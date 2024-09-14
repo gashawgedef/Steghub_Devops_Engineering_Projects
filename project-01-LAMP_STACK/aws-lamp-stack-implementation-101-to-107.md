@@ -31,7 +31,7 @@ chmod 400 "gashaw_key.pem"
 The connect the instance using instance Public Ip Addresss
 
 ```
-ssh -i melkamu_key.pem ubuntu@34.229.199.16
+ssh -i "gashaw_key.pem" root@ec2-3-93-184-36.compute-1.amazonaws.com
 ```
 
 ![image](assets/connect-instance.jpg)
