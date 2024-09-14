@@ -88,4 +88,4 @@ sudo apt install mysql-server
 ```
 sudo mysql
 ```
-![Login to mysql](assets/login-to-mysql.jpg.jpg)
+![Login to mysql](assets/login-to-mysql.jpg)
