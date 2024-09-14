@@ -104,37 +104,48 @@ Start the interactive script by running:
 ```
 sudo mysql_secure_installation
 ```
+
 ![Login to mysql](assets/interactive_scure.jpg)
 
-
 5. ### Installing PHP
+
 ---
+
 ```
 sudo apt  install php libapache2-mod-php  php-mysql
 ```
+
 **Confirm php version**
+
 ```
 php -v
 ```
+
 ![image](assets/install-php.jpg)
 
 6. ### Creating Virtual Host For Your Website using Apache
+
 ---
+
 1. Create directory projectlamp inside /var/www
+
 ```
 sudo mkdir /var/www/projectlamp
 
 ```
+
 2. Give Ownerhip for current User
 
 ```
 sudo chown -R $user:$user /var/www/projectlamp
 ```
+
 3. Create Virtual Host Configuration File and edit using editor
 
 ```
 sudo vim /etc/apache2/sites-available/projectlamp.conf
 ```
+
 ![image](assets/conf_file.jpg)
 
 4. see available files in sites-available folder
@@ -143,22 +154,28 @@ sudo vim /etc/apache2/sites-available/projectlamp.conf
 sudo ls /etc/apache2/sites-available
 
 ```
+
 ![image](assets/available-file.jpg)
 
 5. Enable new virtual host
+
 ```
 sudo a2ensite projectlamp
 
 ```
+
 6. Disable default website
 
 ```
 sudo a2dissite 000-default
 ```
+
 7. Check Syntax error
+
 ```
 sudo apache2ctl configtest
 ```
+
 ![image](assets/check_syntax_error.jpg)
 
 8. Reload Apache to change effect
@@ -166,7 +183,9 @@ sudo apache2ctl configtest
 ```
 sudo systemctl reload apache2
 ```
+
 9. create index file to the root folder
+
 ```
 sudo bash -c '
 TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds:21600")
@@ -175,42 +194,52 @@ IP=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -S http://169.254.169.254/latest
 echo "Hello LAMP from hostname $HOSTNAME with public IP $IP" > /var/www/projectlamp/index.html
 '
 ```
+
 ![image](assets/create_index.jpg)
 
 10. Browse the website
-[Website URL http://3.88.103.206/ ](http://3.88.103.206/)
-![image](assets/browse-image.jpg)
 
-7. ### Enable PHP ON Website
+[Website URL](http://3.88.103.206/)
+![image](assets/browse-image.jpg) 7. ### Enable PHP ON Website
+
 ---
+
 **Change the behavior by edit dir.conf**
+
 ```
 vim /etc/apache2/mods-enabled/dir.conf
 
 ```
+
 ![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/421ec5f0-b918-4abd-b8fc-c44f2f2b77c9)
 
 **New updatedcode**
 ![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/e002b073-cc00-4ab6-b0eb-bdd833aa05cd)
 
 **system restart**
+
 ```
 sudo systemctl reload apache2
 ```
+
 **Create custom Php script for test**
+
 ```
  sudo vim /var/www/projectlamp/index.php
 
 ```
+
 ![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/9d090ad3-f9e2-4ba8-9df9-33e1af796d4a)
 
 **Access using browser**
 ![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/738e43d5-6c5d-4d20-a6d4-c3d1de0d34fd)
 
 **Finally remove index.php file because it contain sensitive information**
+
 ```
 sudo rm /var/www/projectlamp/index.php
 ```
 
 ## End of LAMP stack
-The LAMP stack is a popular open-source web development platform that consists of four key components **Linux**, **Apache**, **MySQL (or MariaDB)**, and **PHP** (or Perl or Python).  By following the above  guideline you can set up and deploye a LAMP environment effectively in AWS Environment.
+
+The LAMP stack is a popular open-source web development platform that consists of four key components **Linux**, **Apache**, **MySQL (or MariaDB)**, and **PHP** (or Perl or Python). By following the above guideline you can set up and deploye a LAMP environment effectively in AWS Environment.
