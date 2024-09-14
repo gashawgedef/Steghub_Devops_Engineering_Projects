@@ -90,7 +90,7 @@ sudo mysql
 ```
 ![Login to mysql](assets/login-to-mysql.jpg)
 
--Set a password for root user using mysql_native_password as default authentication method
+Set a password for root user using mysql_native_password as default authentication method
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 ```
