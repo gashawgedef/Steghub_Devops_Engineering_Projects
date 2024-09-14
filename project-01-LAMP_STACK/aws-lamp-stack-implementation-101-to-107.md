@@ -33,8 +33,9 @@ The connect the instance using instance Public Ip Addresss
 ```
 ssh -i melkamu_key.pem ubuntu@34.229.199.16
 ```
+![image](assets/connect-instance.jpg)
 
-![image](assets/connect-instance.jpg) 3. ### Install Apache and Updating Firewall
+3. ### Install Apache and Updating Firewall
 
 ---
 
