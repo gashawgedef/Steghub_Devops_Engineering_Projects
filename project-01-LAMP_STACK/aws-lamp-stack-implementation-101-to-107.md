@@ -56,3 +56,9 @@ curl http://127.0.0.1:80
 **Add Inbound Rule using Port 80**
 ![Set Inbound Rules using port 80](assets/inbound-rule-80.jpg)
 
+
+**Test in browser using public IP Address **
+```
+http://3.88.103.206/
+```
+![In Browser](assets/default-page.jpg)
