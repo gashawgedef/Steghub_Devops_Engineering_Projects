@@ -33,6 +33,7 @@ The connect the instance using instance Public Ip Addresss
 ```
 ssh -i melkamu_key.pem ubuntu@34.229.199.16
 ```
+
 ![image](assets/connect-instance.jpg)
 
 3. ### Install Apache and Updating Firewall
@@ -85,16 +86,22 @@ sudo apt install mysql-server
 ```
 
 **Login To MYSQL**
+
 ```
 sudo mysql
 ```
+
 ![Login to mysql](assets/login-to-mysql.jpg)
 
 Set a password for root user using mysql_native_password as default authentication method
+
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 ```
+
 Start the interactive script by running:
+
 ```
 sudo mysql_secure_installation
 ```
+![Login to mysql](assets/interactive_scure.jpg)
