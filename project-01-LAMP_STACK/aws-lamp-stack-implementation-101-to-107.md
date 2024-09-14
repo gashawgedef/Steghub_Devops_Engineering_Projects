@@ -117,3 +117,30 @@ sudo apt  install php libapache2-mod-php  php-mysql
 php -v
 ```
 ![image](assets/install-php.jpg)
+
+6. ### Creating Virtual Host For Your Website using Apache
+---
+1. Create directory projectlamp inside /var/www
+```
+sudo mkdir /var/www/projectlamp
+
+```
+2. Give Ownerhip for current User
+
+```
+sudo chown -R $user:$user /var/www/projectlamp
+```
+3. Create Virtual Host Configuration File and edit using editor
+
+```
+sudo vim /etc/apache2/sites-available/projectlamp.conf
+```
+![image](assets/conf_file.jpg.jpg)
+
+4. see available files in sites-available folder
+
+```
+sudo ls /etc/apache2/sites-available
+
+```
+![image](assets/available-file.jpg)
