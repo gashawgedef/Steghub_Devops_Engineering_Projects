@@ -105,3 +105,15 @@ Start the interactive script by running:
 sudo mysql_secure_installation
 ```
 ![Login to mysql](assets/interactive_scure.jpg)
+
+
+5. ### Installing PHP
+---
+```
+sudo apt  install php libapache2-mod-php  php-mysql
+```
+**Confirm php version**
+```
+php -v
+```
+![image](assets/install-php.jpg)
