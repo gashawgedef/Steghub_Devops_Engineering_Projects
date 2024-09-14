@@ -17,3 +17,40 @@ create Aws aacount to access aws console to run over all action Ec2
 
 **Instance summary**
 ![Instance Summary Image](assets/instance-summary.jpg)
+
+2. ### Connect to Ec2 Instance
+---
+First  get private key[gashaw_key.pem] of EC2 instance server by download and give permission
+```
+chmod 400 "gashaw_key.pem"
+```
+
+The connect the instance  using instance Public Ip Addresss
+```
+ssh -i melkamu_key.pem ubuntu@34.229.199.16
+```
+![image](assets/connect-instance.jpg)
+3. ### Install Apache and Updating Firewall
+---
+```
+sudo apt update
+```
+
+```
+sudo apt install apache2
+```
+**Verify Installation**
+
+```
+sudo systemctl status apache2
+```
+![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/c32d582e-39fd-4da8-96d0-d121f1390f16)
+
+**Check acccess locally**
+
+```
+curl http://localhost:80
+```
+```
+curl http://127.0.0.1:80
+```
