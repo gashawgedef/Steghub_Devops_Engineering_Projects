@@ -135,7 +135,7 @@ sudo chown -R $user:$user /var/www/projectlamp
 ```
 sudo vim /etc/apache2/sites-available/projectlamp.conf
 ```
-![image](assets/conf_file.jpg.jpg)
+![image](assets/conf_file.jpg)
 
 4. see available files in sites-available folder
 
