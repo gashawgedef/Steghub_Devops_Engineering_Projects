@@ -83,3 +83,9 @@ http://3.88.103.206/
 ```
 sudo apt install mysql-server
 ```
+
+**Login To MYSQL**
+```
+sudo mysql
+```
+![Login to mysql](assets/login-to-mysql.jpg.jpg)
