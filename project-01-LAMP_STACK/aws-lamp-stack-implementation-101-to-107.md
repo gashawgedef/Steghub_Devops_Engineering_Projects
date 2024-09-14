@@ -199,48 +199,40 @@ echo "Hello LAMP from hostname $HOSTNAME with public IP $IP" > /var/www/projectl
 
 10. Browse the website
 
-[3.88.103.206 - Website URL](http://3.93.184.36/)
+[3.93.184.36 - Website URL](http://3.93.184.36/)
 ![image](assets/browse-image.jpg)
-7. ### Enable PHP ON Website
+### Enable PHP ON Website
 
 ---
 
 **Change the behavior by edit dir.conf**
 
 ```
-vim /etc/apache2/mods-enabled/dir.conf
+sudo vim /etc/apache2/mods-enabled/dir.conf
 
 ```
 
-![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/421ec5f0-b918-4abd-b8fc-c44f2f2b77c9)
-
-**New updatedcode**
-![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/e002b073-cc00-4ab6-b0eb-bdd833aa05cd)
+![image](assets/change-behavior.jpg)
 
 **system restart**
 
 ```
 sudo systemctl reload apache2
 ```
-
-**Create custom Php script for test**
-
-```
- sudo vim /var/www/projectlamp/index.php
+**Create New File named index.php in my custom folder**
 
 ```
-
-![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/9d090ad3-f9e2-4ba8-9df9-33e1af796d4a)
-
-**Access using browser**
-![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/738e43d5-6c5d-4d20-a6d4-c3d1de0d34fd)
+  sudo vim /var/www/projectlamp/index.php
+```
+![image](assets/new_php_script.jpg)
 
 **Finally remove index.php file because it contain sensitive information**
-
 ```
 sudo rm /var/www/projectlamp/index.php
 ```
 
 ## End of LAMP stack
 
-The LAMP stack is a popular open-source web development platform that consists of four key components **Linux**, **Apache**, **MySQL (or MariaDB)**, and **PHP** (or Perl or Python). By following the above guideline you can set up and deploye a LAMP environment effectively in AWS Environment.
+LAMP stack development involves using a combination of open-source technologies to build and manage dynamic web applications. The acronym "LAMP" stands for **Linux**(the operating system), **Apache**(the web server), **MySQL** or **MariaDB** (the database management system), and **PHP**, **Python**, or **Perl**(the scripting language). This stack provides a reliable and flexible framework for creating web applications, with Linux offering a stable platform, Apache handling web requests, MySQL/MariaDB managing data, and PHP/Python/Perl generating dynamic content. Widely adopted for its cost-effectiveness and extensive community support, the LAMP stack is ideal for developing everything from content management systems to custom web applications.
+
+
