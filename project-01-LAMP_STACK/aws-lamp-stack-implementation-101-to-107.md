@@ -168,13 +168,18 @@ sudo systemctl reload apache2
 ```
 9. create index file to the root folder
 ```
-sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with publicIP' $(curl -s http://169.254.169.254/latest-meta-data/public-ipv4) > /var/www/projectlamp/index.html 
+sudo bash -c '
+TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds:21600")
+HOSTNAME=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -S http://169.254.169.254/latest/meta-data/public-hostname)
+IP=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -S http://169.254.169.254/latest/meta-data/public-ipv4)
+echo "Hello LAMP from hostname $HOSTNAME with public IP $IP" > /var/www/projectlamp/index.html
+'
 ```
-![image](assets/h)
+![image](assets/create_index.jpg)
 
 10. Browse the website
 [Website URL http://http://3.88.103.206/ ](http://3.88.103.206/)
-![image](assets/host-name.jpg)
+![image](assets/browse-image.jpg)
 
 7. ### Enable PHP ON Website
 ---
