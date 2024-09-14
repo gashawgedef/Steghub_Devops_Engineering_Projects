@@ -94,3 +94,7 @@ Set a password for root user using mysql_native_password as default authenticati
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 ```
+Start the interactive script by running:
+```
+sudo mysql_secure_installation
+```
