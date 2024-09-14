@@ -13,7 +13,7 @@ LAMP is an acronym that stands for four open-source software components commonly
 
 create Aws aacount to access aws console to run over all action Ec2
 **EC2 Dashboard**
-![EC2 Doashboard](../assets/ec2-dashboard.jpg)
+![EC2 Doashboard](assets/ec2-dashboard.jpg)
 
 **Instance summary**
-![Instance Summary Image](../assets/instance-summary.jpg)
+![Instance Summary Image](assets/instance-summary.jpg)
