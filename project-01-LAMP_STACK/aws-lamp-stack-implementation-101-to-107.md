@@ -44,7 +44,7 @@ sudo apt install apache2
 ```
 sudo systemctl status apache2
 ```
-![image](https://github.com/melkamu372/web-stack-implementation-lamp-stack-in-aws-/assets/47281626/c32d582e-39fd-4da8-96d0-d121f1390f16)
+![Verify Instalation](assets/verify-instalation.jpg)
 
 **Check acccess locally**
 
