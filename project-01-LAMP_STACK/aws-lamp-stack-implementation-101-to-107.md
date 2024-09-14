@@ -199,7 +199,7 @@ echo "Hello LAMP from hostname $HOSTNAME with public IP $IP" > /var/www/projectl
 
 10. Browse the website
 
-[3.88.103.206 - Website URL](http://3.88.103.206/)
+[3.88.103.206 - Website URL](http://3.93.184.36/)
 ![image](assets/browse-image.jpg)
 7. ### Enable PHP ON Website
 
