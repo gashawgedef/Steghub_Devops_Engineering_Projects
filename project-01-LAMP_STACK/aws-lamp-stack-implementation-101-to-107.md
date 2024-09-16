@@ -224,7 +224,7 @@ sudo systemctl reload apache2
 ```
   sudo vim /var/www/projectlamp/index.php
 ```
-![image](assets/new_php_script.jpg)
+![image](assets/last-php.jpg)
 
 **Finally remove index.php file because it contain sensitive information**
 ```
