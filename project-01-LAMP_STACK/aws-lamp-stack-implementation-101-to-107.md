@@ -187,17 +187,12 @@ sudo systemctl reload apache2
 9. create index file to the root folder
 
 ```
-sudo bash -c '
-TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds:21600")
-HOSTNAME=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -S http://169.254.169.254/latest/meta-data/public-hostname)
-IP=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -S http://169.254.169.254/latest/meta-data/public-ipv4)
-echo "Hello LAMP from hostname $HOSTNAME with public IP $IP" > /var/www/projectlamp/index.html
-'
+sudo echo 'Hello LAMP from hostname' $(TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
 ```
 
 ![image](assets/create_index.jpg)
 
-10. Browse the website
+10. Browse the website using public IP address
 
 [3.93.184.36 - Website URL](http://3.93.184.36/)
 ![image](assets/browse-image.jpg)
@@ -226,12 +221,17 @@ sudo systemctl reload apache2
 ```
 ![image](assets/last-php.jpg)
 
-**Finally remove index.php file because it contain sensitive information**
+
+**In The Browser Access PHP File looks like**
+![image](assets/php-file-browse.jpg)
+
+
+**At the end we  remove index.php file**
 ```
 sudo rm /var/www/projectlamp/index.php
 ```
 
-## End of LAMP stack
+## End of LAMP stack Project
 
 LAMP stack development involves using a combination of open-source technologies to build and manage dynamic web applications. The acronym "LAMP" stands for **Linux**(the operating system), **Apache**(the web server), **MySQL** or **MariaDB** (the database management system), and **PHP**, **Python**, or **Perl**(the scripting language). This stack provides a reliable and flexible framework for creating web applications, with Linux offering a stable platform, Apache handling web requests, MySQL/MariaDB managing data, and PHP/Python/Perl generating dynamic content. Widely adopted for its cost-effectiveness and extensive community support, the LAMP stack is ideal for developing everything from content management systems to custom web applications.
 
