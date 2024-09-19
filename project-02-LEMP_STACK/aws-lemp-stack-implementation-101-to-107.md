@@ -88,7 +88,7 @@ sudo apt install nginx
 ```
 sudo systemctl status nginx
 ```
-![image](assets/14_verify_nginx_instalation.jpg.jpg)
+![image](assets/14_verify_nginx_instalation.jpg)
 
 Our server is running and we can access it locally and from the Internet (Source 0.0.0.0/0 means 'from any IP address').
 
