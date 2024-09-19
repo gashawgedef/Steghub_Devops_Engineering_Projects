@@ -154,8 +154,8 @@ sudo mysql -p
 ```
 ![image](assets/verify_secure_instalation.jpg)
 
-exit the MySQL console, type:
+Exit the MySQL console, type:
 
-````
+```
 exit
 ```
