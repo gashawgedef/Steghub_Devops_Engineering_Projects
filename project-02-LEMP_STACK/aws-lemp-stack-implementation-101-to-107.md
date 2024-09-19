@@ -52,4 +52,5 @@ By configuring these rules, your instance will allow SSH access for management a
 
   ![image](assets/8_add_inbound_rules.jpg)
 - Connect to instance from ssh client
+
    ![image](assets/10_connect_instance1.jpg)
