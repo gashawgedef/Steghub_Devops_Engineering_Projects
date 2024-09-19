@@ -29,4 +29,4 @@ A security group in AWS acts as a virtual firewall for your EC2 instances. It co
 ![image](assets/4_create_security_group.jpg)
 
 - View the status of instance created
-  ![image](assets/6_view_instance.jpg)
+  ![image](assets/6_View_instance.jpg)
