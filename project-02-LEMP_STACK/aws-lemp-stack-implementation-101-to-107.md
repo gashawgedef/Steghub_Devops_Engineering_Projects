@@ -133,3 +133,14 @@ Set a password for the root user, using mysql_native_password as default authent
 ```
 ALTERUSER'root'@'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
 ```
+Exit the MySQL shell with:
+
+```
+exit
+```
+
+Start the interactive script by running:
+
+```
+sudo mysql_secure_installation
+```
