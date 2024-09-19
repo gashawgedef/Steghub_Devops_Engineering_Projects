@@ -270,3 +270,10 @@ sudo echo 'Hello LEMP from hostname' $(TOKEN=`curl -X PUT "http://169.254.169.25
 http://35.172.116.181:80
 ```
 ![image](assets/24_get_host_name.jpg)
+
+**Or using public DNS name**
+
+```
+http://ec2-100-24-55-126.compute-1.amazonaws.com/
+```
+![image](assets/public_dns.jpg)
