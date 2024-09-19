@@ -120,7 +120,7 @@ sudo apt install mysql-server
 ```
 ![image](assets/install_mysql.jpg)
 
-**Confirm MySQL instalation**
+**log in to the MySQL console by typing:**
 
 ```
 sudo mysql
