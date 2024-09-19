@@ -292,7 +292,7 @@ nano /var/www/projectLEMP/info.php
 <?php
 phpinfo();
 ```
-![image](assets/25_testing_php.jpg.jpg)
+![image](assets/25_testing_php.jpg)
 
 - Access this page in the web browser by visiting the domain name or public IP address we’ve set up in your Nginx configuration file, followed by /info.php:
 
