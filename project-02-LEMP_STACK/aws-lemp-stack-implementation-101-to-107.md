@@ -103,3 +103,6 @@ curl http://localhost:80
 curl http://127.0.0.1:80
 ```
 ![image](assets/16_curl_127_local_ip.jpg)
+
+**Now Test Our Nginx server on the Internet**
+[http://35.175.237.174/](http://35.175.237.174/)
