@@ -39,3 +39,15 @@ A security group in AWS acts as a virtual firewall for your EC2 instances. It co
 - View Instance Details
 
   ![image](assets/7_view_instance_details.jpg)
+- Configuring Security Group with Specific Inbound Rules
+  When setting up a security group for your EC2 instance, you can control which traffic reaches your instance through inbound rules.
+
+For SSH (port 22), this rule allows secure shell access to your instance. By default, SSH is open to any IP address (0.0.0.0/0), which is useful for testing but insecure for production. It's recommended to restrict this access to trusted IPs to reduce exposure to unauthorized login attempts.
+
+For HTTP (port 80), this rule allows web traffic from anywhere on the internet. This is essential if you're hosting a public-facing website or web service that users can access over HTTP.
+
+For HTTPS (port 443), this rule enables secure web traffic. Like HTTP, HTTPS traffic is generally allowed from anywhere on the internet, ensuring encrypted access for your users. This is crucial for secure communication, especially for websites dealing with sensitive data.
+
+By configuring these rules, your instance will allow SSH access for management and handle both HTTP and HTTPS traffic, making it accessible to the public while still maintaining necessary security measures.
+
+  ![image](assets/8_add_inbound_rules.jpg)
