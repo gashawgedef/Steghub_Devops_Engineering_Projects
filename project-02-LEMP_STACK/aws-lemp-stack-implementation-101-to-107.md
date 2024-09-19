@@ -13,4 +13,5 @@ Project 2 covers similar concepts as Project 1 and help to cement your skill of 
 The first step in implementing this project is launch an instance in AWS console
 
 create an instance in the default region us-east-1 and enter instance name **LEMP STACK Web Server**
-![image](assets/1_launch_instance_name.jpg.jpg)
+
+![image](assets//1_launch_instance_name.jpg)
