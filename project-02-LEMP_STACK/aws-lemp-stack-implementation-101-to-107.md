@@ -127,3 +127,9 @@ sudo mysql
 ```
 
 ![image](assets/18_verify_mysql_installation.jpg)
+
+Set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.
+
+```
+ALTERUSER'root'@'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
+```
