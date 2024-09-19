@@ -309,3 +309,55 @@ sudo rm /var/www/your_domain/info.php
 ```
 ## Step 6 — Retrieving data from MySQL database with PHP
 
+- connect to the MySQL console using the root account:
+
+```
+ sudo mysql -p
+```
+
+![image](assets/mysql_logins.jpg)
+
+- create a new database, run the following command from the  MySQL console:
+
+```
+CREATE DATABASE `example_database`;
+```
+
+![image](assets/26_create_database.jpg)
+
+- Create a new user named **example_user**, using **mysql_native_password** as default authentication method.
+
+```
+CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+```
+
+![image](assets/28_create_mysql_user.jpg)
+
+- Now we need to give this user permission over the example_database database:
+
+```
+GRANT ALL ON example_database.* TO 'example_user'@'%';
+```
+![image](assets/29_grant_all_permissions.jpg)
+
+- Exit the MySQL shell with:
+
+```
+Exit
+```
+
+- test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
+
+```
+mysql -u example_user -p
+```
+
+![image](assets/30_mysql_user_login.jpg)
+
+
+- After logging in to the MySQL console, confirm that you have access to the example_database database:
+
+```
+SHOW DATABASES;
+```
+![image](assets/31_show_databases.jpg)
