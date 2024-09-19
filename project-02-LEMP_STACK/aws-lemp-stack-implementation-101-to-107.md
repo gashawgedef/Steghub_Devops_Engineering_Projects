@@ -15,8 +15,7 @@ The first step in implementing this project is launch an instance in AWS console
 create an instance in the default region us-east-1 and enter instance name **LEMP STACK Web Server**
 
 ![image](assets//1_launch_instance_name.jpg)
-
--Next we select ubuntu operating system for an instance 
+- Next we select ubuntu operating system for an instance 
 ![image](assets/2_select_ubuntu_instance.jpg)
 
 -Create or use existing  private key to log into the instance created
