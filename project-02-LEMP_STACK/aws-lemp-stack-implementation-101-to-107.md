@@ -3,5 +3,5 @@ LEMP is an open-source web application stack used to develop web applications. T
 
 - **Linux:** The operating system that runs the web server.
 - **Nginx:** The web server software that handles HTTP requests.
-- **ySQL:** The relational database management system that stores the website’s data.
+- **MySQL:** The relational database management system that stores the website’s data.
 - **PHP:** The programming language used to build dynamic web applications.
