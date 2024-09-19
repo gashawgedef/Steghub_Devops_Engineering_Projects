@@ -277,3 +277,37 @@ http://35.172.116.181:80
 http://ec2-100-24-55-126.compute-1.amazonaws.com/
 ```
 ![image](assets/public_dns.jpg)
+
+## Step 5 – Testing PHP with Nginx
+
+- Create a test PHP file in your document root. Open a new file called info.php within your document root in your text editor:
+
+```
+nano /var/www/projectLEMP/info.php
+```
+
+- Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:
+
+```
+<?php
+phpinfo();
+```
+![image](assets/25_testing_php.jpg.jpg)
+
+- Access this page in the web browser by visiting the domain name or public IP address we’ve set up in your Nginx configuration file, followed by /info.php:
+
+```
+
+````
+
+![image](assets/26_access_php_file.jpg)
+
+- Remove the file you created as it contains sensitive information about your PHP environment and your Ubuntu server. You can use rm to remove that file:
+
+```
+sudo rm /var/www/your_domain/info.php
+```
+
+
+
+
