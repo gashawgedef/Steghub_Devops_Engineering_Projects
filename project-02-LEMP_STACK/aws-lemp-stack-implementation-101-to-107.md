@@ -104,5 +104,6 @@ curl http://127.0.0.1:80
 ```
 ![image](assets/16_curl_127_local_ip.jpg)
 
-**Now Test Our Nginx server on the Internet**
-[http://35.175.237.174/](http://35.175.237.174/)
+**Now Test Our Nginx server on the Internet in browser using public ip address or domain name**
+[http://35.172.116.181/](http://35.172.116.181/)
+![image](assets/17_open_public_ip_address.jpg)
