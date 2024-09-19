@@ -153,3 +153,9 @@ When you’re finished, test if you’re able to log in to the MySQL console by 
 sudo mysql -p
 ```
 ![image](assets/verify_secure_instalation.jpg)
+
+exit the MySQL console, type:
+
+````
+exit
+```
