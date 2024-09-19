@@ -244,3 +244,29 @@ server {
 ```
 sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
 ```
+- Test  configuration for syntax errors by typing the following command
+
+![image](assets/22_nginx_ok.jpg)
+
+- Disable default Nginx host that is currently configured to listen on port 80, for this run:
+
+```
+sudo unlink /etc/nginx/sites-enabled/default
+```
+-  Reload Nginx to apply the changes:
+
+```
+sudo systemctl reload nginx
+```
+- Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your new server block works as expected:
+
+```
+sudo echo 'Hello LEMP from hostname' $(TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html
+```
+![image](assets/create_index_file.jpg)
+- open your website URL using IP address:
+
+```
+http://35.172.116.181:80
+```
+![image](assets/24_get_host_name.jpg)
