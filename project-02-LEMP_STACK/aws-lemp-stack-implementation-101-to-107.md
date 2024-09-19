@@ -160,7 +160,7 @@ Exit the MySQL console, type:
 exit
 ```
 
-## Step – Installing PHP
+## Step 3– Installing PHP
 Nginx is installed to serve your content and MySQL installed to store and manage your data. Now you can install PHP to process code and generate dynamic content for the web server.
 
 While Apache embeds the PHP interpreter in each request, Nginx requires an external program to handle PHP processing and act as a bridge between the PHP interpreter itself and the web server. This allows for a better overall performance in most PHP-based websites, but it requires additional configuration. You’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. Additionally, you’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. Core PHP packages will automatically be installed as dependencies.
@@ -176,3 +176,53 @@ sudo apt install php-fpm php-mysql
 php -v
 ```
 ![image](assets/20_verify_php_instalation.jpg)
+
+## Step 4 — Configuring Nginx to Use PHP Processor
+
+When using the Nginx web server, we can create server blocks (similar to virtual hosts in Apache) to encapsulate configuration details and host more than one domain on a single server. 
+
+**Create the root web directory for your_domain as follows:**
+
+```
+sudo mkdir /var/www/projectLEMP
+```
+
+![image](assets/create_root_directory.jpg)
+
+- assign ownership of the directory with the $USER environment variable, which will reference your current system user:
+
+```
+sudo chown -R $USER:$USER /var/www/projectLEMP
+```
+- open a new configuration file in Nginx’s sites-available directory using your preferred nano editor.
+
+```
+sudo nano /etc/nginx/sites-available/projectLEMP
+```
+- Paste in the following bare-bones configuration:
+
+```
+#/etc/nginx/sites-available/projectLEMP
+
+server {
+    listen 80;
+    server_name projectLEMP www.projectLEMP;
+    root /var/www/projectLEMP;
+
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
+     }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}
+```
