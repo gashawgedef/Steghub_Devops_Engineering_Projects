@@ -15,18 +15,24 @@ The first step in implementing this project is launch an instance in AWS console
 create an instance in the default region us-east-1 and enter instance name **LEMP STACK Web Server**
 
 ![image](assets//1_launch_instance_name.jpg)
-- Next we select ubuntu operating system for an instance 
+- Next we select ubuntu operating system for an instance
+  
 ![image](assets/2_select_ubuntu_instance.jpg)
 
 - Create or use existing  private key to log into the instance created
+  
 ![image](assets/3_key_pair_new_existing.jpg)
 
 - Choose the **volume size** and **type** for the instance created
+
 ![image](assets/5_configure_and_launch_instance.jpg)
+
 - Configuring the security group in AWS EC2
   
 A security group in AWS acts as a virtual firewall for your EC2 instances. It controls both inbound and outbound traffic to ensure only the permitted traffic reaches your instance. Each EC2 instance must be associated with at least one security group. The security group rules can be customized to define the type of traffic that is allowed to connect to the instance, including protocols, ports, and IP addresses.
+
 ![image](assets/4_create_security_group.jpg)
 
 - View the status of instance created
+
   ![image](assets/6_View_instance.jpg)
