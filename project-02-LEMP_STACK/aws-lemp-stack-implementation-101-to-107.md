@@ -89,6 +89,7 @@ sudo apt install nginx
 sudo systemctl status nginx
 ```
 ![image](assets/14_verify_nginx_instalation.jpg.jpg)
+
 Our server is running and we can access it locally and from the Internet (Source 0.0.0.0/0 means 'from any IP address').
 
 First, let us try to check how we can access it locally in our Ubuntu shell, run:
@@ -101,4 +102,4 @@ curl http://localhost:80
 ```
 curl http://127.0.0.1:80
 ```
-![image](assets/16_curl_127_local_ip.jpg.jpg)
+![image](assets/16_curl_127_local_ip.jpg)
