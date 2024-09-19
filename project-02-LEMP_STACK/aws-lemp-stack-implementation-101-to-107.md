@@ -307,6 +307,5 @@ phpinfo();
 ```
 sudo rm /var/www/your_domain/info.php
 ```
-
-
+## Step 6 — Retrieving data from MySQL database with PHP
 
