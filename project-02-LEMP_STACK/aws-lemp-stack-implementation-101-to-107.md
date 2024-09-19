@@ -109,3 +109,21 @@ curl http://127.0.0.1:80
 **Using public address [http://35.172.116.181/](http://35.172.116.181/)**
 
 ![image](assets/17_open_public_ip_address.jpg)
+
+## Step 2— Installing MySQL
+Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.
+
+Again, use 'apt' to acquire and install this software:
+
+```
+sudo apt install mysql-server
+```
+![image](assets/install_mysql.jpg)
+
+**Confirm MySQL instalation**
+
+```
+sudo mysql
+```
+
+![image](assets/18_verify_mysql_installation.jpg)
