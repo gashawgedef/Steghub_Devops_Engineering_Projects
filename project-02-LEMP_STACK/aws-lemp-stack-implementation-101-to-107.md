@@ -395,3 +395,45 @@ SELECT * FROM example_database.todo_list;
 ```
 exit
 ``` 
+- Now you can create a PHP script that will connect to MySQL and query for your content. Create a new PHP file in your custom web root directory using nano editor:
+
+```
+nano /var/www/projectLEMP/todo_list.php
+
+```
+
+- The following PHP script connects to the MySQL database and queries for the content of the todo_list table, displays the results in a list. If there is a problem with the database connection, it will throw an exception.
+
+```
+<?php
+$user = "example_user";
+$password = "PassWord.1";
+$database = "example_database";
+$table = "todo_list";
+
+try {
+  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+  echo "<h2>TODO</h2><ol>";
+  foreach($db->query("SELECT content FROM $table") as $row) {
+    echo "<li>" . $row['content'] . "</li>";
+  }
+  echo "</ol>";
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+```
+
+![image](assets/35_php_script_connecting_to_server.jpg)
+
+
+- You can now access this page in your web browser by visiting the domain name or public IP address configured for your website, followed by /todo_list.php:
+
+```
+http://35.172.116.181/todo_list.php
+```
+
+![image](assets/36_my_to_do_list_last.jpg)
+
+## The end of LEMP Stack Project
+That means your PHP environment is ready to connect and interact with your MySQL server.
