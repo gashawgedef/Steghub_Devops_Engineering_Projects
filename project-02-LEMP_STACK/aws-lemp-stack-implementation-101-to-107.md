@@ -146,3 +146,10 @@ sudo mysql_secure_installation
 ```
 
 ![image](assets/19_secure_mysql_installation.jpg)
+
+When you’re finished, test if you’re able to log in to the MySQL console by typing:
+
+```
+sudo mysql -p
+```
+![image](assets/verify_secure_instalation.jpg)
