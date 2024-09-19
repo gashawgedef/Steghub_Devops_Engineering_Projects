@@ -346,7 +346,7 @@ GRANT ALL ON example_database.* TO 'example_user'@'%';
 Exit
 ```
 
-- test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
+- Test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
 
 ```
 mysql -u example_user -p
@@ -361,3 +361,37 @@ mysql -u example_user -p
 SHOW DATABASES;
 ```
 ![image](assets/31_show_databases.jpg)
+
+
+-  Create a test table named **todo_list**. From the MySQL console, run the following statement:
+
+```
+CREATE TABLE todo_db.todo_list (
+  item_id INT AUTO_INCREMENT,
+  content VARCHAR(255),
+  PRIMARY KEY(item_id)
+);
+```
+
+![image](assets/32_use_db_and_create_table.jpg)
+
+- Insert a few rows of content in the test table. You might want to repeat the next command a few times, using different VALUES:
+
+```
+INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
+```
+
+![image](assets/33_insert_data.jpg)
+
+- To confirm that the data was successfully saved to your table, run:
+
+```
+SELECT * FROM example_database.todo_list;
+```
+![image](assets/34_select_data_from_database.jpg)
+
+- After confirming that you have valid data in your test table, you can exit the MySQL console:
+
+```
+exit
+``` 
