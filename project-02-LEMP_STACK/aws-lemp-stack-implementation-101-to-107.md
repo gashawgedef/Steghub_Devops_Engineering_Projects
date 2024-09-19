@@ -67,3 +67,4 @@ Once the private key file has the correct permissions, you can use SSH to connec
 ```
 ssh -i "gashaw_key.pem" ubuntu@ec2-54-226-142-99.compute-1.amazonaws.com
 ```
+![image](assets/12_connect_instance_using_domain_name.jpg)
