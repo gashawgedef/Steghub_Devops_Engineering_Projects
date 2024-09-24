@@ -406,5 +406,9 @@ DB='mongodb+srv://gashawgedef:*****************@cluster0.mnsga.mongodb.net/?retr
 ```
 ![image](assets/42_edit_env_variable.jpg)
 
+Now we need to update the index.js to reflect the use of .env so that Node.js can connect to the database.
+
+Simply delete existing content in the file, and update it with the entire code below.
+
 
 
