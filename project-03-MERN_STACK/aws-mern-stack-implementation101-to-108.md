@@ -41,14 +41,16 @@ create an instance in the default region us-east-1 and enter instance name **MER
   
 A security group in AWS acts as a virtual firewall for your EC2 instances. It controls both inbound and outbound traffic to ensure only the permitted traffic reaches your instance. Each EC2 instance must be associated with at least one security group. The security group rules can be customized to define the type of traffic that is allowed to connect to the instance, including protocols, ports, and IP addresses.
 
-![image](assets/4_create_security_group.jpg)
+![image](assets/5_configure_security_group.jpg)
 
 - View the status of instance created
 
-  ![image](assets/6_View_instance.jpg)
+  ![image](assets/6_view_instance.jpg)
+  
 - View Instance Details
 
   ![image](assets/7_view_instance_details.jpg)
+
 - Configuring Security Group with Specific Inbound Rules
   When setting up a security group for your EC2 instance, you can control which traffic reaches your instance through inbound rules.
 
