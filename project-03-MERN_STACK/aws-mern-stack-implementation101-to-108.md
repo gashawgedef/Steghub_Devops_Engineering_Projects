@@ -375,3 +375,7 @@ MongoDB is a NoSQL database that stores data in flexible, JSON-like documents, a
 Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
 
 ![image](assets/35_add_ip_from_anywhere.jpg)
+
+- Create a MongoDB database and collection inside mLab
+
+![image](assets/39_create_database.jpg)
