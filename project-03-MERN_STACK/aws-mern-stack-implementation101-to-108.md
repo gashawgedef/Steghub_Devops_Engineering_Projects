@@ -46,7 +46,7 @@ A security group in AWS acts as a virtual firewall for your EC2 instances. It co
 - View the status of instance created
 
   ![image](assets/6_view_instance.jpg)
-  
+
 - View Instance Details
 
   ![image](assets/7_view_instance_details.jpg)
@@ -62,7 +62,7 @@ For HTTPS (port 443), this rule enables secure web traffic. Like HTTP, HTTPS tra
 
 By configuring these rules, your instance will allow SSH access for management and handle both HTTP and HTTPS traffic, making it accessible to the public while still maintaining necessary security measures.
 
-  ![image](assets/8_add_inbound_rules.jpg)
+  ![image](assets/8_create_inbound_rules.jpg)
 - Connect to instance from ssh client
 
    ![image](assets/10_connect_instance1.jpg)
