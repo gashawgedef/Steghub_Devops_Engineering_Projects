@@ -383,3 +383,12 @@ Allow access to the MongoDB database from anywhere (Not secure, but it is ideal 
 - Database after created looks like
 
 ![image](assets/40_after_created_database.jpg)
+
+In the **index.js** file, we specified process.env to access environment variables, but we have not yet created this file. So we need to do that now.
+
+Create a file in your Todo directory and name it **.env**.
+
+```
+touch .env
+```
+![image](assets/41_create_env_file.jpg)
