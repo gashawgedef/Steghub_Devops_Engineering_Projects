@@ -17,6 +17,7 @@ This stack allows developers to build modern, scalable applications with a unifi
 - Highly scalable and suitable for modern web applications.
 - Efficient, with reusable React components and an asynchronous, event-driven backend.
 
+## Getting Started a MERN STACK Project
 
 **1. Launch instance in AWS Console**
 The first step in implementing this project is launch an instance in AWS console
