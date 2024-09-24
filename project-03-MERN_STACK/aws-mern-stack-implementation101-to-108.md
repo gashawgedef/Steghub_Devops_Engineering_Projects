@@ -286,7 +286,7 @@ mkdir models
 ```
 ![image](assets/31_create_models_folder_and_navigate.jpg)
 
-Change directory into the newly created 'models' folder with cd models.
+Change directory into the newly created **models** folder with cd models.
 
 ```
 cd models
