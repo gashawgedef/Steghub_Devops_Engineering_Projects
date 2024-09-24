@@ -81,3 +81,11 @@ Once the private key file has the correct permissions, you can use SSH to connec
 ssh -i "gashaw_key.pem" ubuntu@ec2-54-226-142-99.compute-1.amazonaws.com
 ```
 ![image](assets/11_connect_to_ssh_client.jpg)
+## Step 1 - Backend configuration
+- Update ubuntu
+
+![image](assets/12_update_ubuntu.jpg)
+
+- Upgrade ubuntu
+
+![image](assets/13_update_ubuntu.jpg)
