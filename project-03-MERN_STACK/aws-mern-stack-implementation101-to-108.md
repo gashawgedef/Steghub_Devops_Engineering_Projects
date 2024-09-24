@@ -399,3 +399,5 @@ touch .env
 ```
 vim .env
 ```
+
+![image](assets/42_edit_env_variable.jpg)
