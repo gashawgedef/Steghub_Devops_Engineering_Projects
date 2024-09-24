@@ -379,3 +379,7 @@ Allow access to the MongoDB database from anywhere (Not secure, but it is ideal 
 - Create a MongoDB database and collection inside mLab
 
 ![image](assets/39_create_database.jpg)
+
+- Database after created looks like
+
+![image](assets/40_after_created_database.jpg)
