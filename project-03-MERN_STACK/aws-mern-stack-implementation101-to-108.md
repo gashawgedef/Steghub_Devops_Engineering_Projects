@@ -222,3 +222,39 @@ mkdir routes
 - Change directory to routes folder.
 
 ![image](assets/26_change_to_routes_directory.jpg)
+
+- create a file api.js with the command below
+
+```
+touch api.js
+```
+
+![image](assets/27_create_api_js.jpg)
+
+- Open the file with the command below
+
+```
+vim api.js
+```
+Copy below code in the file. 
+
+```
+const express = require ('express');
+const router = express.Router();
+
+router.get('/todos', (req, res, next) => {
+
+});
+
+router.post('/todos', (req, res, next) => {
+
+});
+
+router.delete('/todos/:id', (req, res, next) => {
+
+})
+
+module.exports = router;
+```
+
+![image](assets/28_edit_api_js.jpg)
