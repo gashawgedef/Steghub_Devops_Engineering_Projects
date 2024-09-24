@@ -298,3 +298,29 @@ Inside the **models** folder, create a file and name it **todo.js**
 touch todo.js
 ```
 ![image](assets/32_create_todo_js_file_inside_models.jpg)
+
+- Open the file created with **vim todo.js**
+
+```
+vim todo.js
+```
+-  then paste the code below in the file:
+
+```
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+//create schema for todo
+const TodoSchema = new Schema({
+action: {
+type: String,
+required: [true, 'The todo text field is required']
+}
+})
+
+//create model for todo
+const Todo = mongoose.model('todo', TodoSchema);
+
+module.exports = Todo;
+```
+![Image](assets/33_vim_edit_todo_js.jpg)
