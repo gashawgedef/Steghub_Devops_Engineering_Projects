@@ -258,3 +258,8 @@ module.exports = router;
 ```
 
 ![image](assets/28_edit_api_js.jpg)
+
+
+## Models
+
+A **model** is central to JavaScript-based applications, enabling interactivity and defining the database schema for MongoDB documents. The schema serves as a blueprint for the database structure, outlining stored fields and additional virtual properties that may not be required. To create a schema and model, you should install Mongoose, a Node.js package that simplifies interactions with MongoDB.
