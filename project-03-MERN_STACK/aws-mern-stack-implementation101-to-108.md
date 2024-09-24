@@ -392,3 +392,10 @@ Create a file in your Todo directory and name it **.env**.
 touch .env
 ```
 ![image](assets/41_create_env_file.jpg)
+
+
+- Edit Environment varibale **.env**
+
+```
+vim .env
+```
