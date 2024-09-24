@@ -400,10 +400,11 @@ touch .env
 vim .env
 ```
 
-![image](assets/42_edit_env_variable.jpg)
-
+- Paste this file
 ```
-<!-- DB='mongodb+srv://gashawgedef:Enzakuna12%4021@cluster0.mnsga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' -->
 DB='mongodb+srv://gashawgedef:*****************@cluster0.mnsga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 ```
+![image](assets/42_edit_env_variable.jpg)
+
+
 
