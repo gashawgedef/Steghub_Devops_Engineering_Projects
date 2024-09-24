@@ -203,3 +203,11 @@ Open up your browser and try to access your server's Public IP or Public DNS nam
 http://18.232.79.101:5000
 ```
 ![image](assets/24_open_in_public_ip_address.jpg)
+
+## Routes
+There are three actions that our To-Do application needs to be able to do:
+
+1. Create a new task
+2. Display list of all tasks
+3. Delete a completed task
+Each task will be associated with some particular endpoint and will use different standard HTTP request methods: **POST**, **GET**, **DELETE**.
