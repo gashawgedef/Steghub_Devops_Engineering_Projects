@@ -111,3 +111,12 @@ node -v
 
 ![image](assets/16_verify_node_instalation.jpg)
 
+ - **Application Code Setup**
+
+Create a new directory for your To-Do project:
+
+```
+mkdir Todo
+```
+
+![image](assets/17_create_todo_directory.jpg)
