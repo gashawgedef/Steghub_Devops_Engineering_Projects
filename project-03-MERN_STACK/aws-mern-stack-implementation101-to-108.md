@@ -142,3 +142,17 @@ npm install express
 ```
 ![image](assets/19_install_express_js.jpg)
 
+- Create a file **index.js** with the command below
+
+```
+ touch index.js
+```
+![image](assets/20_create_index_js_file.jpg)
+
+- Install the dotenv module
+
+```
+npm install dotenv
+```
+![image](assets/21_install_dotenv.jpg)
+
