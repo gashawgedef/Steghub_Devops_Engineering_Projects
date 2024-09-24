@@ -65,7 +65,7 @@ By configuring these rules, your instance will allow SSH access for management a
   ![image](assets/8_create_inbound_rules.jpg)
 - Connect to instance from ssh client
 
-   ![image](assets/10_connect_instance1.jpg)
+   ![image](assets/9_connect_instance.jpg)
 **Give Permission for the Private SSH Key**
   
   This command ensures that this  private SSH key has the correct permissions before using it to connect to your instance.
