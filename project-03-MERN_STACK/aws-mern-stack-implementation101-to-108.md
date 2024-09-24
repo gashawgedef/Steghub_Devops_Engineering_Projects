@@ -405,7 +405,7 @@ vim .env
 DB='mongodb+srv://gashawgedef:*****************@cluster0.mnsga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 ```
 Here is how to get your connection string
-![image](assets/42_edit_env_variable.jpg)
+![image](assets/37_connect.jpg)
 
 ![image](assets/38_connect.jpg)
 
