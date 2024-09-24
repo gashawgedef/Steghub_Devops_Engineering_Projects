@@ -468,4 +468,4 @@ console.log(`Server running on port ${port}`)
 node index.js
 ```
 
-![image](assets/4)
+![image](assets/44_database_connected_successfully.jpg)
