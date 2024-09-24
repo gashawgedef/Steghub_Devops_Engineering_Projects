@@ -325,9 +325,9 @@ module.exports = Todo;
 ```
 ![Image](assets/33_vim_edit_todo_js.jpg)
 
-Now we need to update our routes from the file api.js in 'routes' directory to make use of the new model.
+Now we need to update our routes from the file **api.js** in **routes** directory to make use of the new model.
 
-In Routes directory, open api.js with vim api.js, delete the code inside with :%d command and paste there code below into it then save and exit
+In Routes directory, open api.js with **vim api.js**, delete the code inside with **:%d** command and paste there code below into it then save and exit
 
 ```
 const express = require ('express');
