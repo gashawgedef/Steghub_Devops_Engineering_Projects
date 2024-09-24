@@ -369,3 +369,9 @@ module.exports = router;
 ## MongoDB Database
 
 MongoDB is a NoSQL database that stores data in flexible, JSON-like documents, allowing for dynamic schemas and easy management of unstructured data. Known for its scalability and performance, it handles large volumes of data across distributed systems. MongoDB supports powerful querying, indexing, and real-time analytics, making it popular for building scalable web and mobile applications.
+
+![image](assets/36_config_mongo_db.jpg)
+
+Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
+
+![image](assets/35_add_ip_from_anywhere.jpg)
