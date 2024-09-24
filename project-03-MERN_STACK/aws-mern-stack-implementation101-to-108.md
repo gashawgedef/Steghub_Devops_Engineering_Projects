@@ -130,3 +130,15 @@ Now change your current directory to the newly created one:
 Next, you will use the command npm init to initialise your project, so that a new file named package.json will be created. This file will normally contain information about your application and the dependencies that it needs to run. Follow the prompts after running the command. You can press Enter several times to accept default values, then accept to write out the package.json file by typing yes.
 
 ![image](assets/18_npm_int.jpg)
+
+## Install ExpressJS
+
+Express.js is a lightweight and flexible web application framework for Node.js, designed to simplify building server-side applications and APIs. It offers features for handling routing, middleware, and HTTP requests, making it ideal for creating scalable and efficient web applications.
+
+- To use express, install it using npm:
+
+```
+npm install express
+```
+![image](assets/19_install_express_js.jpg)
+
