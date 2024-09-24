@@ -404,6 +404,11 @@ vim .env
 ```
 DB='mongodb+srv://gashawgedef:*****************@cluster0.mnsga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 ```
+Here is how to get your connection string
+![image](assets/42_edit_env_variable.jpg)
+
+![image](assets/38_connect.jpg)
+
 ![image](assets/42_edit_env_variable.jpg)
 
 Now we need to update the index.js to reflect the use of .env so that Node.js can connect to the database.
@@ -462,3 +467,5 @@ console.log(`Server running on port ${port}`)
 ```
 node index.js
 ```
+
+![image](assets/4)
