@@ -84,8 +84,6 @@ ssh -i "gashaw_key.pem" ubuntu@ec2-54-226-142-99.compute-1.amazonaws.com
 ## Step 1 - Backend configuration
 - Update ubuntu
 
-![image](assets/12_update_ubuntu.jpg)
-
-- Upgrade ubuntu
-
 ![image](assets/13_update_ubuntu.jpg)
+
+
