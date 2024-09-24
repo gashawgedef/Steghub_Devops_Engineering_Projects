@@ -156,3 +156,35 @@ npm install dotenv
 ```
 ![image](assets/21_install_dotenv.jpg)
 
+- Open the index.js file with the command below
+
+```
+vim index.js
+```
+Type the code below into it and save.
+
+```
+const express = require('express');
+require('dotenv').config();
+
+const app = express();
+
+const port = process.env.PORT || 5000;
+
+app.use((req, res, next) => {
+res.header("Access-Control-Allow-Origin", "\*");
+res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+next();
+});
+
+app.use((req, res, next) => {
+res.send('Welcome to Express');
+});
+
+app.listen(port, () => {
+console.log(`Server running on port ${port}`)
+});
+```
+![image](assets/22_edit_code_vim.jpg)
+
+
