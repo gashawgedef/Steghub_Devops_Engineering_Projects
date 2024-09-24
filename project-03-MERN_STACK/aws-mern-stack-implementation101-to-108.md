@@ -73,10 +73,11 @@ By configuring these rules, your instance will allow SSH access for management a
   ```
   chmod 400 "gashaw_key.pem"
   ```
+  ![image](assets/10_give_permision.jpg)
 **Connecting to the Instance via SSH**
 
 Once the private key file has the correct permissions, you can use SSH to connect to your EC2 instance using its public IP address or domain name.
 ```
 ssh -i "gashaw_key.pem" ubuntu@ec2-54-226-142-99.compute-1.amazonaws.com
 ```
-![image](assets/12_connect_instance_using_domain_name.jpg)
+![image](assets/11_connect_to_ssh_client.jpg)
