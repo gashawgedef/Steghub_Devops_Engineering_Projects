@@ -270,3 +270,18 @@ A **model** is central to JavaScript-based applications, enabling interactivity 
 cd ..
 ```
 ![image](assets/29_change_directory_to_Todo.jpg)
+
+- install Mongoose
+
+```
+npm install mongoose
+```
+
+![image](assets/30_install_mongo_db.jpg)
+
+Create a new folder with **models** with the following command
+
+```
+mkdir models
+```
+![image](assets/31_create_models_folder_and_navigate.jpg)
