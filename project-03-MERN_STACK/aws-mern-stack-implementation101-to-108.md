@@ -211,3 +211,14 @@ There are three actions that our To-Do application needs to be able to do:
 2. Display list of all tasks
 3. Delete a completed task
 Each task will be associated with some particular endpoint and will use different standard HTTP request methods: **POST**, **GET**, **DELETE**.
+
+- Create **routes** folder
+
+```
+mkdir routes
+```
+![image](assets/25_create_routes_folder.jpg)
+
+- Change directory to routes folder.
+
+![image](assets/26_change_to_routes_directory.jpg)
