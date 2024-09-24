@@ -285,3 +285,16 @@ Create a new folder with **models** with the following command
 mkdir models
 ```
 ![image](assets/31_create_models_folder_and_navigate.jpg)
+
+Change directory into the newly created 'models' folder with cd models.
+
+```
+cd models
+```
+
+Inside the **models** folder, create a file and name it **todo.js**
+
+```
+touch todo.js
+```
+![image](assets/32_create_todo_js_file_inside_models.jpg)
