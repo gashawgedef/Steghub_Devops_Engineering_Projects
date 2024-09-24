@@ -188,3 +188,18 @@ console.log(`Server running on port ${port}`)
 ![image](assets/22_edit_code_vim.jpg)
 
 
+Specify port 5000 in the AWS instance's inbound rules.
+
+Now it is time to start our server to see if it works. Open your terminal in the same directory as your index.js file and type:
+
+```
+node index.js
+```
+![image](assets/23_runn_nodejs_server.jpg)
+
+Open up your browser and try to access your server's Public IP or Public DNS name followed by port 5000:
+
+```
+http://18.232.79.101:5000
+```
+![image](assets/24_open_in_public_ip_address.jpg)
