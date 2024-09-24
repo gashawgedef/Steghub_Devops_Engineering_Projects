@@ -103,3 +103,11 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 ![image](assets/15_install_Node_js.jpg)
+
+- Verify the node installation with the command below
+```
+node -v 
+```
+
+![image](assets/16_verify_node_instalation.jpg)
+
