@@ -84,6 +84,22 @@ ssh -i "gashaw_key.pem" ubuntu@ec2-54-226-142-99.compute-1.amazonaws.com
 ## Step 1 - Backend configuration
 - Update ubuntu
 
+```
+sudo apt update
+```
+
 ![image](assets/13_update_ubuntu.jpg)
 
 
+Lets get the location of Node.js software from Ubuntu repositories.
+
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+
+- **Install Node.js on the server**
+
+```
+sudo apt-get install -y nodejs
+```
+![image](assets/15_install_Node_js.jpg)
