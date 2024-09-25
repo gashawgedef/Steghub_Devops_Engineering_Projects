@@ -261,6 +261,9 @@ touch api.js
 vim api.js
 ```
 
+![image](assets/open_api_js.jpg)
+
+
 Copy below code in the file. 
 
 
