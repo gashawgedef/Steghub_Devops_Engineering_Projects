@@ -138,14 +138,17 @@ This file will normally contain information about your application and the depen
 
 ## Install ExpressJS
 
-Express.js is a lightweight and flexible web application framework for Node.js, designed to simplify building server-side applications and APIs. It offers features for handling routing, middleware, and HTTP requests, making it ideal for creating scalable and efficient web applications.
+**Express.js**  is a lightweight and flexible web application framework for **Node.js**, designed to simplify building server-side applications and APIs. It offers features for handling routing, middleware, and HTTP requests, making it ideal for creating scalable and efficient web applications.
 
-- To use express, install it using npm:
+- To use **express**, install it using npm:
+
 
 ```
 npm install express
 ```
+
 ![image](assets/19_install_express_js.jpg)
+
 
 - Create a file **index.js** with the command below
 
