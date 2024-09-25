@@ -77,7 +77,6 @@ Securing the MongoDB database: Managing access control and securing database cre
 
 ## Solutions Implemented
 
-
 - **Upgrade Instance Type**
 
 Upgrade an instance to a t2.small instance, which has more CPU power and double the memory (1 vCPU and 2 GB of RAM), the process speeds up because the system can handle the resource-intensive tasks more efficiently, leading to faster performance during app creation and builds.
