@@ -56,7 +56,10 @@ DELETE /api/todos/:id # Delete a todo by id
 ## Environment Variables
 
 Store sensitive credentials (MongoDB URI) in environment variables using **.env** files and **dotenv** in Node.js.
+## Continuous Learning
 
+This journey reinforced the importance of continuous learning and adapting to new technologies. AWS is a constantly evolving platform, and staying up-to-date with new services and best practices is key to success.
+Lesson: Embrace continuous learning to keep pace with changes in cloud technologies and development frameworks.
 
 ## Challenges Faced
 
@@ -79,22 +82,3 @@ Securing the MongoDB database: Managing access control and securing database cre
 
 Upgrade an instance to a t2.small instance, which has more CPU power and double the memory (1 vCPU and 2 GB of RAM), the process speeds up because the system can handle the resource-intensive tasks more efficiently, leading to faster performance during app creation and builds.
 
-
-**Lessons Learned**
-
-- **Cloud Service Mastery**
-
-AWS provides a wide range of services, and while this flexibility is powerful, it can also be overwhelming. I learned how to selectively use services like EC2
-Lesson: Proper planning and understanding AWS architecture before deployment is critical to ensure both security and scalability.
-
-- **MERN Stack Deployment**
-
-Deploying full-stack applications requires careful coordination between frontend and backend services, especially in the cloud. Understanding how routing works in single-page applications (SPAs) when deployed in a static environment was essential.
-
-
-**Lesson:** Cloud deployment introduces additional complexities, such as managing static assets, handling API endpoints, and establishing database connections.
-
-- **Continuous Learning**
-
-This journey reinforced the importance of continuous learning and adapting to new technologies. AWS is a constantly evolving platform, and staying up-to-date with new services and best practices is key to success.
-Lesson: Embrace continuous learning to keep pace with changes in cloud technologies and development frameworks.
