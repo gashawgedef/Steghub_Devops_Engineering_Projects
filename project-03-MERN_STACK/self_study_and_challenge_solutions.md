@@ -51,11 +51,6 @@ Lesson: Proper planning and understanding AWS architecture before deployment is 
 Full-stack applications require careful orchestration between frontend and backend services, especially during deployment in the cloud. Understanding how routing works in SPAs when deployed to a static environment was crucial.
 Lesson: Cloud deployment introduces additional complexities such as handling static assets, API endpoints, and database connections.
 
-- Security Considerations
-
-Managing security in the cloud requires extra caution. Misconfigurations can expose sensitive data to the public. I improved my knowledge of securing cloud services through IAM roles, security groups, and VPC configurations.
-Lesson: Never deploy without considering security protocols, especially in cloud environments.
-
 - Continuous Learning
 
 The journey taught me the importance of continuously learning and adapting to new technologies. AWS itself is a constantly evolving platform, and staying updated is key.
