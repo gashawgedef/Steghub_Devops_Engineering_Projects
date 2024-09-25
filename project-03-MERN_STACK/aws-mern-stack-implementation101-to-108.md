@@ -155,7 +155,7 @@ npm install express
 ```
  touch index.js
 ```
-![image](assets/20_create_index_js_file.jpg)
+![image](assets/create_index_file.jpg)
 
 - Install the dotenv module
 
