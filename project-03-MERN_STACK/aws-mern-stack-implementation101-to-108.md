@@ -111,9 +111,9 @@ node -v
 
 ![image](assets/16_verify_node_instalation.jpg)
 
- - **Application Code Setup**
+ **Application Code Setup**
 
-Create a new directory for your To-Do project:
+- Create a new directory for your To-Do project:
 
 ```
 mkdir Todo
@@ -121,7 +121,8 @@ mkdir Todo
 
 ![image](assets/17_create_todo_directory.jpg)
 
-Now change your current directory to the newly created one:
+
+- Now change your current directory to the newly created one:
 
 ```
  cd Todo
