@@ -75,7 +75,7 @@ Lesson: Embrace continuous learning to keep pace with changes in cloud technolog
 Securing the MongoDB database: Managing access control and securing database credentials was critical and required a deeper understanding of networking.
 
 
-**Solutions Implemented**
+## Solutions Implemented
 
 
 - **Upgrade Instance Type**
