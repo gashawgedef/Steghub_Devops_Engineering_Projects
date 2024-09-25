@@ -401,9 +401,10 @@ module.exports = router;
 
 ## MongoDB Database
 
-MongoDB is a NoSQL database that stores data in flexible, JSON-like documents, allowing for dynamic schemas and easy management of unstructured data. Known for its scalability and performance, it handles large volumes of data across distributed systems. MongoDB supports powerful querying, indexing, and real-time analytics, making it popular for building scalable web and mobile applications.
+**MongoDB** is a NoSQL database that stores data in flexible, JSON-like documents, allowing for dynamic schemas and easy management of unstructured data. Known for its scalability and performance, it handles large volumes of data across distributed systems. MongoDB supports powerful querying, indexing, and real-time analytics, making it popular for building scalable web and mobile applications.
 
 ![image](assets/36_config_mongo_db.jpg)
+
 
 Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
 
@@ -424,8 +425,8 @@ Create a file in your Todo directory and name it **.env**.
 ```
 touch .env
 ```
-![image](assets/41_create_env_file.jpg)
 
+![image](assets/41_create_env_file.jpg)
 
 - Edit Environment varibale **.env**
 
@@ -434,24 +435,32 @@ vim .env
 ```
 
 - Paste this file
+
+
 ```
 DB='mongodb+srv://gashawgedef:*****************@cluster0.mnsga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 ```
+
+
 Here is how to get your connection string
+
+
 ![image](assets/37_connect.jpg)
 
 ![image](assets/38_connect.jpg)
 
 ![image](assets/42_edit_env_variable.jpg)
 
-Now we need to update the index.js to reflect the use of .env so that Node.js can connect to the database.
+Now we need to update the **index.js** to reflect the use of .env so that Node.js can connect to the database.
 
 Simply delete existing content in the file, and update it with the entire code below.
 
 ```
 vim index.js
 ```
+
 - Add the following code after deleting the first content
+
 
 ```
 const express = require('express');
@@ -497,11 +506,13 @@ console.log(`Server running on port ${port}`)
 
 - Start your server using the command:
 
+
 ```
 node index.js
 ```
 
 ![image](assets/44_database_connected_successfully.jpg)
+
 
 ## Testing Backend Code without Frontend using RESTful API
 
@@ -511,7 +522,9 @@ Now open your Postman, create a POST request to the API http://<PublicIP-or-Publ
 
 Note: make sure your set header key Content-Type as application/json
 
+
 ![image](assets/45_retrive_before_insert.jpg)
+
 
 - Make HTTP POST request
 
