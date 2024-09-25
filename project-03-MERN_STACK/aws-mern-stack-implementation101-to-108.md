@@ -128,9 +128,13 @@ mkdir Todo
  cd Todo
  ```
 
-Next, you will use the command npm init to initialise your project, so that a new file named package.json will be created. This file will normally contain information about your application and the dependencies that it needs to run. Follow the prompts after running the command. You can press Enter several times to accept default values, then accept to write out the package.json file by typing yes.
+Next, you will use the command **npm init** to initialise your project, so that a new file named **package.json** will be created.
+
+This file will normally contain information about your application and the dependencies that it needs to run. Follow the prompts after running the command. You can press Enter several times to accept default values, then accept to write out the package.json file by typing yes.
+
 
 ![image](assets/18_npm_int.jpg)
+
 
 ## Install ExpressJS
 
