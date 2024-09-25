@@ -480,6 +480,18 @@ Note: make sure your set header key Content-Type as application/json
 
 ![image](assets/45_retrive_before_insert.jpg)
 
-- Create a GET request to your API
+- Make HTTP POST request
 
 ![image](assets/47_check_data_is_inserted.jpg)
+
+- Create a GET request to your API
+
+```
+http://54.90.167.28:5000/api/todos
+```
+
+![image](assets/47_check_data_is_inserted.jpg)
+
+- DELETE request to delete a task from out To-Do list.
+
+![image](assets/48_delete_using_id.jpg)
