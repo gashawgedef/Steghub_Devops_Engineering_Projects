@@ -1081,7 +1081,7 @@ npm run dev
 
 ```
 
-![image](assets/npm%20run%20final.JPG)
+![image](assets/final_image_run.JPG)
 
 
 ## The End Of MERN STACK Project
