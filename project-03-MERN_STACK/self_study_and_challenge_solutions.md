@@ -9,7 +9,51 @@ In my pursuit of mastering full-stack development, I chose to build a MERN (Mong
 
 **Learning the MERN Stack:**
 
-I started by learning the individual technologies in the MERN stack. I took several courses and worked on small projects using MongoDB, Express, React, and Node.js to gain practical experience.
+I started by learning the individual technologies in the MERN stack. I took several courses and worked on small projects using:
+
+**MongoDB:** For database management, understanding CRUD operations, and data modeling.
+**Express:** To create a robust backend with RESTful API design.
+**React:**  For building dynamic user interfaces and managing application state.
+**Node.js:**  As the server-side runtime environment for executing JavaScript code.
+
+
+## Backend Development (Node.js and Express)
+
+I learnt to build a REST API for the **to-do** app using Node.js and Express.I set up Express to create routes (GET, POST, PUT, DELETE) for managing to-do items.Explore mongoose for MongoDB integration to define a schema for storing tasks.
+
+Example endpoints:
+
+```
+GET /api/todos  # Fetch all todos
+POST /api/todos # Add new todo
+DELETE /api/todos/:id # Delete a todo by id
+```
+
+
+## Frontend Development (React)
+- I have  created a React application for interacting with the API.
+- Develop components ( Input.js ListTodo.js Todo.js) to create, view and delete tasks.
+- Use axios for making API requests to the backend.
+
+##  MongoDB (Database)
+
+- I have learnt how to  set up **MongoDB Atlas** for storing to-do items.
+
+- I have learnt how to configure MongoDB Atlas and connect it to the Node.js app using mongoose.
+- Secure MongoDB Atlas access by whitelisting IP addresses and using strong credentials.
+
+## EC2 Instance Setup
+
+- I learnt how to set up an **EC2** instance to host the Node.js backend.
+- Launch an EC2 instance using Amazon Linux 2 or Ubuntu.
+- SSH into the instance and configure the environment.
+- Install Node.js, npm, and other necessary packages.
+- Deploy the backend by uploading the codebase using SCP or Git, 
+
+## Environment Variables
+
+Store sensitive credentials (MongoDB URI) in environment variables using **.env** files and **dotenv** in Node.js.
+
 
 **Building the Application:**
 
@@ -30,6 +74,10 @@ I used EC2 to host my server-side code and deployed my frontend via S3. I also e
 
 **Cause:**  The reason why creating a React app takes too long on an AWS t2.micro instance is likely due to the limited computing resources available on that instance type. The t2.micro instance has lower CPU power and less memory (1 vCPU and 1 GB of RAM), which can cause processes like installing dependencies and building the app to take significantly longer.
 
+**Understanding AWS services:**
+
+ Initially, it was challenging to navigate through the wide range of services AWS offers, but hands-on practice helped in understanding their roles.
+Securing the MongoDB database: Managing access control and securing database credentials was critical and required a deeper understanding of networking.
 
 **Solutions Implemented**
 
