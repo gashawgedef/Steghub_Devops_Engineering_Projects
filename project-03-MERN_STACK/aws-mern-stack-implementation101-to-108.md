@@ -213,6 +213,7 @@ Now it is time to start our server to see if it works. Open your terminal in the
 ```
 node index.js
 ```
+
 ![image](assets/23_runn_nodejs_server.jpg)
 
 Open up your browser and try to access your server's Public IP or Public DNS name followed by port 5000:
