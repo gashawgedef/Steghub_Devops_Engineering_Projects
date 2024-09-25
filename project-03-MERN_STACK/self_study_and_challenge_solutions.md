@@ -27,13 +27,15 @@ I used EC2 to host my server-side code and deployed my frontend via S3. I also e
 
 - **Backend Integration**
 
-Issue: Setting up the connection between the backend (Node.js/Express) and MongoDB hosted on AWS was challenging due to security settings.
+**Issue:** Setting up the connection between the backend (Node.js/Express) and MongoDB hosted on AWS was challenging due to security settings.
 Cause: AWS VPC (Virtual Private Cloud) configurations and firewall rules blocked access to the database.
 
 - **Creating React App**
 
-Issue: Deploying the React application using AWS S3 had issues with routing.
-Cause: S3 static website hosting does not handle client-side routing for single-page applications (SPAs) well.
+**Issue:** creating a React app was taking a long time
+
+**Cause:**  The reason why creating a React app takes too long on an AWS t2.micro instance is likely due to the limited computing resources available on that instance type. The t2.micro instance has lower CPU power and less memory (1 vCPU and 1 GB of RAM), which can cause processes like installing dependencies and building the app to take significantly longer.
+
 
 - **AWS Costs & Resource Management**
 
