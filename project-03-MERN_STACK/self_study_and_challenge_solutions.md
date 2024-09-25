@@ -24,12 +24,6 @@ I used EC2 to host my server-side code and deployed my frontend via S3. I also e
 
 **2. Challenges Faced**
 
-
-- **Backend Integration**
-
-**Issue:** Setting up the connection between the backend (Node.js/Express) and MongoDB hosted on AWS was challenging due to security settings.
-Cause: AWS VPC (Virtual Private Cloud) configurations and firewall rules blocked access to the database.
-
 - **Creating React App**
 
 **Issue:** creating a React app was taking a long time
@@ -39,14 +33,11 @@ Cause: AWS VPC (Virtual Private Cloud) configurations and firewall rules blocked
 
 **Solutions Implemented**
 
-- **Securing the Database**
 
-I configured AWS Security Groups to allow only my EC2 instance to access the MongoDB instance. I also enabled VPC Peering to improve security within the private network.
-Implemented environment variables using AWS Systems Manager Parameter Store to securely manage database credentials.
+- **Upgrade Instance Type**
 
-- **Handling Frontend Routing**
+Upgrade an instance to a t2.small instance, which has more CPU power and double the memory (1 vCPU and 2 GB of RAM), the process speeds up because the system can handle the resource-intensive tasks more efficiently, leading to faster performance during app creation and builds.
 
-I solved the routing issue by configuring AWS CloudFront as a CDN to serve my React app and setting up custom error pages to handle the client-side routing for undefined routes.
 
 **Lessons Learned**
 
