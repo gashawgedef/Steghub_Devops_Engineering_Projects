@@ -333,6 +333,9 @@ touch todo.js
 ```
 vim todo.js
 ```
+![image](assets/open_todo_js.jpg)
+
+
 -  then paste the code below in the file:
 
 ```
