@@ -528,9 +528,11 @@ Note: make sure your set header key Content-Type as application/json
 
 - Make HTTP POST request
 
-![image](assets/47_check_data_is_inserted.jpg)
+![image](assets/post_request.jpg)
+
 
 - Create a GET request to your API
+
 
 ```
 http://54.90.167.28:5000/api/todos
