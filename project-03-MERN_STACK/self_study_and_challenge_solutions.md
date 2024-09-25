@@ -37,11 +37,6 @@ Cause: AWS VPC (Virtual Private Cloud) configurations and firewall rules blocked
 **Cause:**  The reason why creating a React app takes too long on an AWS t2.micro instance is likely due to the limited computing resources available on that instance type. The t2.micro instance has lower CPU power and less memory (1 vCPU and 1 GB of RAM), which can cause processes like installing dependencies and building the app to take significantly longer.
 
 
-- **AWS Costs & Resource Management**
-
-Issue: Managing AWS resources efficiently while keeping costs low was a new experience.
-Cause: The variety of services and pricing options required careful planning and resource allocation.
-
 **Solutions Implemented**
 
 - **Securing the Database**
@@ -52,12 +47,6 @@ Implemented environment variables using AWS Systems Manager Parameter Store to s
 - **Handling Frontend Routing**
 
 I solved the routing issue by configuring AWS CloudFront as a CDN to serve my React app and setting up custom error pages to handle the client-side routing for undefined routes.
-
-- **Cost Optimization**
-
-I used AWS Free Tier services where possible and configured Auto Scaling for my EC2 instance to adjust resources based on traffic.
-Set up CloudWatch monitoring and created alerts to track resource usage and avoid unnecessary costs.
-
 
 **Lessons Learned**
 
