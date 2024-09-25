@@ -744,7 +744,7 @@ To make use of **Axios**, which is a Promise based HTTP client for the browser a
 cd ..
 ```
 
-![image](assets/66_move_src_folder.jpg.jpg)
+![image](assets/66_move_src_folder.jpg)
 
 - Move to **clients** folder
 
