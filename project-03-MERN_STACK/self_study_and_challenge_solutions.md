@@ -41,17 +41,17 @@ Upgrade an instance to a t2.small instance, which has more CPU power and double 
 
 **Lessons Learned**
 
-- Cloud Service Mastery
+**- Cloud Service Mastery**
 
-AWS provides a wide range of services, and while this flexibility is powerful, it can also be overwhelming. I learned how to selectively use services like EC2, S3, and CloudFront efficiently.
+AWS provides a wide range of services, and while this flexibility is powerful, it can also be overwhelming. I learned how to selectively use services like EC2
 Lesson: Proper planning and understanding AWS architecture before deployment is critical to ensure both security and scalability.
 
-- MERN Stack Deployment
+**- MERN Stack Deployment**
 
-Full-stack applications require careful orchestration between frontend and backend services, especially during deployment in the cloud. Understanding how routing works in SPAs when deployed to a static environment was crucial.
-Lesson: Cloud deployment introduces additional complexities such as handling static assets, API endpoints, and database connections.
+Deploying full-stack applications requires careful coordination between frontend and backend services, especially in the cloud. Understanding how routing works in single-page applications (SPAs) when deployed in a static environment was essential.
+Lesson: Cloud deployment introduces additional complexities, such as managing static assets, handling API endpoints, and establishing database connections.
 
-- Continuous Learning
+**- Continuous Learning**
 
-The journey taught me the importance of continuously learning and adapting to new technologies. AWS itself is a constantly evolving platform, and staying updated is key.
-Lesson: Embrace continuous learning to keep up with changes in cloud technologies and development frameworks.
+This journey reinforced the importance of continuous learning and adapting to new technologies. AWS is a constantly evolving platform, and staying up-to-date with new services and best practices is key to success.
+Lesson: Embrace continuous learning to keep pace with changes in cloud technologies and development frameworks.
