@@ -482,4 +482,4 @@ Note: make sure your set header key Content-Type as application/json
 
 - Create a GET request to your API
 
-![image](assets/46_retrive_before_insert.jpg)
+![image](assets/47_check_data_is_inserted.jpg)
