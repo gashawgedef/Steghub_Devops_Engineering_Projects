@@ -1082,3 +1082,7 @@ npm run dev
 ```
 
 ![image](assets/npm%20run%20final.JPG)
+
+
+## The End Of MERN STACK Project
+A MERN stack application (MongoDB, Express, React, Node.js) deployed on AWS offers a full-stack solution where the backend is hosted using AWS EC2 for server-side operations, MongoDB Atlas for cloud-based database management, and the frontend served via AWS S3 for static hosting. The application typically involves RESTful APIs for data communication between the client and server,
