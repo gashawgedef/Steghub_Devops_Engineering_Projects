@@ -162,14 +162,21 @@ npm install express
 ```
 npm install dotenv
 ```
+
 ![image](assets/21_install_dotenv.jpg)
+
 
 - Open the index.js file with the command below
 
 ```
 vim index.js
 ```
+
+![image](assets/open_index_js.jpg)
+
+
 Type the code below into it and save.
+
 
 ```
 const express = require('express');
@@ -193,6 +200,7 @@ app.listen(port, () => {
 console.log(`Server running on port ${port}`)
 });
 ```
+
 ![image](assets/22_edit_code_vim.jpg)
 
 
