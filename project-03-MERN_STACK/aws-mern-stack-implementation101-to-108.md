@@ -469,3 +469,17 @@ node index.js
 ```
 
 ![image](assets/44_database_connected_successfully.jpg)
+
+## Testing Backend Code without Frontend using RESTful API
+
+So far, we've built the backend for our To-Do application and set up the database, but the frontend UI using ReactJS is still pending. During development, we need to test the backend functionality through the RESTful API. To do this efficiently before the frontend is ready, we can use an API development client like Postman or Insomnia to test our API endpoints and ensure the backend works correctly.
+
+Now open your Postman, create a POST request to the API http://<PublicIP-or-PublicDNS>:5000/api/todos. This request sends a new task to our To-Do list so the application could store it in the database.
+
+Note: make sure your set header key Content-Type as application/json
+
+![image](assets/45_retrive_before_insert.jpg)
+
+- Create a GET request to your API
+
+![image](assets/46_retrive_before_insert.jpg)
