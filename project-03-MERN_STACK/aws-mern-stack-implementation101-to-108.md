@@ -175,7 +175,7 @@ vim index.js
 ![image](assets/open_index_js.jpg)
 
 
-Type the code below into it and save.
+- Type the code below into it and save.
 
 
 ```
@@ -204,7 +204,9 @@ console.log(`Server running on port ${port}`)
 ![image](assets/22_edit_code_vim.jpg)
 
 
-Specify port 5000 in the AWS instance's inbound rules.
+- Specify port 5000 in the AWS instance's inbound rules.
+
+![image](assets/inbound%20Rules%205000.jpg)
 
 Now it is time to start our server to see if it works. Open your terminal in the same directory as your index.js file and type:
 
