@@ -565,3 +565,7 @@ Now, ensure you are inside the Todo directory, and simply do:
 npm run dev
 
 ```
+![image](assets/58_run_react_app.jpg)
+
+
+Creating your React Components
