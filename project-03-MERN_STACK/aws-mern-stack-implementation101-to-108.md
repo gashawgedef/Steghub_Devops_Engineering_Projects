@@ -495,3 +495,7 @@ http://54.90.167.28:5000/api/todos
 - DELETE request to delete a task from out To-Do list.
 
 ![image](assets/48_delete_using_id.jpg)
+
+- Check After being Deleted
+
+![image](assets/49_check_after_delete.jpg)
