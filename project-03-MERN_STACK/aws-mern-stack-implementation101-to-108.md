@@ -557,9 +557,12 @@ In the same root directory as your backend code, which is the Todo directory, ru
 ```
  npx create-react-app client
 ```
+
+
 ![image](assets/51_create_client_react_app_copp.jpg)
 
-- Install concurrently. It is used to run more than one command simultaneously from the same terminal window.
+
+- Install **concurrently**. It is used to run more than one command simultaneously from the same terminal window.
 
 ```
 npm install concurrently --save-dev
@@ -567,7 +570,7 @@ npm install concurrently --save-dev
 
 ![image](assets/52_install_concurently.jpg)
 
-- Install nodemon. It is used to run and monitor the server. If there is any change in the server code, nodemon will restart it automatically and load the new changes.
+- Install **nodemon**. It is used to run and monitor the server. If there is any change in the server code, nodemon will restart it automatically and load the new changes.
 
 ```
 npm install nodemon --save-dev
@@ -576,7 +579,7 @@ npm install nodemon --save-dev
 ![image](assets/51_install_nodemon.jpg)
 
 
-- In Todo folder open the package.json file. Change the highlighted part of the below screenshot and replace with the code below.
+- In **Todo** folder open the **package.json** file. Change the highlighted part of the below screenshot and replace with the code below.
 
 ```
 "scripts": {
@@ -601,18 +604,25 @@ npm install nodemon --save-dev
 cd client
 ```
 
+
 ```
  vim package.json
 ```
+
+
 ![image](assets/55_add_proxy.jpg)
 
 
+
 Now, ensure you are inside the Todo directory, and simply do:
+
 
 ```
 npm run dev
 
 ```
+
+
 ![image](assets/58_run_react_app.jpg)
 
 
@@ -631,12 +641,19 @@ cd client
 ```
 cd src
 ```
+
+
 ![image](assets/60_goto_src_folder.jpg)
+
+
 - Inside your src folder create another folder called components
+
 
 ```
 mkdir components
 ```
+
+
 ![image](assets/61_create_components_folder.jpg)
 
 
@@ -665,6 +682,7 @@ vim Input.js
 ![image](assets/63_open_input_js.jpg)
 
 - Copy and paste the following
+
 
 ```
 import React, { Component } from 'react';
@@ -714,11 +732,13 @@ return (
 export default Input
 ```
 
+
 ![image](assets/65_edit_input_js.jpg)
 
-To make use of Axios, which is a Promise based HTTP client for the browser and node.js, you need to cd into your client from your terminal and run yarn add axios or npm install axios.
 
-- Move to the src folder
+To make use of **Axios**, which is a Promise based HTTP client for the browser and node.js, you need to cd into your client from your terminal and run yarn add axios or npm install axios.
+
+- Move to the **src** folder
 
 ```
 cd ..
@@ -726,28 +746,37 @@ cd ..
 
 ![image](assets/66_move_src_folder.jpg.jpg)
 
-- Move to clients folder
+- Move to **clients** folder
 
 ```
 cd ..
 ```
+
 ![image](assets/67_move_clients_folder.jpg)
 
-- Install Axios
+- Install **Axios**
+
 
 ```
 npm install axios
 ```
+
+
 ![image](assets/70_install_axios.jpg)
+
 
 - Go to 'components' directory
 
 ```
 cd src/components
 ```
+
+
 ![image](assets/71_move_to_components.jpg)
 
+
 - After that open your ListTodo.js
+
 
 ```
 vim ListTodo.js
@@ -755,6 +784,7 @@ vim ListTodo.js
 ```
 
 ![image](assets/72_open_list_todo.jpg)
+
 
 - In the ListTodo.js copy and paste the following code
 
@@ -789,7 +819,9 @@ export default ListTodo
 
 ![image](assets/73_edit_list_todo.jpg)
 
-- Then in your Todo.js file you write the following code
+
+- Then in your **Todo.js** file you write the following code
+
 
 ```
 import React, {Component} from 'react';
@@ -851,9 +883,10 @@ export default Todo;
 
 ![image](assets/75_edit_todo_js.jpg)
 
+
 We need to make little adjustment to our react code. Delete the logo and adjust our App.js to look like this.
 
-- Move to the src folder
+- Move to the **src** folder
 
 
 ```
@@ -862,11 +895,13 @@ cd ..
 
 - Make sure that you are in the src folder and run
 
+
 ```
 vim App.js
 ```
 
 - Copy and paste the code below into it
+
 
 ```
 import React from 'react';
@@ -885,18 +920,23 @@ return (
 export default App;
 ```
 
+
 ![image](assets/77_edit_app_js.jpg)
+
 
 After pasting, exit the editor.
 
-- In the src directory open the App.css
+- In the **src** directory open the App.css
 
 ```
 vim App.css
 ```
 
 ![image](assets/78_open_app_css.jpg)
+
+
 - Then paste the following code into App.css:
+
 
 ```
 .App {
@@ -990,13 +1030,20 @@ margin-top: 0;
 
 ![image](assets/79_edit_app_css.jpg)
 
+
 - In the src directory open the index.css
+
+
 ```
 vim index.css
 ```
+
+
 ![image](assets/80_open_index_css.jpg)
 
+
 - Copy and paste the code below
+
 
 ```
 body {
@@ -1020,14 +1067,14 @@ monospace;
 
 ![image](assets/81_edit_index_css.jpg)
 
-- Go to the Todo directory
+- Go to the **Todo** directory
 
 ```
 cd ../..
 ```
 ![image](assets/82_move_to_todo_folder.jpg)
 
-- When you are in the Todo directory run:
+- When you are in the **Todo** directory run:
 
 ```
 npm run dev
