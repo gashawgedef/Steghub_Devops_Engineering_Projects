@@ -499,3 +499,69 @@ http://54.90.167.28:5000/api/todos
 - Check After being Deleted
 
 ![image](assets/49_check_after_delete.jpg)
+
+## Step 2 - Frontend creation
+
+Since we are done with the functionality we want from our backend and API, it is time to create a user interface for a Web client (browser) to interact with the application via API. To start out with the frontend of the To-do app, we will use the create-react-app command to scaffold our app.
+
+In the same root directory as your backend code, which is the Todo directory, run:
+
+```
+ npx create-react-app client
+```
+![image](assets/51_create_client_react_app_copp.jpg)
+
+- Install concurrently. It is used to run more than one command simultaneously from the same terminal window.
+
+```
+npm install concurrently --save-dev
+```
+
+![image](assets/52_install_concurently.jpg)
+
+- Install nodemon. It is used to run and monitor the server. If there is any change in the server code, nodemon will restart it automatically and load the new changes.
+
+```
+npm install nodemon --save-dev
+```
+
+![image](assets/51_install_nodemon.jpg)
+
+
+- In Todo folder open the package.json file. Change the highlighted part of the below screenshot and replace with the code below.
+
+```
+"scripts": {
+"start": "node index.js",
+"start-watch": "nodemon index.js",
+"dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
+},
+```
+
+![image](assets/53_vim_package_json.jpg)
+
+
+- Then the code is replaced as follows
+
+![image](assets/54_edit_package.json.jpg)
+
+**Configure Proxy in package.json**
+
+- Change directory to 'client'
+
+```
+cd client
+```
+
+```
+ vim package.json
+```
+![image](assets/55_add_proxy.jpg)
+
+
+Now, ensure you are inside the Todo directory, and simply do:
+
+```
+npm run dev
+
+```
