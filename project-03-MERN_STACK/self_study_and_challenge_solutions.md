@@ -12,8 +12,11 @@ In my pursuit of mastering full-stack development, I chose to build a MERN (Mong
 I started by learning the individual technologies in the MERN stack. I took several courses and worked on small projects using:
 
 **MongoDB:** For database management, understanding CRUD operations, and data modeling.
+
 **Express:** To create a robust backend with RESTful API design.
+
 **React:**  For building dynamic user interfaces and managing application state.
+
 **Node.js:**  As the server-side runtime environment for executing JavaScript code.
 
 
@@ -78,6 +81,7 @@ I used EC2 to host my server-side code and deployed my frontend via S3. I also e
 
  Initially, it was challenging to navigate through the wide range of services AWS offers, but hands-on practice helped in understanding their roles.
 Securing the MongoDB database: Managing access control and securing database credentials was critical and required a deeper understanding of networking.
+
 
 **Solutions Implemented**
 
