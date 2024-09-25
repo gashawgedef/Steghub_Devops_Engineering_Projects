@@ -221,6 +221,7 @@ Open up your browser and try to access your server's Public IP or Public DNS nam
 ```
 http://18.232.79.101:5000
 ```
+
 ![image](assets/24_open_in_public_ip_address.jpg)
 
 ## Routes
@@ -236,13 +237,17 @@ Each task will be associated with some particular endpoint and will use differen
 ```
 mkdir routes
 ```
+
 ![image](assets/25_create_routes_folder.jpg)
 
 - Change directory to routes folder.
 
+
 ![image](assets/26_change_to_routes_directory.jpg)
 
-- create a file api.js with the command below
+
+- create a file **api.js** with the command below
+
 
 ```
 touch api.js
@@ -255,7 +260,9 @@ touch api.js
 ```
 vim api.js
 ```
+
 Copy below code in the file. 
+
 
 ```
 const express = require ('express');
