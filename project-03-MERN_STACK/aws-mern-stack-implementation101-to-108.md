@@ -568,4 +568,44 @@ npm run dev
 ![image](assets/58_run_react_app.jpg)
 
 
-Creating your React Components
+## Creating your React Components
+
+One of the advantages of react is that it makes use of components, which are reusable and also makes code modular. For our Todo app, there will be two stateful components and one stateless component.
+- From your Todo directory run:
+
+```
+cd client
+```
+
+
+- move to the src directory
+
+```
+cd src
+```
+
+- Inside your src folder create another folder called components
+
+```
+mkdir components
+```
+
+
+- Move into the components directory with
+
+```
+cd components
+
+```
+
+- Inside 'components' directory create three files Input.js, ListTodo.js and Todo.js.
+
+```
+touch Input.js ListTodo.js Todo.js
+```
+
+- Open **Input.js** file
+
+```
+vim Input.js
+```
