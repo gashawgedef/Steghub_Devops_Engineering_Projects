@@ -49,7 +49,9 @@ Lesson: Proper planning and understanding AWS architecture before deployment is 
 - **MERN Stack Deployment**
 
 Deploying full-stack applications requires careful coordination between frontend and backend services, especially in the cloud. Understanding how routing works in single-page applications (SPAs) when deployed in a static environment was essential.
-Lesson: Cloud deployment introduces additional complexities, such as managing static assets, handling API endpoints, and establishing database connections.
+
+
+**Lesson:** Cloud deployment introduces additional complexities, such as managing static assets, handling API endpoints, and establishing database connections.
 
 - **Continuous Learning**
 
