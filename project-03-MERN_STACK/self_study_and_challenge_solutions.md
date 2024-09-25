@@ -58,18 +58,7 @@ DELETE /api/todos/:id # Delete a todo by id
 Store sensitive credentials (MongoDB URI) in environment variables using **.env** files and **dotenv** in Node.js.
 
 
-**Building the Application:**
-
-I designed and built a full-stack application. The backend was developed using Node.js with Express, and the frontend was built using React. MongoDB was used for database management.
-
-**Deploying on AWS:**
-
-I familiarized myself with AWS services such as EC2 (Elastic Compute Cloud), S3 (Simple Storage Service), and RDS (Relational Database Service) to host the application.
-
-I used EC2 to host my server-side code and deployed my frontend via S3. I also explored AWS Elastic Beanstalk for deployment automation.
-
-
-**2. Challenges Faced**
+## Challenges Faced
 
 - **Creating React App**
 
