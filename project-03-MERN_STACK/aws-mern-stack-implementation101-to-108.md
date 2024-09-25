@@ -807,14 +807,16 @@ We need to make little adjustment to our react code. Delete the logo and adjust 
 
 - Move to the src folder
 
+
 ```
 cd ..
 ```
+
 - Make sure that you are in the src folder and run
+
 ```
 vim App.js
 ```
-
 
 - Copy and paste the code below into it
 
@@ -833,7 +835,7 @@ return (
 }
 
 export default App;
-``
+```
 
 ![image](assets/77_edit_app_js.jpg)
 
