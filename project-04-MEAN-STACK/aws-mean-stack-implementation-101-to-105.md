@@ -99,6 +99,7 @@ sudo apt update
  sudo apt upgrade
 ```
 
+![image](assets/12_upgrade_ubuntu.JPG)
 
 - Add Certificates
 
