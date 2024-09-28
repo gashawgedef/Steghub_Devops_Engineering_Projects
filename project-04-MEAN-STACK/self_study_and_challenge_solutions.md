@@ -1,6 +1,6 @@
 # MEAN Stack Project Documentation
 
-## Project Overview
+##   Lessons Learned, Challengies and Solutions
 
 
 ## 1. Refreshing Knowledge of the OSI Model
