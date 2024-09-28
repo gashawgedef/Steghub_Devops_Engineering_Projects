@@ -144,6 +144,7 @@ This command installs essential tools for handling GPG keys and transferring dat
 ```
 sudo apt-get install -y gnupg curl
 ```
+![image](assets/50_install_gnu.JPG)
 
 - **Download and Store MongoDB GPG Key**
 
@@ -153,27 +154,36 @@ This command downloads MongoDB’s GPG key and stores it securely for use in pac
 curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
 ```
 
+![image](assets/16_install_mongo_1.JPG)
+
 The command below adds the MongoDB repository to your system's package manager sources, enabling the installation and updates of MongoDB packages.
 
 ```
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 ```
 
+![image](assets/17_install_mongo_2.JPG)
+
+
 - Install MongoDB
 
 ```
 sudo apt-get install -y mongodb-org
 ```
+![image](assets/18_install_mongo_db_main.JPG)
 
 - Start The server
 
+```
+sudo systemctl start mongod
 
 ```
-sudo service mongodb start
-```
+
+![image](assets/19_start_mongo_db.JPG)
 
 - Verify that the service is up and running
 
 ```
-sudo systemctl status mongodb
+sudo systemctl status mongod
 ```
+![image](assets/23_check_system_is%20_running.JPG)
