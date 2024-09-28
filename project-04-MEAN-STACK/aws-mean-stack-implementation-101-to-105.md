@@ -22,7 +22,7 @@ This stack enables developers to build modern, scalable applications using a sin
 **1. Launch instance in AWS Console**
 The first step in implementing this project is to launch an instance in the AWS Console.
 
-create an instance in the default region us-east-1 and enter instance name **MERN STACK WEB SERVER**
+create an instance in the default region us-east-1 and enter instance name **MEAN STACK WEB SERVER**
 
 ![image](assets//1_launch_instance.JPG)
 - Next we select ubuntu operating system for an instance
