@@ -81,3 +81,48 @@ Once the private key file has the correct permissions, you can use SSH to connec
 ssh -i "gashaw_key.pem" ubuntu@ec2-54-226-142-99.compute-1.amazonaws.com
 ```
 ![image](assets/10_inatance_connected.JPG)
+
+
+## Step 1 - Install NodeJs
+
+- Update ubuntu
+
+```
+sudo apt update
+```
+
+![image](assets/11_update_ubunt.JPG)
+
+- Upgrade Ubuntu
+
+```
+ sudo apt upgrade
+```
+
+
+- Add Certificates
+
+```
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+```
+
+![image](assets/11_update_ubunt.JPG)
+
+
+Lets get the location of Node.js software from Ubuntu repositories.
+
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+
+- **Install Node.js on the server**
+
+```
+sudo apt-get install -y nodejs
+```
+![image](assets/15_install_Node_js.jpg)
+
+- Verify the node installation with the command below
+```
+node -v 
+```
