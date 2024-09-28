@@ -350,6 +350,7 @@ module.exports = function(app) {
 
 [images](assets/33_edit_routes.JPG)
 
+
 - In the 'apps' folder, create a folder named models
 
 ```
