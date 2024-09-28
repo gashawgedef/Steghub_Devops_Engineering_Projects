@@ -1,23 +1,23 @@
 
 # MERN Stack Development
 
-**MERN** stack development is a full-stack web development approach using **MongoDB**, **Express.js**, **React**, and **Node.js**, all based on JavaScript. MongoDB serves as the NoSQL database, while Express.js and Node.js handle the server-side logic, with React powering the dynamic user interface. 
+The **MEAN** stack is a full-stack web development framework consisting of **MongoDB**, **Express.js**, **Angular**, and **Node.js**, all based on JavaScript. MongoDB serves as the NoSQL database, while Express.js and Node.js manage the server-side logic, with Angular providing the dynamic front-end interface.
 
-This stack allows developers to build modern, scalable applications with a unified language, streamlining development across both frontend and backend. It is highly suitable for building single-page applications, offering efficiency through reusable React components, and enabling high performance with the asynchronous nature of Node.js.
+This stack enables developers to build modern, scalable applications using a single language for both front-end and back-end, streamlining the development process. It is particularly suitable for developing single-page applications, leveraging Angular's two-way data binding for efficient UI updates and Node.js's asynchronous nature for improved performance.
 
-## MERN Web Stack Components:
+## MEAN Web Stack Components: 
 
-- **MongoDB**: A document-based, No-SQL database used to store application data in the form of documents.
-- **Express.js**: A server-side web application framework for Node.js.
-- **React.js**: A frontend framework developed by Facebook, based on JavaScript, used to build User Interface (UI) components.
-- **Node.js**: A JavaScript runtime environment, used to run JavaScript on a machine rather than in a browser.
+- **MongoDB:** A document-based, NoSQL database used to store application data in the form of documents.
+- **Express.js:** A server-side web application framework for Node.js.
+- **Angular:** A frontend framework developed by Google, based on TypeScript, used to build dynamic and responsive User Interface (UI) components.
+- **Node.js:** A JavaScript runtime environment used to run JavaScript on a machine rather than in a browser.
 
 ## Key Benefits:
 - Single language (JavaScript) across the stack.
 - Highly scalable and suitable for modern web applications.
-- Efficient, with reusable React components and an asynchronous, event-driven backend.
+- Efficient, with Angular's two-way data binding for seamless UI updates and an asynchronous, event-driven backend using Node.js.
 
-## Getting Started a MERN STACK Project
+## Getting Started a MEAN STACK Project
 
 **1. Launch instance in AWS Console**
 The first step in implementing this project is to launch an instance in the AWS Console.
