@@ -132,3 +132,48 @@ sudo apt install -y nodejs
 ```
 node -v 
 ```
+
+## Step 2: Install MongoDB
+
+MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document and data structure can be changed over time. For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages.
+
+- **Install GnuPG and Curl**
+
+This command installs essential tools for handling GPG keys and transferring data:
+
+```
+sudo apt-get install -y gnupg curl
+```
+
+- **Download and Store MongoDB GPG Key**
+
+This command downloads MongoDB’s GPG key and stores it securely for use in package verification:
+
+```
+curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+```
+
+The command below adds the MongoDB repository to your system's package manager sources, enabling the installation and updates of MongoDB packages.
+
+```
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+```
+
+- Install MongoDB
+
+```
+sudo apt-get install -y mongodb-org
+```
+
+- Start The server
+
+
+```
+sudo service mongodb start
+```
+
+- Verify that the service is up and running
+
+```
+sudo systemctl status mongodb
+```
