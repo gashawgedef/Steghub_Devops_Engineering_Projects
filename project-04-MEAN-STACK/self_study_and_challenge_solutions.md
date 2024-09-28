@@ -2,13 +2,6 @@
 
 ## Project Overview
 
-### Project Title:
-*Your Project Title Here*
-
-### Description:
-*Briefly describe what your project is about and its purpose.*
-
----
 
 ## 1. Refreshing Knowledge of the OSI Model
 
@@ -23,11 +16,6 @@
   6. **Presentation Layer:** Translates data between the application layer and the network (encryption, compression).
   7. **Application Layer:** Closest to the end-user, where applications interact with the network (HTTP, FTP).
 
-### Resources Used:
-- Videos and articles from MDN and GeeksforGeeks.
-
----
-
 ## 2. Load Balancing in AWS
 
 ### Key Learnings:
@@ -37,14 +25,6 @@
   - **Network Load Balancer (NLB):** Best for TCP traffic; capable of handling millions of requests per second.
   - **Classic Load Balancer (CLB):** Older version that supports both TCP and HTTP traffic.
 
-### Implementation Steps:
-- Set up an Elastic Load Balancer in AWS.
-- Configured listeners and target groups.
-
-### Resources Used:
-- AWS documentation and online tutorials.
-
----
 
 ## 3. HTML, CSS, JavaScript, and MEAN Stack Development
 
@@ -65,16 +45,17 @@
 3. Developed the frontend with Angular, utilizing services to communicate with the backend.
 4. Implemented routing in Angular for navigation within the application.
 
-### Resources Used:
-- MDN Web Docs and YouTube tutorials on MEAN stack development.
 
----
 
 ## Challenges Faced:
-- *Document any challenges you encountered during the project and how you overcame them.*
+- The commands used to start and check status  for **mongodb** was not working  and I changed to another one
+
+- The port number **3300** was not working and I changed it to **3000** and it works correctly.
 
 ## Conclusion
 This project allowed me to consolidate my understanding of the OSI model, gain hands-on experience with load balancing in AWS, and develop a full-stack application using the MEAN stack. Each component played a vital role in the overall architecture and performance of the application.
 
-### Future Improvements:
-- *Outline any future improvements or features you plan to add to the project.*
+### Continuous Learning
+
+This journey reinforced the importance of continuous learning and adapting to new technologies. AWS is a constantly evolving platform, and staying up-to-date with new services and best practices is key to success.
+Lesson: Embrace continuous learning to keep pace with changes in cloud technologies and development frameworks.
