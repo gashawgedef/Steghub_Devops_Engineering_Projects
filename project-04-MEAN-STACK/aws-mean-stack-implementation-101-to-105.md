@@ -106,7 +106,7 @@ sudo apt update
 sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 ```
 
-![image](assets/11_update_ubunt.JPG)
+![image](assets/13_certificate_1.JPG)
 
 
 Lets get the location of Node.js software from Ubuntu repositories.
