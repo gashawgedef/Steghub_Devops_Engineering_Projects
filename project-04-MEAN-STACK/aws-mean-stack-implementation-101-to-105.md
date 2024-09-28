@@ -186,4 +186,5 @@ sudo systemctl start mongod
 ```
 sudo systemctl status mongod
 ```
+
 ![image](assets/23_check_system_is%20_running.JPG)
