@@ -561,8 +561,29 @@ node server.js
 The server is now up and running, we can connect it via port 3300. You can launch a separate Putty or SSH console to test what curl command returns locally.
 
 ```
-curl -s http://localhost:3000
+curl -s http://localhost:3300
 ```
 ![images](assets/45_curl_command.JPG)
+
+For this - you need to open TCP port 3300 in your AWS Web Console for your EC2 Instance.
+
+![images](assets/46_add_port_3300.JPG)
+
+Now we can access our Book Register web application from the Internet with a browser using Public IP address or Public DNS name.
+
+> - Quick reminder how to get your server's Public IP and public DNS name:
+
+> -  You can find it in your AWS web console in EC2 details or Run
+>   
+**For Public IP address** 
+```
+curl -s http://169.254.169.254/latest/meta-data/public-ipv4
+``` 
+**For Public DNS name**
+```
+curl -s http://169.254.169.254/latest/meta-data/public-hostname 
+```
+## This is how our Book Register Application will look like in browser:
+
 
 
