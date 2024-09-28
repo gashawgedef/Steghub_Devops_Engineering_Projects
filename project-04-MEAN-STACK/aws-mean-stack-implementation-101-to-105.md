@@ -112,8 +112,11 @@ sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 Lets get the location of Node.js software from Ubuntu repositories.
 
 ```
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
+
+![image](assets/14_certificate_1.JPG)
+
 
 - **Install Node.js on the server**
 
