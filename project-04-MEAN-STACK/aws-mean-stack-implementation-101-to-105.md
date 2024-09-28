@@ -385,3 +385,184 @@ module.exports = mongoose.model('Book', bookSchema);
 ```
 
 ![images](assets/36_edit_book_js.JPG)
+
+## Step 4 - Access the routes with AngularJS
+
+AngularJS provides a web framework for creating dynamic views in your web applications. In this tutorial, we use AngularJS to connect our web page with Express and perform actions on our book register.
+
+- Change the directory back to **Books**
+
+```
+cd ../..
+
+```
+
+- Create a folder named public
+
+```
+mkdir public && cd public
+```
+![images](assets/38_create_public_folder_and_go.JPG)
+
+- Add a file named script.js
+
+```
+vim  script.js
+```
+
+![images](assets/39_add_scripts_js.JPG)
+
+- Copy and paste the Code below (controller configuration defined) into the script.js file.
+
+```
+angular.module('myApp', [])
+  .controller('myCtrl', function($scope, $http) {
+    function fetchBooks() {
+      $http.get('/book')
+        .then(response => {
+          $scope.books = response.data;
+        })
+        .catch(error => {
+          console.error('Error fetching books:', error);
+        });
+    }
+
+    fetchBooks();
+
+    $scope.del_book = function(book) {
+      $http.delete(`/book/${book.isbn}`)
+        .then(() => {
+          fetchBooks();
+        })
+        .catch(error => {
+          console.error('Error deleting book:', error);
+        });
+    };
+
+    $scope.add_book = function() {
+      const newBook = {
+        name: $scope.Name,
+        isbn: $scope.Isbn,
+        author: $scope.Author,
+        pages: $scope.Pages
+      };
+
+      $http.post('/book', newBook)
+        .then(() => {
+          fetchBooks();
+          // Clear form fields
+          $scope.Name = $scope.Isbn = $scope.Author = $scope.Pages = '';
+        })
+        .catch(error => {
+          console.error('Error adding book:', error);
+        });
+    };
+  });
+```
+
+![images](assets/40_edit_scripts.JPG)
+
+- In **public** folder, create a file named **index.html**
+
+```
+vi index.html
+```
+
+![images](assets/41_open_index_html.JPG)
+
+- Cpoy and paste the code below into index.html file.
+
+```
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myCtrl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Management</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    input[type="text"], input[type="number"] { width: 100%; padding: 5px; }
+    button { margin-top: 10px; padding: 5px 10px; }
+  </style>
+</head>
+<body>
+  <h1>Book Management</h1>
+  
+  <h2>Add New Book</h2>
+  <form ng-submit="add_book()">
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" ng-model="Name" required></td>
+      </tr>
+      <tr>
+        <td>ISBN:</td>
+        <td><input type="text" ng-model="Isbn" required></td>
+      </tr>
+      <tr>
+        <td>Author:</td>
+        <td><input type="text" ng-model="Author" required></td>
+      </tr>
+      <tr>
+        <td>Pages:</td>
+        <td><input type="number" ng-model="Pages" required></td>
+      </tr>
+    </table>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <h2>Book List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>ISBN</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="book in books">
+        <td>{{book.name}}</td>
+        <td>{{book.isbn}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.pages}}</td>
+        <td><button ng-click="del_book(book)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+```
+
+![images](assets/42_edit_index_html.JPG)
+
+- Change the directory back up to 'Books'
+
+```
+cd ..
+```
+
+![images](assets/43_change_directory_books.JPG)
+
+- Start the server by running this command:
+
+```
+node server.js
+```
+![images](assets/44_run_server.JPG)
+
+The server is now up and running, we can connect it via port 3300. You can launch a separate Putty or SSH console to test what curl command returns locally.
+
+```
+curl -s http://localhost:3000
+```
+![images](assets/45_curl_command.JPG)
+
+
