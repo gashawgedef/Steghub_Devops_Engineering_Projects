@@ -188,3 +188,81 @@ sudo systemctl status mongod
 ```
 
 ![image](assets/23_check_system_is%20_running.JPG)
+
+- Install [npm](https://www.npmjs.com) - Node package manager.
+
+
+```
+sudo apt install -y npm
+```
+
+![image](assets/51_install_node_package_manager.JPG)
+
+- Install 'body-parser package
+
+We need 'body-parser' package to help us process JSON files passed in requests to the server.
+
+```
+sudo npm install body-parser
+```
+
+![image](assets/25_install_parsor.JPG)
+
+- Create a folder named 'Books'
+
+```
+mkdir Books && cd Books
+
+```
+![image](assets/26_create_and_goto_books.JPG)
+
+
+- In the Books directory, Initialize npm project
+
+```
+npm init
+```
+
+![image](assets/27_npm_init.JPG)
+
+- Add a file to it named server.js
+
+```
+vim server.js
+
+```
+
+![image](assets/28_open_server_js.JPG)
+
+-
+- Copy and paste the web server code below into the server.js file.
+
+```
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3300;
+
+// MongoDB connection
+mongoose.connect('mongodb://localhost:27017/test', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.error('MongoDB connection error:', err));
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.json());
+
+require('./apps/routes')(app);
+
+app.listen(PORT, () => {
+  console.log(`Server up: http://localhost:${PORT}`);
+});
+
+```
+
+![image](assets/29_edit_server_js.JPG)
