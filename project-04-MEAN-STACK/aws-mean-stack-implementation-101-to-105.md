@@ -63,9 +63,8 @@ For HTTPS (port 443), this rule enables secure web traffic. Like HTTP, HTTPS tra
 By configuring these rules, your instance will allow SSH access for management and handle both HTTP and HTTPS traffic, making it accessible to the public while still maintaining necessary security measures.
 
   ![image](assets/configure%20inbound_rules.JPG)
-- Connect to instance from ssh client
 
-   ![image](assets/9_connect_instance_command.JPG)
+
 **Give Permission for the Private SSH Key**
   
   This command ensures that this  private SSH key has the correct permissions before using it to connect to your instance.
