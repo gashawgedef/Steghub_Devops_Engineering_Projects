@@ -581,9 +581,11 @@ curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 ``` 
 **For Public DNS name**
 ```
-curl -s http://169.254.169.254/latest/meta-data/public-hostname 
+curl -s http://169.254.169.254/latest/meta-data/public-hostname
 ```
 ## This is how our Book Register Application will look like in browser:
+
+![images](assets/48_after_running.JPG)
 
 
 
