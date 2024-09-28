@@ -587,5 +587,7 @@ curl -s http://169.254.169.254/latest/meta-data/public-hostname
 
 ![images](assets/48_after_running.JPG)
 
+- Insert and Retrieve Data in Angular App
 
+![images](assets/49_insert_and%20Display_Data.JPG)
 
