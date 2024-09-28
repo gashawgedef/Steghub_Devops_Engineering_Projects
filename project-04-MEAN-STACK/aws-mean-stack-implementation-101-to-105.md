@@ -346,12 +346,12 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
   });
 };
+
 ```
 
-[images](assets/33_edit_routes.JPG)
+![images](assets/33_edit_routes.JPG)
 
-
-- In the 'apps' folder, create a folder named models
+- In the **apps** folder, create a folder named models
 
 ```
 mkdir models && cd models
