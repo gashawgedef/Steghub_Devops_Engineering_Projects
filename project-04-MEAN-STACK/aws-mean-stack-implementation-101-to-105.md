@@ -41,15 +41,15 @@ create an instance in the default region us-east-1 and enter instance name **MEA
   
 A security group in AWS acts as a virtual firewall for your EC2 instances. It controls both inbound and outbound traffic to ensure only the permitted traffic reaches your instance. Each EC2 instance must be associated with at least one security group. The security group rules can be customized to define the type of traffic that is allowed to connect to the instance, including protocols, ports, and IP addresses.
 
-![image](assets/4_create_security_group.JPG.jpg)
+![image](assets/4_create_security_group.JPG)
 
 - View the status of instance created
 
-  ![image](assets/6_view_instance.jpg)
+  ![image](assets/6_view_instance.JPG)
 
 - View Instance Details
 
-  ![image](assets/7_view_instance_details.jpg)
+  ![image](assets/7_instance_details.JPG)
 
 - Configuring Security Group with Specific Inbound Rules
   When setting up a security group for your EC2 instance, you can control which traffic reaches your instance through inbound rules.
@@ -62,10 +62,10 @@ For HTTPS (port 443), this rule enables secure web traffic. Like HTTP, HTTPS tra
 
 By configuring these rules, your instance will allow SSH access for management and handle both HTTP and HTTPS traffic, making it accessible to the public while still maintaining necessary security measures.
 
-  ![image](assets/8_create_inbound_rules.jpg)
+  ![image](assets/configure%20inbound_rules.JPG)
 - Connect to instance from ssh client
 
-   ![image](assets/9_connect_instance.jpg)
+   ![image](assets/9_connect_instance_command.JPG)
 **Give Permission for the Private SSH Key**
   
   This command ensures that this  private SSH key has the correct permissions before using it to connect to your instance.
@@ -73,11 +73,11 @@ By configuring these rules, your instance will allow SSH access for management a
   ```
   chmod 400 "gashaw_key.pem"
   ```
-  ![image](assets/10_give_permision.jpg)
+  ![image](assets/8_give_permission.JPG)
 **Connecting to the Instance via SSH**
 
 Once the private key file has the correct permissions, you can use SSH to connect to your EC2 instance using its public IP address or domain name.
 ```
 ssh -i "gashaw_key.pem" ubuntu@ec2-54-226-142-99.compute-1.amazonaws.com
 ```
-![image](assets/11_connect_to_ssh_client.jpg)
+![image](assets/10_inatance_connected.JPG)
