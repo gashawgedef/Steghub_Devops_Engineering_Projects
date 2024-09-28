@@ -121,11 +121,13 @@ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 - **Install Node.js on the server**
 
 ```
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 ```
-![image](assets/15_install_Node_js.jpg)
+
+![image](assets/21_install_node_js.JPG)
 
 - Verify the node installation with the command below
+
 ```
 node -v 
 ```
