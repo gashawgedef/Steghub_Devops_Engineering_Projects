@@ -115,7 +115,7 @@ Lets get the location of Node.js software from Ubuntu repositories.
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
 
-![image](assets/15_certificates_2.JPG)
+![image](assets/configure%2020_instal_mongo_main.JPG)
 
 
 - **Install Node.js on the server**
