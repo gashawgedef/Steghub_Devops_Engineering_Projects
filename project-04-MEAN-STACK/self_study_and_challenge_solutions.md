@@ -1,11 +1,12 @@
 # MEAN Stack Project Documentation
 
-## Project Overview
+##   Lessons Learned, Challengies and Solutions
 
 
 ## 1. Refreshing Knowledge of the OSI Model
 
 ### Key Learnings:
+
 - **Definition:** The OSI (Open Systems Interconnection) model is a conceptual framework used to understand network communication.
 - **Seven Layers:**
   1. **Physical Layer:** Deals with the physical connection between devices (cables, switches).
