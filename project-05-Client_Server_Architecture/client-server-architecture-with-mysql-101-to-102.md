@@ -24,39 +24,39 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 **Let us see how to create mysql server and follow same steps too create mysql client server**
 1. Log to aws account console and create EC2 instance of t2.micro type with Ubuntu 24.04 LTS (HVM) Server launch in the default region us-east-1. name instance mysql server  
    
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/da219d84-f1c2-427d-b997-95f56c790410)
+![image](assets/server_1_launch_instance_name.JPG)
 
 2. Application and OS Images select Ubuntu free tire eligable version
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/353f11ca-78b4-4fd8-8d01-b818cb79201b)
+![image](assets/server_2_select_os.JPG)
 
 
 3. Create new key pair or select existing key
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/84691a41-99c6-48c0-91bc-bd08bb94d94b)
+![image](assets/server_3_select_existing_key_pair.JPG)
 
 4. Network setting create new security group or use existing security group
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d14a769b-0d06-4540-a1fb-6cebe1e81704)
+![image](assets/server_4_create_security_group.JPG)
 
 5. Configure Storage and launch the instance
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0fb930d1-1cd0-4a15-80b5-8a24c6319433)
+![image](assets/server_5_configure_storage.JPG)
 
 6. View Instance
 
-   ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/40d89a99-8fa6-4862-8ee0-8a5dc9ac2ff3)
+   ![image](assets/server_6_view_instance.JPG)
 
 7 . Instance Details for MYSQL server
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2116f627-15eb-4b08-8356-84806f1c4d42)
+![image](assets/server_7_view_details.JPG)
 
 8. Configure security group with the following inbound rules:
    
 - Allow traffic on port 22 (SSH) with source from any IP address.
 - Allow traffic on port 3306  with source from mysql client IP address 172.31.16.13 . 
 
-  ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/19cadc41-0a40-4572-92d6-3c0dde88d279)
+  ![image](assets/adding_port_3306.JPG)
 
 ### For **Server B** name - `mysql client`follow same steps and our final instance detail looks like this 
 
