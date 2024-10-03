@@ -11,11 +11,16 @@ Ping and traceroute are two essential tools for network troubleshooting. They wo
 
 
 **How Ping Works:**
-1. **ICMP Echo Request/Reply:** Ping sends Internet Control Message Protocol (ICMP) Echo Request messages to the target host and waits for an ICMP Echo Reply.
-2. **Round-Trip Time (RTT):** It measures the time taken for the round-trip from the originating host to the destination and back.
+
+- Ping sends **ICMP (Internet Control Message Protocol)** Echo Request packets to the target device.
+
+- The target replies with an Echo Reply packet.
+
+- It measures the **round-trip time (RTT)** it takes for packets to go from the source to the destination and back.
+
 When using Ping, always test a few different sites to see if it is just one site or all sites.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cee9880e-6196-4f4c-bce2-574568d0aa8a)
+![image](assets/self_ping.JPG)
 
 You can interrupt Ping at any time by holding down the CTRL key, and pressing C on your keyboard.
 
@@ -32,7 +37,7 @@ Ping operates by sending ICMP Echo Request packets to the target device and wait
 ### Example: target device not responding
 A ping result, where the target device is not responding, or there is a connection issue, will look like this
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e4b6a42c-31df-47ca-af2f-0475b1c5c0bb)
+![image](assets/self_pint_reachtimeout.JPG)
 
 
 Although four packets were sent, none have been received, showing a 100% loss of packets, and indicating an issue with either the connection or the target device.
