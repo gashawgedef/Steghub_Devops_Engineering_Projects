@@ -15,43 +15,43 @@ In the **client-server** architecture with **MYSQL**, our Web Server has a role 
 
 To demonstrate a basic client-server using MySQL RDBMS, follow the below instructions
 
-1. Create and configure two Linux-based virtual servers (EC2 instances in AWS)
+**1. Create and configure two Linux-based virtual servers (EC2 instances in AWS)**
 
 - **Server A** name  `mysql server`
 
 - **Server B** name - `mysql client`
 
 **Let us see how to create mysql server and follow same steps too create mysql client server**
-1. Log to aws account console and create EC2 instance of t2.micro type with Ubuntu 24.04 LTS (HVM) Server launch in the default region us-east-1. name instance mysql server  
+- **Log to aws account console and create EC2 instance of t2.micro type with Ubuntu 24.04 LTS (HVM) Server launch in the default region us-east-1. name instance mysql server**
    
 ![image](assets/server_1_launch_instance_name.JPG)
 
-2. Application and OS Images select Ubuntu free tire eligable version
+- **Application and OS Images select Ubuntu free tire eligable version**
 
 ![image](assets/server_2_select_os.JPG)
 
 
-3. Create new key pair or select existing key
+- **Create new key pair or select existing key**
 
 ![image](assets/server_3_select_existing_key_pair.JPG)
 
-4. Network setting create new security group or use existing security group
+- **Network setting create new security group or use existing security group**
 
 ![image](assets/server_4_create_security_group.JPG)
 
-5. Configure Storage and launch the instance
+- **Configure Storage and launch the instance**
 
 ![image](assets/server_5_configure_storage.JPG)
 
-6. View Instance
+- **View Instance**
 
    ![image](assets/server_6_view_instance.JPG)
 
-7 . Instance Details for MYSQL server
+- **Instance Details for MYSQL server**
 
 ![image](assets/server_7_view_details.JPG)
 
-8. Configure security group with the following inbound rules:
+- **Configure security group with the following inbound rules:**
    
 - Allow traffic on port 22 (SSH) with source from any IP address.
 - Allow traffic on port 3306  with source from mysql client IP address 172.31.16.13 . 
