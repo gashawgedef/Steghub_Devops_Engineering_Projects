@@ -40,8 +40,6 @@ A ping result, where the target device is not responding, or there is a connecti
 
 Although four packets were sent, none have been received, showing a 100% loss of packets, and indicating an issue with either the connection or the target device.
 
-> **Note**: A result like this does not always mean the device is not online or working correctly. Many devices have ICMP ping responses disabled for security or service reasons. So even if they are up and running it will appear as if they are unreachable.
-
 
 ### Traceroute
 
@@ -169,15 +167,17 @@ SELECT * FROM courses;
   DROP TABLE courses
   ```
 
-## Challenges Faced:
-- The commands used to start and check status  for **mongodb** was not working  and I changed to another one
+## Challenges Faced and Solutions:
 
-- The port number **3300** was not working and I changed it to **3000** and it works correctly.
+- I faced MYSQL User Permission challenges and I solved by granting all `user` permisions to user`gashaw`
+
+- The port number **3306** was not working and I changed it toclients from specific client ip address
 
 ## Conclusion
-This project allowed me to consolidate my understanding of the OSI model, gain hands-on experience with load balancing in AWS, and develop a full-stack application using the MEAN stack. Each component played a vital role in the overall architecture and performance of the application.
+
+This project enabled me to solidify my understanding of client-server architecture, gain practical experience with MySQL setup across AWS instances, and manage secure communication between database and client systems. Each component, from configuring MySQL to handling connectivity challenges, played a crucial role in ensuring the reliability and performance of the architecture.
+
 
 ### Continuous Learning
 
-This journey reinforced the importance of continuous learning and adapting to new technologies. AWS is a constantly evolving platform, and staying up-to-date with new services and best practices is key to success.
-Lesson: Embrace continuous learning to keep pace with changes in cloud technologies and development frameworks.
+This experience emphasized the value of continuous learning and adapting to new challenges in cloud-based infrastructure. As AWS and database technologies evolve, keeping up with best practices and new services is essential for optimizing solutions. Lesson: Continuously expand your knowledge to stay current with advancements in cloud platforms and database management systems.
