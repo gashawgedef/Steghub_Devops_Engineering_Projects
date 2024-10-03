@@ -81,7 +81,7 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
   1.1.  Run sudo apt update -y for latest updates on server
   
   ``` 
-  sudo apt update -y
+  sudo apt update 
   ```
 ![image](assets/server_10_update.JPG)
 
@@ -191,6 +191,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'172.31.81.205';
 FLUSH PRIVILEGES;
 ```
 ![image](assets/flush%20previleges.JPG)
+
+
+>**In This project the `user` is created and granted privileges from specific client IP address**
 
 **Exit MySQL and restart the MySQL service using**
 ```
