@@ -26,24 +26,24 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
    
 ![image](assets/server_1_launch_instance_name.JPG)
 
-- **Application and OS Images select Ubuntu free tire eligable version**
+- **Application and OS Images select Ubuntu free tire eligable version for Mysql Server**
 
 ![image](assets/server_2_select_os.JPG)
 
 
-- **Create new key pair or select existing key**
+- **Create new key pair or select existing key for Server**
 
 ![image](assets/server_3_select_existing_key_pair.JPG)
 
-- **Network setting create new security group or use existing security group**
+- **Network setting create new security group or use existing security group For Server**
 
 ![image](assets/server_4_create_security_group.JPG)
 
-- **Configure Storage and launch the instance**
+- **Configure Storage and launch the instance For Server**
 
 ![image](assets/server_5_configure_storage.JPG)
 
-- **View Instance**
+- **View Instance of Mysql Server**
 
    ![image](assets/server_6_view_instance.JPG)
 
@@ -51,7 +51,7 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 
 ![image](assets/server_7_view_details.JPG)
 
-- **Configure security group with the following inbound rules:**
+- **Configure security group with the following inbound rules: for Server**
    
 - Allow traffic on port 22 (SSH) with source from any IP address.
 - Allow traffic on port 3306  with source from mysql client IP address 172.31.16.13 . 
