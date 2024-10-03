@@ -193,13 +193,17 @@ FLUSH PRIVILEGES;
 ![image](assets/flush%20previleges.JPG)
 
 
->**In This project the `user` is created and granted privileges from specific client IP address**
+
+
+>**Note: In This project the `user` is created and granted privileges from specific client IP address**
+
+
 
 **Exit MySQL and restart the MySQL service using**
 ```
 sudo systemctl restart mysql
 ```
-> **Note**: '172.31.16.13' is the ip address of your mysql-client server
+> **Note**: '172.31.92.86' is the private ip address of your mysql-client server
 
 6. From aysql client Linux Server connect remotely to mysql server Database Engine without using ssh. You must use the mysql utility to perform this action.
 ```
