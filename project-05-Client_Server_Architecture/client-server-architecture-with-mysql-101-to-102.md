@@ -145,16 +145,53 @@ place '127.0.0.1' to '0.0.0.0' like this:
 
 **Creating a Dedicated MySQL User and Granting Privileges**
 
+- Create user from any host
 ```
-CREATE USER 'gashaw'@'%' IDENTIFIED BY 'Password.1';
+CREATE USER 'gashity'@'%' IDENTIFIED BY 'Password.1';
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/da1a128b-08bf-4d48-9b8d-0ce91e79d7af)
+![image](assets/create_user_from_any_host.JPG)
+
+
+- Create user from specific single host `172.31.81.205` or client IP address
+
+```
+CREATE USER 'gashaw'@'172.31.81.205' IDENTIFIED BY 'Password.1';
+```
+![image](assets/create_user_gashaw_from_ip.JPG.JPG)
+
+- Create user from specific subnet 
+```
+CREATE USER 'gashaw1'@'172.31.81.0/24' IDENTIFIED BY 'Password.1'; 
+```
+![image](assets/create_user_from_subnet.JPG)
+
+
+- grant privileges  for user `gashaw` from any host
 
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'%';
 FLUSH PRIVILEGES;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/390f3a25-ee66-4cab-94c0-23422f948bbd)
+
+![image](assets/server_grant_all_previleges.JPG)
+
+
+```
+GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'%';
+FLUSH PRIVILEGES;
+```
+
+![image](assets/create_user_gashaw_from_ip.JPG)
+
+
+```
+GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'%';
+FLUSH PRIVILEGES;
+```
+
+![image](assets/grant_previlege%20from_specific_client.JPG)
+
+
 
 **Exit MySQL and restart the MySQL service using**
 ```
