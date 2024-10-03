@@ -15,7 +15,7 @@ In the **client-server** architecture with **MYSQL**, our Web Server has a role 
 
 To demonstrate a basic client-server using MySQL RDBMS, follow the below instructions
 
-**1. Create and configure two Linux-based virtual servers (EC2 instances in AWS)**
+## 1. Create and configure two Linux-based virtual servers (EC2 instances in AWS)
 
 - **Server A** name  `mysql server`
 
@@ -71,7 +71,7 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/96dd95db-9ca3-4a94-aa04-fbd4f6c09c58)
 
 
-3. On **mysql server Linux Server(Server A)** install MySQL Server software.
+## 2. On mysql server Linux Server(Server A)** install MySQL Server software.
 > Interesting fact: MySQL is an open-source relational database management system. Its name is a combination of `My`, the name of co-founder Michael Widenius's daughter, and `SQL`, the abbreviation for Structured Query Language.
 
 
@@ -105,7 +105,7 @@ sudo systemctl status mysql
 ```   
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0220a082-6d7d-47be-affb-1171931313dd)
  
-3. On mysql client Linux Server install MySQL Client software.
+## 3. On mysql client Linux Server install MySQL Client software.
 
 1.1.  Run sudo apt update -y for latest updates on server
  
