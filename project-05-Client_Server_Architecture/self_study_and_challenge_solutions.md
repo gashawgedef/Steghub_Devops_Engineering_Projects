@@ -76,6 +76,7 @@ SQL stands for Structured Query Language. SQL commands are the instructions used
 SQL commands can be used to search the database and to do other functions like creating tables, adding data to tables, modifying data, and dropping tables.
 
 Here is a list of basic SQL commands (sometimes called clauses) you should know if you are going to work with SQL.
+
 # Basic SQL Commands
 
 ## SHOW
@@ -99,158 +100,70 @@ SHOW COLUMNS FROM table_name;
 ### CREATE
 The CREATE command is used to create databases, tables, views, and other database objects.
 
-**Examples**:
-
-- **Create a new database**:
-```
-CREATE DATABASE database_name;
-```
-- **Create a new table**:
-```
-CREATE TABLE table_name (
-    column1_name data_type constraints,
-    column2_name data_type constraints,
-    ...
-);
-```
-**Example**:
-```
-CREATE TABLE employees (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    position VARCHAR(50),
-    salary DECIMAL(10, 2)
-);
-```
-### DROP
-The DROP command is used to delete databases, tables, or other database objects.
-
-**Examples**:
-
-- **Drop a database**:
-```
-DROP DATABASE database_name;
-```
-- **Drop a table**:
-```
-DROP TABLE table_name;
-```
-
-### SELECT
-The SELECT command is used to query data from one or more tables.
-
-**Examples**:
-
-- *Select all columns from a table:*
-```
-SELECT * FROM table_name;
-```
-- *Select specific columns from a table*:
-```
-SELECT column1_name, column2_name FROM table_name;
-```
-
-- *Select with a condition*:
-```
-SELECT * FROM table_name WHERE condition;
-```
-Example:
-```
-SELECT name, position FROM employees WHERE salary > 50000;
-```
-### INSERT
-The INSERT command is used to add new rows of data into a table.
-
-**Examples**:
-
-- Insert a single row:
-```
-INSERT INTO table_name (column1_name, column2_name, ...)
-VALUES (value1, value2, ...);
-```
-**Example**:
-```
-INSERT INTO employees (name, position, salary)
-VALUES ('John Doe', 'Manager', 75000);
-```
-- Insert multiple rows:
-
-```
-INSERT INTO table_name (column1_name, column2_name, ...)
-VALUES 
-(value1, value2, ...),
-(value3, value4, ...),
-...;
-```
-
-**Example**:
-```
-INSERT INTO employees (name, position, salary)
-VALUES 
-('Jane Smith', 'Developer', 60000),
-('Mike Johnson', 'Analyst', 55000);
-```
-
 # Practical example how to use basic SQL commands
 
 **Let's combine these commands in a practical scenario**:
-0. Log into your host and next to  MySQL/MariaDB
+- Log into your host and next to  MySQL
 ```
 mysql -u root -p
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6c44a14a-0601-4c3c-8b57-769e6365094c)
+![image](assets/server_16_login_mysql.JPG)
+
+- Create Database
+
+```
+CREATE DATABASE Client_Server;
+```
+
+![Images](assets/self_create_database.JPG)
 
 
-1. Show existing databases:
+- Show existing databases:
 
 ```
 SHOW DATABASES;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a9243981-bacc-463a-8a22-62261e308110)
 
-2.  Create a new database:
-```
-CREATE DATABASE company;
-```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/48faae71-3a72-43b4-97b5-ee9439d85871)
+![image](assets/SELF_SHOW_DATABASE.JPG)
 
-3. Switch to the new database:
+
+- Switch to the new database:
+
 ```
-USE company;
+USE Client_Server;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4a1b2a7a-5371-4347-bbf1-2a8bbee7ad99)
+
 
 4. Create a new table:
 ```
-CREATE TABLE employees (
+CREATE TABLE courses(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
-    position VARCHAR(50),
-    salary DECIMAL(10, 2)
+    credit_hour INT,  -- Credit hours as an integer
+    instructor VARCHAR(100)  -- Added instructor name for the course
 );
+
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/bc6c3f5c-0d1e-4c7f-ade5-7b0ac136a625)
+
+![image](assets/self_create_table_courses.JPG)
 
 5. Insert data into the table:
 ```
-INSERT INTO employees (name, position, salary)
-VALUES ('Melkamu Tessema', 'CEO', 120000);
+INSERT INTO courses (name, credit_hour, instructor) VALUES
+('Introduction to Programming', 3, 'Alice Johnson'),
+('Data Structures and Algorithms', 4, 'Bob Smith'),
+('Database Management Systems', 3, 'Charlie Brown');
+
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/583f7e0f-3286-4520-975d-9c2c962090a1)
+![image](assets/self_insert_data.JPG)
 
 6. Query the table:
 ```
-SELECT * FROM employees;
+SELECT * FROM courses;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a1463a86-4a91-4689-b6af-c6c2aaffcca3)
+
 
 7. Drop the table:
   ```
-  DROP TABLE employees
+  DROP TABLE courses
   ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2f190cd2-f90b-498f-8f5d-ee7bc6055f46)
-
-## References
-1. [Cloud Direct Using Traceroute, Ping, MTR, and PathPing](https://www.clouddirect.net/knowledge-base/KB0011455/using-traceroute-ping-mtr-and-pathping)
-2. [Cisco Understand the Ping and Traceroute Commands](https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-software-releases-121-mainline/12778-ping-traceroute.html)
-3. [Basic SQL Commands - The List of Database Queries and Statements You Should Know](https://www.freecodecamp.org/news/basic-sql-commands/)
