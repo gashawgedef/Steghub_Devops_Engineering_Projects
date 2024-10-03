@@ -141,7 +141,7 @@ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 `
 place '127.0.0.1' to '0.0.0.0' like this:
 `
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d670cb70-9d2d-4540-8863-f9ec0edd130a)
+![image](assets/server_14_edit%20configurations.JPG)
 
 **Creating a Dedicated MySQL User and Granting Privileges**
 
