@@ -60,10 +60,10 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 
 ### For **Server B** name - `mysql client`follow same steps and our final instance detail looks like this 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9e483b90-3545-408e-833c-9d46f03e2df0)
+![image](assets/client_6_view_instance.JPG)
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a1e6ced5-eda2-424f-a4e1-ca047f706211)
+![image](assets/client_7_view_details.JPG)
 
 
 **Now Two Servers UP are we can go to do our client server architecture**
