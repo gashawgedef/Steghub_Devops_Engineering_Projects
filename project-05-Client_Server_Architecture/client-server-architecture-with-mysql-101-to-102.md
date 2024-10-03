@@ -157,7 +157,7 @@ CREATE USER 'gashity'@'%' IDENTIFIED BY 'Password.1';
 ```
 CREATE USER 'gashaw'@'172.31.81.205' IDENTIFIED BY 'Password.1';
 ```
-![image](assets/create_user_gashaw_from_ip.JPG.JPG)
+![image](assets/create_user_gashaw_from_ip.JPG)
 
 - Create user from specific subnet 
 ```
@@ -173,25 +173,21 @@ GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'%';
 FLUSH PRIVILEGES;
 ```
 
-![image](assets/server_grant_all_previleges.JPG)
+![image](assets/grant%20from%20any%20host.JPG)
 
 
 ```
-GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'172.31.81.205';
+```
+
+![image](assets/grant%20specific%20ip.JPG)
+
+- Flush Previleges
+
+```
 FLUSH PRIVILEGES;
 ```
-
-![image](assets/create_user_gashaw_from_ip.JPG)
-
-
-```
-GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'%';
-FLUSH PRIVILEGES;
-```
-
-![image](assets/grant_previlege%20from_specific_client.JPG)
-
-
+![image](assets/flush%20previleges.JPG)
 
 **Exit MySQL and restart the MySQL service using**
 ```
