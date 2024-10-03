@@ -167,7 +167,7 @@ SELECT * FROM courses;
   DROP TABLE courses
   ```
 
-## Challenges Faced and Solutions:
+# 3. Challenges Faced and Solutions:
 
 - I faced MYSQL User Permission challenges and I solved by granting all `user` permisions to user`gashaw`
 
