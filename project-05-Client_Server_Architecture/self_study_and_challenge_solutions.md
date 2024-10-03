@@ -2,10 +2,13 @@
 # 1. Read about ping and traceroute network diagnostic utilities. Be able to make sense out of the results of using these tools.
 
 ## Ping and Traceroute: Network Diagnostic Utilities
+
 Ping and traceroute are two essential tools for network troubleshooting. They work together to diagnose different aspects of connectivity issues:
 ### Ping
 
-**Ping** is a network utility used to test the reachability of a host on an IP network and to measure the round-trip time for messages sent from the originating host to a destination computer.
+**Ping** is a network utility used to test the reachability of a host on an IP network and measure the round-trip time for messages sent from the originating host to a destination computer. It uses Internet Control Message Protocol (ICMP) Echo Request messages to elicit an ICMP Echo Reply from the target host.
+
+
 
 **How Ping Works:**
 1. **ICMP Echo Request/Reply:** Ping sends Internet Control Message Protocol (ICMP) Echo Request messages to the target host and waits for an ICMP Echo Reply.
@@ -50,7 +53,7 @@ As you can see in this test we dropped two packets but, due to the large sample 
 
 ### Traceroute
 
-**Traceroute** is a network diagnostic tool used to track the path that packets take from one IP address to another. It provides information on each hop the packet passes through to reach the destination.
+**Traceroute** is a network diagnostic tool used to track the pathway that a packet takes from the source to the destination. It records the route (the specific gateway computers at each hop) through the Internet between your computer and a specified destination computer. It also calculates and displays the time taken for each hop.
 
 **How Traceroute Works:**
 1. **ICMP/TCP/UDP Probes:** Traceroute sends a sequence of packets with incrementally increasing Time-To-Live (TTL) values.
