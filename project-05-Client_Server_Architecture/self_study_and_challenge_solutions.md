@@ -105,7 +105,7 @@ The CREATE command is used to create databases, tables, views, and other databas
 ```
 mysql -u root -p
 ```
-![image](assets/server_16_login_mysql.JPG)
+![image](assets/Login_to_server_mysql.JPG)
 
 - Create Database
 
