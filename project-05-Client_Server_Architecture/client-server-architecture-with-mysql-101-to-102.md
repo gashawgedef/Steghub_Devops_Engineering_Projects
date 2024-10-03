@@ -6,7 +6,7 @@
 
 In their communication, each machine has its own role: the machine `sending` requests is usually referred as *Client* and the machine responding (serving) is called *Server*.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/eda684be-8aea-4a72-a3da-6c712461c897)
+![image](assets/Client-Server-Architecture-1.png)
 
 
 In the client-server architecture with MYSQL, our Web Server has a role of a `Client` that connects and reads/writes to/from a Database (DB) Server (MySQL, MongoDB, Oracle, SQL Server or any other), and the communication between them happens over a Local Network (it can also be Internet connection, but it is a common practice to place Web Server and DB Server close to each other in local network).
