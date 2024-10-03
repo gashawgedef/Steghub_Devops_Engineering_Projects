@@ -58,10 +58,13 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 
   ![image](assets/adding_port_3306.JPG)
 
-### For **Server B** name - `mysql client`follow same steps and our final instance detail looks like this 
+### For **Server B** name - `mysql client` follow same steps  to launch instance and our final instance detail looks like this 
+
+- View Client Instance(Mysql_client)
 
 ![image](assets/client_6_view_instance.JPG)
 
+- View Client Instance Details (Mysql_client)
 
 ![image](assets/client_7_view_details.JPG)
 
