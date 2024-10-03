@@ -71,7 +71,7 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 
 **Now Two Servers UP are we can go to do our client server architecture**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/96dd95db-9ca3-4a94-aa04-fbd4f6c09c58)
+![image](assets/two_instances_running.JPG)
 
 
 ## 2. On mysql server Linux Server(Server A)** install MySQL Server software.
