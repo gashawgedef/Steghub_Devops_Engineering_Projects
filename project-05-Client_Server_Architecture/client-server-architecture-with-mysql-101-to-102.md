@@ -146,7 +146,16 @@ place '127.0.0.1' to '0.0.0.0' like this:
 `
 ![image](assets/server_14_edit%20configurations.JPG)
 
+
 **Creating a Dedicated MySQL User and Granting Privileges**
+
+- Login to Mysql Server
+
+```
+sudo mysql -u root -p
+```
+
+![images](assets/Login_to_server_mysql.JPG)
 
 - Create user from any host
 ```
