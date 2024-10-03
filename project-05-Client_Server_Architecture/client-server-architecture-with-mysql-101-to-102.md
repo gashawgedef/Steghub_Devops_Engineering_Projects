@@ -146,12 +146,13 @@ place '127.0.0.1' to '0.0.0.0' like this:
 **Creating a Dedicated MySQL User and Granting Privileges**
 
 ```
-CREATE USER 'melkamu'@'172.31.16.13' IDENTIFIED BY 'PassWord.1';
+CREATE USER 'gashaw'@'%' IDENTIFIED BY 'Password.1';
 ```
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/da1a128b-08bf-4d48-9b8d-0ce91e79d7af)
 
 ```
-GRANT ALL PRIVILEGES ON * . * TO 'melkamu'@'172.31.16.13';
+GRANT ALL PRIVILEGES ON *.* TO 'gashaw'@'%';
+FLUSH PRIVILEGES;
 ```
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/390f3a25-ee66-4cab-94c0-23422f948bbd)
 
@@ -163,16 +164,16 @@ sudo systemctl restart mysql
 
 6. From aysql client Linux Server connect remotely to mysql server Database Engine without using ssh. You must use the mysql utility to perform this action.
 ```
-mysql -u melkamu -h 100.26.107.253 -p
+mysql -h 172.31.92.86 -u gashaw -p
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a4092086-3225-446d-8b09-05eb4cf79f96)
+![image](assets/connect_with_mysql_server.JPG)
 
 8. Check that you have successfully connected to a remote MySQL server and can perform SQL queries:
    
 ```
 Show databases;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/56097bff-2919-47ff-819e-9ca494bb46e8)
+![image](assets/show_databases.JPG)
 
 
 ## The End of Client-Server Architecture using MySQL project
