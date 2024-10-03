@@ -69,7 +69,7 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 ![image](assets/client_7_view_details.JPG)
 
 
-**Now Two Servers UP are we can go to do our client server architecture**
+**Now that both servers are running, we can proceed with our client-server architecture tasks.**
 
 ![image](assets/two_instances_running.JPG)
 
