@@ -54,82 +54,21 @@ Although four packets were sent, none have been received, showing a 100% loss of
 ```
 tracert steghub.com
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/744f030f-7d62-4739-a023-0182217550dc)
+![image](assets/)
 
-> **Note**: You can interrupt Traceroute at any time by holding down the CTRL key, and pressing C on your keyboard
+
 
 **Interpreting Traceroute Results:**
+
 - **List of Hops:** Each line represents a hop from the source to the destination.
 - **IP Address and Hostnames:** Shows the IP address and, if resolvable, the hostname of each hop.
 - **RTT for Each Hop:** Provides round-trip times for each hop, often three times per hop.
 
 **Key Points:**
+
 - **Hop Count:** The number of hops (intermediate routers) to reach the destination.
 - **Latency per Hop:** Helps identify where delays are occurring in the path.
 - **Unreachable Nodes:** If a hop consistently fails to respond, it might indicate a network problem at that hop.
-
-> Understanding how to use and interpret the results from Ping and Traceroute,help diagnose and troubleshoot network issues effectively.
-
-### Using PathPing
-
-**PathPing** is a network utility that combines the functions of `ping` and `tracert` to provide detailed information about the path between your computer and a destination. It sends packets to each router on the way to a final destination and reports the results over a period of time, showing the degree of packet loss at each router or link.
-
-### How to Use PathPing
-
-1. **Open Command Prompt**:
-   - Press `Win + R`, type `cmd`, and press `Enter`.
-
-2. **Run PathPing Command**:
-   - Type `pathping <destination>` and press `Enter`.
-   - `<destination>` can be an IP address or a domain name (e.g., `pathping google.com`).
-
-3. **Interpret the Results**:
-   - The first part of the report shows the path and round-trip times to each hop.
-   - The second part shows the packet loss and latency at each hop after sending packets for a certain duration.
-
-### Understanding MTR (MyTraceRoute)
-
-**MTR** is a network diagnostic tool that combines the functionality of `ping` and `traceroute`. It continuously sends packets and updates the results in real-time, making it easier to diagnose network issues.
-
-### How to Use MTR
-
-1. **Install MTR**:
-   - On **Linux**: You can install MTR using a package manager.
-     ```sh
-     sudo apt-get install mtr  # For Debian/Ubuntu
-     ```
-     ```
-     sudo yum install mtr  # For CentOS/RedHat
-     ```
-   - On **macOS**: Install MTR using Homebrew.
-     ```sh
-     brew install mtr
-     ```
-   - On **Windows**: Download and install the Windows version of MTR from [MTR's official website](https://github.com/traviscross/mtr).
-
-2. **Run MTR Command**:
-   - Open your terminal or command prompt.
-   - Type `mtr <destination>` and press `Enter`.
-   - `<destination>` can be an IP address or a domain name (e.g., `mtr google.com`).
-
-3. **Interpret the Results**:
-   - The results show each hop on the route to the destination.
-   - Columns include:
-     - **Loss%**: Packet loss percentage at each hop.
-     - **Snt**: Number of packets sent.
-     - **Last**: Latency of the last packet.
-     - **Avg**: Average latency.
-     - **Best**: Best (minimum) latency.
-     - **Wrst**: Worst (maximum) latency.
-     - **StDev**: Standard deviation of the latency.
-
-### Key Differences and Use Cases PathPing & MTR
-
-- **PathPing**: Ideal for a detailed, single-time diagnostic of packet loss and latency over time.
-- **MTR**: Suitable for real-time, continuous monitoring of network paths, making it easier to spot transient issues.
-
-Both tools are powerful for diagnosing network issues, helping identify problematic hops and potential sources of latency or packet loss.
-
 
 # 2. Refresh your knowledge of basic SQL commands, be able to perform simple SHOW, CREATE, DROP, SELECT and INSERT SQL queries.
 SQL stands for Structured Query Language. SQL commands are the instructions used to communicate with a database to perform tasks, functions, and queries with data.
