@@ -30,8 +30,6 @@ You can interrupt Ping at any time by holding down the CTRL key, and pressing C 
 - **Packets sent/received/lost:** Helps determine packet loss.
 - **RTT (ms):** Shows minimum, maximum, and average round-trip times, indicating latency.
 
-**Example Ping Output:**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/285545b1-9d7f-4683-a7e7-448dad725a38)
 
 Ping operates by sending ICMP Echo Request packets to the target device and waiting for an ICMP Echo Reply. The program reports errors, packet loss, and a statistical summary of the results.
 ### Example: target device not responding
