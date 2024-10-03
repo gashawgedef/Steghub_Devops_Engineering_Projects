@@ -134,7 +134,8 @@ USE Client_Server;
 ```
 
 
-4. Create a new table:
+- Create a new table:
+
 ```
 CREATE TABLE courses(
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -147,7 +148,7 @@ CREATE TABLE courses(
 
 ![image](assets/self_create_table_courses.JPG)
 
-5. Insert data into the table:
+- Insert data into the table:
 ```
 INSERT INTO courses (name, credit_hour, instructor) VALUES
 ('Introduction to Programming', 3, 'Alice Johnson'),
@@ -157,13 +158,26 @@ INSERT INTO courses (name, credit_hour, instructor) VALUES
 ```
 ![image](assets/self_insert_data.JPG)
 
-6. Query the table:
+- Query the table:
+
 ```
 SELECT * FROM courses;
 ```
 
-
-7. Drop the table:
+- Drop the table:
   ```
   DROP TABLE courses
   ```
+
+## Challenges Faced:
+- The commands used to start and check status  for **mongodb** was not working  and I changed to another one
+
+- The port number **3300** was not working and I changed it to **3000** and it works correctly.
+
+## Conclusion
+This project allowed me to consolidate my understanding of the OSI model, gain hands-on experience with load balancing in AWS, and develop a full-stack application using the MEAN stack. Each component played a vital role in the overall architecture and performance of the application.
+
+### Continuous Learning
+
+This journey reinforced the importance of continuous learning and adapting to new technologies. AWS is a constantly evolving platform, and staying up-to-date with new services and best practices is key to success.
+Lesson: Embrace continuous learning to keep pace with changes in cloud technologies and development frameworks.
