@@ -83,7 +83,7 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
   ``` 
   sudo apt update -y
   ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e031bdd2-c569-4894-963f-eb48abbfc837)
+![image](assets/server_10_update.JPG)
 
     
   1.2.  Install MySQL Server software
@@ -91,7 +91,7 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
   ```
   sudo apt install mysql-server
   ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7dde3efd-fedd-4203-b430-53940596a63c)
+![image](assets/server_11_install_mysql_server.JPG)
 
 
 1.3 Start server
@@ -99,14 +99,14 @@ To demonstrate a basic client-server using MySQL RDBMS, follow the below instruc
 ```
 sudo systemctl enable mysql
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/128789e5-ea72-46e2-abdd-e3293d200266)
+![image](assets/server_12_start_mysql.JPG)
 
 1.4.  Check the status to ensure it is running
 
 ```
 sudo systemctl status mysql
 ```   
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0220a082-6d7d-47be-affb-1171931313dd)
+![image](assets/server_13_check_server_running.JPG)
  
 ## 3. On mysql client Linux Server install MySQL Client software.
 
@@ -115,7 +115,7 @@ sudo systemctl status mysql
   ``` 
   sudo apt update -y
   ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/faa8696a-ce05-4d83-a147-b92dc55b655b)
+![image](assets/client_10_update_server.JPG)
 
     
 1.2.  Install MySQL Client software
@@ -123,7 +123,7 @@ sudo systemctl status mysql
   ```
   sudo apt install mysql-client
   ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d3c39433-26e1-4e2d-b9ea-e1d55fa52371)
+![image](assets/client_11_install_mysql_client.JPG)
 
    
 4. By default, both of our EC2 virtual servers are located in the same local virtual network. So they can communicate to each other using local IP addresses.
