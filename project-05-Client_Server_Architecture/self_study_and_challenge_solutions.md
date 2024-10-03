@@ -54,7 +54,7 @@ Although four packets were sent, none have been received, showing a 100% loss of
 ```
 tracert steghub.com
 ```
-![image](assets/)
+![image](assets/self_trecert.JPG)
 
 
 
