@@ -2,9 +2,9 @@
 # Client-Server Architecture with MySQL
 # Understanding Client-Server Architecture
 
-**Client-Server** refers to an architecture in which two or more computers are connected together over a network to send and receive requests between one another.
+**Client-server** architecture is a computing model where **clients** (user devices) request services, and **servers** (powerful machines or programs) provide them. 
 
-In their communication, each machine has its own role: the machine `sending` requests is usually referred as *Client* and the machine responding (serving) is called *Server*.
+**Clients** handle user interactions, while **servers** process data and manage resources. Communication follows a request-response model, with clients sending requests (e.g., web page, file), and servers responding with the needed information. This scalable model is widely used in web applications, email systems, and distributed computing.
 
 ![image](assets/Client-Server-Architecture-1.png)
 
