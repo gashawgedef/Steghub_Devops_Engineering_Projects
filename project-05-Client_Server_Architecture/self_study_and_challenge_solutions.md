@@ -42,17 +42,6 @@ Although four packets were sent, none have been received, showing a 100% loss of
 
 > **Note**: A result like this does not always mean the device is not online or working correctly. Many devices have ICMP ping responses disabled for security or service reasons. So even if they are up and running it will appear as if they are unreachable.
 
-### Example: a longer test
-Unfortunately, a sample set of four pings is not suitable for detecting packet loss, so we need to run a longer test. This is done by adding the –n option flag, followed by the number of pings you want performed, as in the following example;
-```
-ping –n 500 192.168.1.1 
-```
-This will ping the target 500 times, and fill the screen with every ping sent. We don't need to view every ping, just the final result, which will look like this:
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f7a6e681-c2f2-4f15-adf8-26502a72a288)
-
-
-As you can see in this test we dropped two packets but, due to the large sample size, this is negligible and is well within working parameters.  If we had a sample size of just four pings this would be a loss of 50% and would not be a true reflection of loss on the circuit.We judge packet loss on a case by case basis. If significant loss is seen, we require some further testing using either **PathPing**or the **MTR utility**.
-
 
 ### Traceroute
 
