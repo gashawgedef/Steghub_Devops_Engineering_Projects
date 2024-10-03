@@ -9,7 +9,7 @@
 ![image](assets/Client-Server-Architecture-1.png)
 
 
-In the client-server architecture with MYSQL, our Web Server has a role of a `Client` that connects and reads/writes to/from a Database (DB) Server (MySQL, MongoDB, Oracle, SQL Server or any other), and the communication between them happens over a Local Network (it can also be Internet connection, but it is a common practice to place Web Server and DB Server close to each other in local network).
+In the **client-server** architecture with **MYSQL**, our Web Server has a role of a `Client` that connects and reads/writes to/from a Database (DB) Server (MySQL, MongoDB, Oracle, SQL Server or any other), and the communication between them happens over a Local Network (it can also be Internet connection, but it is a common practice to place Web Server and DB Server close to each other in local network).
 
 # TASK - Implement a Client Server Architecture using MySQL Database Management System (DBMS).
 
