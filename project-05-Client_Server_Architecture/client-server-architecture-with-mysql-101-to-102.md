@@ -129,14 +129,14 @@ sudo systemctl status mysql
 
 > For extra security, do not allow all IP addresses to reach your `mysql server` - allow access only to the specific local IP address of your `mysql client`.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/59c56561-2b1e-49f8-abed-1f1682e8668c)
+![image](assets/adding_port_3306.JPG)
 
 5. You might need to configure **MySQL server** to allow connections from remote hosts and replace the following line:bind-address = `127.0.0.1`  with the following line bind-address = `0.0.0.0`
    
 ```
 sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/47c3bf67-cbae-4ec3-861a-1b61d476b331)
+![image](assets/server_15_open_configurations.JPG)
 
 `
 place '127.0.0.1' to '0.0.0.0' like this:
