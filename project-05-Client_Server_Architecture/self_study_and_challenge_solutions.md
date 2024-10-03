@@ -1,4 +1,4 @@
-# Self Study
+#Lessons Learned, Challenges Faced and Solutions
 # 1. Read about ping and traceroute network diagnostic utilities. Be able to make sense out of the results of using these tools.
 
 ## Ping and Traceroute: Network Diagnostic Utilities
