@@ -204,13 +204,15 @@ FLUSH PRIVILEGES;
 sudo systemctl restart mysql
 ```
 
-> **Note**: '172.31.92.86' is the private ip address of your mysql-client server
-
-
 6. From aysql client Linux Server connect remotely to mysql server Database Engine without using ssh. You must use the mysql utility to perform this action.
 ```
 mysql -h 172.31.92.86 -u gashaw -p
 ```
+
+
+> **Note**: '172.31.92.86' is the private ip address of your mysql-client server
+
+
 ![image](assets/connect_with_mysql_server.JPG)
 
 8. Check that you have successfully connected to a remote MySQL server and can perform SQL queries:
