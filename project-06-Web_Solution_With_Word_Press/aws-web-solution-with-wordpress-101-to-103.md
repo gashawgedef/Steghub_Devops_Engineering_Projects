@@ -17,6 +17,8 @@ Three-tier Architecture is a client-server software architecture pattern that co
 2. **Business Layer (BL)**: This is the backend program that implements business logic. Application or Webserver
 3. **Data Access or Management Layer (DAL)**: This is the layer for computer data storage and data access. Database Server or File System Server such as File Transfer Protocol `FTP` server, orNetwork File System `NFS` Server
 
+![Images](assets/3_tier_architecture1.jpg)
+
 ### Disk management in Linux
 
 Disk management in Linux involves tasks such as partitioning, formatting, and mounting disks, as well as monitoring disk usage and health. Here's a brief overview of common tools and commands used for these tasks:
