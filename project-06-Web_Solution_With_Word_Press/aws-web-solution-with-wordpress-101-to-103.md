@@ -24,6 +24,8 @@ Three-tier Architecture is a client-server software architecture pattern that co
 2. An EC2 Linux Server as a web server (This is where you will install WordPress)
 3. An EC2 Linux server as a database (DB) server
 
+# Step 1 — Prepare a Web Server
+
 > Use RedHat OS for this projects we will use very popular distribution called 'RedHat' (it also has a fully compatible derivative - CentOS)
 
 
