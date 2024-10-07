@@ -11,6 +11,13 @@
   - **Extended Partition:** Used to overcome the 4-partition limit by acting as a container for multiple logical partitions.
   - **Logical Partitions:** Partitions inside the extended partition.
 
+- **File Systems:** Determine how data is stored and organized on the disk. Common file systems in Linux include:
+
+  - `ext4`: Default file system for most Linux distributions.
+  - `xfs`: Scalable and robust, often used for large systems.
+  - `btrfs`: Advanced, with snapshot and RAID support.
+  - `vfat`: Used for compatibility with Windows and DOS.
+  - `swap`: Used for memory swapping.
   
     
 
