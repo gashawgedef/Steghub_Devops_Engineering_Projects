@@ -57,6 +57,19 @@ du -sh /path/to/directory
     - `w`: Write changes and exit.
     - `q`: Quit without saving changes.
 
+- `parted`: Used for more advanced partitioning (supports both MBR and GPT partitioning)
+  - Example usage:
+
+  ```
+  sudo parted /dev/sda
+  ```
+  - Important commands inside parted:
+
+    - `mklabel gpt`: Create a new GPT partition table.
+    - `mkpart primary ext4 1MiB 100%`: Create a new primary partition from 1 MiB to the end of the disk.
+    - `print`: Display partition table.
+    - `resizepart`: Resize a partition.
+
 
 
 
