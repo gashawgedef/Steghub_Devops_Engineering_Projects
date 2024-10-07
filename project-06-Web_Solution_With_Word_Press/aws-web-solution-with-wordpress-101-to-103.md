@@ -31,7 +31,8 @@ Three-tier Architecture is a client-server software architecture pattern that co
 
 **Let us get started by creating web server and database server using redhat Os**
 
-1. Log to aws account console and create EC2 instance of t2.micro type with RedHat Server launch in the default region us-east-1. name instance **web server**
+1. Launch an EC2 instance that will serve as "Web Server". Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
+
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/99319c00-fd57-434d-b584-756bd396fbae)
 
