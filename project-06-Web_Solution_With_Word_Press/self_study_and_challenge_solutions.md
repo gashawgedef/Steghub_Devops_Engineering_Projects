@@ -132,6 +132,66 @@ Swap space is used when physical RAM is full. Linux will move inactive pages to 
   sudo mkswap /swapfile
   sudo swapon /swapfile
   ```
+- Enable Swap on Boot: Add the swap entry in `/etc/fstab`:
+
+```
+/swapfile   none   swap   sw   0 0
+```
+- Monitoring Swap Usage:
+
+```
+swapon --show
+free -h
+```
+
+### 7. Disk Quotas
+
+Disk quotas are used to limit the amount of disk space or the number of files a user can use.
+
+- **Installing Quota Tools**: On Debian/Ubuntu
+
+```
+sudo apt install quota
+```
+On RHEL/CentOS:
+
+```
+sudo yum install quota
+```
+
+- Enable Quotas on File Systems:
+
+  - Edit `/etc/fstab` to add the `usrquota` and `grpquota` options for the file system:
+
+  ```
+  /dev/sda1   /   ext4   defaults,usrquota,grpquota   0 1
+  ```
+  - Remount the file system:
+
+  ```
+  sudo mount -o remount /
+  ```
+
+- Initialize Quotas:
+
+```
+sudo quotacheck -cum /
+sudo quotaon /
+```
+
+- Assign Quotas to Users:
+
+```
+sudo edquota -u username
+```
+This opens an editor where you can set soft and hard limits for disk space and file limits.
+
+
+
+
+
+
+
 
 
     
