@@ -187,6 +187,52 @@ sudo edquota -u username
 This opens an editor where you can set soft and hard limits for disk space and file limits.
 
 
+### 8. LVM (Logical Volume Manager)
+
+LVM allows flexible disk management by creating logical volumes that can be resized easily.
+
+- **LVM** Components:
+  - **Physical Volumes (PV)**: Physical disks or partitions.
+  - **Volume Groups (VG)**: A pool of physical volumes.
+  - **Logical Volumes (LV)**: Allocated from volume groups and used as virtual partitions.
+- **LVM Workflow:**
+  **1. Create Physical Volume:**
+
+  ```
+  sudo pvcreate /dev/sda1
+  ```
+
+  **2. Create Volume Group:**
+
+  ```
+   sudo vgcreate my_vg /dev/sda1
+  ```
+
+  **3. Create Logical Volume:**
+
+  ```
+  sudo lvcreate -L 10G -n my_lv my_vg
+  ```
+
+  **4. Format and Mount Logical Volume:**
+
+- **Resize Logical Volume:**
+  - To extend an existing logical volume
+
+  ```
+
+  sudo lvextend -L +5G /dev/my_vg/my_lv
+  sudo resize2fs /dev/my_vg/my_lv
+  ```
+
+
+
+  
+
+
+
+
+
 
 
 
