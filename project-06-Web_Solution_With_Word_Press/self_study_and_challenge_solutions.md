@@ -108,6 +108,31 @@ To mount the file system at boot, you can add an entry to `/etc/fstab`:
 /dev/sda1   /mnt/mydisk   ext4   defaults   0 2
 ```
 
+- Unmounting: Removing access to a mounted file system
+
+```
+sudo umount /mnt/mydisk
+```
+
+- Listing Mounted File Systems
+
+```
+mount | grep "^/dev"
+```
+
+### 6. Swap Management
+
+Swap space is used when physical RAM is full. Linux will move inactive pages to the swap space.
+
+- Creating Swap Space:
+  - Create a swap partition or a swap file.
+
+  ```
+  sudo dd if=/dev/zero of=/swapfile bs=1G count=4
+  sudo mkswap /swapfile
+  sudo swapon /swapfile
+  ```
+
 
     
 
