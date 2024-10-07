@@ -226,6 +226,46 @@ LVM allows flexible disk management by creating logical volumes that can be resi
   sudo resize2fs /dev/my_vg/my_lv
   ```
 
+### 9. Monitoring Disk Usage
+
+- `df`: Reports file system disk space usage
+
+```
+df -h
+```
+
+- `du`: Shows disk usage of files and directories.
+
+```
+du -sh /path/to/directory
+```
+
+- `iostat`: Displays disk I/O statistics.
+
+```
+iostat -x
+```
+### 10. Troubleshooting and Maintenance
+
+`fsck`: Check and repair file system integrity.
+
+```
+sudo fsck /dev/sda1
+```
+
+- `badblocks`: Scan a disk for bad sectors.
+
+```
+sudo badblocks -v /dev/sda
+```
+
+**Conclusion**
+
+Managing disks in Linux involves a variety of tools and techniques, from partitioning and formatting to mounting and monitoring disk usage. Understanding these tools will help system administrators efficiently manage storage resources. Always remember to back up data before making major changes to disk partitions or file systems!
+
+
+
+
 
 
   
