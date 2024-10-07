@@ -70,7 +70,43 @@ du -sh /path/to/directory
     - `print`: Display partition table.
     - `resizepart`: Resize a partition.
 
+### 4. Formatting Partitions
 
+After creating partitions, they need to be formatted with a file system. Common formatting commands:
+- `mkfs.ext4`: Format a partition with the ext4 file system
+
+```
+sudo mkfs.ext4 /dev/sda1
+```
+- `mkfs.xfs`: Format a partition with the xfs file system
+
+```
+sudo mkfs.xfs /dev/sda1
+```
+
+- `mkswap`: Format a partition for swap
+
+```
+sudo mkswap /dev/sda2
+```
+- `mkfs.vfat`: Format with the FAT32 file system for compatibility with Windows
+
+```
+sudo mkfs.vfat /dev/sda1
+```
+
+### 5. Mounting and Unmounting File Systems
+
+- **Mounting**: Making a file system accessible at a specific directory in Linux (known as the mount point).
+
+```
+sudo mount /dev/sda1 /mnt/mydisk
+```
+To mount the file system at boot, you can add an entry to `/etc/fstab`:
+
+```
+/dev/sda1   /mnt/mydisk   ext4   defaults   0 2
+```
 
 
     
