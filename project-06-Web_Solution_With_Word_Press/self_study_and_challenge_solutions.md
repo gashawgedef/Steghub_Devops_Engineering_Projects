@@ -11,3 +11,54 @@ Creating Linux partitions with `fdisk` involves the following steps. Be careful 
 sudo fdisk -l
 ```
 This will display information about your disks, e.g., `/dev/sda`, `/dev/sdb`.
+
+**3. Run fdisk on the Target Disk:** Choose the disk you want to partition, e.g., /dev/sda. Replace /dev/sda with your actual disk.
+
+```
+sudo fdisk /dev/sda
+```
+**4. View Current Partitions (Optional):** Once inside fdisk, you can type p to view existing partitions on the disk.
+
+**5. Create a New Partition:**
+
+- To create a new partition, press n.
+- Choose between creating a **primary** or **extended** partition. You can create up to 4 primary partitions. Press `p`for primary or `e` for extended.
+- It will ask you for **a partition number** (1-4), the **first sector** (press `Enter` to choose the default), and the **last sector** or the size of the partition (e.g., `+2G` for a 2 GB partition). You can type a size in `+sizeM` or `+sizeG` format for MB or GB.
+
+**6. Write the Changes:** After creating the partition, you can write the changes to the disk by typing **`w`**. This saves the partition table and exits **`fdisk`**.
+
+**7. Format the Partition:** After creating the partition, it needs to be formatted. For example, to format it with the `ext4` file system:
+
+```
+sudo mkfs.ext4 /dev/sda1
+```
+Replace `/dev/sda1` with your actual partition.
+
+**8. Mount the Partition (Optional):** If you want to use the partition immediately, you can mount it to a directory:
+
+```
+sudo mkdir /mnt/mydisk
+sudo mount /dev/sda1 /mnt/mydisk
+
+```
+**Example Walkthrough:**
+
+1. Open fdisk for the disk `/dev/sda`:
+
+```
+sudo fdisk /dev/sda
+```
+
+2. Create a new partition:
+- Press `n`, choose `p` (for primary), and set the partition number to `1`.
+- Use default values for the first sector by pressing `Enter`.
+- Set the last sector size as `+2G` for a 2 GB partition.
+
+3. Write the changes with `w`.
+
+4. Format the new partition with `ext4`:
+
+```
+sudo mkfs.ext4 /dev/sda1
+```
+Now you've successfully created and formatted a Linux partition using `fdisk`.
