@@ -196,6 +196,7 @@ LVM allows flexible disk management by creating logical volumes that can be resi
   - **Volume Groups (VG)**: A pool of physical volumes.
   - **Logical Volumes (LV)**: Allocated from volume groups and used as virtual partitions.
 - **LVM Workflow:**
+
   **1. Create Physical Volume:**
 
   ```
