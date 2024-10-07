@@ -34,32 +34,32 @@ Three-tier Architecture is a client-server software architecture pattern that co
 1. Launch an EC2 instance that will serve as "Web Server". Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/99319c00-fd57-434d-b584-756bd396fbae)
+![image](assets/web_server_1_name.JPG)
 
-2. Application and OS Images select RedHat free tire eligable version
+- Application and OS Images select RedHat free tire eligable version
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/47800606-58c2-4233-b7d4-19235461335e)
+![image](assets/web_server_2_os.JPG)
 
 3. Create new key pair or select existing key
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fb1410f5-33cf-4f1f-b6b8-bb43f1636cd6)
+![image](assets/web_server_3_key_pair.JPG)
 
 4. Network setting create new security group or use existing security group
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/64844d2b-56ac-4667-8f28-20e1823d95f5)
+![image](assets/web_server_4_security_group.JPG)
 
 5. Configure Storage and launch the instance
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ae30ed2f-7b43-4679-94ed-6de5eba8a959)
+![image](assets/web_server_5_configure_storage.JPG)
 
    
 6. View Instance
 
-   ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e05fc97c-ecd1-4a49-baa8-6e7e24056585)
+   ![image](assets/web_server_7_view_instance.JPG)
 
 7. Instance Details for web
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/371c3b99-edd5-4d80-a5be-25150d0d9ac5)
+![image](assets/web_server_8_view_details.JPG)
 
    
 8. Configure security group with the following inbound rules:
