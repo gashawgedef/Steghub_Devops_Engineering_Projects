@@ -36,6 +36,26 @@ sudo fdisk -l
 ```
 df -h
 ```
+- `du -sh`: Displays disk usage of directories/files.
+
+```
+du -sh /path/to/directory
+```
+
+### 3. Disk Partitioning
+
+- `fdisk`: A command-line tool for creating and managing partitions. It is used for MBR (Master Boot Record) partitioning.
+  - Open fdisk on a disk (e.g., /dev/sda):
+
+  ```
+  sudo fdisk /dev/sda
+  ```
+  - Common commands inside fdisk
+    - `n`: Create a new partition.
+    - `p`: Print the partition table.
+    - `d`: Delete a partition.
+    - `w`: Write changes and exit.
+    - `q`: Quit without saving changes.
 
 
 
