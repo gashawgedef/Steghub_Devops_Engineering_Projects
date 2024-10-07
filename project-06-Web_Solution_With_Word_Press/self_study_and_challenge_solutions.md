@@ -1,4 +1,29 @@
 
+## Disk Management in Linux: Detailed Notes
+
+**Disk management** in Linux involves creating, modifying, and managing partitions, file systems, and disk quotas. It's an essential aspect of system administration to ensure efficient utilization and organization of disk space. Below is a comprehensive guide on disk management in Linux.
+### 1. Understanding Disks, Partitions, and File Systems
+
+- **Disks:** Physical storage devices like hard drives (HDD), solid-state drives (SSD), USB drives, etc. They are represented as `/dev/sda`, `/dev/sdb`, etc.
+
+- **Partitions:** Logical divisions within a disk that act as separate storage units. A single disk can have multiple partitions.
+  - **Primary Partition:** A disk can have up to 4 primary partitions.
+  - **Extended Partition:** Used to overcome the 4-partition limit by acting as a container for multiple logical partitions.
+  - **Logical Partitions:** Partitions inside the extended partition.
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
 Creating Linux partitions with `fdisk` involves the following steps. Be careful when using `fdisk`, as it can modify the partition table, potentially leading to data loss if not used properly.
 
 ### Steps to Create Linux Partitions Using `fdisk`:
