@@ -18,7 +18,28 @@
   - `btrfs`: Advanced, with snapshot and RAID support.
   - `vfat`: Used for compatibility with Windows and DOS.
   - `swap`: Used for memory swapping.
-  
+
+### 2. Listing and Viewing Disk Information
+- `lsblk` (List Block Devices): Displays block devices (disks and partitions) in a tree structure
+
+```
+lsblk
+
+```
+- `fdisk -l`: Lists all disk partitions and their sizes, types, and other details
+
+```
+sudo fdisk -l
+```
+- `df -h`: Shows mounted file systems and their usage in human-readable form.
+
+```
+df -h
+```
+
+
+
+
     
 
 
