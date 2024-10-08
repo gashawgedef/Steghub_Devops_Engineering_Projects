@@ -547,7 +547,7 @@ sudo mount /dev/webdata-vg/logs-lv /var/log
 ```
 sudo rsync -av /home/recovery/logs/log/. /var/log
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1529e9f7-b2e2-422c-b1f0-50b2e3ed634b)
+![image](assets/db_server_37_restore_log_files.JPG)
 
 21. Update /etc/fstab file so that the mount configuration will persist after restart of the server. The UUID of the device will be used to update the /etc/fstab file;
 
@@ -555,38 +555,40 @@ sudo rsync -av /home/recovery/logs/log/. /var/log
 ```
 sudo blkid
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6db3bb48-8358-4bd0-958b-355d265e68d2)
+![image](assets/db_server_38_blkid.JPG)
 
 **Edit the /etc/fstab File**
 ```
 sudo vi /etc/fstab
 ```
+![image](assets/db_server_39_open_fstab.JPG)
 
 **Update /etc/fstab in this format using our own UUID**
 Replace UUID with the actual UUID from the blkid
+
 ```
-UUID=7a63eca8-a7e7-4400-9a0e-1d3e5a03f913  /db             ext4 defaults 0 0
-UUID=a042a1ca-fd09-498e-bf99-7977bd1aff23  /var/log         ext4 defaults 0 0
+UUID=d8247734-039f-48f4-a784-ff60fd905a88  /db             ext4 defaults 0 0
+UUID=fe8c3fb4-b5cb-43d3-8821-625afdfe4cf7  /var/log         ext4 defaults 0 0
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b1d5378e-821a-493a-bfc5-9c58973fc3b6)
+![image](assets/db_server_40_edit_fstab.JPG)
 
 22. Test the configuration 
 ```
 sudo mount -a
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/960179bb-5bea-4cca-af87-0f8fbe9eb9b1)
+![image](assets/db_server_41_test_config_1.JPG)
 
 **Reload the daemon**
 ```
 sudo systemctl daemon-reload
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8fc9f348-5edc-4e27-90e6-d8d857fc6aaa)
+![image](assets/db_server_42_reload_daemon.JPG)
 
 23. Verify our setup by running
 ```
 df -h
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f1494bee-e61b-4b92-b712-257689ee35db)
+![image](assets/db_server_43_verify_setup.JPG)
 
 # Step 3 - Install WordPress on your Web Server EC2
 1. Update the repository
