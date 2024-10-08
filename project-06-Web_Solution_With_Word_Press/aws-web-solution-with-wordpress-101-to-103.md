@@ -596,26 +596,26 @@ df -h
 ```
 sudo yum -y update
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/89ea9d94-f1b3-4366-ab19-db6de8ff14bd)
+![image](assets/step_3_update_webserver.JPG)
 
-2. Install **wget**, **Apache** and it's dependencies
+2. Install **`wget`**, **`Apache`** and it's dependencies
 ```
 sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/48da8b05-c3ff-4649-a3a6-6a6c2ca58f54)
+![image](assets/step_3_install_wget_apache.JPG)
 
 3. Start Apache
 **Enable httpd**
 ```
 sudo systemctl enable httpd 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3fc7ac23-64d5-4c35-9533-ef470994b28f)
+![image](assets/step_3_enable_httpd.JPG)
 
 **start httpd**
 ```
 sudo systemctl start httpd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b6b4a789-bd77-413d-95a9-1531f51c87e3)
+![image](assets/step_3_start_httpd.JPG)
 
 4. Install PHP and it's dependencies
  ```  
