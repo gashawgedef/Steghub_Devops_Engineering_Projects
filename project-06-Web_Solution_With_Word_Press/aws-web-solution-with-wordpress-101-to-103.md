@@ -361,9 +361,9 @@ df -h
 1. Launch A second RedHat EC2 Instance that will have a role **`DB Server`**
 Repeat the same steps as for the Web Server, but instead of _**apps-lv**_ create _**db-lv**_ and mount it to _**/db**_  directory instead of **/var/www/html/**
 
-### Afterfollowing same step to create instance our DB Server look like this 
+### Afterfollowing same step Like  `Web Server` we created an instance ` DB Server` and looks like  this 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e63bfe7c-9bcf-4e0c-bb9f-212194726d05)
+![image](assets/db_server_6_view_instance.JPG)
 
 **Now we are going to Add EBS Volume to an DB Server EC2 instance we repate the above steps**
 1. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
