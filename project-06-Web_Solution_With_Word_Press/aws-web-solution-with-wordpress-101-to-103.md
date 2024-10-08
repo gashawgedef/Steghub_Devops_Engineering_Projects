@@ -423,7 +423,7 @@ Finally the partition is created Like:
 ```
 lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a7992e1e-c54c-4fc6-a818-b40cb51258c4)
+![image](assets/db_server_17_after_partitions.jpg)
 
 
 6. Install **lvm2** package
