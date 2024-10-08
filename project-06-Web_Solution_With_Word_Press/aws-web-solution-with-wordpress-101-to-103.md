@@ -368,14 +368,18 @@ Repeat the same steps as for the Web Server, but instead of _**apps-lv**_ create
 **Now we are going to Add EBS Volume to an DB Server EC2 instance we repate the above steps**
 1. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5840d6f3-ac43-4213-8b02-4b861d779168)
+![image](assets/web_server_49_db_server_volumes_created.jpg)
 
 **Attach all volumes one by one to our DB Server EC2 instance**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b751aad6-88c7-4be3-b7b4-0abc4e85e5c3)
+![image](assets/web_server_50_db_after_atached.jpg)
 
 2. Open up the Linux terminal to begin configuration
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/68ad3966-c3ec-45cd-a5d3-594be9e2bc9e)
+![image](assets/db_server_8_give_permision.jpg)
+
+Connect with `DB Server` Instance
+
+![image](assets/db_server_9_connect.jpg)
 
 3. Use lsblk command to inspect what block devices are attached to the server.
 
