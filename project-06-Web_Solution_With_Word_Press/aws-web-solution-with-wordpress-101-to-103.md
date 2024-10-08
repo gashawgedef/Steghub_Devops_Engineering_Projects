@@ -621,19 +621,13 @@ sudo systemctl start httpd
  ```  
  sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ec113dca-4fe7-4758-ae90-721f837d172d)
+![image](assets/step_3_instal_php_1.JPG)
 
-**To confirm that EPEL has been added**
-
-```
- rpm -qi epel-release
-```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/df707e19-63cc-49cd-865a-e1992efeb464)
 
 ```
 sudo dnf -y install http://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/bf9250cb-578e-4776-bb5a-af6ca7579167)
+![image](assets/ste)
 
 **Before installing PHP, we need to check the available PHP streams in the repository.**
 ```
