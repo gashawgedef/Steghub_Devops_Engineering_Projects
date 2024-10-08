@@ -144,15 +144,15 @@ sudo gdisk /dev/xvdb
 ```
 **List Existing Partitions: To see the current partitions, use the p command:**
 
-![image](assets/web_server_16_create+partition_3.JPG)
+![image](assets/web_server_14_create+partition_1.JPG)
 
 **Create a New Partition: To add a new partition, enter n: then Press Enter to accept default value**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9bb8e08d-1386-4438-9afd-6850c2e32189)
+![image](assets/web_server_15_create_partition_2.JPG)
 
 **Write Changes: Once you've created the desired partitions, write the changes to the disk with w:**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/77bbc089-b4f5-4f54-94e5-5a8362eb9e43)
+![image](assets/web_server_16_create+partition_3.JPG)
 
 
 **Yes to proceed and complete** 
