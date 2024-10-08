@@ -430,13 +430,15 @@ lsblk
 ```
 sudo yum install lvm2
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a4e922a2-730c-4a8b-a2b1-584c63191c15)
+![image](assets/db_server_18_install_lvm2_1.jpg)
+
+![image](assets/db_server_18_install_lvm2_1.jpg)
 
 **Check for available partitions**
 ```
 sudo lvmdiskscan
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/158cb1e7-7280-4bb4-ba19-bb23ee6e84b2)
+![image](assets/db_server_check_for_available_partitions.jpg)
 
 7. Use pvcreate utility to mark each of disks as physical volumes (PVs) to be used by LVM
 ```
@@ -444,54 +446,54 @@ sudo pvcreate /dev/xvdb1
 sudo pvcreate /dev/xvdc1
 sudo pvcreate /dev/xvdd1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/01490ff3-6343-4521-b9de-e4f477665cc3)
+![image](assets/db_server_20_pvcreate.jpg)
 
 8. Verify that our Physical volume has been created successfully
 ```
 sudo pvs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a964f5a6-258f-4a9c-b725-840858b8820b)
+![image](assets/db_server_21_check_p_v_created.jpg)
 
 9. Use **vgcreate** utility to add all 3 PVs to a volume group (VG). Name the VG webdata-vg
 ```
 sudo vgcreate webdata-vg /dev/xvdb1 /dev/xvdc1 /dev/xvdd1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fbe5e6f5-91ab-485b-8129-2416931966a1)
+![image](assets/db_server_22_vg_create.jpg)
 
 10. Verify that our VG has been created successfully
 ```
 sudo vgs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/41559f26-47c2-4be0-a2b8-e5f2937ccbfc)
+![image](assets/db_server_23_verify_volume_group.jpg)
 
 11. Use **lvcreate** utility to create 2 logical volumes. db-lv (Use half of the PV size), and logs-lv Use the remaining space of the PV size.
 > NOTE: db-lv will be used to store data for the database while, logs-lv will be used to store data for logs.
 ```
 sudo lvcreate -n dbs-lv -L 14G webdata-vg
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7f1a14c3-7588-435d-902f-2e0a246483c5)
+![image](assets/db_server_24_dbs_lv.jpg)
 
 ```
 sudo lvcreate -n logs-lv -L 14G webdata-vg
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e619c79a-36e8-441e-933f-679185b031d6)
+![image](assets/db_server_25_logs_lv.jpg)
 
 12. Verify that our Logical Volume has been created successfully
 ```
 sudo lvs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1ac12b5f-f75c-4451-ad6a-14541afd0993)
+![image](assets/db_server_26_verify_lv.jpg)
 
 13. Verify the entire setup view complete setup - VG, PV, and LV
 ```
 sudo vgdisplay -v
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8918761a-512f-4f45-8b43-b7746e89908e)
+![image](assets/db_server_27_verify_complete_setup.jpg)
 
 ```
 sudo lsblk 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0c1fcc6a-41cb-4b6f-b364-2c3304b1f246)
+![image](assets/db_server_28_all_available_partitions.jpg)
 
 **Use mkfs.ext4 to format the logical volumes with ext4 filesystem**
 ```
