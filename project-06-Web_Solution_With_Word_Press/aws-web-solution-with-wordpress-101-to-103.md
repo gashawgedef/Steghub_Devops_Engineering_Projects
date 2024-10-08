@@ -774,43 +774,45 @@ sudo systemctl enable mysqld
 ```
 sudo mysql
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1e40b616-e837-40d0-a339-36af45d76cf2)
+![image](assets/step_5_login_mysql.JPG)
 
 ```
 CREATE DATABASE wordpress;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7a838fda-f344-40e2-92e2-6c59a1130876)
+![image](assets/step_5_create_database.JPG)
 
 ```
-CREATE USER `melkamu`@`172.31.31.188` IDENTIFIED BY 'PassWord.1';
+CREATE USER `gashaw`@`172.31.37.132` IDENTIFIED BY 'PassWord.1';
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f6ad9461-cf3d-4322-85f7-d3e67156daf2)
+![image](assets/step_5_create_user.JPG)
 
 ```
-GRANT ALL ON wordpress.* TO 'melkamu'@'172.31.31.188';
+GRANT ALL ON wordpress.* TO 'gashaw'@'172.31.37.132';
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/60fde754-705f-4aa0-a77a-1daafdc12895)
+![image](assets/step_5_grant_previleges.JPG)
 
 ```
 FLUSH PRIVILEGES;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4a1e4747-72de-4eda-bd1a-7f5c3ae9a1bc)
+![image](assets/step_5_flush_previleges.JPG)
 
 
 ```
 SHOW DATABASES;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c94b270c-dbc0-4d45-93fb-8e32cdc935a4)
+![image](assets/step_5_show_databases.JPG)
+
+Enter `exit` and logout
 
 ```
 exit
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f9c143ce-01a0-4c24-a8d8-841c3affc400)
 
 # Step 6 - Configure WordPress to connect to remote database
+
 > Hint: Do not forget to open MySQL port 3306 on DB Server EC2. For extra security, we shall allow access to the DB server ONLY from our Web Server's IP address so in the Inbound Rule configuration specify source as /32
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/023e0382-d37a-4d5b-b488-65ca6ccc4ddf)
+![image](assets/step_6_configure_port.JPG)
 
 
 
@@ -818,12 +820,12 @@ exit
 ```
 sudo yum install mysql
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8c022e65-4e82-47cd-9ef5-1ce3ad0aa993)
+![image](assets/step_6_mysql_install.JPG)
 
 
 **sudo mysql -u admin -p -h <DB-Server-Private-IP-address>**
 ```
-sudo mysql -u melkamu -p -h 172.31.18.245
+sudo mysql -u gashaw -p -h 172.31.34.75
 ```
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7c2b9056-1cbe-4d61-a8c8-24796fcec740)
 
