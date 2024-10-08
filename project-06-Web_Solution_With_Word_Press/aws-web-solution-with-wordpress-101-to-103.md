@@ -256,19 +256,19 @@ sudo lsblk
 ```
 sudo mkfs -t ext4 /dev/webdata-vg/apps-lv
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/14038c4e-9f99-4eff-8d78-ef22431c3d3c)
+![image](assets/web_server_35_format_ext4_1.JPG)
 
 
 ```
 sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/51302ae9-5a4f-4e85-8b29-938594806d46)
+![image](assets/web_server_36_format_ext4_2.JPG)
 
 17. Create /var/www/html directory to store website files
 ```
 sudo mkdir -p /var/www/html
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/91168896-ff99-4376-b3f7-75577fd2b182)
+![image](assets/web_server_37_create_html.JPG)
 
 18. Create /home/recovery/logs to store backup of log data 
 
