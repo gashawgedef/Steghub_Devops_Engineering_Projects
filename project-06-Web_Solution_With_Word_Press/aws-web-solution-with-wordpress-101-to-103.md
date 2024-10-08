@@ -212,13 +212,13 @@ sudo pvs
 ```
 sudo vgcreate webdata-vg /dev/xvdb1 /dev/xvdc1 /dev/xvdd1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e14f1d1d-0674-4d3a-a29c-618c1296e3a9)
+![image](assets/web_server_28_create_volume_group.JPG)
 
 13. Verify that your VG has been created successfully
 ```
  sudo vgs
 ``` 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ccfb186a-3c7a-4902-8cf7-5a7afaec46ad)
+![image](assets/web_server_299_verify_group.JPG)
 
 14.  Use `lvcreate` utility to create 2 logical volumes. `apps-lv` (**Use half of the PV size**), and `logs-lv` Use the remaining space of the PV size.
 
