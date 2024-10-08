@@ -275,7 +275,7 @@ sudo mkdir -p /var/www/html
 ```
 sudo mkdir -p /home/recovery/logs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8242fda2-9fbb-40c1-bac1-c445df3c086f)
+![image](assets/web_server_38_create_logs.JPG)
 
 
 19.  Mount /var/www/html on apps-lv logical volume
@@ -283,13 +283,13 @@ sudo mkdir -p /home/recovery/logs
 ```
 sudo mount /dev/webdata-vg/apps-lv /var/www/html/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5d0e29f1-387e-4194-a11a-d9a9bf517748)
+![image](assets/web_server_39_mount.JPG)
 
 **Verify the Mount:**
 ```
 df -h | grep /var/www/html
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8415e922-a46c-46d3-8dad-02a869f63a1f)
+![image](assets/web_server_40_verify_mount.JPG)
 
 20. Use rsync utility to backup all the files in the log directory /var/log into /home/recovery/logs
  
@@ -298,7 +298,7 @@ df -h | grep /var/www/html
 ```
 sudo rsync -av /var/log/. /home/recovery/logs/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cf6cc3ab-d945-434b-b4ea-edb009f50ef1)
+![image](assets/web_server_41_rsync.JPG)
 
 21. Mount /var/log on logs-lv logical volume
     
@@ -307,14 +307,14 @@ sudo rsync -av /var/log/. /home/recovery/logs/
 ```
 sudo mount /dev/webdata-vg/logs-lv /var/log
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/65e718ac-f045-4fd3-8b4f-7218bf1d1aee)
+![image](assets/web_server_42_mount.JPG)
 
 
 22. Restore log files back into /var/log directory
 ```   
-sudo rsync -av /home/recovery/logs/. /var/log
+sudo rsync -av /home/recovery/logs/ /var/log
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ff8565d9-940a-4f74-a8e5-db2374d520c2)
+![image](assets/web_server_43_restore_log_files.JPG)
 
 
 23. Update /etc/fstab file so that the mount configuration will persist after restart of the server.  The UUID of the device will be used to update the /etc/fstab file;
