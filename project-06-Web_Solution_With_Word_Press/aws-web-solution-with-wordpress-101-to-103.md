@@ -156,9 +156,13 @@ sudo gdisk /dev/xvdb
 
 
 **Yes to proceed and complete** 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9eb8faf4-4f71-497a-8480-81d26c513c08)
+![image](assets/web_server_17_create+partion_4.JPG)
 
-**we follow the same steps for remaining two**
+![image](assets/web_server_19_create.JPG)
+
+![image](assets/web_server_20_final.JPG)
+
+**we follow the same steps for remaining two partitions**
 
 7. Use lsblk utility to view the newly configured partition on each of the 3 disks.
 ```
