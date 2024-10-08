@@ -323,13 +323,13 @@ sudo rsync -av /home/recovery/logs/ /var/log
 ```
 sudo blkid
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5a68ad7d-16e2-4532-9929-d992f5368701)
+![image](assets/web_server_44_find_UIDD_device.JPG)
 
 **Edit the /etc/fstab File**
 ```
 sudo vim /etc/fstab
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/595b664d-3d08-4c21-b409-b060c1f68f4e)
+![image](assets/web_server_45_open_fstap.JPG)
 
 **Replace UUID with the actual UUID from the blkid**
 ```
@@ -337,25 +337,25 @@ sudo vim /etc/fstab
 UUID=f5c3bc97-925c-4692-b634-b217f65fb96e  /var/www/html    ext4 defaults 0 0
 UUID=fc107995-52e8-44ae-b99f-b23f97aa54c8  /var/log         ext4 defaults 0 0
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/24041c0f-3e37-4b11-aa3b-89bf3ef748ca)
+![image](assets/web_server_46_edit_fstab.JPG)
 
 24. Test the configuration 
 ```
 sudo mount -a
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/eec0837c-ec36-4a99-a7e9-6200ff046693)
+![image](assets/web_server_47_test_configuration.JPG)
 
 **Reload the daemon**
 ```
 sudo systemctl daemon-reload
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4c9fb5bb-b7e3-42ca-bcbb-a59890f66d5f)
+![image](assets/web_server_48_test_configuration_1.JPG)
 
 25. Verify our setup
 ```
 df -h
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c9fcccfb-5fe9-45fb-8e2c-54fe21ca2965)
+![image](assets/web_server_48_verify_set_up.JPG)
 
 # Step 2 - Prepare the Database Server
 1. Launch A second RedHat EC2 Instance that will have a role **`DB Server`**
