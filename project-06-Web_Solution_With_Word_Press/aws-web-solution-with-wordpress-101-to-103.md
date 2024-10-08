@@ -168,45 +168,45 @@ sudo gdisk /dev/xvdb
 ```
 lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3003793e-4891-45dc-9412-0ad016b6c7e6)
+![image](assets/web_server_21_after_create_three_partitions.JPG)
 
 8. Install `lvm2` package 
 ```
 sudo yum install lvm2
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d88545f4-321a-4f51-944b-5caa7e20982f)
+![image](assets/web_server_22_install_lvm2.JPG)
 
 
 9.  Check for available partitions.
 ```
 sudo lvmdiskscan 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cf26fad7-5683-4c3c-9f26-e5b3693c7838)
+![image](assets/web_server_23_check_lvmdiskscan.JPG)
 
-> Note:  In Ubuntu we used apt command to install packages, in **RedHat/CentOS** a different package manager is used, so we shall use yum command instead.
+> Note:  In Ubuntu we used apt command to install packages, in **RedHat/CentOS** a different package manager is used, so we shall use `yum` command instead.
 
 10. Use `pvcreate` utility to mark each of 3 disks as physical volumes (PVs) to be used by LVM
 ```
 sudo pvcreate /dev/xvdb1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e364a48b-2aff-47fe-a7a5-fd8c580c9e38)
+![image](assets/web_server_24_phical_volume_xvdb1.JPG)
 
 ```
 sudo pvcreate /dev/xvdc1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1b8518c3-8a09-411a-9cd0-4e06e73931df)
+![image](assets/web_server_25_phisical_volume_xvdc1.JPG)
 
 ```
 sudo pvcreate /dev/xvdd1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d743a184-6c75-4229-ba3d-7890b2e3ad6a)
+![image](assets/web_server_26_phisical_volume_xvdd1.JPG)
 
 11. Verify that your Physical volume has been created successfully 
 
 ```
 sudo pvs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9a550cbc-7572-48cd-9722-6301c9f12644)
+![image](assets/web_server_27_verify_phisical_volume_created.JPG)
 
 12. Use `vgcreate` utility to add all 3 PVs to a volume group (VG) Name the VG `webdata-vg`
 ```
