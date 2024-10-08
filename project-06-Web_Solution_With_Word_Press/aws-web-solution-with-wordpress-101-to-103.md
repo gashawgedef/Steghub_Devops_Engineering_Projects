@@ -95,42 +95,46 @@ Launch an EC2 instance that will serve as Web Server. Create 3 volumes in the sa
 
 1. Add EBS Volume to an EC2 instance
 
+![image](assets/web_server_create_vol_1_0.JPG)
+
+![image](assets/web_server_create_vol_1_0.JPG)
+
+![image](assets/web_server_create_vol_2.JPG)
+
+
+**Created volumes in same availablity zone**
+
+![image](assets/web_server_volumes_list.JPG)
+
+
+2. Attach all three volumes one by one to our Web Server EC2 instance
+
 ![image](assets/atach_volume1.JPG)
 
 ![image](assets/atach_volume_2.JPG)
 
 ![image](assets/atach_volume_3.JPG)
 
-
-**Created volumes in same availablity zone**
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c7739cff-53cd-4dfd-957d-c1d0e2204c34)
-
-
-2. Attach all three volumes one by one to our Web Server EC2 instance
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4752ae95-89ac-4829-a8ea-fa7827cb7acc)
-
 **After three voumes attached to the webserver instance**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3c191531-c56e-4540-a0ea-0a4f405f9ec5)
+![image](assets/volume_list_in_use.JPG)
 
 3. Open up the Linux terminal to begin configuration
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/88502c8d-ac9b-4d80-99ee-06a372432baf)
+![image](assets/web_server_11_lsblk.JPG)
 
 
 4. Use `lsblk` command to inspect what block devices are attached to the server.
 ```
 lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5d815dde-fc74-4c2a-a7c1-0cca7e8d724b)
+![image](assets/web_server_12_lsblk_results.JPG)
 
 5. Use df -h command to see all mounts and free space 
 ```
 df -h
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1108fc69-c1c1-403e-abce-d0db003e51e8)
+![image](assets/web_server_13_free_mount_space.JPG)
 
 
 6. Use `gdisk` utility to create a single partition on each of the 3 disks
