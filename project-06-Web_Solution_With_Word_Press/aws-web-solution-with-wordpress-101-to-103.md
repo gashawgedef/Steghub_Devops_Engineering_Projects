@@ -245,7 +245,7 @@ sudo lvs
 ```
 sudo vgdisplay -v
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6f4aab54-43f0-4cde-bc02-da88c8915ac0)
+![image](assets/web_server_33_verify_entire_access.JPG)
 
 ```
 sudo lsblk
