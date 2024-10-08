@@ -627,38 +627,46 @@ sudo systemctl start httpd
 ```
 sudo dnf -y install http://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
 ```
-![image](assets/ste)
+![image](assets/step_3_instal_php_2.JPG)
 
 **Before installing PHP, we need to check the available PHP streams in the repository.**
 ```
- sudo dnf module list php -y
+ sudo yum module list php 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5f219412-4b1e-4872-998c-c00152c16a8d)
+![image](assets/step_3_install_php_3.JPG)
 
 ```
-sudo dnf module reset php -y
+sudo yum module reset php 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7c7a8a71-15c1-4f99-bbcb-bd5b313d2b9e)
+![image](assets/step_3_install_php_4.JPG)
 
 ```
-sudo dnf module enable php:remi-8.2 -y
+sudo dnf module enable php:remi-8.0
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/452daf6f-262a-4d98-b9dc-86003ca0b835)
+![image](assets/step_3_install_php_5.JPG)
 
 ```
-sudo dnf install php -y
+sudo dnf install php php-opcache php-gd php-curl php-mysqlnd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fd8e4852-4494-47f0-96b8-a2623eaa8c83)
+![image](assets/step_3_install_php_6.JPG)
 
-```
-php -v
-```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f6cb5b4e-c3de-41b3-8277-d5c4fe6e7320)
 
 ```
 sudo systemctl start php-fpm
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3870cf6c-5896-4d35-b500-3291a5979951)
+![image](assets/step_3_install_php_7.JPG)
+
+```
+sudo systemctl enable php-fpm
+```
+![image](assets/step_3_install_php_8.JPG)
+
+```
+sudo setsebool -P httpd_execmem 1
+```
+![image](assets/step_3_install_php_9.JPG)
+
+
 
 ```
  sudo dnf install httpd -y
@@ -669,43 +677,72 @@ sudo systemctl start httpd
 ```
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6da8e1a1-a3bb-4b44-9821-317b02501030)
 
-5. Be sure to ensure that Apache is up and running.
+5. Restart Apache and check it is running.
+```
+sudo systemctl restart httpd
+```
+![image](assets/step_3_restart_httpd.JPG)
+
 ```
 sudo systemctl status httpd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1a1584ff-d9c5-4ce4-85a0-a5b7258712e5)
 
-6. Download wordpress and copy wordpress to /var/www/html
-```
-mkdir wordpress cd wordpress
-```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/02d74a7e-ba18-432c-a81c-3ffd59571b25)
+![images](assets/step_3_check_ruuning.JPG)
+
+
+6. Download wordpress and copy wordpress to `/var/www/html`
 
 ```
-sudo wget http://wordpress.org/latest.tar.gz sudo tar xzvf latest.tar.gz
+cd wordpress
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/25fd8dea-3e83-4ad6-b37a-cb01c5ee28aa)
+![image](assets/step_3_install_word_press_1.JPG)
 
 ```
-sudo rm -rf latest.tar.gz cp wordpress/wp-config-sample.php wordpress/wp-config.php
-cp -R wordpress /var/www/html/
+sudo wget http://wordpress.org/latest.tar.gz
 ```
+![image](assets/step_3_wordpress_2.JPG)
+
+```
+ sudo tar -xzvf latest.tar.gz
+```
+![images](assets/step_3_wordpress_3.JPG)
+
+
+
+
+
+```
+sudo rm -rf latest.tar.gz 
+```
+![images](assets/step_3_wordpress_4.JPG)
+
+```
+cp wordpress/wp-config-sample.php wordpress/wp-config.php
+```
+
+![images](assets/step_3_wordpress_5.JPG)
+
+
+```
+sudo cp -R wordpress /var/www/html/
+```
+![images](assets/step_3_copy_1.JPG)
 
 7. Configure SELinux Policies
 ```
 sudo chown -R apache:apache /var/www/html/wordpress
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/da3d0dcd-caca-4686-b6e0-1ba590c56ea9)
+![image](assets/step_3_conf1.JPG)
 
 ```
 sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d90d9646-acf8-4104-863d-423b2c31dd55)
+![image](assets/step_3_conf_2.JPG)
 
 ```
 sudo setsebool -P httpd_can_network_connect=1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5e901929-c032-4e47-ac34-5eef7c2b78ec)
+![image](assets/step_3_connect_1.JPG)
 
 # Step 4 — Install MySQL on our DB Server EC2
 **Update the system**
