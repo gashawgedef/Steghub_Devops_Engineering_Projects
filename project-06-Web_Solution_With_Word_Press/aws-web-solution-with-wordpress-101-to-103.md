@@ -699,13 +699,12 @@ sudo wget http://wordpress.org/latest.tar.gz
 ![images](assets/step_3_wordpress_3.JPG)
 
 
-
-
-
 ```
 sudo rm -rf latest.tar.gz 
 ```
+
 ![images](assets/step_3_wordpress_4.JPG)
+
 
 ```
 cp wordpress/wp-config-sample.php wordpress/wp-config.php
@@ -735,38 +734,40 @@ sudo setsebool -P httpd_can_network_connect=1
 ```
 ![image](assets/step_3_connect_1.JPG)
 
+
 # Step 4 — Install MySQL on our DB Server EC2
 **Update the system**
+
 ```
 sudo yum update
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4ba3d81f-5fc7-49d2-ac94-18cbf9c3d38a)
+![image](assets/step_4_update_1.JPG)
 
 **Install Mysql Server**
 ```
 sudo yum install mysql-server
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/052ab6c5-54f7-4e66-aa4a-e658090f74ed)
+![image](assets/step_4_install_mysql.JPG)
 
 **Verify that the service is up and running**
 ```
 sudo systemctl status mysqld
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f94a9404-5ad9-4fdb-8fe5-d9293024ab74)
+![image](assets/step_4_status_mysqld.JPG)
 
 **if it is not running, restart the service.** 
 ```
 sudo systemctl restart mysqld
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3853ae17-8fca-43c1-aec3-22efa5328658)
+![image](assets/step_4_restart_mysqld.JPG)
 
 **Enable it to be running even after reboot**:
 ```
 sudo systemctl enable mysqld
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/44519e4f-6a21-4de7-a81c-6e9dc678c3cf)
+![image](assets/step_4_enable_mysqld.JPG)
 **Check status now**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c988c1fe-0b06-44ab-8dd4-bfc9c4e4ea0f)
+![image](assets/step_4_status_running.JPG)
 
 # Step 5 - Configure DB to work with WordPress
 **Log to mysql**
