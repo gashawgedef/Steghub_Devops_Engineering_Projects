@@ -95,11 +95,11 @@ Launch an EC2 instance that will serve as Web Server. Create 3 volumes in the sa
 
 1. Add EBS Volume to an EC2 instance
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/47681df8-7b7c-410e-987a-fdb72e60844f)
+![image](assets/atach_volume1.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d7516732-5aa5-4ba6-b57e-932c436a3e72)
+![image](assets/atach_volume_2.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4192ee2d-fa09-465c-9aa8-4c63cb26a575)
+![image](assets/atach_volume_3.JPG)
 
 
 **Created volumes in same availablity zone**
