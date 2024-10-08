@@ -386,32 +386,36 @@ Connect with `DB Server` Instance
 ```
 lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f4d9f95f-9b70-4c61-abc6-2942d35cd27e)
+![image](assets/db_server_10_lsblk.jpg)
 
 
 4. Use df -h command to see all mounts and free space on your server
    ```
    df -h
    ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/087e3729-3e92-477e-9a7b-632b0e9ef9cb)
+![image](assets/db_server_11_see_all_mounts_free_space.jpg)
 
  **Use gdisk utility to create a single partition on each of the 3 disks**
 ``` 
 sudo gdisk /dev/xvdb
 ```
 **List Existing Partitions: To see the current partitions, use the p command:**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/486ec823-230f-47d1-9add-37cb94f6f525)
+![image](assets/db_server_12_create_partition_1.jpg)
 
 **Create a New Partition: To add a new partition, enter n: then Press Enter to accept default value**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/70985507-987d-4dc2-a07b-6e670517444c)
+![image](assets/db_server_13_create_partition_2.jpg)
 
 
-**Write Changes: Once you've created the desired partitions, write the changes to the disk with w**:
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fe18f1c1-ff33-40ce-9943-8895e8065aa7)
+**Write Changes: Once you've created the desired partitions, write the changes to the disk with `w`**:
+![image](assets/db_server_14_create_partition_3.jpg)
 
 
 **Yes to proceed and complete**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8e01e914-1a10-4399-8ba5-871708c683af)
+![image](assets/db_server_15_procced_yes.jpg)
+
+Finally the partition is created Like:
+
+![image](assets/db_server_16_partition_full_step.jpg)
 
 **we follow the same steps for remaining**
 
