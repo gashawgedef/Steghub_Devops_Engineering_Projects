@@ -24,14 +24,12 @@ Three-tier Architecture is a client-server software architecture pattern that co
 2. An EC2 Linux Server as a web server (This is where you will install WordPress)
 3. An EC2 Linux server as a database (DB) server
 
-# Step 1 — Prepare a Web Server
-
 > Use RedHat OS for this projects we will use very popular distribution called 'RedHat' (it also has a fully compatible derivative - CentOS)
 
 
 **Let us get started by creating web server and database server using redhat Os**
 
-1. Launch an EC2 instance that will serve as "Web Server". Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
+1. Launch Two EC2 instances that will serve as **Web Server** and **DB Server**.
 
 
 ![image](assets/web_server_1_name.JPG)
@@ -68,30 +66,31 @@ Three-tier Architecture is a client-server software architecture pattern that co
 - Allow traffic on port 80 (HTTP) with source from anywhere on the internet.
 - Allow traffic on port 443 (HTTPS) with source from anywhere on the internet.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0b3dd6b9-527e-4db8-8fd6-509a4556abba)
+![image](assets/web_server_10_configure%20ports.JPG)
 
 ### For DB Server follow same steps and our final instance detail looks like this
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e63bfe7c-9bcf-4e0c-bb9f-212194726d05)
+![image](assets/db_server_6_view_instance.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cff44690-f4f9-44df-97a4-6b6fdf622f7b)
+![image](assets/db_server_7_view_details.JPG)
 
 
 ### Now Two Servers UP are we can go to do our 3-Tire  server architecture
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d1bda6a5-a142-4ba6-bd7b-87ab9155971a)
+![image](assets/up_servers.JPG)
 
 > **Note**: for Ubuntu server, when connecting to it via SSH/Putty or any other tool, we used ubuntu user, but for RedHat you will need to use ec2-user user. Connection string will look like ec2-user@<Public-IP>
 
 **Let us see how to connect webserver**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2730dd36-2176-4736-9587-2369c7c7a5b2)
+![image](assets/web_server_connect_1.JPG)
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/15bb6adc-d1e2-4e75-bb55-c2ba721a1b65)
+![image](assets/web_server_connect_2.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9ff07f1f-2fa8-47f9-8c83-b55ca964249c)
+![image](assets/web_server_connect_3.JPG)
 
-### Step 1 - Prepare a Web Server
+# Step 1 — Prepare a Web Server
+
 Launch an EC2 instance that will serve as Web Server. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
 1. Add EBS Volume to an EC2 instance
