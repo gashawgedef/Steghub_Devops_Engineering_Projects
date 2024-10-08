@@ -226,19 +226,19 @@ sudo vgcreate webdata-vg /dev/xvdb1 /dev/xvdc1 /dev/xvdd1
 ```
 sudo lvcreate -n apps-lv -L 14G webdata-vg
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a87d734f-fb9d-4542-8cee-8f21ccc0b02c)
+![image](assets/web_server_30_logical_volume_apps_created.JPG)
 
 
 ```
 sudo lvcreate -n logs-lv -L 14G webdata-vg
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/707742d5-a8fa-4107-ac58-789be223aa82)
+![image](assets/web_server_31_logical_volume_logs_lv_created.JPG)
 
 15. Verify that our Logical Volume has been created successfully
 ```
 sudo lvs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/622c094c-74ae-40fe-9ee8-c9fae70a78b0)
+![image](assets/web_server_32_verify_logical_volumes_created.JPG)
 
 16.  Verify the entire setup
 #view complete setup - VG , PV, and LV
