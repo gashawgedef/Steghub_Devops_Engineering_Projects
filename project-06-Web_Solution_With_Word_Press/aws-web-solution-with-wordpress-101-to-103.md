@@ -250,7 +250,7 @@ sudo vgdisplay -v
 ```
 sudo lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a7f48bd6-f109-4df0-a1e4-a09cb84b513f)
+![image](assets/web_server_34_show_all_partitions.JPG)
 
 **Use mkfs.ext4 to format the logical volumes with ext4 filesystem**
 ```
