@@ -334,8 +334,8 @@ sudo vim /etc/fstab
 **Replace UUID with the actual UUID from the blkid**
 ```
 # MOUNTS FOR WORDPRESS WEBSERVER
-UUID=f5c3bc97-925c-4692-b634-b217f65fb96e  /var/www/html    ext4 defaults 0 0
-UUID=fc107995-52e8-44ae-b99f-b23f97aa54c8  /var/log         ext4 defaults 0 0
+UUID=481d6b40-7d14-4897-bbce-5cb1db497ac1 /var/www/html    ext4 defaults 0 0
+UUID=99c0c884-1094-4b8a-a122-08b0b000d01d  /var/log         ext4 defaults 0 0
 ```
 ![image](assets/web_server_46_edit_fstab.JPG)
 
