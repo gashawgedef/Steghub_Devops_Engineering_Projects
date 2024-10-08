@@ -499,49 +499,49 @@ sudo lsblk
 ```
 sudo mkfs -t ext4 /dev/webdata-vg/dbs-lv
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d91c4c55-b31f-4236-8b2e-49e32e3a8207)
+![image](assets/db_server_29_dbs_lv.JPG)
 
 ```
 sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c538d568-3d5d-49f2-a48c-c899da5162a8)
+![image](assets/db_server_30_logs_lv.JPG)
 
 
 14. Create /db directory to store database files
 ```
 sudo mkdir -p /db
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9d2af98a-fdf0-488d-9e50-fce451ed3018)
+![image](assets/db_server_31_db_directory.JPG)
 
-16. Create /home/recovery/logs to store backup of log data
+16. Create `/home/recovery/logs` to store backup of log data
 ```
  sudo mkdir -p /home/recovery/logs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5ca67075-4a7e-4931-a235-8cb83ec28dc4)
+![image](assets/db_server_32_logs_directory.JPG)
 
-17. Mount /db on dbs-lv logical volume
+17. Mount `/db `on `dbs-lv` logical volume
 ```
 sudo mount /dev/webdata-vg/dbs-lv /db/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6b3dd65a-1385-42cb-8f62-cdd2c529139b)
+![image](assets/db_server_33_mount.JPG)
 
 **Verify the Mount**:
 ```
 df -h | grep /db
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6b6d4454-e347-4775-9b0b-292597bb16c1)
+![image](assets/db_server_34_verify_mount.JPG)
 
 18. Use **rsync** utility to backup all the files in the log directory /var/log into /home/recovery/logs (This is required before mounting the file system)
 ```
 sudo rsync -av /var/log/. /home/recovery/logs/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/98c42855-0295-4117-96db-144e357682d9)
+![image](assets/db_server_35_rsync.JPG)
 
-19. Mount /var/log on logs-lv logical volume. (Note that all the existing data on /var/log will be deleted. That is why step 15 above is very important)
+19. Mount `/var/log` on `logs-lv` logical volume. (Note that all the existing data on /var/log will be deleted. That is why step 15 above is very important)
 ```
 sudo mount /dev/webdata-vg/logs-lv /var/log
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cec4db6e-66eb-4ea3-823f-93b90650a228)
+![image](assets/db_server_36_mount_logical_volume.JPG)
 
 20. Restore log files back into /var/log directory
 ```
