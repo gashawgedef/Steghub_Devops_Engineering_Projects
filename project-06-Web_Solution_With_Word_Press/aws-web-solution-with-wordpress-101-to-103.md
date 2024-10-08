@@ -668,15 +668,6 @@ sudo setsebool -P httpd_execmem 1
 
 
 
-```
- sudo dnf install httpd -y
-```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c5cc5123-8177-4c1d-a4d5-31db9b6e9fc7)
-```
-sudo systemctl start httpd
-```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6da8e1a1-a3bb-4b44-9821-317b02501030)
-
 5. Restart Apache and check it is running.
 ```
 sudo systemctl restart httpd
