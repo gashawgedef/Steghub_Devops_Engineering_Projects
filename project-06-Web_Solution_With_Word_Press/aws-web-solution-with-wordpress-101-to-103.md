@@ -322,7 +322,7 @@ sudo rsync -av /home/recovery/logs/ /var/log
 ![image](assets/web_server_43_restore_log_files.JPG)
 
 
-23. Update /etc/fstab file so that the mount configuration will persist after restart of the server.  The UUID of the device will be used to update the /etc/fstab file;
+23. Update `/etc/fstab` file so that the mount configuration will persist after restart of the server.  The UUID of the device will be used to update the `/etc/`fstab file;
 
 **Find the UUID of the Device**
 ```
