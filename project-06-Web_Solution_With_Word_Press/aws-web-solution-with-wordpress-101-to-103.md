@@ -827,14 +827,14 @@ sudo yum install mysql
 ```
 sudo mysql -u gashaw -p -h 172.31.34.75
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7c2b9056-1cbe-4d61-a8c8-24796fcec740)
+![image](assets/step_6_login_mysql_from_client.JPG)
 
 
 2. Verify if you can successfully connect
  ```
 SHOW DATABASES;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b260191d-a1d5-4db6-8817-5c4077a4778c)
+![image](assets/step_6_show_databases.JPG)
 
 
 **if sucessful the command list of existing databases.**
