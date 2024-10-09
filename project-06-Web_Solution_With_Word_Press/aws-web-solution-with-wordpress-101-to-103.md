@@ -330,7 +330,7 @@ sudo blkid
 ```
 ![image](assets/web_server_44_find_UIDD_device.JPG)
 
-**Edit the /etc/fstab File**
+**Edit the `/etc/fstab` File**
 ```
 sudo vim /etc/fstab
 ```
