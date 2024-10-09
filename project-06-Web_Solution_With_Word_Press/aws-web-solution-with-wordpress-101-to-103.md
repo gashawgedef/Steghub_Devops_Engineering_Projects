@@ -74,12 +74,12 @@ Three-tier Architecture is a client-server software architecture pattern that co
 
 ![image](assets/db_server_6_view_instance.JPG)
 
-- Instance Details Looks like:
+- `DB Server` instance Details Looks like:
 
 ![image](assets/db_server_7_view_details.JPG)
 
 
-### Now Two Servers UP are we can go to do our 3-Tire  server architecture
+### Now Two Servers `running` are we can go to do our 3-Tire  server architecture
 
 ![image](assets/up_servers.JPG)
 
