@@ -27,14 +27,14 @@ Three-tier Architecture is a client-server software architecture pattern that co
 > Use RedHat OS for this projects we will use very popular distribution called 'RedHat' (it also has a fully compatible derivative - CentOS)
 
 
-**Let us get started by creating web server and database server using redhat Os**
+**Let us get started by creating `Web Server` and `Database Server` using redhat Os**
 
-1. Launch Two EC2 instances that will serve as **Web Server** and **DB Server**.
+1. Launch Two EC2 instances that will serve as **`Web Server`** and **`DB Server`**.
 
 
 ![image](assets/web_server_1_name.JPG)
 
-- Application and OS Images select RedHat free tire eligable version
+2. Application and OS Images select RedHat free tire eligable version
 
 ![image](assets/web_server_2_os.JPG)
 
@@ -55,7 +55,7 @@ Three-tier Architecture is a client-server software architecture pattern that co
 
    ![image](assets/web_server_7_view_instance.JPG)
 
-7. Instance Details for web
+7. Instance Details for `Web Server`
 
 ![image](assets/web_server_8_view_details.JPG)
 
@@ -69,7 +69,12 @@ Three-tier Architecture is a client-server software architecture pattern that co
 ![image](assets/web_server_10_configure%20ports.JPG)
 
 ### For DB Server follow same steps and our final instance detail looks like this
+
+- `DB Server` instance after launched looks like
+
 ![image](assets/db_server_6_view_instance.JPG)
+
+- Instance Details Looks like:
 
 ![image](assets/db_server_7_view_details.JPG)
 
