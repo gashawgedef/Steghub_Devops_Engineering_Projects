@@ -370,7 +370,7 @@ Repeat the same steps as for the Web Server, but instead of _**`apps-lv`**_ crea
 
 ![image](assets/db_server_6_view_instance.JPG)
 
-**Now we are going to Add EBS Volume to an DB Server EC2 instance we repate the above steps**
+**Now we are going to Add EBS Volume to an DB Server EC2 instance we repeat the above steps**
 1. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
 ![image](assets/web_server_49_db_server_volumes_created.jpg)
@@ -407,7 +407,7 @@ sudo gdisk /dev/xvdb
 **List Existing Partitions: To see the current partitions, use the p command:**
 ![image](assets/db_server_12_create_partition_1.jpg)
 
-**Create a New Partition: To add a new partition, enter n: then Press Enter to accept default value**
+**Create a New Partition: To add a new partition, enter `n`: then Press Enter to accept default value**
 ![image](assets/db_server_13_create_partition_2.jpg)
 
 
@@ -512,7 +512,7 @@ sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
 ![image](assets/db_server_30_logs_lv.JPG)
 
 
-14. Create /db directory to store database files
+14. Create `/db` directory to store database files
 ```
 sudo mkdir -p /db
 ```
@@ -538,7 +538,7 @@ df -h | grep /db
 
 18. Use **rsync** utility to backup all the files in the log directory /var/log into /home/recovery/logs (This is required before mounting the file system)
 ```
-sudo rsync -av /var/log/. /home/recovery/logs/
+sudo rsync -av /var/log/ /home/recovery/logs/
 ```
 ![image](assets/db_server_35_rsync.JPG)
 
@@ -554,7 +554,7 @@ sudo rsync -av /home/recovery/logs/log/. /var/log
 ```
 ![image](assets/db_server_37_restore_log_files.JPG)
 
-21. Update /etc/fstab file so that the mount configuration will persist after restart of the server. The UUID of the device will be used to update the /etc/fstab file;
+21. Update `/etc/fstab` file so that the mount configuration will persist after restart of the server. The UUID of the device will be used to update the `/etc/fstab` file;
 
 **Find the UUID of the Device**
 ```
