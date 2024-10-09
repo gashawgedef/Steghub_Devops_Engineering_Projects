@@ -364,7 +364,7 @@ df -h
 
 # Step 2 - Prepare the Database Server
 1. Launch A second RedHat EC2 Instance that will have a role **`DB Server`**
-Repeat the same steps as for the Web Server, but instead of _**apps-lv**_ create _**db-lv**_ and mount it to _**/db**_  directory instead of **/var/www/html/**
+Repeat the same steps as for the Web Server, but instead of _**`apps-lv`**_ create _**`db-lv`**_ and mount it to _**`/db`**_  directory instead of **`/var/www/html/`**
 
 ### Afterfollowing same step Like  `Web Server` we created an instance ` DB Server` and looks like  this 
 
