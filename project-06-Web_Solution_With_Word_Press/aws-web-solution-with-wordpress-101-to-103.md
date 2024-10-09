@@ -79,7 +79,7 @@ Three-tier Architecture is a client-server software architecture pattern that co
 ![image](assets/db_server_7_view_details.JPG)
 
 
-### Now Two Servers `running` are we can go to do our 3-Tire  server architecture
+### Now Two Servers `running` and let's configure our 3-Tire  server architecture
 
 ![image](assets/up_servers.JPG)
 
@@ -96,7 +96,7 @@ Three-tier Architecture is a client-server software architecture pattern that co
 
 # Step 1 — Prepare a Web Server
 
-Launch an EC2 instance that will serve as Web Server. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
+Launch an EC2 instance that will serve as `Web Server`. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
 1. Add EBS Volume to an EC2 instance
 
@@ -107,7 +107,7 @@ Launch an EC2 instance that will serve as Web Server. Create 3 volumes in the sa
 ![image](assets/web_server_create_vol_2.JPG)
 
 
-**Created volumes in same availablity zone**
+**Created volumes in same availablity zone looks like this**
 
 ![image](assets/web_server_volumes_list.JPG)
 
@@ -269,13 +269,13 @@ sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
 ```
 ![image](assets/web_server_36_format_ext4_2.JPG)
 
-17. Create /var/www/html directory to store website files
+17. Create `/var/www/html` directory to store website files
 ```
 sudo mkdir -p /var/www/html
 ```
 ![image](assets/web_server_37_create_html.JPG)
 
-18. Create /home/recovery/logs to store backup of log data 
+18. Create `/home/recovery/logs` to store backup of log data 
 
 ```
 sudo mkdir -p /home/recovery/logs
@@ -283,7 +283,7 @@ sudo mkdir -p /home/recovery/logs
 ![image](assets/web_server_38_create_logs.JPG)
 
 
-19.  Mount /var/www/html on apps-lv logical volume
+19.  Mount `/var/www/html` on apps-lv logical volume
 
 ```
 sudo mount /dev/webdata-vg/apps-lv /var/www/html/
@@ -296,7 +296,7 @@ df -h | grep /var/www/html
 ```
 ![image](assets/web_server_40_verify_mount.JPG)
 
-20. Use rsync utility to backup all the files in the log directory /var/log into /home/recovery/logs
+20. Use rsync utility to backup all the files in the log directory `/var/log` into `/home/recovery/logs`
  
  > This is required before mounting the file system
 
