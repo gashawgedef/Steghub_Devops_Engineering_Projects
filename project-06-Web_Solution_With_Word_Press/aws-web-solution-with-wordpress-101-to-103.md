@@ -315,7 +315,7 @@ sudo mount /dev/webdata-vg/logs-lv /var/log
 ![image](assets/web_server_42_mount.JPG)
 
 
-22. Restore log files back into /var/log directory
+22. Restore log files back into `/var/log` directory
 ```   
 sudo rsync -av /home/recovery/logs/ /var/log
 ```
