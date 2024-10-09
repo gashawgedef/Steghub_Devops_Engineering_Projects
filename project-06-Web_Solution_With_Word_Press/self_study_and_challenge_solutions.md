@@ -314,7 +314,8 @@ echo '/swapfile swap swap defaults 0 0' | sudo tee -a /etc/fstab
 ```
   
 
-
+- I have Got php installation Conflict and  I resolved by upgrading from :
+`sudo yum  install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm` to `sudo dnf install -y  https://rpms.remirepo.net/enterprise/remi-release-9.rpm`
 
 
 
