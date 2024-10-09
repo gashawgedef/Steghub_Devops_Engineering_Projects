@@ -1,4 +1,6 @@
 
+# Self Study, Challenges and  Solutions
+
 ## Disk Management in Linux: Detailed Notes
 
 **Disk management** in Linux involves creating, modifying, and managing partitions, file systems, and disk quotas. It's an essential aspect of system administration to ensure efficient utilization and organization of disk space. Below is a comprehensive guide on disk management in Linux.
