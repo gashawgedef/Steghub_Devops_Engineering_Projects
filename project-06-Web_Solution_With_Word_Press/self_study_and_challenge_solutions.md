@@ -258,9 +258,9 @@ sudo fsck /dev/sda1
 ```
 sudo badblocks -v /dev/sda
 ```
-Creating Linux partitions with `fdisk` involves the following steps. Be careful when using `fdisk`, as it can modify the partition table, potentially leading to data loss if not used properly.
 
-### Steps to Create Linux Partitions Using `fdisk`:
+## Steps to Create Linux Partitions Using `fdisk`:
+Creating Linux partitions with `fdisk` involves the following steps. Be careful when using `fdisk`, as it can modify the partition table, potentially leading to data loss if not used properly.
 
 **1. Open a Terminal:** Press Ctrl+Alt+T or open a terminal window in your Linux environment.
 
@@ -328,7 +328,8 @@ Managing disks in Linux involves a variety of tools and techniques, from partiti
 
 
 ## The Challenges and Solutions
-- I face Challenges when installing  `php` . But resolved by following the following steps:
+
+### I face Challenges when installing  `php` . But resolved by following the following steps:
 
 1. Check for Existing Swap File:
 
@@ -377,6 +378,6 @@ echo '/swapfile swap swap defaults 0 0' | sudo tee -a /etc/fstab
 ```
   
 
-- I have Got php installation Conflict and  I resolved by upgrading from :
+### I have Got php installation Conflict and  I resolved by upgrading from :
 `sudo yum  install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm` to `sudo dnf install -y  https://rpms.remirepo.net/enterprise/remi-release-9.rpm`
 
