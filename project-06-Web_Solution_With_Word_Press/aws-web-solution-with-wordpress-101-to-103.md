@@ -301,11 +301,11 @@ df -h | grep /var/www/html
  > This is required before mounting the file system
 
 ```
-sudo rsync -av /var/log/. /home/recovery/logs/
+sudo rsync -av /var/log/ /home/recovery/logs/
 ```
 ![image](assets/web_server_41_rsync.JPG)
 
-21. Mount /var/log on logs-lv logical volume
+21. Mount `/var/log` on `logs-lv` logical volume
     
 > Note that all the existing data on /var/log will be deleted. That is why step 17 above is very important
 
