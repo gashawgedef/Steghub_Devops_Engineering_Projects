@@ -843,23 +843,21 @@ SHOW DATABASES;
 
 4. Enable TCP port 80 in Inbound Rules configuration for our Web Server EC2 (enable from everywhere 0.0.0.0/0 or from our workstation's IP)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9d070f8d-92f3-4ca7-90c0-202de8b90935)
+![image](assets/step_6_configure_port-one.JPG)
 
 5. Try to access from your browser the link to your WordPress
 ```
 http://<Web-Server-Public-IP-Address>/wordpress/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d7e13991-8b1e-4c2f-b25e-5fa25718c0d3)
+![image](assets/word_press_1.JPG)
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c9ae873e-17d8-4398-a8be-1dd59c9f2869)
+![image](assets/wordpress_2.JPG)
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d4c719e5-5f80-41fe-baf8-9a0c6323bf10)
+![image](assets/word_press_login.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9c149c3d-475b-4818-8d4e-7376224a47e4)
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a23e2dd0-6eb5-427f-9a1e-a44dc0f71332)
+![image](assets/wordpress_dashboard.JPG)
 
 ### The End of Web Solution With WordPress project
 In this project we prepared storage infrastructure on two Linux servers and implement a basic web solution using WordPress.
