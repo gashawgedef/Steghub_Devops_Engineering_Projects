@@ -18,7 +18,7 @@
 5. 
 #### ARCHTECTURAL DESIGN
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f3549b65-2c78-4efa-9e9e-af83268a2296)
+![image](assets/images1.png)
 
 ## Step 1 - Prepare NFS Server
 1. Spin up a new EC2 instance with RHEL Linux Operating System.
