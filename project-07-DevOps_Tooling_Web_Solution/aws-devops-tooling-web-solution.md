@@ -213,7 +213,7 @@ sudo mount -a
 ```
 df -h
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4662fc86-dc51-4a26-88d3-f89fcbcd7ec6)
+![image](assets/nfs_server_37_dfh.JPG)
 
 4. Install NFS server, configure it to start on reboot and make sure it is up and running
 
