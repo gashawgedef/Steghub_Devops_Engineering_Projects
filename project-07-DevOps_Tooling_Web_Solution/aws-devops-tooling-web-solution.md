@@ -143,26 +143,28 @@ sudo lvcreate -L 14G -n lv-apps webdata-vg
 sudo lvcreate -L 14G -n lv-logs webdata-vg
 sudo lvcreate -L 14G -n lv-opt  webdata-vg
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6b6b58ef-e55a-4a70-be2e-7a4abad0789a)
+![image](assets/nfs_server_27_create.JPG)
+
+![images](assets/nfs_server_28_create_with_minimum_space.JPG)
 
 **Verify that our Logical Volume has been created successfully**
 ```
 sudo lvs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d0510c5e-f675-4650-8165-b08e8f585bfc)
+![image](assets/nfs_server_30_verify.JPG)
 
 **Verify the entire setup #view complete setup - VG , PV, and LV**
 ```
 sudo vgdisplay -v
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8ef02e1e-28c6-4ff9-aa8c-866a1e473451)
+![image](assets/nfs_server_31_display_all.JPG)
 
 3. Instead of formatting the disks as ext4 you will have to format them as xfs
 - Ensure there are 3 Logical Volumes `lv-opt` `lv-apps`, and `lv-logs`
 ```
 sudo lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/30185aa4-061f-49e7-8f37-0e6f53b09619)
+![image](assets/nfs_server_32_lsblk.JPG)
 
 **Format the Logical Volumes as XFS:**
 ```
