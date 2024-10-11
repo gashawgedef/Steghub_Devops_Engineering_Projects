@@ -195,7 +195,7 @@ sudo mount /dev/webdata-vg/lv-opt /mnt/opt
 
 **Add Mount Points to /etc/fstab**
 ```
-sudo vi /etc/fstab
+sudo vim /etc/fstab
 ```
 **Add the following lines**:
 ```
@@ -203,7 +203,7 @@ sudo vi /etc/fstab
 /dev/webdata-vg/lv-logs /mnt/logs xfs defaults 0 0
 /dev/webdata-vg/lv-opt /mnt/opt xfs defaults 0 0
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/91a056b5-d84f-45bb-87e3-ab83ac6597d8)
+![image](assets/nfs_server_36_edit_fstab.JPG)
 
 **Verify Mounts**:
 
