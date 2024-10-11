@@ -182,9 +182,7 @@ sudo mkdir /mnt/apps
 sudo mkdir /mnt/logs
 sudo mkdir /mnt/opt
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d967f7e3-0d89-4e68-9dea-adf3014d771d)
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/35a8afb6-96c6-487c-88a0-f2a6ca9fb4c7)
+![image](assets/nfs_server_34_create_directories.JPG)
 
 **Mount Logical Volumes**
 ```
@@ -259,7 +257,7 @@ sudo chmod -R 777 /mnt/apps
 sudo chmod -R 777 /mnt/logs
 sudo chmod -R 777 /mnt/opt
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/69154fdf-2a59-42df-86c9-7456789f7fc1)
+![image](assets/nfs_Server_35_mount_all.JPG)
 
 **Restart NFS Server**
 ```
