@@ -27,22 +27,22 @@
 ![image](assets/nfs_server_1_instance_name.JPG)
 
 **Application and OS Images select RedHat free tire eligable version**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/be10eab8-0f78-4aa0-bdbd-43f98b32d2cc)
+![image](assets/nfs_server_2_select_os.JPG)
 
 **Create new key pair or select existing key**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2a224898-c6a1-416b-b874-b1f3db9f36e5)
+![image](assets/nfs_server_3_key_pair.JPG)
 
 **Network setting create new security group or use existing security group**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d61b1359-539e-4c35-bda4-79a582c52681)
+![image](assets/nfs_server_4_security_gruop.JPG)
 
 **Configure Storage and launch the instance**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b206b1f5-0d72-41d2-9ead-593580d326f4)
+![image](assets/nfs_server_5_configure_storage.JPG)
 
 **View Instance**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7454b402-4a76-4834-b418-a005afdc1e37)
+![image](assets/nfs_Server_6_view_instance.JPG)
 
 **Instance Details for web**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/04945132-11cd-4e32-8e72-1aa0d7c81149)
+![image](assets/nfs_server_7_view_details.JPG)
 
 
 **Configure security group with the following inbound rules:**
