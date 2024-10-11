@@ -49,15 +49,15 @@
 - Allow traffic on port 22 (SSH) with source from any IP address. This is opened by default.
 - Allow traffic on port 80 (HTTP) with source from anywhere on the internet.
 - Allow traffic on port 443 (HTTPS) with source from anywhere on the internet.
-  ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/83aa77a2-0445-45fa-b968-0fad36af7d96)
+![image](assets/nfs_server_8_configure_ports.JPG)
 
 2. Based on your LVM experience from Project 6, Configure LVM on the Server. Create 3 volumes in the same AZ as your Web Server EC2, each of 20 GiB.
 
 **Add EBS Volume to an EC2 instance**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/86d4d944-ce76-49e3-9b0e-682e330ed485)
+![image](assets/nfs_server_9_create_three_volumes.JPG)
 
 **Attach all three volumes one by one to our NFS Web Server EC2 instance**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/64c26f72-13aa-487d-a9f0-c40365672dc5)
+![image](assets/nfs_server_12_atach_3_volumes.JPG)
 
  **Open up the Linux terminal to begin configuration**
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/84be9f7d-7685-4843-9a2b-02a09e95bf97)
