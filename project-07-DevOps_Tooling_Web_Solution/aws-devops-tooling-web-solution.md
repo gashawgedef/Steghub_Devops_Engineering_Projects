@@ -191,7 +191,7 @@ sudo mount /dev/webdata-vg/lv-logs /mnt/logs
 sudo mount /dev/webdata-vg/lv-opt /mnt/opt
 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f4308135-587f-4c6d-919b-0b61b61da04c)
+![image](assets/nfs_Server_35_mount_all.JPG)
 
 **Add Mount Points to /etc/fstab**
 ```
