@@ -117,13 +117,13 @@ sudo lvmdiskscan
 ```
 sudo pvcreate /dev/xvdb1 /dev/xvdc1 /dev/xvdd1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e8165611-f10c-4838-9fcb-2790fb1e3fa1)
+![image](assets/nfs_server_23_create_physical_volumes.JPG)
 
 **Verify that your Physical volume has been created successfully**
 ```
 sudo pvs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e8ead4b9-48fc-44e1-b57e-c1c6ad3bd2a3)
+![image](assets/nfs_server_24_view_lvs.JPG)
 
 **Use vgcreate utility to add all 3 PVs to a volume group (VG) Name the VG webdata-vg**
 ```
