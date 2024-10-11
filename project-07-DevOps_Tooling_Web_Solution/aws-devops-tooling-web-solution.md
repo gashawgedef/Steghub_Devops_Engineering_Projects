@@ -221,27 +221,29 @@ df -h
 ```
 sudo yum -y update
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8d37fffe-f3a2-4a64-8627-44f348c045e3)
+![image](assets/nfs_server_38_update_server.JPG)
 
 ```
 sudo yum install nfs-utils -y
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/29c33604-b690-49e1-a027-2e2d917cc0d7)
+![image](assets/nfs_server_39_install_nfs_service.JPG)
 
 **Start and Enable NFS Server**:
 
 ```
 sudo systemctl start nfs-server.service
 ```
+![images](assets/nfs_server_40_start_nfs_server_ser%20vice.JPG)
+
 ```
 sudo systemctl enable nfs-server.service
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0c99fba5-5916-4a08-a1a4-5b4d340c57bc)
+![image](assets/nfs_server_41_enable.JPG)
 
 ```
 sudo systemctl status nfs-server.service
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/048af360-e331-41c5-a7a9-eaf2e29949ba)
+![image](assets/nfs_server_42_status.JPG)
 
 
 5. Export the NFS Mounts'
