@@ -129,13 +129,13 @@ sudo pvs
 ```
 sudo vgcreate webdata-vg /dev/xvdb1 /dev/xvdc1 /dev/xvdd1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/dd7feb65-047e-4189-854b-418e5fef1250)
+![image](assets/nfs_server_25_add_to_volume_group.JPG)
 
 **Verify that your VG has been created successfully**
 ```
 sudo vgs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/761cec16-28e5-426a-aa1e-f579e142da4f)
+![image](assets/nfs_server_26_verify_volume.JPG)
 
 **Create Logical Volumes Use `lvcreate utility` to create logical volumes
 ```
