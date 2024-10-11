@@ -104,14 +104,14 @@ lsblk
 ```
 sudo yum install lvm2
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/55b48752-0cc7-4a5a-971a-ea0bfa8744ea)
+![image](assets/nfs_server_21_install_lvm2.JPG)
 
 **Check for available partitions.**
 
 ```
 sudo lvmdiskscan 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/056282fe-8f59-4615-a393-2e0a1f469e95)
+![image](assets/nfs_server_22_check_for_available_disks.JPG)
 
 **Create Physical Volumes Use pvcreate utility to mark each of 3 disks as physical volumes (PVs) to be used by LVM**
 ```
