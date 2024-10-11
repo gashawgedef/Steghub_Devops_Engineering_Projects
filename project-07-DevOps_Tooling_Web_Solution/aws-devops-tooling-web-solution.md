@@ -24,7 +24,7 @@
 1. Spin up a new EC2 instance with RHEL Linux Operating System.
    
 **Log to aws account console and create EC2 instance of t2.micro type with RedHat Server launch in the default region us-east-1. name instance _Linux NFS server_**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2681b07a-2976-4872-9e61-48ba9e73ce71)
+![image](assets/nfs_server_1_instance_name.JPG)
 
 **Application and OS Images select RedHat free tire eligable version**
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/be10eab8-0f78-4aa0-bdbd-43f98b32d2cc)
