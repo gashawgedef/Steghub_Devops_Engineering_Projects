@@ -60,43 +60,45 @@
 ![image](assets/nfs_server_12_atach_3_volumes.JPG)
 
  **Open up the Linux terminal to begin configuration**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/84be9f7d-7685-4843-9a2b-02a09e95bf97)
+ ![images](assets/nfs_Server_13_give_permisions.JPG)
+
+![image](assets/nfs_server_14_connect_server.JPG)
 
   **List Available Disks**
 ```
 sudo lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b9686c5d-0179-40e0-b444-8974460f0b35)
+![image](assets/nfs_server_15_list_available_disks.JPG)
 
 **Use df -h command to see all mounts and free space**
 ```
 df -h
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5e0c9ecc-4988-4742-985b-7272a26f3f9e)
+![image](assets/nfs_server_16_mount_used_and_free_space.JPG)
 
 **Use gdisk utility to create a single partition on each of the 3 disks**
 ```
 sudo gdisk /dev/xvdb
 ```
 **List Existing Partitions: To see the current partitions, use the `p` command:**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2004ce38-2dd7-4dd0-b1d2-06ecd52e5809)
+![image](assets/nfs_Server_17_creat_partitions_1.JPG)
 
 **Create a New Partition: To add a new partition, enter `n`: then Press Enter to accept default value**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/db6f43d8-ee17-4cb1-bb9d-a71cbc92d928)
+![image](assets/nfs_server_18_create_partions_2.JPG)
 
 **Write Changes: Once you've created the desired partitions, write the changes to the disk with `w`:**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6b187aed-4386-4494-b256-e8a12dff6ae8)
+![image](assets/nfs_Server_19_create_partitions_3.JPG)
 
 **Yes to proceed and complete**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fddb01f3-626f-429f-9036-6ea5022be36e)
+![image](assets/nfs_Server_19_create_partitions_3.JPG)
 
-> we follow the same steps for remaining two and create partishion
+> we follow the same steps for remaining `two` and create partition
 
 **Use lsblk utility to view the newly configured partition on each of the 3 disks.**
 ```
 lsblk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/55299708-5cfa-4abd-ae9a-7234303b2b6a)
+![image](assets/nfs_server_20_view_partitions.JPG)
 
 **Install lvm2 package**
 ```
