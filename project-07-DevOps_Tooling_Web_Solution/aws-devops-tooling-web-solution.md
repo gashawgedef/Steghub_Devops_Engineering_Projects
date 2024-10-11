@@ -172,7 +172,7 @@ sudo mkfs.xfs /dev/webdata-vg/lv-apps
 sudo mkfs.xfs /dev/webdata-vg/lv-logs
 sudo mkfs.xfs /dev/webdata-vg/lv-opt
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/66b58d40-98f6-43d3-96a0-8e696f21b1b2)
+![image](assets/nfs_server_33_format_xfs.JPG)
 
 - Create mount points on `/mnt` directory for the logical volumes as follows: `Mount lv-apps` on /mnt/apps - To be used by webservers ,`Mount lv-logs` on /mnt/logs - To be used by webserver logs, `Mount lv-opt` on /mnt/opt - To be used by Jenkins server in Project 8
 
