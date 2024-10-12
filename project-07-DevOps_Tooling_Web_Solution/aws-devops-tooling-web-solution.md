@@ -330,9 +330,9 @@ sudo yum update
 
 1.2. Install MySQL server:
 ```
-sudo apt install mysql-server
+sudo yum install mysql-server
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3d39ad91-22a5-463f-a601-cc5ffb731836)
+![image](assets/db_server_9_install_mysql_srver.jpg)
 
 1.3 Check status :
 ```
