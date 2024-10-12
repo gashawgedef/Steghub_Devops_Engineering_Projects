@@ -138,11 +138,13 @@ sudo vgs
 ![image](assets/nfs_server_26_verify_volume.JPG)
 
 **Create Logical Volumes Use `lvcreate utility` to create logical volumes
+
 ```
 sudo lvcreate -L 14G -n lv-apps webdata-vg
 sudo lvcreate -L 14G -n lv-logs webdata-vg
 sudo lvcreate -L 14G -n lv-opt  webdata-vg
 ```
+
 ![image](assets/nfs_server_27_create.JPG)
 
 ![images](assets/nfs_server_28_create_with_minimum_space.JPG)
@@ -259,28 +261,28 @@ sudo chmod -R 777 /mnt/apps
 sudo chmod -R 777 /mnt/logs
 sudo chmod -R 777 /mnt/opt
 ```
-![image](assets/nfs_Server_35_mount_all.JPG)
+![image](assets/nfs_server_%2043_set_permisions.jpg)
 
 **Restart NFS Server**
 ```
 sudo systemctl restart nfs-server.service
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1bb1674a-2fb4-461c-b663-683d006c02e0)
+![image](assets/nfs_server_44_restart_nfs_server.jpg)
 
-6. Configure access to NFS for clients within the same subnet (example of Subnet CIDR - 172.31.16.0/20 ):
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b37f58e1-d9c1-451b-91aa-224b316f74d1)
+6. Configure access to NFS for clients within the same subnet (example of Subnet CIDR - 172.31.32.0/20 ):
+![image](assets/nfs_server_45_subnet_cdir.jpg)
 
 ```
-sudo vi /etc/exports
+sudo vim /etc/exports
 ```
 **Add the following lines**:
 
 ```
-/mnt/apps 172.31.16.0/20(rw,sync,no_all_squash,no_root_squash)
-/mnt/logs 172.31.16.0/20(rw,sync,no_all_squash,no_root_squash)
-/mnt/opt 172.31.16.0/20(rw,sync,no_all_squash,no_root_squash)
+/mnt/apps 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
+/mnt/logs 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
+/mnt/opt 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1818c80f-790d-4cff-9fde-52e27fad870d)
+![image](assets/nfs_server_46_edit_nfs_exports.jpg)
 
 **save and exit from the editor by** `Esc + :wq!`
 
@@ -289,7 +291,7 @@ sudo vi /etc/exports
 ```
 sudo exportfs -arv
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/46535253-4d4c-4de0-bc1f-98359d16e92e)
+![image](assets/nfs_server_48_export.jpg)
 
 
 7. Check which port is used by NFS and open necessary ports in Security Groups (add new Inbound Rule)
@@ -299,30 +301,32 @@ sudo exportfs -arv
 ```
 rpcinfo -p | grep nfs
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d95f15bf-aad7-456a-a855-75c679105aed)
+![image](assets/nfs_server_49_check%20ports.jpg)
 
 > **Important note**: In order for NFS server to be accessible from our client,we open following ports:
 - `TCP 111`
 - `UDP 111`
 - `UDP 2049`
 - `UDP 2049`
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/801f96f8-47ce-4645-ad4a-aa55659e83f6)
 
 ## Step 2 - Configure the database server
+
 Log to aws account console and create EC2 instance of t2.micro type with Ubuntu Server launch in the default region us-east-1. name instance MySQL server
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7692b0cf-2cf2-4692-a726-592ff2e2f58c)
+![image](assets/db_server_1_instance_name.jpg)
  Follow the same step and finally the instance created like this 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1422fff3-ba37-4b08-8919-cbeaa821813a)
+![image](assets/db_server_6_instance_details.jpg)
 
 1. Install MySQL Server
 First, we need to connect to our  Mysql server server
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4bac19a7-71cb-4a06-9b89-b29d4b48af48)
+![image](assets/db_server_7_connect.jpg)
 
 1.1. Update the package index:
 ```
-sudo apt update
+sudo yum update
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6412cdbe-5c23-4e82-aedd-f599db0b6da8)
+![image](assets/db_server_8_update.jpg)
 
 1.2. Install MySQL server:
 ```
@@ -431,16 +435,17 @@ sudo mount -t nfs -o rw,nosuid 172.31.28.68:/mnt/apps /var/www
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7e32ebc5-2427-44e8-9f10-133e7ccb073d)
   
 Make sure that the changes will persist on Web Server after reboot:
+
 ```
 sudo vi /etc/fstab
 ```
 
 add following line
+
 ```
 172.31.28.68:/mnt/apps /var/www nfs defaults 0 0
 ```
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/489120b5-f8ef-4447-a8bc-1d71a97d6ce8)
-
 
 5. Install Remi's repository, Apache and PHP
 
@@ -479,12 +484,15 @@ sudo swapon /swapfile
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ee6c73c8-a874-44a8-b382-8bf2cf2d5ad8)
 
 **Make the swap file permanent:**
+
 ```
 echo '/swapfile swap swap defaults 0 0' | sudo tee -a /etc/fstab
 ```
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8bd755c4-c4cc-4dac-8960-053e1a817a32)
 
 **Update and Clean the System and re run**
+
 ```
 sudo dnf upgrade --refresh -y
 sudo dnf upgrade -y dnf
@@ -492,6 +500,7 @@ sudo dnf update -y
 sudo dnf clean all
 sudo reboot
 ```
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d1ca49c4-ab12-4389-b4c0-9ae10098882e)
 
 **Tehn Re run again**
@@ -499,28 +508,33 @@ sudo reboot
 ```
 sudo dnf -y install http://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
 ```
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/065c3670-bd16-4d08-8c8d-7c58bb8688fb)
 
 Before installing PHP, we need to check the available PHP streams in the repository.
+
 ```
  sudo dnf module list php -y
 ```
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cdae6be5-ba91-4c66-8e0c-aa9b4c245527)
 
 ```
 sudo dnf module reset php
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9804b9e9-7232-400d-a9c9-19bd5cc8ad9b)
 
+![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9804b9e9-7232-400d-a9c9-19bd5cc8ad9b)
 
 ```
 sudo dnf module enable php:remi-8.2 -y
 ```
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f8bdb6dc-929c-46b4-8d26-7b742640ec72)
 
 ```
 sudo dnf install php -y
 ```
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ad7c8f5c-d595-450d-8e97-61dc2140fbd0)
 
 ```
