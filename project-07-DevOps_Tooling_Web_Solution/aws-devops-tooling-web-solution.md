@@ -417,14 +417,17 @@ sudo yum update -y
 ```
 sudo yum install nfs-utils nfs4-acl-tools -y
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ce01fb6d-486a-457c-a4bd-e5a68cfa0f66)
+![image](assets/web_server_8_install_client.JPG)
 
 3. Mount /var/www/ and target the NFS server's export for apps
 ```
 sudo mkdir /var/www
 ```
+
+![images](assets/web_server_9_create_www_directory.JPG)
+
 ```
-sudo mount -t nfs -o rw,nosuid 172.31.28.68:/mnt/apps /var/www
+sudo mount -t nfs -o rw,nosuid 172.31.36.105:/mnt/apps /var/www
 ```
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b754b43d-bc0a-4e01-9e37-dfb6d9f24081)
 
