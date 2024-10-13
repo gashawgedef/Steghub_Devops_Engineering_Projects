@@ -38,6 +38,7 @@ sudo fdisk -l
 ```
 df -h
 ```
+
 - `du -sh`: Displays disk usage of directories/files.
 
 ```
@@ -134,11 +135,13 @@ Swap space is used when physical RAM is full. Linux will move inactive pages to 
   sudo mkswap /swapfile
   sudo swapon /swapfile
   ```
+  
 - Enable Swap on Boot: Add the swap entry in `/etc/fstab`:
 
 ```
 /swapfile   none   swap   sw   0 0
 ```
+
 - Monitoring Swap Usage:
 
 ```

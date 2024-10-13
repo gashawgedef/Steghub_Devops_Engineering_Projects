@@ -1,4 +1,4 @@
-# DevOps Tooling Website Solution
+# DevOps Tooling Website Solution Project 7
 > This project focuses on building a website solution for a team of developers that will help a in day to day activities in managing, developing, testing, deploying, and monitoring different projects
 ### In this project, we will implement a solution that consists of the following components:
 
@@ -44,14 +44,7 @@
 **Instance Details for web**
 ![image](assets/nfs_server_7_view_details.JPG)
 
-
-**Configure security group with the following inbound rules:**
-- Allow traffic on port 22 (SSH) with source from any IP address. This is opened by default.
-- Allow traffic on port 80 (HTTP) with source from anywhere on the internet.
-- Allow traffic on port 443 (HTTPS) with source from anywhere on the internet.
-![image](assets/nfs_server_8_configure_ports.JPG)
-
-2. Based on your LVM experience from Project 6, Configure LVM on the Server. Create 3 volumes in the same AZ as your Web Server EC2, each of 20 GiB.
+2. Based on your LVM experience from Project 6, Configure LVM on the Server. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
 **Add EBS Volume to an EC2 instance**
 ![image](assets/nfs_server_9_create_three_volumes.JPG)
@@ -125,7 +118,7 @@ sudo pvs
 ```
 ![image](assets/nfs_server_24_view_lvs.JPG)
 
-**Use vgcreate utility to add all 3 PVs to a volume group (VG) Name the VG webdata-vg**
+**Use `vgcreate` utility to add all 3 PVs to a volume group (VG) Name the VG `webdata-vg`**
 ```
 sudo vgcreate webdata-vg /dev/xvdb1 /dev/xvdc1 /dev/xvdd1
 ```
@@ -147,10 +140,12 @@ sudo lvcreate -L 14G -n lv-opt  webdata-vg
 
 ![image](assets/nfs_server_27_create.JPG)
 
+there is no enough space to create `lv-opt` and we have to make free some spaces
+
 ![images](assets/nfs_server_28_create_with_minimum_space.JPG)
 
 **Verify that our Logical Volume has been created successfully**
-```
+``` 
 sudo lvs
 ```
 ![image](assets/nfs_server_30_verify.JPG)
@@ -161,14 +156,14 @@ sudo vgdisplay -v
 ```
 ![image](assets/nfs_server_31_display_all.JPG)
 
-3. Instead of formatting the disks as ext4 you will have to format them as xfs
+3. Instead of formatting the disks as `ext4` you will have to format them as `xfs`
 - Ensure there are 3 Logical Volumes `lv-opt` `lv-apps`, and `lv-logs`
 ```
 sudo lsblk
 ```
 ![image](assets/nfs_server_32_lsblk.JPG)
 
-**Format the Logical Volumes as XFS:**
+**Format the Logical Volumes as `XFS`:**
 ```
 sudo mkfs.xfs /dev/webdata-vg/lv-apps
 sudo mkfs.xfs /dev/webdata-vg/lv-logs
@@ -176,7 +171,7 @@ sudo mkfs.xfs /dev/webdata-vg/lv-opt
 ```
 ![image](assets/nfs_server_33_format_xfs.JPG)
 
-- Create mount points on `/mnt` directory for the logical volumes as follows: `Mount lv-apps` on /mnt/apps - To be used by webservers ,`Mount lv-logs` on /mnt/logs - To be used by webserver logs, `Mount lv-opt` on /mnt/opt - To be used by Jenkins server in Project 8
+- Create mount points on `/mnt` directory for the logical volumes as follows: `Mount lv-apps` on `/mnt/apps` - To be used by webservers ,`Mount lv-logs` on `/mnt/logs` - To be used by webserver logs, `Mount lv-opt` on `/mnt/opt` - To be used by Jenkins server in Project 8
 
 **Create Directories**:
 ```
@@ -187,15 +182,17 @@ sudo mkdir /mnt/opt
 ![image](assets/nfs_server_34_create_directories.JPG)
 
 **Mount Logical Volumes**
+
 ```
 sudo mount /dev/webdata-vg/lv-apps /mnt/apps
 sudo mount /dev/webdata-vg/lv-logs /mnt/logs
 sudo mount /dev/webdata-vg/lv-opt /mnt/opt
-
 ```
+
 ![image](assets/nfs_Server_35_mount_all.JPG)
 
 **Add Mount Points to /etc/fstab**
+
 ```
 sudo vim /etc/fstab
 ```
@@ -240,11 +237,13 @@ sudo systemctl start nfs-server.service
 ```
 sudo systemctl enable nfs-server.service
 ```
+
 ![image](assets/nfs_server_41_enable.JPG)
 
 ```
 sudo systemctl status nfs-server.service
 ```
+
 ![image](assets/nfs_server_42_status.JPG)
 
 
@@ -261,15 +260,19 @@ sudo chmod -R 777 /mnt/apps
 sudo chmod -R 777 /mnt/logs
 sudo chmod -R 777 /mnt/opt
 ```
+
 ![image](assets/nfs_server_%2043_set_permisions.jpg)
 
 **Restart NFS Server**
+
 ```
 sudo systemctl restart nfs-server.service
 ```
+
 ![image](assets/nfs_server_44_restart_nfs_server.jpg)
 
 6. Configure access to NFS for clients within the same subnet (example of Subnet CIDR - 172.31.32.0/20 ):
+
 ![image](assets/nfs_server_45_subnet_cdir.jpg)
 
 ```
@@ -282,6 +285,7 @@ sudo vim /etc/exports
 /mnt/logs 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
 /mnt/opt 172.31.32.0/20(rw,sync,no_all_squash,no_root_squash)
 ```
+
 ![image](assets/nfs_server_46_edit_nfs_exports.jpg)
 
 **save and exit from the editor by** `Esc + :wq!`
@@ -291,6 +295,7 @@ sudo vim /etc/exports
 ```
 sudo exportfs -arv
 ```
+
 ![image](assets/nfs_server_48_export.jpg)
 
 
@@ -301,6 +306,7 @@ sudo exportfs -arv
 ```
 rpcinfo -p | grep nfs
 ```
+
 ![image](assets/nfs_server_49_check%20ports.jpg)
 
 > **Important note**: In order for NFS server to be accessible from our client,we open following ports:
@@ -309,17 +315,22 @@ rpcinfo -p | grep nfs
 - `UDP 2049`
 - `UDP 2049`
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/801f96f8-47ce-4645-ad4a-aa55659e83f6)
+![image](assets/port_range.jpg)
 
 ## Step 2 - Configure the database server
 
 Log to aws account console and create EC2 instance of t2.micro type with Ubuntu Server launch in the default region us-east-1. name instance MySQL server
+
 ![image](assets/db_server_1_instance_name.jpg)
+
  Follow the same step and finally the instance created like this 
+
 ![image](assets/db_server_6_instance_details.jpg)
 
 1. Install MySQL Server
+
 First, we need to connect to our  Mysql server server
+
 ![image](assets/db_server_7_connect.jpg)
 
 1.1. Update the package index:
@@ -336,44 +347,56 @@ sudo yum install mysql-server
 
 1.3 Check status :
 ```
-sudo systemctl status mysql
+sudo systemctl status mysqld
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/983caa69-beed-4e0e-8f13-cfd18dc42d66)
+![image](assets/db_server_13_check_mysql_running.jpg)
 
 1.4. Enable MySQL to start on boot:
+
 ```
-sudo systemctl enable mysql
+sudo systemctl enable mysqld
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d8fdde26-9b5c-4a2e-8896-4d9a499053af)
+
+![image](assets/db_serv)
 
 1.5. Secure the MySQL installation (set root password, remove test databases, etc.):
 ```
 sudo mysql_secure_installation
 ```
 Follow the prompts to complete the configuration.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b9468974-933f-4248-bb02-5147812f5664)
+
+![image](assets/db_server_14_mysql_secure_instalation.jpg)
 
 
 2. Create a database and name it tooling
 
  2.1. Log in to the MySQL server as the root user:
+
 ```
 sudo mysql -u root -p
 ```
+![images](assets/db_server_15_login.jpg)
+
 2.2. Create the database:
+
 ```
 CREATE DATABASE tooling;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3874798a-58c7-4356-833e-9d978b2381ee)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a1361f43-77a0-4ed3-90ee-d35855611192)
+![image](assets/db_server_16_tooling_database.jpg)
+
+```
+show databases;
+```
+
+![image](assets/db_server_17_show_databases.jpg)
 
 3. Create a database user and name it `webaccess`
 
 ```
 CREATE USER 'webaccess'@'%' IDENTIFIED BY 'PassWord.1';
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/14b641d4-8b59-4270-bcc4-40daa0a11f93)
+![image](assets/db_server_18_create_user_webaccess.jpg)
 
 4. Grant permission to webaccess user on tooling database to do anything only from the webservers subnet `cidr`
 > To grant permissions to a MySQL user based on a specific subnet (CIDR), you can use a series of wildcard characters to match the IP address range. MySQL does not support direct CIDR notation, so you need to translate the CIDR range into a pattern that MySQL understands.
@@ -381,16 +404,23 @@ CREATE USER 'webaccess'@'%' IDENTIFIED BY 'PassWord.1';
 ```
 GRANT ALL PRIVILEGES ON tooling. * TO 'webaccess'@'%' WITH GRANT OPTION;
 ```
+
+![images](assets/db_server_19_grantr_previlege.jpg)
+
 **Apply the changes**:
+
 ```
 FLUSH PRIVILEGES;
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7b2c57e2-a225-415f-acb5-6541b65b07e0)
+
+![image](assets/db_server_20_flush_privileges.jpg)
 
 **Exit MySQL**
+
 ```
 exit
 ```
+
 ## Step 3 - Prepare the Web Servers
 
  **In this step we will do the following**
@@ -401,17 +431,23 @@ exit
 
 1. Launch a new EC2 instance with RHEL 8 Operating System
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8002b412-e91f-4172-abbc-c6410d6aaea1)
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5f91a1d0-1cfe-4ae5-a2c3-b5a6ee820c4e)
+![image](assets/web_server_instance_name.jpg)
+
+![image](assets/web_server_2_select_os.jpg)
+
+![image](assets/web_server_3_key_pair.jpg)
+
+
 **Follow same steps above and  our instance detail look like this**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b69e64a4-08cb-4a0e-aefb-7ee10198ac13)
+
+![image](assets/db_server_6_instance_details.jpg)
 
 
 2. Install NFS client
 ```
 sudo yum update -y
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cf036f39-cd2e-44d8-9fe7-701c45710705)
+![image](assets/web_server_6_update.jpg)
 
 
 ```
@@ -419,7 +455,8 @@ sudo yum install nfs-utils nfs4-acl-tools -y
 ```
 ![image](assets/web_server_8_install_client.JPG)
 
-3. Mount /var/www/ and target the NFS server's export for apps
+3. Mount `/var/www/` and target the NFS server's export for apps
+
 ```
 sudo mkdir /var/www
 ```
@@ -429,12 +466,15 @@ sudo mkdir /var/www
 ```
 sudo mount -t nfs -o rw,nosuid 172.31.36.105:/mnt/apps /var/www
 ```
+
 ![image](assets/web_Server_10_mount.jpg)
 
 4. Verify that NFS was mounted successfully
+
 ```
  df -h
  ```
+
 ![image](assets/web_server_11_initials.jpg)
   
 Make sure that the changes will persist on Web Server after reboot:
@@ -455,6 +495,7 @@ add following line
 ```
 sudo yum install httpd -y
 ```
+
 ![image](assets/web_server_13_install_httpd.jpg)
 
 ```
@@ -478,13 +519,14 @@ Updating System with Limited Memory
 
 Create a swap file to increase virtual memory:
 
+
 ```
 sudo fallocate -l 1G /swapfile
+sudo dd if=/dev/zero of=/swapfile bs=1M count=512
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ee6c73c8-a874-44a8-b382-8bf2cf2d5ad8)
 
 **Make the swap file permanent:**
 
@@ -504,7 +546,7 @@ sudo dnf clean all
 sudo reboot
 ```
 
-![image](assets/web_server_17_.jpg)
+![image](assets/web_server_18_.jpg)
 
 **Tehn Re run again**
 
@@ -549,16 +591,16 @@ php -v
 ```
 sudo systemctl start php-fpm
 ```
+
 ![image](assets/web_server_25_.jpg)
-
-
-```
 
 
 ```
 sudo systemctl enable php-fpm
 ```
+
 ![image](assets/web_server_26_.jpg)
+
 
 ```
 sudo setsebool -P httpd_execmem 1
