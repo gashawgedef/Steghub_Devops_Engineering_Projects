@@ -492,7 +492,7 @@ sudo swapon /swapfile
 echo '/swapfile swap swap defaults 0 0' | sudo tee -a /etc/fstab
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8bd755c4-c4cc-4dac-8960-053e1a817a32)
+![image](assets/web_server_17_.jpg)
 
 **Update and Clean the System and re run**
 
@@ -504,7 +504,7 @@ sudo dnf clean all
 sudo reboot
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d1ca49c4-ab12-4389-b4c0-9ae10098882e)
+![image](assets/web_server_17_.jpg)
 
 **Tehn Re run again**
 
@@ -512,7 +512,7 @@ sudo reboot
 sudo dnf -y install http://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/065c3670-bd16-4d08-8c8d-7c58bb8688fb)
+![image](assets/web_server_19_updates.jpg)
 
 Before installing PHP, we need to check the available PHP streams in the repository.
 
@@ -520,48 +520,45 @@ Before installing PHP, we need to check the available PHP streams in the reposit
  sudo dnf module list php -y
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cdae6be5-ba91-4c66-8e0c-aa9b4c245527)
+![image](assets/web_server_20_.jpg)
 
 ```
 sudo dnf module reset php
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9804b9e9-7232-400d-a9c9-19bd5cc8ad9b)
+![image](assets/web_server_21_.jpg)
 
 ```
 sudo dnf module enable php:remi-8.2 -y
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f8bdb6dc-929c-46b4-8d26-7b742640ec72)
+![image](assets/web_server_22_.jpg)
 
 ```
-sudo dnf install php -y
+sudo dnf install php php-opcache php-gd php-curl php-mysqlnd
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ad7c8f5c-d595-450d-8e97-61dc2140fbd0)
+![image](assets/web_server_23_.jpg)
 
 ```
 php -v
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/99fe167a-03da-4f7b-99fc-84007726a6c2)
+![image](assets/web_server_24_.jpg)
 
 ```
 sudo systemctl start php-fpm
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4420ac86-6cf0-4271-b620-47bea2687ccb)
+![image](assets/web_server_25_.jpg)
 
 
 ```
-sudo dnf install php php-opcache php-gd php-curl php-mysqlnd
-```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b9281e76-5e0a-4066-8ad1-bc7f33f64f1a)
 
 
 ```
 sudo systemctl enable php-fpm
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/be84c348-be23-4d87-9bf4-954f58b8c19c)
+![image](assets/web_server_26_.jpg)
 
 ```
 sudo setsebool -P httpd_execmem 1
