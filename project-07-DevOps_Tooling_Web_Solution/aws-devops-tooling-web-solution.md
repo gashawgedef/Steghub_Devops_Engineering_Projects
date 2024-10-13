@@ -527,6 +527,7 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
+![images](assets/swap%20file.jpg)
 
 **Make the swap file permanent:**
 
@@ -605,10 +606,12 @@ sudo systemctl enable php-fpm
 ```
 sudo setsebool -P httpd_execmem 1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fec48723-2c5b-4e90-a761-f01947b43956)
+![image](assets/web_server_12_install_boolean.jpg)
+
 
 > Repeat steps 1-5 for another 2 Web Servers and finally 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cc6d6668-a90f-45a8-8d17-1bbf276e1997)
+
+![image](assets/web_servers_2.jpg)
 
 
 
