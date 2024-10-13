@@ -429,13 +429,13 @@ sudo mkdir /var/www
 ```
 sudo mount -t nfs -o rw,nosuid 172.31.36.105:/mnt/apps /var/www
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b754b43d-bc0a-4e01-9e37-dfb6d9f24081)
+![image](assets/web_Server_10_mount.jpg)
 
 4. Verify that NFS was mounted successfully
 ```
  df -h
  ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7e32ebc5-2427-44e8-9f10-133e7ccb073d)
+![image](assets/web_server_11_initials.jpg)
   
 Make sure that the changes will persist on Web Server after reboot:
 
@@ -446,32 +446,32 @@ sudo vi /etc/fstab
 add following line
 
 ```
-172.31.28.68:/mnt/apps /var/www nfs defaults 0 0
+172.31.36.105:/mnt/apps /var/www nfs defaults 0 0
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/489120b5-f8ef-4447-a8bc-1d71a97d6ce8)
+![image](assets/web_server_12.jpg)
 
 5. Install Remi's repository, Apache and PHP
 
 ```
 sudo yum install httpd -y
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9eedcd74-6bb8-4bf7-a2ce-9ba9cca730dd)
+![image](assets/web_server_13_install_httpd.jpg)
 
 ```
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/01fae725-f4fe-49ae-85b6-f057e59eaa7d)
+![image](assets/web_server_14_install_all.jpg)
 
 **To confirm that EPEL has been added**
 ```
  rpm -qi epel-release
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c672f3aa-c506-48da-bb6d-c39d0146c29a)
+![image](assets/web_server_15_install.jpg)
 
 ```
 sudo dnf -y install http://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/10736900-cd9c-4499-9e36-f77187172f16)
+![image](assets/web_server_16_remi-release-9.jpg)
 
 > If you encounter the "Killed" message while running , it likely means the process was terminated due to running out of memory. Here are steps to mitigate this:
 Updating System with Limited Memory
