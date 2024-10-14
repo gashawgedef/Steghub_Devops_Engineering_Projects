@@ -749,5 +749,5 @@ VALUES (2, 'webaccess_user', '5f4dcc3b5aa765d61d8327deb882cf99', 'user@mail.com'
 
 
 ### End of the Project
-We successfully implemented and deployed a DevOps tooling website, providing easy access to DevOps tools within the corporate infrastructure. The solution includes multiple web servers sharing a common database and accessing the same files using Network File System (NFS) for shared storage.
+We successfully implemented and deployed a DevOps tooling website in AWS, designed to provide seamless access to essential DevOps tools within the corporate infrastructure. The project involved setting up three web servers, all connected to a central database server. Additionally, a Network File System (NFS) was configured to enable the web servers to share common files, ensuring synchronized access to data across the infrastructure. This scalable solution enhances the efficiency of DevOps operations by integrating a reliable, high-availability system for managing DevOps tools.
 
