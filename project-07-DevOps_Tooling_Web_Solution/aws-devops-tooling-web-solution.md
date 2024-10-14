@@ -747,7 +747,6 @@ VALUES (2, 'webaccess_user', '5f4dcc3b5aa765d61d8327deb882cf99', 'user@mail.com'
 
 ![image](assets/web_serv_final_17.jpg)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/300c579c-92d6-430d-81d1-34b2d362e82b)
 
 ### End of the Project
 We successfully implemented and deployed a DevOps tooling website, providing easy access to DevOps tools within the corporate infrastructure. The solution includes multiple web servers sharing a common database and accessing the same files using Network File System (NFS) for shared storage.
