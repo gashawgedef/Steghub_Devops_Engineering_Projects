@@ -1,5 +1,8 @@
 # DevOps Tooling Website Solution Project 7
+
 > This project focuses on building a website solution for a team of developers that will help a in day to day activities in managing, developing, testing, deploying, and monitoring different projects
+
+
 ### In this project, we will implement a solution that consists of the following components:
 
 1. Infrastructure: AWS
@@ -15,44 +18,54 @@
 2. Basic knowledge of Linux commands and how to manage storage on a Linux server.
 3. Basic knowledge of Network-attached storage (NAS), Storage Area Networks (SAN), and related protocols like NFS, FPT, SFTP, SMB, iSCSI.
 4. Knowledge of Block-level storage and how it is used on the Cloud.
-5. 
 #### ARCHTECTURAL DESIGN
 
 ![image](assets/images1.png)
 
 ## Step 1 - Prepare NFS Server
+
 1. Spin up a new EC2 instance with RHEL Linux Operating System.
    
 **Log to aws account console and create EC2 instance of t2.micro type with RedHat Server launch in the default region us-east-1. name instance _Linux NFS server_**
+
 ![image](assets/nfs_server_1_instance_name.JPG)
 
 **Application and OS Images select RedHat free tire eligable version**
+
 ![image](assets/nfs_server_2_select_os.JPG)
 
 **Create new key pair or select existing key**
+
 ![image](assets/nfs_server_3_key_pair.JPG)
 
 **Network setting create new security group or use existing security group**
+
 ![image](assets/nfs_server_4_security_gruop.JPG)
 
 **Configure Storage and launch the instance**
+
 ![image](assets/nfs_server_5_configure_storage.JPG)
 
 **View Instance**
+
 ![image](assets/nfs_Server_6_view_instance.JPG)
 
 **Instance Details for web**
+
 ![image](assets/nfs_server_7_view_details.JPG)
 
 2. Based on your LVM experience from Project 6, Configure LVM on the Server. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
 **Add EBS Volume to an EC2 instance**
+
 ![image](assets/nfs_server_9_create_three_volumes.JPG)
 
 **Attach all three volumes one by one to our NFS Web Server EC2 instance**
+
 ![image](assets/nfs_server_12_atach_3_volumes.JPG)
 
  **Open up the Linux terminal to begin configuration**
+
  ![images](assets/nfs_Server_13_give_permisions.JPG)
 
 ![image](assets/nfs_server_14_connect_server.JPG)
@@ -357,7 +370,7 @@ sudo systemctl status mysqld
 sudo systemctl enable mysqld
 ```
 
-![image](assets/db_serv)
+![image](assets/db_server_12_enable_mysql.jpg)
 
 1.5. Secure the MySQL installation (set root password, remove test databases, etc.):
 ```
