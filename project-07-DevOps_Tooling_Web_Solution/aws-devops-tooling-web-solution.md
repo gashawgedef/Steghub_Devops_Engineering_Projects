@@ -381,9 +381,9 @@ Follow the prompts to complete the configuration.
 ![image](assets/db_server_14_mysql_secure_instalation.jpg)
 
 
-2. Create a database and name it tooling
+2. Create a database and name it `tooling`
 
- 2.1. Log in to the MySQL server as the root user:
+ 2.1. Log in to the MySQL server as the `root user`:
 
 ```
 sudo mysql -u root -p
