@@ -1,8 +1,7 @@
 
 # Self Study, Challenges and  Solutions
 
-## Read about Network-attached storage (NAS), Storage Area Network (SAN) and related protocols like NFS, (s)FTP, SMB, iSCSI. Explore what Block-level storage is and how it is used by Cloud Service providers, know the difference from Object storage. On the example of AWS services understand the difference between Block Storage, Object Storage and Network File System.
-
+## Network-attached storage (NAS), Storage Area Network (SAN)  NFS, (s)FTP, SMB, iSCSI. 
 > Now let getstaered by breake down each conceptes one by one 
 
 ## Storage Technologies and Protocols
