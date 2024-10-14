@@ -619,46 +619,45 @@ sudo setsebool -P httpd_execmem 1
 
 6. Verify NFS Mount and Apache Setup 
 
-Verify that Apache files and directories are available on the Web Server in /var/www and also on the NFS server in /mnt/apps. If you see the same files - it means NFS is mounted correctly.
+Verify that Apache files and directories are available on the Web Server in `/var/www `and also on the NFS server in `/mnt/apps`. If you see the same files - it means NFS is mounted correctly.
 
 ```
 cd /var/www
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3520ec68-988d-4e7d-9dcc-5b4556eb5ee4)
+![image](assets/final_1.jpg)
 
 ```
 ls -l
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b7349964-4951-47cb-ae55-49b3ba5db997)
+![image](assets/final_2.jpg)
 
  You can try to create a new file
 ```
 sudo touch test.txt
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/421dcfe1-c487-4117-922f-e09b9400ca17)
+![image](assets/final_3.jpg)
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0ba0d04f-8d4b-4b77-a78f-6243ef3d526b)
 
-**We can see the text.txt file created inside our nfs server /mnt/apps directory. So they are communicating perfectly.**
+**We can see the text.txt file created inside our nfs server `/mnt/apps` directory. So they are communicating perfectly.**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1111c017-196b-45c6-a1e6-9f684377beb8)
+![image](assets/final_4.jpg)
 
 from one server and check if the same file is accessible from other Web Servers.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/be74d92a-90d5-4cd5-888d-a09b0dcd9947)
+![image](assets/final_5.jpg)
 
 
 7. Locate the log folder for Apache on the Web Server and mount it to NFS server's export for logs. Repeat step №4 to make sure the mount point will persist after reboot.
 ```
 sudo mkdir -p /var/log/httpd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/24b30052-2f58-4ae1-b8bf-a8597684cd29)
+![image](assets/web_serv_final_1.jpg)
 
 ```
-sudo mount -t nfs -o rw,nosuid 172.31.28.68:/mnt/logs /var/log/httpd
+sudo mount -t nfs -o rw,nosuid 172.31.36.105:/mnt/logs /var/log/httpd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b6a50485-dd65-461f-b923-abdfa7a7d79e)
+![image](assets/web_serv_final_2.jpg)
 
 Edit the /etc/fstab file so that it persists even after reboot
 ```
@@ -666,28 +665,28 @@ sudo vi /etc/fstab
 ```
 add the following lines
 ```
-172.31.28.68:/mnt/logs /var/log/httpd nfs defaults 0 0
+172.31.36.105:/mnt/logs /var/log/httpd nfs defaults 0 0
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0658920b-fad5-4e76-b08f-614260e16c89)
+![image](assets/web_serv_final_3.jpg)
 
 8. Fork the tooling source code from Darey.io Github Account to your Github account.
 **Download git**
 ```
 sudo yum install git
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1f1f26f8-da14-4f1d-a75f-d361d36dfe7d)
+![image](assets/web_serv_final_5_instal_git.jpg)
 
 **Clone the repository you forked the project into**
 ```
-git clone https://github.com/melkamu372/tooling.git
+git clone https://github.com/gashawgedef/tooling.git
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cd9e36f0-7129-4029-9808-15d4177c54d0)
+![image](assets/web_serv_final_6.jpg)
 
 9. Deploy the tooling website's code to the Webserver. Ensure that the html folder from the repository is deployed to /var/www/html
 ```
 sudo cp -R html/. /var/www/htm/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/004aaed6-4085-46f4-92fa-e0dfccce8d52)
+![image](assets/web_serv_final_7.jpg)
 
 > Note 1: Do not forget to open TCP port 80 on the Web Server.
 
@@ -697,54 +696,56 @@ sudo cp -R html/. /var/www/htm/
 ```
 sudo setenforce 0
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0519607c-34bb-4247-b8e2-68816857610e)
+![image](assets/web_serv_final_8.jpg)
 
 ```
 sudo vi /etc/sysconfig/selinux
 ```
 and set SELINUX=disabled
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b3b63124-cee0-41b6-b5f6-186b6323f0b8)
+![image](assets/web_serv_final_9.jpg)
 
  **Then restrt httpd**.
 ```
 sudo systemctl restart httpd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1c12dbb9-3222-4a82-aeee-aa74c793ca5b)
+![image](assets/web_serv_final_10.jpg)
 ```
 sudo systemctl status httpd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3c262a40-9026-48a8-9c85-3e9c5c511cbf)
+![image](assets/web_serv_final_11.jpg)
 
 
 10. Update the website's configuration to connect to the database (in /var/www/html/functions.php file). Apply `tooling-db.sql` script to your database using this command
  
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3b1d214e-7092-4593-838d-e695f824f671)
+![image](assets/web_serv_final_12.jpg)
 
  ```
-  mysql -h 172.31.21.131 -u webaccess -p -D tooling < tooling-db.sql
+  mysql -h 172.31.37.78 -u webaccess -p -D tooling < tooling-db.sql
 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e022be24-ef1a-44a3-b2ea-b8115e1d7ce0)
+![image](assets/web_serv_final_13.jpg)
 
 
 11. Create in MySQL a new admin user with `username: myuser` and `password: password`:
 
 ```
-mysql -h 172.31.21.131 -u webaccess -p
+mysql -h 172.31.37.78 -u webaccess -p
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4ab2076d-1cba-4629-b11b-4ae9c5ce5a69)
+![image](assets/web_serv_final_14.jpg)
 
 ```
-INSERT INTO 'users' ('id', 'username', 'password', 'email', 'user_type', 'status') VALUES -> (2, 'webaccess_user', '5f4dcc3b5aa765d61d8327deb882cf99', 'user@mail.com', 'admin', '1');
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `user_type`, `status`) 
+VALUES (2, 'webaccess_user', '5f4dcc3b5aa765d61d8327deb882cf99', 'user@mail.com', 'admin', '1');
+
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/340ba5b3-0b3b-4471-8f2a-a9deb1946ef1)
+![image](assets/web_serv_final_15.jpg)
 
 12. Open the website in your browser http://`Web-Server-Public-IP-Address`or `Public-DNS-Name`/index.php and make sure you can login into the website with  your user and password.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/edf887e7-e267-43eb-9996-85d46b239605)
+![image](assets/web_serv_final_16.jpg)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/098e7ff2-693b-4ae1-a247-623d1e9a80d7)
+![image](assets/web_serv_final_17.jpg)
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/300c579c-92d6-430d-81d1-34b2d362e82b)
 
