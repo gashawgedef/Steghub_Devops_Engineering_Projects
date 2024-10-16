@@ -129,7 +129,7 @@ ProxyPassReverse / balancer://mycluster/
 ```
 sudo systemctl restart apache2
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/835312f2-a626-4ba0-b741-6b5548e2a14c)
+![image](assets/restart%20apache2.jpg)
 
 > `bytraffic` balancing method will distribute incoming load between our Web Servers according to current traffic load. We can control in which proportion the traffic must be distributed by loadfactor parameter.
 
@@ -138,7 +138,7 @@ we can also use other methods, like: `bybusyness`, `byrequests`, `heartbeat`
 **Verify that our configuration works** 
 
 ```
-http://3.90.26.133/index.php
+http://3.93.57.84/index.php
 ```
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4c04e86b-1d67-478e-a3e9-e6eb14e1438c)
 
