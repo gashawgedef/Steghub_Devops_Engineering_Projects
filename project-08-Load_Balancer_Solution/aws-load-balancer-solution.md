@@ -116,14 +116,11 @@ sudo vi /etc/apache2/sites-available/000-default.conf
                ProxySet lbmethod=bytraffic
                # ProxySet lbmethod=byrequests
         </Proxy>
+        ProxyPreserveHost On
+        ProxyPass / balancer://mycluster/
+        ProxyPassReverse / balancer://mycluster/
 ```
 ![image](assets/lb_server_config_web_servers_to_accept.jpg)
-
-```
-ProxyPreserveHost On
-ProxyPass / balancer://mycluster/
-ProxyPassReverse / balancer://mycluster/
-```
 
 **Restart apache server**
 ```
@@ -146,15 +143,15 @@ http://54.224.143.231/index.php
 
 ![image](assets/lb_images.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/97b07510-1767-4645-96cc-199c60155067)
 
 > **Note**: If in the previous project, we mounted /var/log/httpd/ from our Web Servers to the **NFS server** - unmount them and make sure that each Web Server has its own log directory.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0f0d47ca-ad2b-4dde-9097-280f6183e046)
+![image](assets/lb_errors.JPG)
 
 **Unmounting the NFS Directory**
 1. Identify the NFS mount: Check the current NFS mounts:
 ```
+
 df -h
 ```
 2. Look for the line showing the /var/log/httpd mount point. Unmount the NFS directory:
