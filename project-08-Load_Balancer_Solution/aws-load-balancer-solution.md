@@ -112,7 +112,7 @@ sudo vi /etc/apache2/sites-available/000-default.conf
 ```
 <Proxy "balancer://mycluster">
                BalancerMember http://172.31.44.68:80 loadfactor=5 timeout=1
-               BalancerMember http:172.31.20.250:80 loadfactor=5 timeout=1
+               BalancerMember http://172.31.43.184:80 loadfactor=5 timeout=1
                ProxySet lbmethod=bytraffic
                # ProxySet lbmethod=byrequests
         </Proxy>
