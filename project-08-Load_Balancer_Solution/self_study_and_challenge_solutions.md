@@ -1,6 +1,8 @@
-# Load Balancing Concepts and Differences between L4 Network Load Balancer and L7 Application Load Balancer
+# Self Study, Challenges and  Solutions
 
-## Load Balancing Concepts
+## Load Balancing Concepts and Differences between L4 Network Load Balancer and L7 Application Load Balancer
+
+### Load Balancing Concepts
 
 1. **Round Robin**: Distributes requests sequentially across a group of servers.
 2. **Least Connections**: Directs traffic to the server with the fewest active connections.
@@ -10,7 +12,7 @@
 6. **Session Persistence (Sticky Sessions)**: Ensures requests from a client during a session are directed to the same server.
 7. **Geographic Load Balancing**: Directs traffic based on the geographic location of the client, optimizing for latency and compliance.
 
-## L4 Network Load Balancer vs. L7 Application Load Balancer
+### L4 Network Load Balancer vs. L7 Application Load Balancer
 
 Load balancers operate at different layers of the OSI network model, leading to distinct functionalities:
 
