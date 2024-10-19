@@ -154,7 +154,7 @@ http://54.224.143.231/index.php
 
 df -h
 ```
-2. Look for the line showing the /var/log/httpd mount point. Unmount the NFS directory:
+2. Look for the line showing the `/var/log/httpd` mount point. Unmount the NFS directory:
 ```
 sudo umount /var/log/httpd
 ```
@@ -175,7 +175,8 @@ sudo systemctl restart httpd
 ```
 
 we should do the above step for all
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7b8d9e2f-da24-4bd5-b05f-7df0362bbcf5)
+
+![image](assets/lb_erros_2.JPG)
 
 
 **Open two ssh/Putty consoles for both Web Servers and run following command:****
@@ -183,13 +184,14 @@ we should do the above step for all
 ```
 sudo tail -f /var/log/httpd/access_log
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3116605c-4bd2-46f4-94d2-3f5da23d0e8f)
+![image](assets/lb_errors.JPG)
 
 **sever 2**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2d3fe896-8fe8-4958-b73b-e760967e8b50)
+![image](assets/lb_errors_1.JPG)
 
 Try to refresh your browser page 
+
 ```
 http://ec2-54-237-197-236.compute-1.amazonaws.com/index.php 
 ```
