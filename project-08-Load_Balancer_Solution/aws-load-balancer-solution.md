@@ -138,17 +138,20 @@ we can also use other methods, like: `bybusyness`, `byrequests`, `heartbeat`
 **Verify that our configuration works** 
 
 ```
-http://3.93.57.84/index.php
+http://54.224.143.231/index.php
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4c04e86b-1d67-478e-a3e9-e6eb14e1438c)
+![image](assets/lb_index.php)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6535d21e-cb09-48b3-acdf-58b2e94e5675)
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/43ca0184-fe0e-4056-a236-55a2c2e0c83d)
+![image](assets/lb_view_index_php.JPG)
+
+![image](assets/lb_images.JPG)
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/97b07510-1767-4645-96cc-199c60155067)
 
 > **Note**: If in the previous project, we mounted /var/log/httpd/ from our Web Servers to the **NFS server** - unmount them and make sure that each Web Server has its own log directory.
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0f0d47ca-ad2b-4dde-9097-280f6183e046)
+
 **Unmounting the NFS Directory**
 1. Identify the NFS mount: Check the current NFS mounts:
 ```
