@@ -193,9 +193,10 @@ sudo tail -f /var/log/httpd/access_log
 Try to refresh your browser page 
 
 ```
-http://ec2-54-237-197-236.compute-1.amazonaws.com/index.php 
+http://ec2-54-224-143-231.compute-1.amazonaws.com/login.php
+
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/eef5c6e5-e3f7-4134-8ba3-8185df5a8cc7)
+![image](assets/lb_view_login.JPG)
 
 several times and make sure that both servers receive HTTP GET requests from our LB - new records must appear in each server's log file. The number of requests to each server will be approximately the same since we set loadfactor to the same value for both servers - it means that traffic will be distributed evenly between them.
 
