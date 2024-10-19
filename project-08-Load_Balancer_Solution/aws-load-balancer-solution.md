@@ -1,4 +1,4 @@
-# Implementing a Load balancer Solution with Apache
+# Project-08- Implementing a Load balancer Solution with Apache
 Load balancers are a special type of server farm that helps in efficiently distributing incoming network traffic across a group of backend servers.
 
 > In this project we will enhance our Tooling Website solution by adding a ***Load Balancer*** to distribute traffic between `Web Servers` and allow users to access our website using a single URL.
