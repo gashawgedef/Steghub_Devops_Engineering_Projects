@@ -211,10 +211,10 @@ sudo vi /etc/hosts
 ```
 2. add this file with **Local IP address** and **arbitrary name** for our Web Servers
 ```
-172.31.29.247 Web1
-172.31.20.250 Web2
+172.31.44.68 Web1
+172.31.43.184 Web2
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/89df3989-7a44-401f-8683-a44d8924bab6)
+![image](assets/lb_add_server_addresses.JPG)
 
 Now we can update our LB config file with those names instead of IP addresses
 ```
@@ -225,19 +225,19 @@ sudo vi /etc/apache2/sites-available/000-default.conf
 BalancerMember http://Web1:80 loadfactor=5 timeout=1
 BalancerMember http://Web2:80 loadfactor=5 timeout=1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a4832d64-71b6-402b-ad83-c8c948fcad2c)
+![image](assets/lb_lists.JPG)
 
 now we can try to curl our Web Servers from LB locally
 ```
 curl http://Web1
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9727f986-0831-403f-b1f7-3b081cbb6c5d)
+![image](assets/lb_curl_1.JPG)
 
  **or**
  ```
  curl http://Web2
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e6355300-fd1a-49b8-a6ee-4b966ff36e3e)
+![image](assets/lb_curl_2.JPG)
 
 > **Remember**, This is only internal configuration and also local to our **LB server**, these names will neither be 'resolvable' from other servers internally nor from the Internet.
 
