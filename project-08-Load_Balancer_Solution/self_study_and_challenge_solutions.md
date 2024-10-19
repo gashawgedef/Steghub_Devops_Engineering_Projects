@@ -1,6 +1,6 @@
 # Self Study, Challenges and  Solutions
 
-## Load Balancing Concepts and Differences between L4 Network Load Balancer and L7 Application Load Balancer
+## Load Balancing, L4 Network Load Balancer and L7 Application Load Balancer
 
 ### Load Balancing Concepts
 
