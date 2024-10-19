@@ -158,6 +158,11 @@ df -h
 ```
 sudo umount /var/log/httpd
 ```
+But we unmount using the following  `lazy`command
+
+```
+sudo umount -l /var/log/httpd
+```
 > If the directory is busy, you might need to stop the services using it first:
 
 ```
