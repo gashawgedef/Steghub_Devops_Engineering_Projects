@@ -139,7 +139,7 @@ sudo systemctl status jenkins
 ```
 http://<Jenkins-Server-Public-IP-Address>:8080
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a2746daa-2f6e-4d75-abc4-7dce3e36b087)
+![image](assets/jenkins_19_login.JPG)
 
 **Obtain Initial Admin Password**
 After accessing Jenkins through our browser via `http: <Jenkins-Server-Public-IP-Address-or-Public-DNS-Name>:8080` we will be prompted to provide a default admin password. T
@@ -148,29 +148,35 @@ To get retrieve the default admin password, run the following command
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5590c0f8-9b33-4122-94d0-db42bb7f6452)
+![image](assets/jenkins_20_retrieve_password.JPG)
 
 Copy the password and paste 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/dd06dc13-8568-4331-ba8b-48afaf035240)
+
+![image](assets/jenkins_21_enter_password.JPG)
 
 This step enables us to authenticate as the administrator and proceed with Jenkins setup and configuration.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/91ac69f2-500f-4807-b0f9-fe0d61b05acf)
+
+![image](assets/jenkins_22_configure_home.JPG)
 
 6. Install Suggested Plugins Then we will be asked which plugins to install - choose suggested plugins.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ad23b36c-e6d4-49a2-b098-ce3e4d36d315)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2efc27eb-eb3e-47d4-bddf-2fb94bb50b70)
+![image](assets/jenkins_23_configure_home.JPG)
+
+![image](assets/jenkins_24_install_plugins.JPG)
 
 7. Once plugin installation is done Create the First Admin User.
 we will create the first admin user for our system, granting initial administrative privileges to manage and configure the platform.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e81493cf-81e3-4526-a539-8deee4c41b3f)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1068b12a-4a8e-4769-a6c9-ca1fd4edf56b)
+![image](assets/jenkins_25_create_new_admin_user.JPG)
+
+![image](assets/jenkins_26_configure_url.JPG)
 
 8. Jenkins Setup Completion.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0ecdce55-11b3-4874-899a-c2efb7e47c3b)
+
+![image](assets/jenkins_27_finish_jenkins.JPG)
 
 With the installation and configuration completed, Jenkins is now ready for use. Navigate to the Jenkins dashboard and click on `New Item` to create a new job.
+![image](assets/jenkins_28_jenkins_dashboard.JPG)
 
 # Step 2 - Configure Jenkins to retrieve source codes from GitHub using Webhooks
 In this part, we will learn how to configure a simple **Jenkins job/project**. This job will will be triggered by `GitHub webhooks` and will execute a `build` task to retrieve codes from GitHub and store it locally on Jenkins server.
