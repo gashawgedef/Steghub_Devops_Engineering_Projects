@@ -182,15 +182,18 @@ With the installation and configuration completed, Jenkins is now ready for use.
 In this part, we will learn how to configure a simple **Jenkins job/project**. This job will will be triggered by `GitHub webhooks` and will execute a `build` task to retrieve codes from GitHub and store it locally on Jenkins server.
 
 1. Enable webhooks in our GitHub repository settings. Go to your GitHub repository and select Settings > Webhooks > Add webhook
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/68ba7c39-aea0-42e7-bfad-23869274d86b)
+![image](assets/jenkins_29_install_webhook.JPG)
 
 2. Go to Jenkins web console, click `New Item` and create a `Freestyle project`
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/529732d8-a4d2-440b-af84-7d3ed797cf3b)
+
+![image](assets/jenkins_30.JPG)
 
 To connect our GitHub repository, we will need to provide its URL, we can copy from the repository itself
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b2bc1c1b-b62d-4f36-9f93-b2c25b72ad3d)
+
+![image](assets/jenkins_31_github_url.JPG)
+
 ```
-https://github.com/melkamu372/tooling.git
+https://github.com/gashawgedef/tooling.git
 ```
 In configuration of our Jenkins freestyle project choose Git repository, provide there the link to our Tooling GitHub repository and credentials (user/password) so Jenkins could access files in the repository.
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b8cd0b2a-88f0-4e83-b5d5-d158ce0cf01f)
