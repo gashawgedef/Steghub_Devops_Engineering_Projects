@@ -44,7 +44,7 @@ Configure security group with the following inbound rules:
 - Allow traffic on port 80 (HTTP) with source from anywhere on the internet.
 - Allow traffic on port 443 (HTTPS) with source from anywhere on the internet.
 
-![image](assets/jenkins_8_open_ports.JPG)
+![image](assets/jenkins_8_ports.JPG)
 
 2. Install JDK since Jenkins is a Java-based application
  
