@@ -8,15 +8,30 @@ Continuous integration (CI) is a software development strategy that improves bot
 
 ![images](assets/continuous-integration-server-diagram.avif)
 
-**Key Components:**
-- **Version Control System (VCS):** Developers commit their code changes to a shared repository.
-- **Automated Build:** Every commit triggers an automated build to compile the code and ensure it integrates with the existing codebase.
-- **Automated Tests:** A suite of automated tests runs to verify that the changes don't break existing functionality.
+**How continuous integration works**
+
+CI is a systematic approach to software delivery that automates repetitive and error-prone tasks for faster, more efficient development. Here’s a step-by-step look at how it works:
+
+**1. Commit:** 	Developers continuously push their code changes to a shared repository, often multiple times a day. This practice ensures that new code is consistently integrated with the existing codebase.
+
+**2. Build:** 	Once code changes are committed, CI systems automatically build the application. This ensures that the new code works with the existing codebase and that the application is deploy-ready at all times.
+
+**3.Test:** 	After the build process, the CI server runs automated tests to assess the changes’ impact on the application’s functionality, security, and adherence to your organization’s policies. Common tests include unit tests, integration tests, security and compliance scans, and code quality checks.
+
+**4. Inform:** 	CI provides rapid feedback to development teams regarding the success or failure of their code changes. This information keeps developers constantly informed about the health of their application, enabling them to iterate quickly and with greater confidence.
+
+**5:Integrate:** 	Once the build and test processes complete successfully, the changes are automatically merged into the main branch. This step ensures that updates are available to all team members and that the mainline stays up to date with the latest working version.
+
+**Deploy:** CI is often combined with continuous delivery (CD), creating an automated deployment pipeline. Once the code passes all tests, it can be automatically deployed to staging environments for further evaluation or sent directly to production, depending on the organization’s policies.
 
 **Benefits:**
-- Early detection of errors and bugs.
-- Reduced integration problems.
-- Improved code quality and collaboration among team members.
+
+- Improved team productivity and efficiency
+- Accelerated speed to market
+- Better product/market fit
+- Higher quality, more stable products
+- Increased customer satisfaction
+- Happier, more productive developers
 
 ## Continuous Delivery (CD)
 
