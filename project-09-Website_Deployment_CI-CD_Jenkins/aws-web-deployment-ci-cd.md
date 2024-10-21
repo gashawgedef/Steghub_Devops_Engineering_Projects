@@ -8,33 +8,43 @@ Enhance the architecture prepared in `Project 8` by adding a Jenkins server, con
 
 # Step 1 - Install Jenkins server
 1. Create an aws EC2 instance server based on Ubuntu Server 24.04 LTS and name it `Jenkins Server`
- Log to aws account console and create EC2 instance of t2.micro type with Ubuntu Server 24.04 LTS Server launch in the default region us-east-1. name instance Linux Jenkins server
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/951d5488-5897-407e-ab66-7345ee787634)
+ Log to aws account console and create EC2 instance of t2.micro type with Ubuntu Server 24.04 LTS Server launch in the default region us-east-1. name instance Linux `Jenkins server`
+
+
+![image](assets/jenkins_1_instance_name.JPG)
 
 Application and OS Images select Ubuntu free tire eligable version
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/46ec338c-7372-43c5-80a5-600615d337d8)
+
+![image](assets/jenkins_2_instance_os.JPG)
 
 Create new key pair or select existing key
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0cd3dd1f-029d-48e7-bbf6-f571fdb1b73f)
+
+![image](assets/jenkins_3_instance_key_pair.JPG)
 
 Network setting create new security group or use existing security group
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5f6239a3-35f4-498b-9728-302b8f7fd8de)
+
+![image](assets/jenkins_4_security_grup.JPG)
 
 Configure Storage and launch the instance
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/09520371-6a1d-4194-8498-9487ffb54268)
+
+![image](assets/jenkins_5_config_storage.JPG)
 
 View Instance
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1d5ff825-a52b-40b0-ac42-b3ccb48d3ea3)
 
-Instance Details for web
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0c1ac140-93a7-42db-b34d-f9e8729dbcd0)
+![image](assets/jenkins_6_view_instance.JPG)
+
+Instance Details for Jenkins Server
+
+![image](assets/jenkins_7_view_details.JPG)
 
 Configure security group with the following inbound rules:
+
 - Allow traffic on port 22 (SSH) with source from any IP address. This is opened by default.
 - Allow traffic on port 8080  default Jenkins server uses TCP port
 - Allow traffic on port 80 (HTTP) with source from anywhere on the internet.
 - Allow traffic on port 443 (HTTPS) with source from anywhere on the internet.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fc376ffa-5836-4cd3-8978-25ce6d8aec9e)
+
+![image](assets/jenkins_8_open_ports.JPG)
 
 2. Install JDK since Jenkins is a Java-based application
  
