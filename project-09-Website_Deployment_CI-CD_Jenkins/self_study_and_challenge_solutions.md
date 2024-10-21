@@ -22,7 +22,7 @@ CI is a systematic approach to software delivery that automates repetitive and e
 
 **5:Integrate:** 	Once the build and test processes complete successfully, the changes are automatically merged into the main branch. This step ensures that updates are available to all team members and that the mainline stays up to date with the latest working version.
 
-**Deploy:** CI is often combined with continuous delivery (CD), creating an automated deployment pipeline. Once the code passes all tests, it can be automatically deployed to staging environments for further evaluation or sent directly to production, depending on the organization’s policies.
+**6. Deploy:** CI is often combined with continuous delivery (CD), creating an automated deployment pipeline. Once the code passes all tests, it can be automatically deployed to staging environments for further evaluation or sent directly to production, depending on the organization’s policies.
 
 **Benefits:**
 
