@@ -230,7 +230,7 @@ Now, go ahead and we make some change in any file in our GitHub repository (e.g.
 
 we will see that a new build has been launched automatically by webhook and its results - artifacts, saved on Jenkins server.
 
-![image](assets/jenkins_38_after%20build.JPG)
+![image](assets/jenkins_47.jpg)
 
 Now we configured an automated `Jenkins job ` that receives files from GitHub by webhook trigger this method is considered as `push` because the changes are being `pushed` and files transfer is initiated by GitHub. There are also other methods: trigger one job `downstreadm` from another `upstream`, pull GitHub periodically and others
 
@@ -294,7 +294,8 @@ sudo chmod -R 755 /mnt/apps
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/39399920-2d7e-4110-a6f1-7d570cbc2358)
 
 `Webhook` will trigger a new job 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/01332821-fb4a-47ee-b6c3-a01676e70421)
+
+![image](assets/jenkins_47.jpg)
 
 and in the `Console Output` of the job we will get something like this:
 
