@@ -6,6 +6,8 @@ CI/CD is a set of practices, processes, and tools that enable software developme
 
 Continuous integration (CI) is a software development strategy that improves both the speed and quality of code deployments. In CI, developers frequently commit code changes, often several times a day. Each change triggers an automated build and test sequence, ensuring that new code works with the existing codebase. If any issues are discovered during the test phase, the CI platform blocks the code from merging and alerts the team so they can quickly fix any errors.mkdir 
 
+![images](assets/continuous-integration-server-diagram.avif)
+
 **Key Components:**
 - **Version Control System (VCS):** Developers commit their code changes to a shared repository.
 - **Automated Build:** Every commit triggers an automated build to compile the code and ensure it integrates with the existing codebase.
