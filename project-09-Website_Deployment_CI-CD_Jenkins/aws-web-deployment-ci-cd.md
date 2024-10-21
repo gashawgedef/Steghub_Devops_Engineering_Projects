@@ -49,42 +49,67 @@ Configure security group with the following inbound rules:
 2. Install JDK since Jenkins is a Java-based application
  
  Open up the Linux terminal to begin configuration
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/60042214-5b40-4a39-9e74-009e2528bfce)
+
+![image](assets/jenkins_9_connect_server.JPG)
 
 ```
 sudo apt update
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ec3cdf07-0d63-439d-a74c-263343c0f534)
+![image](assets/jenkins_10_update.JPG)
 
 ```
 sudo apt install default-jdk-headless
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/795efe72-f044-4dc4-bbfa-eeb6329d8e57)
+![image](assets/jenkins_11_install_jdk.JPG)
 
  **check if the installation worked**
 ```
 java -version
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3f3c9d33-74f0-422f-aa60-5cd33689e8d9)
+![image](assets/jenkins_12_check_versions.JPG)
 
 3. Install Jenkins
+
 Add the Jenkins repository:
 ```
 sudo wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/bd87e0fd-e5ea-49e3-ab8c-d3adc964b491)
+![image](assets/jenkins_13_authenticate_package.JPG)
 
 **Put the Jenkins repository to the list of package sources**
 ```
 sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
     /etc/apt/sources.list.d/jenkins.list'
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7538e383-f182-4815-ad54-18ca3d9524e3)
+![image](assets/jenkins_14_install_package.JPG)
 
+
+but i have got error using above commands
+
+**Remove the Jenkins Repository and Key:** First, clean up the current Jenkins repository configuration:
+
+```
+sudo rm /etc/apt/sources.list.d/jenkins.list
+sudo rm /usr/share/keyrings/jenkins-key.gpg
+```
+**Manually Import the Jenkins GPG Key Using apt-key:** Although apt-key is deprecated, it can still work for this particular case:
+
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5BA31D57EF5975CA
+```
+This directly imports the key identified by 5BA31D57EF5975CA from the keyserver.
+
+**Re-add the Jenkins Repository:** Now add the Jenkins repository again:
+
+```
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+```
+
+**Update the Package List:** Run the update command to see if the key has been properly imported:
 ```
 sudo apt update
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/66df5470-262b-463c-9ca5-27f8312357aa)
+![image](assets/jenkins_16.JPG)
 
 **Installing and configuring Jenkins**
 ```
