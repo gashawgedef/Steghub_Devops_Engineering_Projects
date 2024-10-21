@@ -276,10 +276,13 @@ Scroll down to `Publish over SSH` plugin configuration section and configure it 
 ![image](assets/jenkins_44_config.JPG)
 **Save the configuration, open your Jenkins job/project configuration page and add another one `Post-build Action`**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0431bb34-999c-46ec-8c13-e6f4228818f3)
+![image](assets/jenkins_45_.jpg)
 
-**Configure it to send all files produced by the build into our previouslys define remote directory** In our case we want to copy **all files** and **directories**, so we use `**` If you want to apply some particular pattern to define which files to send - [Read here in detail](https://ant.apache.org/manual/dirtasks.html#patterns).
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/546db5c7-1fd8-4036-a11e-d388b59eabff)
+**Configure it to send all files produced by the build into our previouslys define remote directory** In our case we want to copy **all files** and **directories**, so we use `**` If you want to apply some particular pattern to define which files to send - [Read here in detail]
+(https://ant.apache.org/manual/dirtasks.html#patterns).
+
+
+![image](assets/jenkins_46.jpg)
 
 **Save this configuration and go ahead, change something in README.MD file in our GitHub Tooling repository**
 > Remeber to give directory permissions for user `ec2-user` on the **NFS server** :
