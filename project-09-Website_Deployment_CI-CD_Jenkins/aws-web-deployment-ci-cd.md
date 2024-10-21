@@ -115,24 +115,24 @@ sudo apt update
 ```
 sudo apt-get install jenkins
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cc5ebca6-29fb-4906-b53f-b34d96e1e579)
+![image](assets/jenkins_17_install_jenkins.JPG)
 
 **Enable jenkins**
 ```
 sudo systemctl enable jenkins
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/37d4625d-e37a-4fc2-8d55-38e53de07053)
+![image](assets/jenkins_17_enable_jenkins.JPG)
 
 
 **Check Jenkins is up and running**
 ```
 sudo systemctl status jenkins
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/dc5b9848-9ff2-4484-ae70-4838a5cd1d2a)
+![image](assets/jenkins_18_jenkins_status.JPG)
 
 4. By default Jenkins server uses TCP port 8080 - open it by creating a new Inbound rule in our EC2 Security Group
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ce1c01be-648d-44b6-afb9-6f14446a953b)
+![image](assets/jenkins_8_ports.JPG)
 
 5. Perform initial Jenkins setup
 **Perform initial Jenkins setup. From your browser access**
