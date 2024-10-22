@@ -303,7 +303,7 @@ and in the `Console Output` of the job we will get something like this:
 SSH: Transferred 25 file(s)
 Finished: SUCCESS
 ```
-![image](assets/jenkins_47.jpg)
+![image](assets/jenkins_48_console.JPG)
 
 **To make sure that the files in /mnt/apps have been updated - connect via SSH to our NFS server and check README.MD file**
 ```
