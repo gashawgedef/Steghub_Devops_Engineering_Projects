@@ -291,7 +291,7 @@ Ensure the target directory on the NFS server has the correct permissions. You m
 sudo chown -R ec2-user:ec2-user /mnt/apps
 sudo chmod -R 755 /mnt/apps
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/39399920-2d7e-4110-a6f1-7d570cbc2358)
+![image](assets/jenkins_52.JPG)
 
 `Webhook` will trigger a new job 
 
