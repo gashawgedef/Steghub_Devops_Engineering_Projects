@@ -238,7 +238,7 @@ Now we configured an automated `Jenkins job ` that receives files from GitHub by
 ```
 ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/66adc51b-dbb5-4b89-8056-3768e1548e8d)
+![image](assets/jenkins_39_lst.JPG)
 
 # Step 3 - Configure Jenkins to copy files to NFS server via SSH
 
