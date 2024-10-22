@@ -310,13 +310,13 @@ Finished: SUCCESS
 sudo ls /mnt/apps
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c1018c18-7504-476b-8f9d-17dd1d11a2cc)
+![image](assets/jenkins_50.JPG)
 
 
 ```
 cat /mnt/apps/README.md
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a95bba63-6c0c-4467-806d-4a65f2bc696b)
+![image](assets/jenkins_51.JPG)
 
 If you see the changes you had previously made in your GitHub - the job works as expected.
 
