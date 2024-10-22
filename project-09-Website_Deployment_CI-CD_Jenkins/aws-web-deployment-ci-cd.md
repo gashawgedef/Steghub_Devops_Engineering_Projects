@@ -1,4 +1,4 @@
-# Tooling Website deployment automation with Continuous Integration
+# Project 09-Tooling Website deployment automation with Continuous Integration
 In this project we are going to start automating part of our routine tasks with a free and open source automation server - **Jenkins**. It is one of the mostl popular CI/CD tools.
 
 Acording to Circle CI, Continuous integration (CI) is a software development strategy that increases the speed of development while ensuring the quality of the code that teams deploy. Developers continually commit code in small increments which is then automatically built and tested before it is merged with the shared repository.
