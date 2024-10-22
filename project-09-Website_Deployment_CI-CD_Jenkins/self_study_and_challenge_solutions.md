@@ -1,4 +1,5 @@
-# Continuous Integration, Continuous Delivery, and Continuous Deployment
+# Self Study, Challenges and Solutions
+## Continuous Integration, Continuous Delivery, and Continuous Deployment
 
 CI/CD is a set of practices, processes, and tools that enable software development teams to automate and standardize the building, testing, and deployment of code changes. It breaks down the development and delivery process into smaller, manageable stages, allowing for continuous, incremental improvements and faster release cycles.
 
