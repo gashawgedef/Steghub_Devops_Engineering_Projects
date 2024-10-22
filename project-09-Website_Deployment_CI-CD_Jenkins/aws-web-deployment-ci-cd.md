@@ -244,13 +244,15 @@ ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
 
 Now we have our artifacts saved locally on Jenkins server, the next step is to copy them to our NFS server to `/mnt/apps` directory
 Jenkins is a highly extendable application and there are `more than 1400 plugins` available. now we will need a plugin that is called `Publish Over SSH`
-1. Install `Publish Over SSH` plugin. Go to the Jenkins web console and select **Manage Jenkins** > **Manage Plugins**> **Available** > **Publish over SSH** > Install without restart."
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d16f56b7-6671-438d-8f6f-c788b213aa09)
+1. Install `Publish Over SSH` plugin. Go to the Jenkins web console and select **Manage Jenkins** > **Manage Plugins**> **Available** > **Publish over SSH** > `Install without restart`."
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/59524e74-719a-4003-bee7-6c687f60b6aa)
+![image](assets/jenkins_40_publish.JPG)
+
+![image](assets/jenkins_41_install_ssh.JPG)
 
 **Verify the installation**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6556d1bf-21bd-4d85-ac57-dd0f9950b444)
+
+![image](assets/jenkins_42_verify.JPG)
 
 2. Configure the **job/project** to copy artifacts over to **NFS server**
  
@@ -267,10 +269,11 @@ Scroll down to `Publish over SSH` plugin configuration section and configure it 
 2.4 Username - `ec2-user` (since NFS server is based on EC2 with RHEL 9)
 
 2.5 Remote directory - `/mnt/apps` since our Web Servers use it as a mointing point to retrieve files from the NFS server
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c65bde96-4a6f-4d91-93ec-f2a595a768dc)
+![image](assets/jenkins_43_enter_rsa_key.JPG)
 
 > Test the configuration and make sure the connection returns _**Success**_. **N.B** that `TCP port 22 on NFS server` must be open to receive SSH connections
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/49b59101-a825-4ad5-86ca-99a425769f30)
+
+![image](assets/jenkins_44_config.JPG)
 **Save the configuration, open your Jenkins job/project configuration page and add another one `Post-build Action`**
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0431bb34-999c-46ec-8c13-e6f4228818f3)
