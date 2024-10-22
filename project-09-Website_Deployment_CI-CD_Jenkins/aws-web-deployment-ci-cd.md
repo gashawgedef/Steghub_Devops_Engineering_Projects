@@ -295,7 +295,7 @@ sudo chmod -R 755 /mnt/apps
 
 `Webhook` will trigger a new job 
 
-![image](assets/jenkins_47.jpg)
+![image](assets/jenkins_49.JPG)
 
 and in the `Console Output` of the job we will get something like this:
 
@@ -303,7 +303,7 @@ and in the `Console Output` of the job we will get something like this:
 SSH: Transferred 25 file(s)
 Finished: SUCCESS
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/91861520-8023-4c7c-80ea-1dd2333ca6b9)
+![image](assets/jenkins_47.jpg)
 
 **To make sure that the files in /mnt/apps have been updated - connect via SSH to our NFS server and check README.MD file**
 ```
