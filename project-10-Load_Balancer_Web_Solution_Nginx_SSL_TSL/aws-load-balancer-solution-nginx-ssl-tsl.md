@@ -125,21 +125,21 @@ Before reloading Nginx, test the configuration to ensure there are no syntax err
 ```
 sudo nginx -t
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/17176c26-50c7-426e-8854-fa3904c70b2a)
+![image](assets/nginx_14_verify_configure.JPG)
 
 7. Reload Nginx
 If the configuration test is successful, reload Nginx to apply the changes
 
 ```
-sudo systemctl reload nginx
+sudo systemctl restart nginx
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/84228a24-d31c-4f3c-92a6-fe2660f20b31)
+![image](assets/nginx_15_restart.JPG)
 
 8. Verify  the service is up and running
 ```
 sudo systemctl status nginx
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c32a1c4e-b36a-4e66-9a8c-0b57f26a7fba)
+![image](assets/nginx_16_status.JPG)
 
 # Part 2 - Register a new domain name and configure secured connection using SSL/TLS certificates
 In order to get a valid SSL certificate we need to register a **new domain name**, we can do it using any Domain name registrar - a company that manages reservation of domain names. The most popular ones are: `Godaddy.com`, `Domain.com`, `Bluehost.com`
