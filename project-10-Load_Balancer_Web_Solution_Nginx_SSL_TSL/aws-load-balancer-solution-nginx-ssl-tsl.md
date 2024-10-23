@@ -63,13 +63,13 @@ Now connect to ssh terminal and work on
 ```
 sudo vi /etc/hosts
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d9640441-cd4c-4313-a82c-e0e7c772b9bb)
+![image](assets/nginx_3.JPG)
 
 Verify change 
 ```
 sudo cat /etc/hosts
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/43c35e2a-d294-4244-b33f-17c9cb958a6d)
+![image](assets/nginx_9.JPG)
 
 
 3. Install and configure Nginx as a load balancer to point traffic to the resolvable DNS names of the webservers
