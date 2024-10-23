@@ -19,31 +19,33 @@ Our target architecture will look like this:
 # Part 1 Configure Nginx as a load balancer
 
 1. Create an EC2 VM based on Ubuntu Server 24.04 LTS and name it nginx Ls 
-  ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8d7588d2-9288-4223-a829-7abdf1594a6f)
+
+  ![image](assets/nginx_1_instance_name.JPG)
+
 
 Application and OS Images select Ubuntu free tire eligable version
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2647c3a2-ea13-4f36-b806-254cc3a46c91)
+![image](assets/nginx_os.JPG)
 
 Create new key pair or select existing key
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3b162024-b52f-4191-a1c0-bb83171bc0cc)
+![image](assets/nginx_3_key_pair.JPG)
 
 Network setting create new security group or use existing security group
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5e0711c5-779d-480f-80b1-179ce5d187fc)
+![image](assets/nginx_4_.JPG)
 
 Configure Storage and launch the instance
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b56fcdd5-41b1-4454-9389-811083f7142b)
+![image](assets/nginx_5_configure_storage.JPG)
 
 View Instance
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e0b1c902-ac5f-45da-8b8c-24609fcd68c8)
+![image](assets/nginx_6_vew.JPG)
 
 Instance Details for web
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3f2f2f33-dac4-4c93-8d8e-ad938f094e44)
+![image](assets/nginx_7_view_details.JPG)
 
 Configure security group with the following inbound rules:
 
@@ -51,9 +53,11 @@ Configure security group with the following inbound rules:
 - Allow traffic on port 80 (HTTP) with source from anywhere on the internet.
 - Allow traffic on port 443 (HTTPS) with source from anywhere on the internet.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/22249603-8e6f-472a-af20-49a8cf4a4587)
+![image](assets/nginx_6_open_ports.JPG)
+
 Now connect to ssh terminal and work on
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/15a71696-e8bb-4002-8633-e8660f8bb105)
+
+![image](assets/nginx_&_connect_servers.JPG)
 
 2. Update `/etc/hosts` file for local DNS with Web Servers' names (e.g web1 and web2) and their local IP addresses
 ```
