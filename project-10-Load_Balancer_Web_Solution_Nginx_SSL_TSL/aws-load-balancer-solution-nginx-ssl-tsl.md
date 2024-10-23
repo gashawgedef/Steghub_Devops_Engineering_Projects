@@ -78,7 +78,7 @@ Update the instance
 ```
 sudo apt update
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/de989d70-3b2a-44c8-98d2-3e46d467bc0b)
+![image](assets/nginx_10_update.JPG)
 
 
 Install Nginx 
@@ -86,14 +86,14 @@ Install Nginx
 ```
 sudo apt install nginx
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/008ade69-defd-4243-800b-1744b41e9906)
+![image](assets/nginx_11_install_nginx.JPG)
 
 
 4. Edit the Nginx configuration file to set up load balancing
 ```
   sudo vi /etc/nginx/nginx.conf
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5105b1e9-4c44-466f-b133-2d281b999064)
+![image](assets/nginx_13_install.JPG)
 
 5. insert the following configuration in `http` section
 
@@ -116,7 +116,7 @@ sudo apt install nginx
 
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/823b737c-7fa7-4878-8b82-4721f68398b6)
+![image](assets/nginx_12_.JPG)
 
 
 6. Test the Configuration
