@@ -14,7 +14,7 @@ This project consists of two parts:
  
 Our target architecture will look like this:
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/04d2b9e4-ba6a-44a2-a750-ba0dd988e3b0)
+![image](assets/nginx.png)
 
 # Part 1 Configure Nginx as a load balancer
 
