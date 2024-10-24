@@ -200,7 +200,7 @@ learn how to allocate an Elastic IP and associate it with an EC2 server [Elastic
 
 3.4 Add or update an A record to point to your Elastic IP address
 
-![image](assets/nginx_23.JPG)
+![image](assets/nginx_update6.JPG)
 
 
 4. Configure Nginx to recognize your new domain name
@@ -211,7 +211,7 @@ Open the Nginx configuration file, typically located at `/etc/nginx/nginx.conf` 
 ```
 sudo vi /etc/nginx/nginx.conf
 ```
-![image](assets/nginx_24.JPG)
+![image](assets/nginx_update7.JPG)
 
 **Restart Nginx**
 ```
