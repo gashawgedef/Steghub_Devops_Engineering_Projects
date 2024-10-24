@@ -247,10 +247,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx
 ```
 Follow the prompts to select your domain and complete the installation
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/761e52c6-25d5-49bd-b904-e52ffd3af8b1)
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/efd6032e-c35b-44db-bf65-233f73c780a4)
-
+![image](assets/nginx_29.JPG)
 
 6. Test secured access to your Web Solution by trying to reach
 - Visit `https://<your-domain-name.com>` in your web browser
@@ -261,7 +258,7 @@ Follow the prompts to select your domain and complete the installation
 
 > You shall be able to access your website by using HTTPS protocol (that uses TCP port 443) and see a padlock pictogram in your browser's search string. Click on the padlock icon and you can see the details of the certificate issued for your website.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0ca058c5-36a2-4545-9833-46042168f914)
+![image](assets/devops.png)
 
 7. Set up periodical renewal of your SSL/TLS certificate
 By default, LetsEncrypt certificate is valid for 90 days, so it is recommended to renew it at least every 60 days or more frequently.
