@@ -151,12 +151,12 @@ In order to get a valid SSL certificate we need to register a **new domain name*
 
  ![image](assets/nginx_17_dynamic_zone.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7f5a23ee-08b1-4f50-a9aa-14cbf3e7a84f)
+![image](assets/nginx_update1.JPG)
 
 - Register your desired domain name  (e.g. .com, .net, .org, .edu, .info, .xyz or any other)
-![image](assets/nginx_18_records.JPG)
+![image](assets/nginx_update2.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ab8f7e71-7f65-489c-9c57-a681ecca543e)
+![image](assets/nginx_update3.JPG)
 
 Now let us check using DNS Checker  [https://dnschecker.org/#A/www.tooling.dns-dynamic.net](https://dnschecker.org/#A/www.tooling.dns-dynamic.net) 
 
@@ -206,18 +206,18 @@ learn how to allocate an Elastic IP and associate it with an EC2 server [Elastic
 4. Configure Nginx to recognize your new domain name
 Open the Nginx configuration file, typically located at `/etc/nginx/nginx.conf` or a specific site configuration file in `/etc/nginx/sites-available/` update your nginx.conf with server_name www.<your-domain-name.com instead of server_name www.domain.com
 
-**our server name :** `www.tooling.dns-dynamic.net`
+**our server name :** `www.anthratechnologies.net`
 
 ```
 sudo vi /etc/nginx/nginx.conf
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c3a61893-996d-45d7-bf2e-99fe277aac70)
+![image](assets/nginx_24.JPG)
 
 **Restart Nginx**
 ```
 sudo systemctl restart nginx
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/3d1623a1-a37b-405f-83ef-c50b15f51c13)
+![image](assets/nginx_25.JPG)
 
 
 5. Install `certbot` and request for an SSL/TLS certificate
@@ -226,13 +226,13 @@ sudo systemctl restart nginx
 ```
 sudo systemctl status snapd
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/400685c2-ca83-4ce3-9509-b658b0a3b8c6)
+![image](assets/nginx_26.JPG)
 
 **Install certbot**
 ```
 sudo snap install --classic certbot
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e4c5cb23-4fb4-4708-9da7-7d21d5e7685a)
+![image](assets/nginx_27.JPG)
 
 Obtain SSL/TLS Certificates:just follow the certbot instructions you will need to choose which domain you want your certificate to be issued for, domain name will be looked up from `nginx.conf` file so make sure you have updated it on step 4).
 
@@ -240,7 +240,7 @@ Obtain SSL/TLS Certificates:just follow the certbot instructions you will need t
 ```
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/bde0bbac-1acc-47e5-8b66-fc04c6ebb0f9)
+![image](assets/nginx_28.JPG)
 
 **Run Certbot to obtain and install the certificate**
 ```
