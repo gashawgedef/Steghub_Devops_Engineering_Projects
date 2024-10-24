@@ -149,7 +149,7 @@ In order to get a valid SSL certificate we need to register a **new domain name*
 - Select a domain registrar like GoDaddy, Domain.com, Bluehost or other for this time I need free domain for that 
   got to [https://www.cloudns.net/main/](https://www.cloudns.net/main/) and signup and register new domain
 
- ![image](assets/nginx_17_dynamic_zone.JPG)
+ ![image](assets/final_update.JPG)
 
 ![image](assets/nginx_update1.JPG)
 
