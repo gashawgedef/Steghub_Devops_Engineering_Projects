@@ -1,4 +1,5 @@
-# Read about different DNS record types and they use
+#Project 10-Self Study, Challenges And Solutions
+## Read about different DNS record types and they use
 
 **What is a DNS Record?**
 
@@ -86,7 +87,7 @@ DNS (Domain Name System) records are used to map human-readable domain names to 
 - Contains a digital signature to authenticate DNS data in DNSSEC.
 - Example: Signature data for DNSSEC validation.
 
-# Read more about HTTP load balancing methods and features supported by Nginx 
+## Read more about HTTP load balancing methods and features supported by Nginx 
 Nginx is a powerful and flexible HTTP server and reverse proxy that supports various load balancing methods and features.
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault‑tolerant configurations. Here's an overview of the HTTP load balancing methods and key features supported by Nginx:
 ![image](assets/dns_record.png)
