@@ -206,7 +206,7 @@ learn how to allocate an Elastic IP and associate it with an EC2 server [Elastic
 4. Configure Nginx to recognize your new domain name
 Open the Nginx configuration file, typically located at `/etc/nginx/nginx.conf` or a specific site configuration file in `/etc/nginx/sites-available/` update your nginx.conf with server_name www.<your-domain-name.com instead of server_name www.domain.com
 
-**our server name :** `www.anthratechnologies.net`
+**our server name :** `www.anthratechnologies.ip-dynamic.org`
 
 ```
 sudo vi /etc/nginx/nginx.conf
