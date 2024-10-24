@@ -1,4 +1,4 @@
-# Load Balancer Solution With Nginx and SSL/TLS
+# Project 10 - Load Balancer Solution With Nginx and SSL/TLS
 
 **Load balancing** : is an excellent way to scale out your application and increase its performance and redundancy. Nginx, a popular web server software, can be configured as a simple yet powerful load balancer to improve your server’s resource availability and efficiency.
 
