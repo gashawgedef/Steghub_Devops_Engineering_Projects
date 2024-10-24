@@ -89,7 +89,7 @@ DNS (Domain Name System) records are used to map human-readable domain names to 
 # Read more about HTTP load balancing methods and features supported by Nginx 
 Nginx is a powerful and flexible HTTP server and reverse proxy that supports various load balancing methods and features.
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault‑tolerant configurations. Here's an overview of the HTTP load balancing methods and key features supported by Nginx:
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7fb5e197-8e13-4cdf-bdfe-a04cfae2de32)
+![image](assets/dns_record.png)
 
 ## Load Balancing Methods
 Nginx supports several load balancing methods, each with its own strengths and weaknesses. The most commonly used methods are listed below.
