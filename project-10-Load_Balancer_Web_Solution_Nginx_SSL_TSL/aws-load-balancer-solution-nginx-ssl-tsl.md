@@ -160,7 +160,7 @@ In order to get a valid SSL certificate we need to register a **new domain name*
 
 Now let us check using DNS Checker  [https://dnschecker.org/#A/www.tooling.dns-dynamic.net](https://dnschecker.org/#A/www.tooling.dns-dynamic.net) 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/bec57229-c0c4-4e44-ae44-85ad868b7b9f)
+![image](assets/nginx_update4.JPG)
 
    
 2. Assign an Elastic IP to our Nginx LB server and associate our domain name with this Elastic IP
