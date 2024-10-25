@@ -27,53 +27,60 @@ When you get to Project 15, we will see a Bastion host in proper action. But for
 # Step 1 -Install and Configure ANSIBLE ON EC2 Instance
 
 1. Update Name tag on our **Jenkins EC2** Instance to **Jenkins-Ansible**. We will use this server to run playbooks.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/848adc8b-31f7-41b9-a6c3-45bd52d74d15)
+
+![image](assets/ansible_1_update_name.JPG)
 
 
 2. In your GitHub account create a new repository and name it **ansible-config-mgt**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/88e8764a-0754-4693-bb5b-4a3eff8dfdbf)
+
+![image](assets/ansible_2_create_repository.JPG)
 
 **Created Repository is**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/dfa4b1e1-91c4-4d87-801b-c5894697524c)
+
+![image](assets/ansible_3_created_repository.JPG)
 
 3. In your `Jenkin-Ansible server`, instal Ansible
 
 ```
 sudo apt update
 ```
+![images](assets/ansible_4_update_server.JPG)
 ```
 sudo apt install ansible
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/66e43ff4-ce20-471c-946e-5ef6159a14c1)
+
+![image](assets/ansible_5_install_ansible.JPG)
 
 **Check your Ansible version** 
 ```
 ansible --version
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/10d49174-d515-4570-82ef-112d889f3c19)
+
+![image](assets/ansible_6_check_versions.JPG)
 
 4. Configure Jenkins build job to save our repository content every time you change it – this will solidify your Jenkins configuration skills acquired in Project 9
 
 - Configure Webhook in GitHub and set webhook to trigger ansible build
   Enable webhooks in our GitHub repository settings. Go to your GitHub repository and select Settings > Webhooks > Add webhook
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ac88604e-24e8-4663-8604-5cf25f219733)
+![image](assets/ansible_7_configure_web_hook.JPG)
 
-- Create a new Freestyle project ansible in Jenkins
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c7c92db6-9e6d-4336-adf4-76847023e386)
+- Create a new Freestyle project `ansible` in Jenkins
+
+![image](assets/ansible_8_create_job.JPG)
 
 Point  to your `ansible-config-mgt` repository
+Get your repository address  from here
 
-Get your repository address  fromhere
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d2f7c94d-c685-4854-a729-a36927835b7e)
+![image](assets/ansible_6_connect_1.JPG)
 
 ```
-https://github.com/melkamu372/ansible-config-mgt.git
+https://github.com/gashawgedef/ansible-config-mgt.git
 ```
  
  Paste address to git configureation
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5a0c4c60-169f-4d7f-89d0-47e38eeeaca3)
+![image](assets/ansible_10_connect_with_repo.JPG)
 
 - Configure a Post-build job to save all (**) files, like you did it in _Project 9_.
 
