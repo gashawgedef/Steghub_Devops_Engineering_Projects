@@ -86,11 +86,12 @@ https://github.com/gashawgedef/ansible-config-mgt.git
 
 **Configure triggering the job from GitHub webhook**:
   
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ab12fbcd-90ee-447c-abba-93ed2fec8739)
+![image](assets/ansible_11_configure_job.JPG)
 
 **Configure Post-build Actions to archive all the files - files resulted from a build are called artifacts**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/977205d0-6194-4ee4-80f1-bb8f923b5e7f)
+
+![image](assets/ansible_12_from_all_files.JPG)
 
 5. Test your setup by making some change in README.MD file in master branch and make sure that builds starts automatically and Jenkins saves the files (build artifacts) in following folder
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/62ef1cfb-bd41-4e8e-8030-8d5f9737dd1c)
