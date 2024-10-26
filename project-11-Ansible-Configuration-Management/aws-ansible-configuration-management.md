@@ -94,23 +94,24 @@ https://github.com/gashawgedef/ansible-config-mgt.git
 ![image](assets/ansible_12_from_all_files.JPG)
 
 5. Test your setup by making some change in README.MD file in master branch and make sure that builds starts automatically and Jenkins saves the files (build artifacts) in following folder
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/62ef1cfb-bd41-4e8e-8030-8d5f9737dd1c)
+![image](assets/ansible_13_suuccess_builds.JPG)
 
 **Console**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7bc3cbad-40c1-497d-8da3-7bd93b1a9216)
+
+![image](assets/ansible_14_console.JPG)
 
 
 ```
 ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/d4c3d190-b3f2-4b56-bbd7-87f4aca800b8)
+![image](assets/ansible_15_check.JPG)
 
 
 > Note: Trigger Jenkins project execution only for /main (master) branch.
 
 Now your setup will look like this:
 
-![6035](https://user-images.githubusercontent.com/85270361/210153832-75e74f67-0654-4fc1-bcdd-08c3d5a8fa76.PNG)
+![6035](assets/ansible_16_home.png)
 
 > Tip Every time you stop/start your Jenkins-Ansible server – you have to reconfigure GitHub webhook to a new IP address, in order to avoid it, it makes sense to allocate an Elastic IP to your Jenkins-Ansible server (you have done it before to your LB server in 
 Project 10). Note that Elastic IP is free only when it is being allocated to an EC2 Instance, so do not forget to release Elastic IP once you terminate your EC2 Instance.
