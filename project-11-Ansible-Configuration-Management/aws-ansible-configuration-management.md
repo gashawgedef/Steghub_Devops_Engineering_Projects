@@ -127,9 +127,9 @@ plethora of different IDEs and Source-code Editors for different languages with 
 3. Clone down(Download) your ansible-config-mgt repo to your Jenkins-Ansible instance `git clone <ansible-config-mgt repo link>`
 
 ```
-git clone https://github.com/melkamu372/ansible-config-mgt.git
+git clone https://github.com/gashawgedef/ansible-config-mgt.git
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/33ace95e-fe63-481e-927e-57652dbecdef)
+![image](assets/ansible_17_clone.JPG)
 
 
 # Step 3 - Begin Ansible Development
@@ -146,8 +146,10 @@ cd path/to/your/ansible-config-mgt
 ```
 **Create a new branch:**
 ```
-git checkout -b feature/prj-11-ansible-setup
+
+git checkout -b feature/project-11-ansible-first
 ```
+![images](assets/ansible_19_create_new_branch.JPG)
 
 2. Checkout the newly created feature branch to your local machine and start building your code and directory structure
 ```
