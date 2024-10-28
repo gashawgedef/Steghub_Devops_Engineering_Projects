@@ -7,14 +7,6 @@ This Project will make us appreciate `DevOps tools` even more by making most of 
 **Ansible Client as a Jump Server (Bastion Host)**
 Ansible can be effectively used in combination with a Jump Server (also known as a Bastion Host) to manage a fleet of servers that are not directly accessible from the public internet. A Jump Server (sometimes also referred as Bastion Host) is an intermediary server through which access to internal network can be provided. If you think about the current architecture you are working on, ideally, the webservers would be inside a secured network which cannot be reached directly from the Internet. That means, even DevOps engineers cannot SSH into the Web servers directly and can only access it through a Jump Server - it provides better security and reduces attack surface.
 
-On the diagram below the Virtual Private Network (VPC) is divided into two subnets - Public subnet has public IP addresses and Private subnet is only reachable by private IP addresses.
-
-
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a324426f-c7f1-42dc-bb6e-4a721ca39cf1)
-
-
-
 When you get to Project 15, we will see a Bastion host in proper action. But for now, we will develop **Ansible scripts** to simulate the use of a Jump box/Bastion host to access our Web Servers
 
 **Tasks**
