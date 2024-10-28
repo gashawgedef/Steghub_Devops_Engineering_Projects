@@ -397,7 +397,7 @@ cd ansible-config-mgt
 ```
 ansible-playbook -i inventory/dev.yml playbooks/common.yml
 ```
-![image](assets/ansible_final.JPG)
+![image](assets/update5.jpg)
 
 You can go to each of the servers and check if wireshark has been installed by running 
 ```
