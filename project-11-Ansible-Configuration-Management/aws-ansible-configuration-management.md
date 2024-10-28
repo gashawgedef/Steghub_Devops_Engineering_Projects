@@ -328,16 +328,18 @@ git commit -m "commit message"
 ![image](assets/ansible_30_git_push.JPG)
 
 2. Create a Pull Request (PR)
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/259d4361-f2de-4a56-bead-9b119655ae53)
+![image](assets/ansible_31_open_pull_request.JPG)
 
 3. Wear the hat of another developer for a second, and act as a reviewer.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e0d5fb1e-007b-4ccf-ad72-74701325560b)
+![image](assets/ansible_32_review.JPG)
 
 4. If the reviewer is happy with your new feature development, merge the code to the master branch.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ebc11c68-2471-4b4b-91ba-8d7e97cb1fdb)
+
+![image](assets/ansible_33_git%20merge.JPG)
 
 5. Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes
-   ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/39a7e9a9-bbdd-4b1e-9b09-41f29656f2ae)
+
+   ![image](assets/ansible_34_configure.JPG)
 
 Once your code changes appear in master branch - Jenkins will do its job and save all the files (build artifacts) to 
 
@@ -345,12 +347,12 @@ Once your code changes appear in master branch - Jenkins will do its job and sav
 
 directory on Jenkins-Ansible server.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5fae49b1-785f-4cf9-ba59-61c44a735d6a)
+![image](assets/ansible_34_configure.JPG)
 
 ```
-ls /var/lib/jenkins/jobs/ansible/builds/12/archive/
+ls /var/lib/jenkins/jobs/ansible/builds/3/archive/
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0929f100-06cb-4f2f-b0b0-cafd71377076)
+![image](assets/ansible_36_updates.JPG)
 
 
 # Step 7 - Run first Ansible test
