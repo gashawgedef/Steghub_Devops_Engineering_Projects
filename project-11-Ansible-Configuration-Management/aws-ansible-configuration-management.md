@@ -248,7 +248,7 @@ Update your ``inventory/dev.yml`` file with this snippet of code:
 ```
 <Load-Balancer-Private-IP-Address> ansible_ssh_user=ubuntu
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/208497c4-aea9-4bf9-989b-8bcdc8da0841)
+![image](assets/ansible_26_configure_servers.JPG)
 
 # Step 5 - Create a Common Playbook
 
