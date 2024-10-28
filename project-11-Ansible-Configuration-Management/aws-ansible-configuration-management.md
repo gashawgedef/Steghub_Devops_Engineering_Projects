@@ -362,7 +362,8 @@ Now, it is time to execute ansible-playbook command and verify if your playbook 
 1. **Install Remote - SSH Extension**
 
 Open VS Code -> Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the VS Code window -> Search for `Remote - SSH` extension and install it
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/52f9bff3-bf47-42a3-a34a-096bd3b99550)
+
+![image](assets/ansible_37_updates.JPG)
 
 2. Configure SSH Host
 
@@ -370,11 +371,11 @@ Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS)->Type and select
 ->Enter the SSH connection string in the format user@hostname or user@ip_address, 
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a4c7d027-dbaa-469a-bb36-558f246120e3)
+![image](assets/ansible_38_connect_ssh.jpg)
 ```
 ubuntu@34.234.86.105
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6582d210-5a6e-477f-a3af-cde247029fc8)
+![image](assets/ansible_39.jpg)
 
 VS Code will prompt you for your SSH password or passphrase.
 
