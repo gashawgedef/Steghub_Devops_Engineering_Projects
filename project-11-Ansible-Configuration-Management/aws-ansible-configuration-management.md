@@ -347,7 +347,7 @@ Once your code changes appear in master branch - Jenkins will do its job and sav
 
 directory on Jenkins-Ansible server.
 
-![image](assets/ansible_34_configure.JPG)
+![image](assets/ansible_35_builds.JPG)
 
 ```
 ls /var/lib/jenkins/jobs/ansible/builds/3/archive/
