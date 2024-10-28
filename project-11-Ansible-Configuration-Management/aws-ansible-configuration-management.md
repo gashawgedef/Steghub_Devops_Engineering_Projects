@@ -384,7 +384,7 @@ After entering the password or passphrase, VS Code will connect to your remote i
 You should see a new VS Code window open with a green indicator in the bottom-left corner, indicating the remote connection.
 Edit Files and Execute Commands
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/299436d9-85fb-45f2-8c36-4fb10cc5f91e)
+![image](assets/ansible_40_connected.JPG)
 
 You can now edit files directly on your remote instance using VS Code.
 Open your Ansible playbook and other project files to make changes or additions as needed.
@@ -392,7 +392,7 @@ Use the integrated terminal in VS Code to run commands on the remote instance di
 ```
 cd ansible-config-mgt
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c5ed53b5-f187-4f0a-a94a-0dd2957b3764)
+![image](assets/ansible_41_cd_ansible.JPG)
 
 ```
 ansible-playbook -i inventory/dev.yml playbooks/common.yml
