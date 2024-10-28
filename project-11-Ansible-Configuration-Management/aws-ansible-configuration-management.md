@@ -322,9 +322,10 @@ git add <selected files>
 ```
 git commit -m "commit message"
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1b91aa7a-a6be-4f55-b6fd-fe7cb08bbeff)
+![image](assets/ansible_29_commit_changes.JPG)
 **Then push to github**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fbdc6f52-5465-449f-b46e-256b5584de93)
+
+![image](assets/ansible_30_git_push.JPG)
 
 2. Create a Pull Request (PR)
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/259d4361-f2de-4a56-bead-9b119655ae53)
