@@ -283,7 +283,7 @@ In `common.yml` playbook you will write configuration for repeatable, re-usable,
         name: wireshark
         state: latest
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e8eaf2f3-0de3-4b17-ae01-e1c26b4032ca)
+![image](assets/ansible_27_common.JPG)
 
 > Examine the code above and try to make sense out of it.  This **playbook** is divided into two parts, each of them is intended to perform the same task :
 
