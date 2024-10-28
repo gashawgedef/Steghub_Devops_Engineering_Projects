@@ -197,7 +197,7 @@ Save the below inventory structure in the ``inventory/dev`` file to start config
 ```
 eval `ssh-agent -s`
 ```
-![image](assets/ansible_21_ssh_agent.JPG)
+![image](assets/update1.jpg)
 
 
 **Add your private key to the SSH agent**: ssh-add <path-to-private-key> Replace <path-to-private-key> with the actual path to your private key file
@@ -205,7 +205,7 @@ eval `ssh-agent -s`
 ```
 ssh-add gashaw_key.pem
 ```
-![image](assets/ansible_23_add_agent.JPG)
+![image](assets/update2.jpg)
 
 
 Confirm the key has been added with the command below, you should see the name of your key
@@ -213,13 +213,13 @@ Confirm the key has been added with the command below, you should see the name o
 ```
 ssh-add -l 
 ```
-ssh![image](assets/ansible_24_add.JPG)
+ssh![image](assets/update3.jpg)
 
 Now, ssh into your Jenkins-Ansible server using ssh-agent
 ```
 ssh -A ubuntu@54.163.41.17
 ```
-![image](assets/ansible_25.JPG)
+![image](assets/update4.jpg)
 
 > To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance,    please see this video: [Windows Linux](https://www.youtube.com/watch?v=OplGrY74qog)
 
