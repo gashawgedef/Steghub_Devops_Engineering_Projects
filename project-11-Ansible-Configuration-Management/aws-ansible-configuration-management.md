@@ -408,10 +408,10 @@ which wireshark
  wireshark --version
 ```
 **Server check Ubuntu server**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/35372206-3e55-49f7-a24f-a7f954090df5)
+![image](assets/wireshark2.JPG)
 
 **Another Server Redhate server**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5ee2b263-c6a9-4539-92ce-4968461b124a)
+![image](assets/wireshark1.JPG)
 
 
 Your updated with Ansible architecture now looks like this:
