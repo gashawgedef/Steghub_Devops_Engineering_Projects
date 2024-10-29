@@ -416,7 +416,7 @@ which wireshark
 
 Your updated with Ansible architecture now looks like this:
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b9983c20-fc00-4ad1-86b8-c41677ce629d)
+![image](assets/final.jfif)
 
 
 # Optional step - Repeat once again
