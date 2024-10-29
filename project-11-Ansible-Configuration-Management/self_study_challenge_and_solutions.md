@@ -24,12 +24,11 @@ Automation can help enterprises reduce costs, complexity, and manual errors in a
 - **Edge automation**: configure and manage remote infrastructure systems including network, security, IoT devices, and server equipment.
 
  ## Jump Servers
- 
+
 A **jump server**, **jump host** or **jump box** is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them. The most common example is managing a host in a DMZ from trusted networks or computers.
 
 ### Implementation
 Jump servers are often placed between a secure zone and a DMZ to provide transparent management of devices on the DMZ once a management session has been established. The jump server acts as a single audit point for traffic and also a single place where user accounts can be managed. A prospective administrator must log into the jump server in order to gain access to the DMZ assets and all access can be logged for later audit.
-
 
 
 
