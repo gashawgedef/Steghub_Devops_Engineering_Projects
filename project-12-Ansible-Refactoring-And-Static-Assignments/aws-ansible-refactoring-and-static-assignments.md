@@ -71,7 +71,7 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 
 7. Test your set up by making some change in `README.MD` file inside your `ansible-config-mgt` repository (right inside master branch).
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/aad9f5f8-1758-44f7-8a5a-3cc496da9455)
+![image](assets/refactor_11.jpg)
 
 
 If both Jenkins jobs have completed one after another – you shall see your files inside /home/ubuntu/ansible-config-artifact directory and it will be updated with every commit to your master branch.
