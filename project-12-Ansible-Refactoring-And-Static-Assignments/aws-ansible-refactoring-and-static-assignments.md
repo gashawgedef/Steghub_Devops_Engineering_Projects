@@ -22,16 +22,18 @@ after each build.
 sudo mkdir /home/ubuntu/ansible-config-artifact
 ```
 
+![images](assets/refactor_1_create_folder.JPG)
 2. Change permissions to this directory, so Jenkins could save files there 
 
 ```
 chmod -R 0777 /home/ubuntu/ansible-config-artifact
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c887a508-3212-46bc-8d80-ce08ac28c451)
+![image](assets/refactore_2.JPG)
 
 3. Go to Jenkins web console -> Manage Jenkins -> Manage Plugins -> on Available tab search for Copy Artifact and install this plugin without restarting Jenkins
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a435a8f9-7778-4561-bd83-6cfbbf0ef738)
+
+![image](assets/refactore3_install_copy_artifact.JPG)
 
 **Use existing  git** 
 
