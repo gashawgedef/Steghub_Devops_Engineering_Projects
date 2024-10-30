@@ -46,8 +46,7 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 
 ![image](assets/refactore_5_create.JPG)
 
-**Add post build action** 
-![image](assets/refactore_6_.JPG)
+
 
 
 
