@@ -37,11 +37,11 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 
 **Use existing  git** 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cded1168-dd5b-4a15-8fac-c1852a3ebfb6)
+![image](assets/refactore_4_use_existing_git.JPG)
 
 **Add github hook trigger**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5a1d8f8c-c513-4bab-8587-27f933c29c72)
+![image](assets/refactore_5_create.JPG)
 
 **Add post build action** 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8d20c836-2f52-489f-83ec-466138c455a3)
