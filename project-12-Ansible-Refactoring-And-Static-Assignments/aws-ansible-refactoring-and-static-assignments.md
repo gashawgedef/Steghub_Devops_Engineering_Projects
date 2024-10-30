@@ -44,7 +44,7 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 ![image](assets/refactore_5_create.JPG)
 
 **Add post build action** 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8d20c836-2f52-489f-83ec-466138c455a3)
+![image](assets/refactore_6_.JPG)
 
 
 4. Create a new Freestyle project (you have done it in **Project 9**) and name it `save_artifacts`
