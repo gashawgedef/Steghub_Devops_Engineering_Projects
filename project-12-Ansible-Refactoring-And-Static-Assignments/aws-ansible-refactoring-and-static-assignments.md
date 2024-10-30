@@ -36,7 +36,7 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 ![image](assets/refactore3_install_copy_artifact.JPG)
 
 4. Create a new Freestyle project (you have done it in **Project 9**) and name it `save_artifacts`
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e9f42da4-42eb-4dfc-b29f-7d478af02934)
+![image](assets/refactore_5_free_style_project.JPG)
 
 **Use existing  git** 
 
