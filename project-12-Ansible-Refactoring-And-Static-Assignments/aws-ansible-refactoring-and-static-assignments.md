@@ -35,6 +35,9 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 
 ![image](assets/refactore3_install_copy_artifact.JPG)
 
+4. Create a new Freestyle project (you have done it in **Project 9**) and name it `save_artifacts`
+![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e9f42da4-42eb-4dfc-b29f-7d478af02934)
+
 **Use existing  git** 
 
 ![image](assets/refactore_4_use_existing_git.JPG)
@@ -47,14 +50,12 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 ![image](assets/refactore_6_.JPG)
 
 
-4. Create a new Freestyle project (you have done it in **Project 9**) and name it `save_artifacts`
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e9f42da4-42eb-4dfc-b29f-7d478af02934)
 
 5. This project will be triggered by completion of your existing ansible project. Configure it accordingly:
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2e163086-2dd5-4f68-892a-245cf510ad6f)
+![image](assets/refactore_7_updates.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/38aee6b8-021d-4d5c-822b-17e7b3384996)
+![image](assets/refactore_8_updates.JPG)
 
 
 > Note: You can configure number of builds to keep in order to save space on the server, for example, you might want to keep only last
