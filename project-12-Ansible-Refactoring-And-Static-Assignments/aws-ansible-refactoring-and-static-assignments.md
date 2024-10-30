@@ -65,7 +65,7 @@ chmod -R 0777 /home/ubuntu/ansible-config-artifact
 `/home/ubuntu/ansible-config-artifact` as a target directory.
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e88ec480-3ad9-4912-a59c-d5a27b1f044e)
+![image](assets/refactore_10.jpg)
 
 > if you get an error Replace `/home/ubuntu/ansible-config-artifact` with `${WORKSPACE}/ansible-config-artifact`
 
