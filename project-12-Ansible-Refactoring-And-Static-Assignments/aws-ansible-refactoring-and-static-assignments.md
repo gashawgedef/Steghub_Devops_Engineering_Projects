@@ -213,7 +213,7 @@ cd roles
 ansible-galaxy init webserver
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b69783ac-920e-4ccd-aaea-ab934f7f6ede)
+![image](assets/refactore_22.jpg)
 
 3. Create the directory/files structure manually
 
@@ -241,7 +241,7 @@ The entire folder structure should look like below, but if you create it manuall
         └── main.yml
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ba794c97-88aa-4822-9340-e3d04e800e1b)
+![image](assets/refactore_23.jpg)
 
 After removing unnecessary directories and files, the roles structure should look like this
 
@@ -259,7 +259,8 @@ After removing unnecessary directories and files, the roles structure should loo
     └── templates
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/e574ed6d-6396-4c54-a4e6-f0e506002e2f)
+![image](assets/refactore_24.jpg)
+
 
 3. Update your inventory `ansible-config-mgt/inventory/uat.yml` file with IP addresses of your 2 UAT Web servers
 
