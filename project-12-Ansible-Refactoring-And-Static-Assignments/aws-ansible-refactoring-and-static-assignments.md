@@ -187,10 +187,10 @@ We have our nice and clean dev environment, so let us put it aside and configure
 1. Launch 2 fresh EC2 instances using RHEL 8 image, we will use them as our uat servers, so give them names accordingly - **Web1-UAT** and **Web2-UAT**
 
 **Web1-UAT**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2d9fd243-6e00-43c1-8d1e-8a192f0d639a)
+![image](assets/refactore_20.jpg)
 
 **Web2-UAT**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cf96e371-3645-4aa5-84e3-77685b38f0d9)
+![image](assets/refactore_21.jpg)
 
 > Tip: Do not forget to stop EC2 instances that you are not using at the moment to avoid paying extra. For now, you only need **2** new
 > **RHEL 8 servers as Web Servers** and 1 existing **Jenkins-Ansible** server up and running.
