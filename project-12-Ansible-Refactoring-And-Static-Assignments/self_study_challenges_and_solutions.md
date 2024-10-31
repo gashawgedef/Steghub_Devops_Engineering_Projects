@@ -1,5 +1,6 @@
-# For better understanding or Ansible-artifacts-re-use –Code Refactoring
-# Ansible Artifacts Reuse and Code Refactoring
+# Self Study, Challengies and Solutions
+
+## Ansible Artifacts Reuse and Code Refactoring
 
 Reusing Ansible artifacts and refactoring code involves organizing your Ansible playbooks, roles, and modules to be more modular, maintainable, and reusable. Here are some key concepts and practices to help you with this:
 
