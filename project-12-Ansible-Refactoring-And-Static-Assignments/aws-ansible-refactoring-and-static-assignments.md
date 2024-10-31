@@ -366,7 +366,7 @@ Within the `static-assignments` folder, create a new assignment for `uat-webserv
      - webserver
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/25b29c07-9724-4b46-8cd3-ee50505db775)
+![image](assets/refactore_28.jpg)
 
 > Remember that the entry point to our ansible configuration is the `site.yml` file. Therefore, you need to refer your `uat-webservers.yml` role inside `site.yml`
 
@@ -381,7 +381,7 @@ So, we should have this in site.yml
 - import_playbook: ../static-assignments/uat-webservers.yml
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2b70f029-9b4f-4009-85b9-f8feecabca4e)
+![image](assets/refactore_29.jpg)
 
 # Step 5 – Commit & Test
 
