@@ -293,7 +293,7 @@ Read about ssh-agent:
 172.31.20.250 ansible_ssh_user='ec2-user'
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fd6c7acf-fa57-481a-94a6-11ccb4cb0bbc)
+![image](assets/refactore_25.jpg)
 
 4. In /etc/ansible/ansible.cfg file uncomment roles_path string and provide a full path to your roles directory
 
@@ -301,7 +301,7 @@ Read about ssh-agent:
 roles_path = /home/ubuntu/ansible-config-mgt/roles
 ```
 
-!:[image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1f31a06b-1fc1-42d6-91d1-d71b0f7ac405)
+!:[image](assets/refactore_26.jpg)
 
 so Ansible could know where to find configured roles.
 
