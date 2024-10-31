@@ -389,13 +389,13 @@ Commit your changes, create a **Pull Request** and merge them to master branch, 
 they ran successfully and copied all the files to your Jenkins-Ansible server into
 `/home/ubuntu/ansible-config-mgt/` directory
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9ff74441-e0a9-4b34-adc4-2154313d1076)
+![image](assets/refactore_30.jpg)
 
 ```
 ls /home/ubuntu/ansible-config-mgt/
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4c3ab445-5509-487e-9e81-a14723eb46bb)
+![image](assets/refactore_31.jpg)
 
 Now run the playbook against your `uat` inventory and see what happens:
 
