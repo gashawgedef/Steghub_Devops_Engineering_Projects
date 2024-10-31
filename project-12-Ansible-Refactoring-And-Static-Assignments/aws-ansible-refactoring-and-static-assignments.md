@@ -353,7 +353,7 @@ Your `main.yml` may consist of following tasks:
     state: absent
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/93cab835-8f51-447a-b573-6891320a61b1)
+![image](assets/refactore_27.jpg)
 
 # Step 4 – Reference `Webserver` role
 
