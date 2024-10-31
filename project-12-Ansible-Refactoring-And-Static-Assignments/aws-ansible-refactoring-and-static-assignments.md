@@ -413,10 +413,23 @@ You should be able to see both of your **UAT Web servers** configured and you ca
 
 http://<Web1-UAT-Server-Public-IP-or-Public-DNS-Name>/index.php
 
+
 or
 
 http://<Web1-UAT-Server-Public-IP-or-Public-DNS-Name>/index.php
 
+```
+http://34.227.84.235/index.php
+```
+
+![image](assets/refactore_33.jpg)
+
+On the second web Server 
+
+```
+http://54.163.108.102/index.php
+```
+![image](assets/refactore_34.jpg)
 Your Ansible architecture now looks like this:
 
 ![6043](https://user-images.githubusercontent.com/85270361/210155433-92f8eac4-d31f-4cbe-af16-16dd70b2a498.PNG)
