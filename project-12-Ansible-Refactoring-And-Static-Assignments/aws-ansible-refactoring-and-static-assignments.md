@@ -301,7 +301,7 @@ Read about ssh-agent:
 roles_path = /home/ubuntu/ansible-config-mgt/roles
 ```
 
-!:[image](assets/refactore_26.jpg)
+![image](assets/refactore_26.jpg)
 
 so Ansible could know where to find configured roles.
 
