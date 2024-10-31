@@ -81,16 +81,18 @@ Most Ansible users learn the one-file approach first. However, breaking tasks up
 
 Let see code re-use in action by importing other playbooks.
 
-1. Within playbooks folder, create a new file and name it `site.yml` - This file will now be considered as an entry point into the entire infrastructure configuration.
+1. Within `playbooks` folder, create a new file and name it `site.yml` - This file will now be considered as an entry point into the entire infrastructure configuration.
+![images](assets/refactore_13_site_yml.jpg)
+
 
 Other playbooks will be included here as a reference. In other words, `site.yml` will become a parent to all other playbooks that will be developed. Including `common.yml` that you created previously. Dont worry, you will understand more what this means shortly.
 
 2. Create a new folder in root of the repository and name it `static-assignments`. The static-assignments folder is where all other children playbooks will be stored. This is merely for easy organization of your work. It is not an Ansible specific concept, therefore you can choose how you want to organize your work. You will see why the folder name has a prefix of static very soon. For now, just
    follow along.
 
-   ![images](assets/refactor_12_updates.jpg)
-
 3. Move `common.yml` file into the newly created static-assignments folder.
+
+![images](assets/refactor_12_updates.jpg)
 
 4. Inside `site.yml` file, `import common.yml` playbook.
 
