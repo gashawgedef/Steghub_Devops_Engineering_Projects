@@ -408,6 +408,7 @@ sudo ansible-playbook -i /home/ubuntu/ansible-config-mgt/inventory/uat.yml /home
 ![image](assets/refactore_32_2.jpg)
 
 ![image](assets/refactore_32_3.jpg)
+
 You should be able to see both of your **UAT Web servers** configured and you can try to reach them from your browser:
 
 http://<Web1-UAT-Server-Public-IP-or-Public-DNS-Name>/index.php
