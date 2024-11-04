@@ -142,7 +142,7 @@ Update `site.yml` file to make use of the dynamic assignment. (At this point, we
 - name: Webserver assignment
   import_playbook: ../static-assignments/webservers.yml
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/10680df3-3861-4f03-9dc6-d44e4f676c84)
+![image](assets/daynamic_05_update_site.JPG)
 
 # Community Roles
 
