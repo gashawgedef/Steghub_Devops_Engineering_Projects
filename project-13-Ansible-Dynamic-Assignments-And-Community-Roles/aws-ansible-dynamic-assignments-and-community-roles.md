@@ -82,7 +82,7 @@ Your layout should now look like this
     └── webservers.yml
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/74d528b0-2db5-47ea-a6cc-582c94039926)
+![image](assets/daynamic_03_create_env_vars.JPG)
 
 Now paste the instruction below into the env-vars.yml file.
 ```
