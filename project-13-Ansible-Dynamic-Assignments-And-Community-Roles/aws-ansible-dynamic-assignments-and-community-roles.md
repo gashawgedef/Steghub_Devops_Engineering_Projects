@@ -32,6 +32,9 @@ git checkout -b dynamic-assignments
 
 1. Create a new folder, name it `dynamic-assignments`.
 2.  Then inside this folder, create a new file and name it `env-vars.yml`.
+
+![images](assets/daynamic_02_create.JPG)
+
 3. We will instruct `site.yml` to include this playbook later. For now, let us keep building up the structure.
 
 Your GitHub shall have following structure by now.
