@@ -289,7 +289,7 @@ lb_host ansible_host=your_lb_host_ip
 ```
 Run the playbook against the UAT environment:
 ```
-ansible-playbook -i inventory/uat site.yml --extra-vars "@env-vars/uat.yml"
+ansible-playbook -i inventory/uat.yml playbooks/sites.yml --extra-vars"@env-vars/uat.yml" 
 ```
 
 ## End of Project 13 ANSIBLE DYNAMIC ASSIGNMENTS (INCLUDE) AND COMMUNITY ROLES
