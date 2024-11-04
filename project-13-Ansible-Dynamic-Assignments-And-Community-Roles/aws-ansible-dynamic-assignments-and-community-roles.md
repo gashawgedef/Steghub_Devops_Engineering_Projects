@@ -28,7 +28,7 @@ In your https://github.com//ansible-config-mgt GitHub repository start a new bra
 git checkout -b dynamic-assignments
 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9cd2dd52-4561-4c71-b6e7-6a5621f5dda1)
+![image](assets/daynamic_01_final.JPG)
 
 1. Create a new folder, name it `dynamic-assignments`.
 2.  Then inside this folder, create a new file and name it `env-vars.yml`.
