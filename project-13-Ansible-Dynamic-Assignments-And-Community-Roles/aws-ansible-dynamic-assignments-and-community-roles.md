@@ -55,7 +55,7 @@ Your GitHub shall have following structure by now.
 └── static-assignments
     └── common.yml
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/430b8b05-fb8d-40d6-9d0d-84646d6b388c)
+![image](assets/daynamic_02_create.JPG)
 
 Since we will be using the same Ansible to configure multiple environments, and each of these environments will have certain unique attributes, such as **servername**, **ip-address** etc., we will need a way to set values to variables per specific environment.
 
