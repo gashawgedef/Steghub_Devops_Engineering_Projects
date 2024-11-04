@@ -231,14 +231,14 @@ Update defaults/main.yml for Nginx Role
 enable_nginx_lb: false
 load_balancer_is_required: false
 ```
-![image](assets/)
+![image](assets/daynamic_10.JPG)
 
 Update defaults/main.yml for Apache Role:
 ```
 enable_apache_lb: false
 load_balancer_is_required: false
 ```
-![image](assets/daynamic_11_update.JPG)
+![image](assets/daynamic_12_updates.JPG)
 
 - Update both assignment and `site.yml` files respectively
 
