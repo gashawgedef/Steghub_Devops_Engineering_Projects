@@ -152,7 +152,8 @@ Now it is time to create a role for **MySQL database** – it should install the
  you can browse available community roles [here](https://galaxy.ansible.com/ui/)
 
 We will be using a [MySQL role developed by geerlingguy](https://galaxy.ansible.com/geerlingguy/mysql )
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9c37bda5-9997-4837-8364-5feb79d5abd2)
+
+![image](assets/daynamic_06_download.JPG)
 
 > Hint: To preserve your your GitHub in actual state after you install a new role – make a commit and push to master your `ansible-config-mgt` directory. Of course you must have git installed and configured on Jenkins-Ansible server and, for more convenient work with codes, you can configure Visual Studio Code to work with this directory. In this case, you will no longer need webhook and Jenkins jobs to update your codes on Jenkins-Ansible server, so you can disable it – we will be using Jenkins later for a better purpose.
 
