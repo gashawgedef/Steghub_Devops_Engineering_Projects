@@ -178,7 +178,7 @@ ansible-galaxy role install geerlingguy.mysql
 ```
 mv geerlingguy.mysql/ mysql
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4721e591-f170-47c6-b432-d8003ebbd8c8)
+![image](assets/daynamic_09_rename.JPG)
 
 Read `README.md` file, and edit roles configuration to use correct credentials for MySQL required for the `tooling` website.
 
@@ -212,7 +212,7 @@ ansible-galaxy role install geerlingguy.nginx
 ansible-galaxy role install geerlingguy.apache
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/99792d26-5633-4fe8-869a-497b4b68bcea)
+![image](assets/daynamic_10.JPG)
 
 - Update both static-assignment and site.yml files to refer the roles
 
@@ -231,14 +231,14 @@ Update defaults/main.yml for Nginx Role
 enable_nginx_lb: false
 load_balancer_is_required: false
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/53f0b6f9-ad83-4217-9704-c6565a7a39bb)
+![image](assets/)
 
 Update defaults/main.yml for Apache Role:
 ```
 enable_apache_lb: false
 load_balancer_is_required: false
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5b32da4f-3f28-42f8-9f44-2c1347903f58)
+![image](assets/daynamic_11_update.JPG)
 
 - Update both assignment and `site.yml` files respectively
 
