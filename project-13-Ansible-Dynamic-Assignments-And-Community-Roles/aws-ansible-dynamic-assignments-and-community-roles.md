@@ -103,7 +103,7 @@ Now paste the instruction below into the env-vars.yml file.
       tags:
         - always
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/366dd7a5-1737-43c3-9e9b-c3b3a192e384)
+![image](assets/daynamic_04_finals.JPG)
 
 
 **Notice 3 things to notice here:**
