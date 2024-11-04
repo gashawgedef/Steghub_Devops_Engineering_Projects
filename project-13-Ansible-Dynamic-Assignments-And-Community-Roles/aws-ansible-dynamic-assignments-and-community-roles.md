@@ -250,7 +250,7 @@ Create  `loadbalancers.yml` file  in static-assignments and add
     - { role: nginx, when: enable_nginx_lb and load_balancer_is_required }
     - { role: apache, when: enable_apache_lb and load_balancer_is_required }
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6fb11b86-20cc-4f81-918e-e2b7fbe2e26a)
+![image](assets/daynamic_13_assignments.JPG)
 
 Update `site.yml` file
 
@@ -260,16 +260,17 @@ Update `site.yml` file
 - import_playbook: ../static-assignments/loadbalancers.yml
   when: load_balancer_is_required 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/70d9436d-d0cc-4cfe-b265-5ec77abcb3bc)
+![image](assets/daynamic_14.JPG)
 
 Now you can make use of `env-vars\uat.yml` file to define which loadbalancer to use in UAT environment by setting respective environmental variable to _true_
 
 You will activate **load balancer**, and enable `nginx` by setting these in the respective environment’s env-vars file.
 ```
 enable_nginx_lb: true
+enable_apache_lb: false
 load_balancer_is_required: true
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b6e7ac75-df88-47ea-9997-b392c4ef9527)
+![image](assets/daynamic_15.JPG)
 
 The same must work with `apache` **LB**, so you can switch it by setting respective environmental variable to _true_ and other to _false_
 ```
@@ -278,7 +279,7 @@ enable_apache_lb: true
 load_balancer_is_required: true
 
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/dbd5396f-965b-4dbd-ae5d-f3a2388234e4)
+![image](assets/daynamic_16.JPG)
 
 To test this, you can update inventory for each environment and run Ansible against each environment.
 update your inventory file for UAT ` inventory/uat`:
