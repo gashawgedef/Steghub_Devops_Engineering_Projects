@@ -507,20 +507,26 @@ Add the Ansible PPA (Personal Package Archive)
 ```
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 ```
+
 ```
 sudo apt update
 sudo apt install ansible -y
 ```
+
 Verify the Installation
+
 ```
 ansible --version
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/725a4bc6-b359-42e1-8597-0e17bd9ae83a)
+
+![image](assets/project14_17_install_ansible.jpg)
 
 
 2. Installing Ansible plugin in Jenkins UI On the dashboard page, click on Manage Jenkins > Manage plugins > Available type in ansible and install without restart
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8c366254-f85a-4dff-85bb-c4e4d3b6221b)
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2feaf956-a280-4fbe-a29f-c50b6a746646)
+
+![image](assets/project14_18_ansible_plugin.jpg)
+
+![image](assets/project14_18_2.jpg)
 
 Click on Dashboard > Manage Jenkins > Global Tool Configuration > Add Ansible. Add a name and the path ansible is installed on the jenkins server
 
