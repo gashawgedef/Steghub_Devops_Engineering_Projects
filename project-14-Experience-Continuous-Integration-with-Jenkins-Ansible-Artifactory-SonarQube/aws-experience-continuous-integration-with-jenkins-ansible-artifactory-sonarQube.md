@@ -530,11 +530,17 @@ ansible --version
 
 Click on Dashboard > Manage Jenkins > Global Tool Configuration > Add Ansible. Add a name and the path ansible is installed on the jenkins server
 
-get path
+Get the path to `ansible` installed
 ```
  which ansible
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cbdfca05-fa88-48b7-8e70-1831222547e9)
+
+![images](assets/project14_19_1_configure_ansible_path.jpg)
+
+Then enter the above path to `Jenkins` GUI as follows
+
+
+![image](assets/project14_19_2_configure_ansible_path.jpg)
 
 3. Creating Jenkinsfile from scratch. (Delete all you currently have in there and start all over to get Ansible to run successfully)
 
