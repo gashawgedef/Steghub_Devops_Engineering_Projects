@@ -332,7 +332,7 @@ ssh -A ubuntu@34.233.123.4
 In the Jenkins dashboard, click on **Manage Jenkins** -> **Manage plugins** and search for `Blue Ocean plugin`. Install and open Blue Ocean plugin
 ![image](assets/project14_01_available.jpg)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/26cf30d1-dd71-4571-9a7f-c5e2f2ca2893)
+
 
 4. Create a new pipeline
 
