@@ -330,14 +330,14 @@ ssh -A ubuntu@34.233.123.4
 ```
 2. Install & Open Blue Ocean Jenkins Plugin
 In the Jenkins dashboard, click on **Manage Jenkins** -> **Manage plugins** and search for `Blue Ocean plugin`. Install and open Blue Ocean plugin
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/9d620074-9a78-422a-849e-476fde406990)
+![image](assets/project14_01_available.jpg)
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/26cf30d1-dd71-4571-9a7f-c5e2f2ca2893)
 
 4. Create a new pipeline
 
 5. Select GitHub
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/065e0b63-107d-49b9-af19-6d8b154af6e8)
+![image](assets/project14_03.jpg)
 
 6. Connect Jenkins with GitHub
 
@@ -357,13 +357,13 @@ Blue Ocean will attempt to give you some guidance to create one. But we do not n
 So, click on Administration to exit the Blue Ocean console.
 
 **Here is our newly created pipeline. It takes the name of your GitHub repository**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/411746d4-8a9c-48d1-8d57-6574f5d94d8e)
+![image](assets/project14_04_after_created.jpg)
 
 
 ### Let us create our Jenkinsfile
 
 In Vscode, inside the Ansible project, create a new directory and name it `deploy`, create a new file `Jenkinsfile` inside the directory
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/54966adb-61a4-45b3-9a09-4f5dbc30456c)
+![image](assets/project14_05.jpg)
 
 Add the code snippet below to start building the Jenkinsfile gradually. This pipeline currently has just one stage called Build and 
 the only thing we are doing is using the shell script module to echo Building Stage
@@ -384,25 +384,25 @@ pipeline {
     }
 }
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8ece4b57-ce9a-455a-a963-1ab3111ddf92)
+![image](assets/project14_06_adding_jenkins_file.jpg)
 
 
 **Now go back into the Ansible pipeline in Jenkins, and select configure**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/bd9b9bd7-76be-4c66-a610-ff86bb3c5871)
+![image](assets/project14_07_configure.jpg)
 
 
 **Scroll down to Build Configuration section and specify the location of the Jenkinsfile at `deploy/Jenkinsfile`**
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/824d9f98-aab9-49ad-a1a3-522bd0487db9)
+![image](assets/project14_08_script_path.jpg)
 
 **Back to the pipeline again, this time click `Build now`**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/252b08d6-78aa-4906-8c76-b9219c2f7136)
+![image](assets/project14_08_1_start.jpg)
 
 
 
 This will trigger a build and you will be able to see the effect of our basic `Jenkinsfile` configuration by going through the console
 output of the build.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0e83effc-f60d-4484-aab9-40b5167f297c)
+![image](assets/project14_08_2console.jpg)
 
 
 To really appreciate and feel the difference of Cloud Blue UI, it is recommended to try triggering the build again from Blue Ocean
@@ -411,8 +411,9 @@ interface.
 1. Click on Blue Ocean
 2. Select your project
 3. Click on the play button against the branch
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c6902703-5aef-4c59-a2b0-124f5ac3d0a3)
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/cd29a156-f08d-49c5-a420-c3a7d60be659)
+![image](assets/project14_09_after_blue_ocean.jpg)
+
+![image](assets/project14_10_blue_ocean_ui.jpg)
 
 > Notice that this pipeline is a multibranch one. This means, if there were more than one branch in GitHub, Jenkins would have scanned
 the repository to discover them all and we would have been able to trigger a build for each branch.
@@ -451,7 +452,7 @@ pipeline {
 }
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/aa5602d3-735a-4483-923a-c07f76b07808)
+![image](assets/project14_11_build_test_stegs.jpg)
 
 
 4. To make your new branch show up in Jenkins, we need to tell Jenkins to scan the repository.
@@ -461,12 +462,12 @@ pipeline {
 2. Navigate to the Ansible project and click on `Scan repository now`
 
 3. Refresh the page and both branches will start building automatically. You can go into Blue Ocean and see both branches there too.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/984cbcc5-cde1-45c2-b539-c41f04e394fb)
+![image](assets/project14_12_scan.jpg)
 
 
 4. In Blue Ocean, you can now see how the Jenkinsfile has caused a new step in the pipeline launch build for the new branch.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a8826ed8-9215-4669-8cf3-ae8f3b0bda43)
+![image](assets/project14_13_added_test_stage_blueocean.jpg)
 
 
 
@@ -482,13 +483,13 @@ and test stages)
    2. Deploy 
    3. Clean up
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f321a8cb-bbd5-4591-9d1b-f82d877cc9fd)
+![image](assets/project14_14_add_aditional_stages_code.jpg)
 
 ```
 5. Verify in Blue Ocean that all the stages are working, then merge your feature branch to the main branch
 6. Eventually, your main branch should have a successful pipeline like this in blue ocean
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/36bb0f6b-f402-4a6f-a156-4cedad8fd524)
+![image](assets/project14_15_adional_stages_blue_ocean.jpg)
 
 ### Running Ansible Playbook from Jenkins
 
