@@ -551,16 +551,11 @@ Let's delete the content of current Jenkinsfile nad create a new Jenkinsfile fro
 
 To do this let's ensure git module is checking out SCM from main branch.
 ```
-  pipeline {
-  agent any
-
-  environment {
-    ANSIBLE_CONFIG="${WORKSPACE}/deploy/ansible.cfg"
-    ANSIBLE_HOST_KEY_CHECKING = 'False'
-  }
+   pipeline {
+    agent any
 
   stages {
-    stage("Initial cleanup") {
+     stage("Initial cleanup") {
       steps {
         dir("${WORKSPACE}") {
           deleteDir()
@@ -570,47 +565,35 @@ To do this let's ensure git module is checking out SCM from main branch.
 
     stage('Checkout SCM') {
       steps {
-        git branch: 'main', url: 'https://github.com/melkamu372/ansible-config-mgt.git'
+        git branch: 'main', credentialsId: 'gashity_token', url: 'https://github.com/gashawgedef/ansible-config-mgt.git'
       }
     }
-
-    stage('Prepare Ansible For Execution') {
-      steps {
-        sh 'echo ${WORKSPACE}'
-        sh 'sed -i "3 a roles_path=${WORKSPACE}/roles" ${WORKSPACE}/deploy/ansible.cfg'
-      }
-    }
-
-    stage('Test SSH Connection') {
-      steps {
-        sshagent(['private-key']) {
-          sh 'ssh -o StrictHostKeyChecking=no -i /home/ubuntu/.ssh/melkamu_key.pem ec2-user@172.31.26.78 exit'
+      stage('Test SSH Connection') {
+            steps {
+                sshagent(['private_key']) {  // 'ansible' is the ID of the credentials
+                    sh 'ssh -o StrictHostKeyChecking=no ubuntu@172.31.22.35 exit'
+                }
+            }
         }
-      }
-    }
+   
+
 
     stage('Run Ansible playbook') {
       steps {
-        sshagent(['private-key']) {
-          ansiblePlaybook(
-            become: true,
-            credentialsId: 'private-key',
-            disableHostKeyChecking: true,
-            installation: 'ansible',
-            inventory: "${WORKSPACE}/inventory/dev.yml",
-            playbook: "${WORKSPACE}/playbooks/site.yml"
-          )
-        }
+       ansiblePlaybook credentialsId: 'private_key', disableHostKeyChecking: true, installation: 'Ansible-Path', inventory: 'inventory/dev.yml', playbook: 'playbooks/site.yml', vaultTmpPath: ''
       }
     }
-
-    stage('Clean Workspace after build') {
+      stage('Clean Workspace after build') {
       steps {
         cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenUnstable: true, deleteDirs: true)
       }
     }
-  }
+
+
+
+    }
 }
+
 
 ```
 
@@ -619,7 +602,7 @@ To do this let's ensure git module is checking out SCM from main branch.
 
 >**Note**: Ensure that Ansible runs against the Dev environment successfully.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7c185a98-066b-40a4-af65-e09ebb4aeecc)
+![image](assets/project14_20_code.jpg)
 
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/51bcc360-b257-47ce-815d-dbeeb333ad09)
