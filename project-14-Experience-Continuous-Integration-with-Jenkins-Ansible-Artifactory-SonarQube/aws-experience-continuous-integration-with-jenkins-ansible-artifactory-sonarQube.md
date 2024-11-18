@@ -720,7 +720,7 @@ understand this, update Jenkinsfile and run it from Jenkins
 ![image](assets/project14_30_tagging.jpg)
 
 after Adding Ansible Tag bove only `webserver` tag will excute as follows
-
+![image](assets/project14_33.jpg)
 
 # CI/CD Pipline for TODO Application 
 We already have **tooling** website as a part of deployment through Ansible. Here we will introduce another PHP application to add to the
