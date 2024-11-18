@@ -44,3 +44,9 @@ sudo apt-get install jfrog-artifactory-oss -y
 
 ```
 ![images](self_study_assets/self_04_intalled.jpg)
+
+```
+sudo systemctl start artifactory
+sudo systemctl enable artifactory
+
+```
