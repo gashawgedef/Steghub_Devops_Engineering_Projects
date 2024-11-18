@@ -716,6 +716,10 @@ From now on, each time you hit on execute, it will expect an input.
 desired. Therefore, add an Ansible tag to run against webserver only. Test this locally first to get the experience. Once you 
 understand this, update Jenkinsfile and run it from Jenkins
 
+![image](assets/project14_31.jpg)
+![image](assets/project14_30_tagging.jpg)
+
+
 # CI/CD Pipline for TODO Application 
 We already have **tooling** website as a part of deployment through Ansible. Here we will introduce another PHP application to add to the
 list of software products we are managing in our infrastructure. The good thing with this particular application is that it has 
