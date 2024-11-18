@@ -596,15 +596,12 @@ To do this let's ensure git module is checking out SCM from main branch.
 
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/536d29af-1ef1-46dc-83c0-5fc9dfd41ad8)
-
-
 >**Note**: Ensure that Ansible runs against the Dev environment successfully.
 
 ![image](assets/project14_20_code.jpg)
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/51bcc360-b257-47ce-815d-dbeeb333ad09)
+![image](assets/project14_22_site_yml.jpg)
 
 
 **Possible errors to watch out for:**
