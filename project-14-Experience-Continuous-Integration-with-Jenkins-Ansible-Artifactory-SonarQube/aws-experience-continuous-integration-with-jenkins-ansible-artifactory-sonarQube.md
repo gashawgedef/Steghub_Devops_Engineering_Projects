@@ -551,7 +551,7 @@ Let's delete the content of current Jenkinsfile nad create a new Jenkinsfile fro
 
 To do this let's ensure git module is checking out SCM from main branch.
 ```
-   pipeline {
+    pipeline {
     agent any
 
   stages {
@@ -580,7 +580,7 @@ To do this let's ensure git module is checking out SCM from main branch.
 
     stage('Run Ansible playbook') {
       steps {
-       ansiblePlaybook credentialsId: 'private_key', disableHostKeyChecking: true, installation: 'Ansible-Path', inventory: 'inventory/dev.yml', playbook: 'playbooks/site.yml', vaultTmpPath: ''
+       ansiblePlaybook credentialsId: 'private_key', disableHostKeyChecking: true, installation: 'ansible-config-mgt', inventory: 'inventory/dev.yml', playbook: 'playbooks/site.yml', vaultTmpPath: ''
       }
     }
       stage('Clean Workspace after build') {
@@ -588,7 +588,6 @@ To do this let's ensure git module is checking out SCM from main branch.
         cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenUnstable: true, deleteDirs: true)
       }
     }
-
 
 
     }
