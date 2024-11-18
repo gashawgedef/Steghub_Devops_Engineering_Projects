@@ -50,3 +50,10 @@ sudo systemctl start artifactory
 sudo systemctl enable artifactory
 
 ```
+Check the status of the artifactory service to identify specific errors:
+
+```
+sudo systemctl status artifactory
+
+```
+![images](self_study_assets/self_05_status.jpg)
