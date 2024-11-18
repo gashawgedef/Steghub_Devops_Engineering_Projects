@@ -709,7 +709,7 @@ From now on, each time you hit on execute, it will expect an input.
 
 ![image](assets/project14_28_build_site_parameters.jpg)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b1ff271f-db69-426f-b4b7-3f41fdf4cd39)
+![image](assets/project14_29_after.jpg)
 
 
 4. Add another parameter. This time, introduce tagging in Ansible. You can limit the Ansible execution to a specific role or playbook
