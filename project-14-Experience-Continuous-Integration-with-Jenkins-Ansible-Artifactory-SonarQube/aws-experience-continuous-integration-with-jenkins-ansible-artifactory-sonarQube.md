@@ -681,7 +681,7 @@ ansible_python_interpreter=/usr/bin/python
 <SIT-DB-Server-Private-IP-Address>
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/90a2c307-5d34-422d-b4b8-d22d61cc81bf)
+![image](assets/project14_25_update_site_yml.jpg)
 
 2. Update `Jenkinsfile` to introduce parameterization. Below is just one parameter. It has a default value in case if no value is 
 specified at execution. It also has a description so that everyone is aware of its purpose.
@@ -691,24 +691,23 @@ pipeline {
     agent any
 
     parameters {
-      string(name: 'inventory', defaultValue: 'dev',  description: 'This is the inventory file for the environment to deploy 
-      configuration')
+      string(name: 'inventory', defaultValue: 'dev',  description: 'This is the inventory file for the environment to deploy configuration')
     }
 ...
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/98aad8de-2501-4062-a2ca-2da93d9bc178)
+![image](assets/project14_26_add_parameters.jpg)
 
 
 3. In the Ansible execution section, remove the hardcoded inventory/dev and replace with `${inventory}
 From now on, each time you hit on execute, it will expect an input.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/30b44153-56d8-4a97-b737-ddc13e3af980)
+![image](assets/project14_27_updatye_nventory.jpg)
 
 
 > Notice that the default value loads up, but we can now specify which environment we want to deploy the configuration to. Simply type
 `sit` and `hit` Run
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/5a4550a5-5e28-4538-9e03-88bcf62a6f1f)
+![image](assets/project14_28_build_site_parameters.jpg)
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b1ff271f-db69-426f-b4b7-3f41fdf4cd39)
 
