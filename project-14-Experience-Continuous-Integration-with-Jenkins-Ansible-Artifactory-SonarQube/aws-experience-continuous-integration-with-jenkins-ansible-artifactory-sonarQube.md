@@ -701,7 +701,7 @@ pipeline {
 
 3. In the Ansible execution section, remove the hardcoded inventory/dev and replace with `${inventory}
 From now on, each time you hit on execute, it will expect an input.
-![image](assets/project14_27_updatye_nventory.jpg)
+![image](assets/project14_32.jpg)
 
 
 > Notice that the default value loads up, but we can now specify which environment we want to deploy the configuration to. Simply type
