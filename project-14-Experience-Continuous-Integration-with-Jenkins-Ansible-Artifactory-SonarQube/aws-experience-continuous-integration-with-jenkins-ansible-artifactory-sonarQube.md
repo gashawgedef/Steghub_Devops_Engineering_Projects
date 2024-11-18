@@ -635,11 +635,11 @@ and run git branch command to confirm that the branch you are expecting is there
 
 **After fixing all errors  final result looks** 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/6650edf8-54aa-4598-a45e-c032535a1b83)
+![image](assets/project14_23_clean_workspace.jpg)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a820b1cf-853b-4555-ade4-4de4f39bfc21)
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/74f20f33-3634-4d13-880a-fa8a20c849fa)
+![image](assets/project14_24_running_ansible.jpg)
+![image](assets/project14_24__2_running_ansible.jpg)
+![image](assets/project14_24__3_running_ansible.jpg)
 
 
 
