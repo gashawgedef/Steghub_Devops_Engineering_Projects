@@ -739,6 +739,10 @@ ansible-galaxy collection install jfrog.platform
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7b3d08b7-4018-485c-a8fb-e1b88716e353)
 
+![image](assets/project14_35_set_jfrog_password.JPG)
+
+![image](assets/project14_36_.JPG)
+
 In the browser, login into artifactory with the  authentication `admin` and  custom `password`
 
 ![image](assets/project14_39_login_artifactory.JPG)
