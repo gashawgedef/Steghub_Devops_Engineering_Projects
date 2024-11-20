@@ -765,34 +765,38 @@ https://github.com/gashawgedef/php-todo.git
 2. On you Jenkins server, install PHP, its dependencies and Composer tool (Feel free to do this manually at first, then update 
 your Ansible accordingly later)
 
+**Step 1: Manually Install PHP and Dependencies**
+- Update the Package Index:
+
 ```
 sudo apt update
 ```
-**Install dependancies**
+- Install PHP and Required Extensions: Run the following command to install PHP and the specified extensions:
+
 ```
 sudo apt install -y zip libapache2-mod-php phploc php-{xml,bcmath,bz2,intl,gd,mbstring,mysql,zip}
 ```
 
-**Install Composer**  Download the Installer:
-```
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-```
-**Install Composer Globally**
-```
-sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-```
-**Remove the Installer**
-```
-php -r "unlink('composer-setup.php');"
-```
-**Verify Installation**
+- Verify PHP Installation: Check the installed PHP version to confirm the installation:
+
 ```
 php -v
 ```
+
+- Install Composer: Composer is a dependency management tool for PHP. Follow these steps:
+
 ```
-composer -v
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/98e98be5-ab3a-4c71-9e29-0b54b243e3f0)
+
+- Verify Composer Installation: Confirm Composer is installed:
+
+```
+composer --version
+```
+
+
 
 
 3. Install Jenkins plugins
