@@ -752,7 +752,7 @@ Create a local repository `todo-dev-local`
 ![image](assets/project14_40_create_repository.JPG)
 
 In Jenkins UI configure Artifactory, enter the public ip for the artifactory, the login details and test the connection  manage Jenkins> configure> Jfrog Platform url
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ac1f40e1-12e4-43cb-98ee-6cde41694a19)
+![image](assets/project14_43_jfrogurl.JPG)
 
 ### Phase 1 – Prepare Jenkins
 
@@ -801,6 +801,7 @@ composer -v
 ![image](assets/project14_41_plot_plogin.JPG)
 
     2 .  [Artifactory plugin](https://www.jfrog.com/confluence/display/JFROG/Jenkins+Artifactory+Plug-in)
+
 ![image](assets/project14_42_artifactory_plugin.JPG)
 
 - We will use _plot_ plugin to display tests reports, and code coverage information.
