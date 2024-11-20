@@ -749,7 +749,7 @@ In the browser, login into artifactory with the  authentication `admin` and  cus
 
 Create a local repository `todo-dev-local`
 
-![image](assets/project14_37_create_repo.JPG)
+![image](assets/project14_40_create_repository.JPG)
 
 In Jenkins UI configure Artifactory, enter the public ip for the artifactory, the login details and test the connection  manage Jenkins> configure> Jfrog Platform url
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ac1f40e1-12e4-43cb-98ee-6cde41694a19)
