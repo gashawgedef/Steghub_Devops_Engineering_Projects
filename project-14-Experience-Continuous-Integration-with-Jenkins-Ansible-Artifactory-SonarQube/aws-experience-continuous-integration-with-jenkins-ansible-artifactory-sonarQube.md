@@ -739,13 +739,13 @@ ansible-galaxy collection install jfrog.platform
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7b3d08b7-4018-485c-a8fb-e1b88716e353)
 
-In the browser, login into artifactory with the default authentication `admin` and `password`
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/61ac8b1c-9a3d-4ff6-ba99-abe1ecadb5e8)
+In the browser, login into artifactory with the  authentication `admin` and  custom `password`
+
+![image](assets/project14_39_login_artifactory.JPG)
 
 Create a local repository `todo-dev-local`
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4807aa33-a562-4d35-8e0b-a959e5e183cb)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8c637a75-62f5-4b59-81be-ceee3eaee510)
+![image](assets/project14_37_create_repo.JPG)
 
 In Jenkins UI configure Artifactory, enter the public ip for the artifactory, the login details and test the connection  manage Jenkins> configure> Jfrog Platform url
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ac1f40e1-12e4-43cb-98ee-6cde41694a19)
@@ -754,9 +754,9 @@ In Jenkins UI configure Artifactory, enter the public ip for the artifactory, th
 
 1. Fork the repository below into your GitHub account
 ```
-https://github.com/StegTechHub/php-todo.git
+https://github.com/gashawgedef/php-todo.git
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4446c862-f53f-4b5c-b8d4-6204c51bf8fd)
+![image](assets/project14_38_fork.JPG)
 
 2. On you Jenkins server, install PHP, its dependencies and Composer tool (Feel free to do this manually at first, then update 
 your Ansible accordingly later)

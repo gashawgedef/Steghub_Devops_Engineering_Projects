@@ -3,7 +3,8 @@
 Install JFrog
 
 ```
-sudo apt-get install gnupg2 -y
+sudo apt-get update
+sudo apt-get install gnupg -y
 ```
 ![images](self_study_assets/self_02_install2.jpg)
 
