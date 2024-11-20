@@ -797,11 +797,11 @@ composer -v
 
 3. Install Jenkins plugins
 
-    1 .  [Plot plugin](https://plugins.jenkins.io/plot/)
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2eec50c9-e487-48c2-9640-ea2f6e8c8d4f)
+    1 .  [Plot plugin](assets/project14_41_plot_plogin.JPG)
 
     2 .  [Artifactory plugin](https://www.jfrog.com/confluence/display/JFROG/Jenkins+Artifactory+Plug-in)
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1c750e6d-951e-4377-b192-34b5acca7a43)
+
+![image](assets/project14_42_artifactory_plugin.JPG)
 
 - We will use _plot_ plugin to display tests reports, and code coverage information.
 - The _Artifactory_ plugin will be used to easily upload code artifacts into an Artifactory server.
