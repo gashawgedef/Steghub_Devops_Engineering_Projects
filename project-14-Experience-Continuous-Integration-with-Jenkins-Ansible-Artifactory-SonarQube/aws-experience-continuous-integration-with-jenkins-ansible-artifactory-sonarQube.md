@@ -845,14 +845,15 @@ sudo systemctl restart mysql
 
 4. Update the database connectivity requirements in the file .env.sample
 ```
-DB_HOST=172.31.26.78
+DB_HOST=172.31.39.234
 DB_DATABASE=homestead
 DB_USERNAME=homestead
-DB_PASSWORD=sePret^i
+DB_PASSWORD=sePret^i12
 DB_CONNECTION=mysql 
 DB_PORT=3306
+APP_KEY=
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/94fa0b61-6d14-4ddb-80d4-dc1cc849f176)
+![image](assets/project14_46_db_env.jpg)
 
 
 5. Update _Jenkinsfile_ with proper pipeline configuration
@@ -860,37 +861,37 @@ DB_PORT=3306
 
 ```
 pipeline {
-    agent any
-
+  agent any
   stages {
-
-     stage("Initial cleanup") {
-          steps {
-            dir("${WORKSPACE}") {
-              deleteDir()
-            }
-          }
+    stage('Initial cleanup') {
+      steps {
+        dir(path: "${WORKSPACE}") {
+          deleteDir()
         }
+
+      }
+    }
 
     stage('Checkout SCM') {
       steps {
-            git branch: 'main', url: 'https://github.com/melkamu372/php-todo.git'
+        git(branch: 'main', url: 'https://github.com/gashawgedef/php-todo.git')
       }
     }
 
     stage('Prepare Dependencies') {
       steps {
-             sh 'mv .env.sample .env'
-             sh 'composer install'
-             sh 'php artisan migrate'
-             sh 'php artisan db:seed'
-             sh 'php artisan key:generate'
+        sh 'mv .env.sample .env'
+        sh 'composer install'
+        sh 'php artisan migrate'
+        sh 'php artisan db:seed'
+        sh 'php artisan key:generate'
       }
     }
+
   }
 }
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/28254d6d-1633-4850-8525-c4f940a67e62)
+![image](assets/project14_45_code.jpg)
 
 
 > **Notice the Prepare Dependencies section**
@@ -899,7 +900,7 @@ pipeline {
 - Composer is used by PHP to install all the dependent libraries used by the application
 - php artisan uses the .env file to setup the required database objects
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4e7d79ed-e066-455b-a54c-3f5932902e75)
+![image](assets/project14_44_pass_prepare.jpg)
 
 – After successful run of this step,
 login to the database,password:`root`
