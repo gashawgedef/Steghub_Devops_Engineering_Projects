@@ -909,7 +909,7 @@ login to the database,password:`root`
 mysql -u root -p
 ```
 run show tables and you will see the tables being created for you
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f43b92e6-76f9-4833-a954-1f4cae6937aa)
+![image](assets/project14_47_databases.JPG)
 
 
 1. Update the Jenkinsfile to include Unit tests step
