@@ -924,8 +924,10 @@ stage('Execute Unit Tests') {
       steps {
              sh './vendor/bin/phpunit'
       } 
+}
 ```
 
+![images](assets/project14_45_unit_test.jpg)
 
 ### Phase 3 – Code Quality Analysis
 
