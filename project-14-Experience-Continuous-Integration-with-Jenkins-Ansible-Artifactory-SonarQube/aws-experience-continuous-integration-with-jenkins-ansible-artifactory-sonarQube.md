@@ -979,3 +979,4 @@ stage ('Package Artifact') {
 
 ```
 
+![images](assets/project14_51_package_artifact.jpg)
