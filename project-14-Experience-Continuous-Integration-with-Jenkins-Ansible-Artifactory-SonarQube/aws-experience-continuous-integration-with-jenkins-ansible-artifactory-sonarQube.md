@@ -951,7 +951,7 @@ stage('Code Analysis') {
   }
 }
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/8a0f302f-1e75-4462-bf5e-1b196df15414)
+![image](assets/project14_48_code_analysis.jpg)
 
 
 2. Plot the data using _plot Jenkins_ plugin.
