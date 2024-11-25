@@ -1007,7 +1007,7 @@ stage ('Upload Artifact to Artifactory') {
 
         }
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0c9bb61c-bc93-48b8-8e23-6e3cc35a4b28)
+![image](assets/project14_52_upload_artifact.jpg)
 
 
 
