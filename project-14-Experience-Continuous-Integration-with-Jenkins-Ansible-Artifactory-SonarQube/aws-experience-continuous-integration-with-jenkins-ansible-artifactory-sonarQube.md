@@ -966,7 +966,8 @@ completes the plots’ data series latest values are pulled from the CSV file ge
 You should now see a Plot menu item on the left menu. Click on it to see the charts. (The analytics may not mean much to you as 
 it is meant to be read by developers. So, you need not worry much about it – this is just to give you an idea of the real-world 
 implementation).
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0ea78af1-6e29-4a2d-95d9-f9f528981456)
+
+![image](assets/project14_50_plot_lot.jpg)
 3. Bundle the application code for into an artifact (archived package) upload to Artifactory
 
 ```
