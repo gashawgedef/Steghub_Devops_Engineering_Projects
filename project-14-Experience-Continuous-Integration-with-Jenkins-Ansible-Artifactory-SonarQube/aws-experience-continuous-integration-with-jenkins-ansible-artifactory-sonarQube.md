@@ -1454,7 +1454,7 @@ sudo systemctl status sonar
 
  1. Set Up Inventory File:
 Define our target host(s) in an inventory file.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/35f60ef9-a4d7-46f4-ae7f-eb7b07d01c35)
+![image](assets/project14_57_sonarqube_server_ip.jpg)
 
 2. Update Ansible Playbook:
 update  a playbook that includes tasks for installing PostgreSQL, creating the SonarQube database and user, installing SonarQube, and configuring it to use PostgreSQL.
