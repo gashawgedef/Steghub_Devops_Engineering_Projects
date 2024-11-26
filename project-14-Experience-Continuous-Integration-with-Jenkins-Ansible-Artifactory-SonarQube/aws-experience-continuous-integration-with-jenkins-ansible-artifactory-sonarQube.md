@@ -1026,12 +1026,17 @@ targeting the main branch. Hence, we have ansible-project/main. Since the Ansibl
 we have included this by specifying the parameters section. The name of the parameter is env and its value is dev. Meaning, 
 deploy to the Development environment.
 **Make sure to update artifactory login details in the todo deployment configuration file in ansible-config-mgt project**
+
+Make sure zip is install
+
+```
+ sudo apt install zip -y
+```
+
 ![image](assets/project14_54_code.JPG)
 
 ![image](assets/project14_53_after_deplooying.JPG)
-Make sure zip is install
 
-$ sudo apt install zip -y
 
 But how are we certain that the code being deployed has the quality that meets corporate and customer requirements? Even though we 
 have implemented **Unit Tests** and **Code Coverage Analysis** with **phpunit** and **phploc**, we still need to implement **Quality Gate** to ensure 
