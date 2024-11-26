@@ -1033,9 +1033,6 @@ Make sure zip is install
 
 $ sudo apt install zip -y
 
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2612b0ec-88b1-4982-8f93-bea25fffc273)
-
 But how are we certain that the code being deployed has the quality that meets corporate and customer requirements? Even though we 
 have implemented **Unit Tests** and **Code Coverage Analysis** with **phpunit** and **phploc**, we still need to implement **Quality Gate** to ensure 
 that ONLY code with the required code coverage, and other quality standards make it through to the environments.
