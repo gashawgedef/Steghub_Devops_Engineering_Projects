@@ -1026,9 +1026,9 @@ targeting the main branch. Hence, we have ansible-project/main. Since the Ansibl
 we have included this by specifying the parameters section. The name of the parameter is env and its value is dev. Meaning, 
 deploy to the Development environment.
 **Make sure to update artifactory login details in the todo deployment configuration file in ansible-config-mgt project**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/04f5ea5a-1980-409a-9c72-1630cf1f4ea5)
+![image](assets/project14_54_code.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/04874304-1216-4ab7-83c9-1751f5556983)
+![image](assets/project14_53_after_deplooying.JPG)
 Make sure zip is install
 
 $ sudo apt install zip -y
