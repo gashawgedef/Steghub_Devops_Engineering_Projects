@@ -1497,14 +1497,14 @@ Now, when SonarQube is up and running, it is time to setup our Quality gate in J
 - Generate authentication token in SonarQube
   
  **User** > **My Account** > **Security** > **Generate Tokens**
- ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ea13e42b-365d-4d05-8852-2c1cf0052d55)
+ ![image](assets/project14_60_generate_sonarqube_tokens.JPG)
 
 
 - Configure Quality Gate Jenkins Webhook in SonarQube – The URL should point to your Jenkins server
  http://{JENKINS_HOST}/sonarqube-webhook/
 
 **Administration** > **Configuration** > **Webhook**s > **Create**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b0eb04ed-5390-4dcf-9636-2f97477a8fbf)
+![image](assets/project14_61_create_quality_gate.JPG)
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4c8b712c-06e3-4ebb-8900-f9dffc9dc02e)
 
