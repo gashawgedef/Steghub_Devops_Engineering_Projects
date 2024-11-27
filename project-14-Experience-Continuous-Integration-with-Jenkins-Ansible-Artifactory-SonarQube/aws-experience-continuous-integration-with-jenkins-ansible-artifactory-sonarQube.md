@@ -1506,12 +1506,12 @@ Now, when SonarQube is up and running, it is time to setup our Quality gate in J
 **Administration** > **Configuration** > **Webhook**s > **Create**
 ![image](assets/project14_61_create_quality_gate.JPG)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4c8b712c-06e3-4ebb-8900-f9dffc9dc02e)
+![image](assets/project14_62_created_hook.JPG)
 
 - Setup SonarQube scanner from Jenkins – Global Tool Configuration
 
 Manage Jenkins > Global Tool Configuration
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2978ac27-8ea3-43b2-a115-82fabaa7f9a6)
+![image](assets/project14_63_sonarqube_scanner.JPG)
 
 ### Update Jenkins Pipeline to include SonarQube scanning and Quality Gate
 Below is the snippet for a Quality Gate stage in Jenkinsfile
@@ -1529,6 +1529,7 @@ Below is the snippet for a Quality Gate stage in Jenkinsfile
     }
 ```
 
+![images](assets/project14_64_update_code.JPG)
 
 > NOTE: The above step will fail because we have not updated `sonar-scanner.properties`
 
