@@ -1614,7 +1614,8 @@ in your browser.
 ### End-to-End Pipeline Overview
 Indeed, this has been one of the longest projects from Project 1, and if everything has worked out for you so far, you should have
 a view like below:
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/4890b539-32c9-4fa8-9655-e63050996975)
+
+![image](assets/project14_77_pass_sonarqube.jpg)
 
 **But we are not completely done yet!**
 
@@ -1623,7 +1624,7 @@ pushed a poor-quality code onto the development environment.
 
 - Navigate to php-todo project in SonarQube
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f6d68924-aae4-4c5d-a84e-f05c543f6dad)
+![image](assets/project14_78_after_first_pass.jpg)
 
 
 There are bugs, and there is 0.0% code coverage. (code coverage is a percentage of unit tests added by developers to test functions
