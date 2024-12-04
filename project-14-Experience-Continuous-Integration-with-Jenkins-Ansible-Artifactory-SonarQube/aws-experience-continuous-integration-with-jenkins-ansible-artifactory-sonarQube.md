@@ -1723,15 +1723,13 @@ Once everything is good with code quality, the pipeline will pass and proceed wi
 1. Introduce Jenkins agents/slaves – Add 2 more servers to be used as Jenkins slave. Configure Jenkins to run its pipeline jobs 
 randomly on any available slave nodes.
 Let's add 2 more servers to be used as Jenkins slave and install java in them.  
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/ac716691-59fb-405f-9a9e-4cd9311b23f6)
+![image](assets/project14_84_instances.jpg)
 
 ```
 sudo apt update
 sudo apt install default-jdk
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7a4645c8-bb8d-4950-8772-c2e73d62d10f)
-
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f0fe6d73-12ac-40ae-9b08-e52c4bf39bb1)
+![image](assets/project14_83_slaves_server.jpg)
 
 2. Configure webhook between Jenkins and GitHub to automatically run the pipeline when there is a code push. Let's Configure the new nodes on Jenkins Server.
  Navigate to **Dashboard** > **Manage Jenkins** > **Nodes**, click on New node and enter a Name and click on create.
