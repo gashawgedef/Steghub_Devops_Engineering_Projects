@@ -1705,13 +1705,14 @@ To test, create different branches and push to GitHub. You will realise that onl
 main, or master will be able to deploy the code.
 
 **Create a new branch feature/sonar-test and commit, push the new code.**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/0c09806f-08b8-4091-8bc0-64426dc02461)
+![image](assets/project14_81_sonarqueb_code.JPG)
 
 If everything goes well, you should be able to see something like this:
 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/c8d7e050-c026-403a-9dd4-0fb242f24c29)
 
 For Branch feature/sonar-test
+
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/b84fdf2a-e79e-4c16-a64e-ef1222053de9)
 
 For main branch 
