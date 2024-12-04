@@ -1810,8 +1810,7 @@ stage ('Deploy to Dev Environment') {
 
 ![image](assets/project14_81_sonarqueb_code.JPG)
    
- **Running on slave console Output**
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f19fcc0a-ce9c-443d-b598-9179eda33fa8)
+
 
 
 4. **Optional** – Experience pentesting in pentest environment by configuring [Wireshark](https://www.wireshark.org/) there and just explore for information sake only.[Watch Wireshark Tutorial here](https://youtu.be/lb1Dw0elw0Q)
