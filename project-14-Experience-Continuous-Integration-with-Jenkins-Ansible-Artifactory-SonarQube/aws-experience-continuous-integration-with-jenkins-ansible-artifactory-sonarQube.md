@@ -731,13 +731,9 @@ Our goal here is to deploy the application onto servers directly from Artifactor
 Ansible with an Artifactory role, simply use this guide to create an Ansible role for Artifactory (ignore the Nginx part). 
 [Configure Artifactory on Ubuntu 20.04](https://www.howtoforge.com/tutorial/ubuntu-jfrog/)
 
-**Prerequests**  Make sure port 8082 is opened in artifactory server
+**Prerequests**  Make sure port 8080 is opened in artifactory server
 
-```
-ansible-galaxy collection install jfrog.platform
-```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7b3d08b7-4018-485c-a8fb-e1b88716e353)
 
 ![image](assets/project14_35_set_jfrog_password.JPG)
 
@@ -1459,15 +1455,12 @@ Define our target host(s) in an inventory file.
 2. Update Ansible Playbook:
 update  a playbook that includes tasks for installing PostgreSQL, creating the SonarQube database and user, installing SonarQube, and configuring it to use PostgreSQL.
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/7905f67b-c350-4f81-8038-2edc7b223f69)
+![image](assets/project14_34_update.JPG)
 
 3. Update Role by adding role fo PostgreSQL and SonarQube :
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1f637fc0-af6d-49d4-bc61-7064ef5bb93c)
+![image](assets/project14_34_1_update.JPG)
 
-4. Execute the Playbook
-   
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/59e83705-fa2f-42e9-9132-2f71be69e341)
 
 
 **Access SonarQube**  To access SonarQube using browser, type server’s IP address followed by port 9000
