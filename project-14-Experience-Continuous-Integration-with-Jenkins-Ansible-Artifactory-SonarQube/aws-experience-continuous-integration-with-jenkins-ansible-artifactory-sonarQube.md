@@ -1635,7 +1635,7 @@ and objects in the code)
 and security issues in the code.
 
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/afeef638-16c7-43c8-8af9-c9dbd98c93be)
+![image](assets/project14_78_after_first_pass.jpg)
 
 
 In the development environment, this is acceptable as developers will need to keep iterating over their code towards perfection. 
