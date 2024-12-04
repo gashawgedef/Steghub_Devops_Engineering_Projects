@@ -1744,7 +1744,7 @@ Name: slave_one
 Remote root directory: /opt/build (This can be any directory for the builds)
 Labels: slave_one 
 save 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/906af197-bb70-4a84-aeb7-120aa4a5b8f5)
+![image](assets/project14_new_node_creates.jpg)
 
 To connect to slave_one, click on the slave_one and if you finsih configuration  save it you see
 
