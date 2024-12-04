@@ -1739,7 +1739,8 @@ sudo apt install default-jdk
 
 2. Configure webhook between Jenkins and GitHub to automatically run the pipeline when there is a code push. Let's Configure the new nodes on Jenkins Server.
  Navigate to **Dashboard** > **Manage Jenkins** > **Nodes**, click on New node and enter a Name and click on create.
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/becc5848-9f29-4366-a155-d2c95043798c)
+
+![image](assets/project14_70slave_one.jpg)
 
 **To connect to slave_one completed this fields and save.**
 
@@ -1749,8 +1750,9 @@ Labels: slave_one
 save 
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/906af197-bb70-4a84-aeb7-120aa4a5b8f5)
 
-To connect to slave_one, click on the slave_one and if you finsih configuration  save it you see 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/fc124386-2e2d-4901-8ab4-ac9c6553fa08)
+To connect to slave_one, click on the slave_one and if you finsih configuration  save it you see
+
+![image](assets/project14_71_slave_one_config.jpg)
 
 Use either options. In this case, I use the first option
 > befor running please check yor public ip addres of your jenkin is same as the if not go to Dashboard> manage Jenkin > systme and update current IP
@@ -1760,7 +1762,7 @@ sudo chown -R ubuntu:ubuntu /opt/build
 sudo chmod -R 755 /opt/build
 ls -ld /opt/build
 ```
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a0096577-6378-44ef-8656-956f24d23a87)
+![image](assets/project14_72_slave_connected.jpg)
 
 **To make it run in background and `&`**
 ```
@@ -1771,12 +1773,12 @@ java -jar agent.jar -webSocket -url http://50.17.45.184:8080/ -secret @secret-fi
 **Repate same thing for the second**
 slave_one
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/1f21c131-8a7e-4c43-aae2-386512955e0a)
+![image](assets/project14_74_slave_one_is_connected.jpg)
 
 slave_two
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/a735f3a4-ccfa-4692-b171-2dbe909d4490)
+![image](assets/project14_75_agent_two_connected.jpg)
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2dca8f1d-ff4c-43f6-92d2-a3f742de9839)
+![image](assets/project14_76_nodes_list.jpg)
 
 3. Deploy the application to all the environments in order to deploy to all environment we Add these stages to our existing Jenkins pipeline script 
 
@@ -1810,7 +1812,7 @@ stage ('Deploy to Dev Environment') {
         }
 ```
 
-![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/2e0e4713-1b71-4185-a55a-d7a658fc8671)
+![image](assets/project14_81_sonarqueb_code.JPG)
    
  **Running on slave console Output**
 ![image](https://github.com/melkamu372/StegHub-DevOps-Cloud-Engineering/assets/47281626/f19fcc0a-ce9c-443d-b598-9179eda33fa8)
