@@ -64,7 +64,9 @@ There are few requirements that must be met before you begin:
    - Click on "Forgot your password?" if you don't have the initial password.
    - Follow the instructions to reset the password and Log in with the new password
 
-  ![image](https://github.com/user-attachments/assets/c113d79d-fd46-4e7f-8b91-9d8ad4e3d429)
+
+![image](assets/project15_06_after_login.JPG)
+
 
 2. Create a free domain name for your fictitious company. I used [cloudns](https://www.cloudns.net/)
 
