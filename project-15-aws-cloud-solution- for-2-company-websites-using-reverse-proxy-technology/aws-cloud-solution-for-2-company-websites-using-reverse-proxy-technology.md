@@ -36,7 +36,7 @@ There are few requirements that must be met before you begin:
 - Create an AWS Master account. (Also known as Root Account) 
 - Within the Root account, create a sub-account and name it DevOps. (You will need another email address to complete this)
 1.1.  In the AWS Management Console, navigate to AWS Organizations.
-![image](https://github.com/user-attachments/assets/911d5366-0b8a-4572-b1a7-8b08e4e815c4)
+![image](assets/project15-01-create_oragnization.JPG)
 
 1.2. If you haven't already created an organization, click "Create an organization" and select "Enable All Features".
 1.3. Click "Add account".
@@ -45,18 +45,18 @@ There are few requirements that must be met before you begin:
  - Account name: DevOps
  - Email address: Provide a new email address (different from the root account).
 1.6. Click "Create". AWS will send a verification email to the provided email address.
-![image](https://github.com/user-attachments/assets/4e5f0705-fd7a-4535-93af-717fad922a21)
+![image](assets/project15-02-create-devops-account.JPG)
 
 1.7. Verify the email address by following the instructions in the email sent by AWS.
-![image](https://github.com/user-attachments/assets/14a23046-4ea9-4d5f-a516-c96779e5e81a)
+![image](assets/project15_03_verify.JPG)
 
 - Within the Root account, create an AWS Organization Unit (OU). Name it Dev. (We will launch Dev resources in there)
   
   **Create an Organizational Unit (OU) Named Dev**  > **In the AWS Organizations dashboard, click on "Organize accounts"** > **Click on "Create organizational unit"** > **Enter Dev as the name for the new OU** > **Click "Create organizational unit"**
-![image](https://github.com/user-attachments/assets/b3782aa8-b644-4dc5-9119-1334996b9da9)
+![image](assets/project15_04_create_dev_ou.JPG)
 
 - Move the DevOps account into the Dev OU.
-![image](https://github.com/user-attachments/assets/7ef21497-7bc0-4596-90c5-3faddd861781)
+![image](assets/project15_05_initial.JPG)
 
 - Login to the newly created AWS account using the new email address.
    - Go to the AWS Management Console login page.
