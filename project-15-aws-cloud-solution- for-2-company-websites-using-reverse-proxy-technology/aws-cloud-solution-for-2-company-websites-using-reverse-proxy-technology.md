@@ -99,6 +99,7 @@ The next step is to get a certificate from AWS Certificate Manager. The reason w
 - Click on request a Cert > Request public cert > Next
 
 ![image](https://github.com/user-attachments/assets/d98e20c7-c16b-476b-a744-89f673f0c004)
+
 ![image](https://github.com/user-attachments/assets/967556ef-f08e-4d16-8a7b-7eaa563f9e82)
 
 
