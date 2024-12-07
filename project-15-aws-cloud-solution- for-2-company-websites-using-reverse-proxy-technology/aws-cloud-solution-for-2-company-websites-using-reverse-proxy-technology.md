@@ -284,9 +284,9 @@ You will need to set up and configure compute resources inside your VPC. The rec
 
 **Nginx ami installation**
 ```
-yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 
-yum install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm
+sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
 
 yum install wget vim python3 telnet htop git mysql net-tools chrony -y
 
