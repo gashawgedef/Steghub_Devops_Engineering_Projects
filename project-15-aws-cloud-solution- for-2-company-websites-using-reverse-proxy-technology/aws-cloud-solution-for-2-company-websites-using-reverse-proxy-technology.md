@@ -248,7 +248,11 @@ curl www.canhazip.com
 System (EFS) must be carefully desinged – only webservers should be able to connect to RDS, while Nginx and Webservers will have 
 access to EFS Mountpoint.
 
-![image](https://github.com/user-attachments/assets/932a2c44-7bfa-41d3-b30a-32495a058b3c)
+![image](assets/project15_32_create_security_group_apl.JPG)
+
+Create others like above
+
+![image](assets/project15_33_security_groups.JPG)
 
 
 **Proceed With Compute Resources**
