@@ -223,10 +223,12 @@ Create a Nat Gateway and assign the Elastic IPs Click on VPC > NAT gateways > Cr
 Select a Public Subnet
 Connection Type: Public
 Allocate Elastic IP
-![image](https://github.com/user-attachments/assets/e41fabaf-39fc-47b9-87bb-7d68e4c00a30)
+
+![image](assets/project15_30_create_nat-gateway.JPG)
 
 Update the Private route table - add allow anywhere ip and associate it the NAT gateway
-![image](https://github.com/user-attachments/assets/41812c4f-37ce-47c5-a577-7aa9871efde7)
+
+![image](assets/project15_31_private_nat.JPG)
 
 9. Create a Security Group for:
 
