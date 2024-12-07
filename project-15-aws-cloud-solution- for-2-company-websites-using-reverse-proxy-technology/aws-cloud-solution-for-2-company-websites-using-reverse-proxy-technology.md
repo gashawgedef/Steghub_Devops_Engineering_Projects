@@ -91,11 +91,13 @@ Fill in the following details:
  Go to the domain name provider and edit the nameservers
 
 Transfer the (4 server address) in the hostname zone in the (NS column) to the domain provider (nameservers).
-![image](https://github.com/user-attachments/assets/a1e6c4ea-4f3c-48a7-809e-e424892bcd5c)
+
+![image](assets/project15_10_update_name_servers.jpg)
 
 The next step is to get a certificate from AWS Certificate Manager. The reason we are creating a certificate first is because when creating `ALB` we need to select a certificate.
 
 - Click on request a Cert > Request public cert > Next
+
 ![image](https://github.com/user-attachments/assets/d98e20c7-c16b-476b-a744-89f673f0c004)
 ![image](https://github.com/user-attachments/assets/967556ef-f08e-4d16-8a7b-7eaa563f9e82)
 
