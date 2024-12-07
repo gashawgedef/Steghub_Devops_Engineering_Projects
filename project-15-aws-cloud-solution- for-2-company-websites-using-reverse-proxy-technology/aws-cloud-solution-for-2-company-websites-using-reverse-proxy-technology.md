@@ -155,6 +155,8 @@ VPC: 10.0.0.0/16
 3. Create a route table and associate it with public subnets
 
 **In the left-hand navigation pane, click on Route Tables** >  **Create route table button**
+
+![images](assets/project15_19_create_route_tables.JPG)
  
  **Enter the following details:**
 
@@ -162,7 +164,7 @@ VPC: 10.0.0.0/16
    - VPC: Select the VPC you created earlier.
    - Click Create route table.
 
-![image](https://github.com/user-attachments/assets/1fa35eb3-83ac-46df-ade2-206b535ea19c)
+![image](assets/project15_20_create-route-table.JPG)
 
 
 **Associate Route Table with Public Subnets**
