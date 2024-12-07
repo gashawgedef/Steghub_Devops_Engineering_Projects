@@ -128,11 +128,12 @@ Always make reference to the architectural diagram and ensure that your configur
 
 1. Create a [VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 
-![image](https://github.com/user-attachments/assets/db03ce4e-84f0-4726-9ed8-6cff2dfcba49)
 
+![image](assets/project15_15_create_vpc.JPG)
 
 **Enable DNS hosting**
-![image](https://github.com/user-attachments/assets/c79be184-235e-4b58-8258-24c279884d4f)
+
+![image](assets/project15_16_edit_vpc_settings.JPG)
 
 
 2. Create subnets as shown in the architecture  On the left panel menu of the VPC UI, click on Subnet > Create Subnet.
@@ -146,7 +147,9 @@ VPC: 10.0.0.0/16
 - Private Subnet 3: 10.0.5.0/24  in Zone A
 - Private Subnet 4: 10.0.6.0/24   in Zone B
 
-  ![image](https://github.com/user-attachments/assets/df150bd6-9dfc-4a8a-b8dc-3c3b36ef5d31)
+![image](assets/project15_17_create_subnet_1.JPG)
+
+  ![image](assets/project15_18_created_subnets.JPG)
 
 
 3. Create a route table and associate it with public subnets
