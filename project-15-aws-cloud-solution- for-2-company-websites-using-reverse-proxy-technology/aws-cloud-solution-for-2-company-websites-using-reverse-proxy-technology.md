@@ -86,7 +86,7 @@ Fill in the following details:
 
 ![image](assets/project15_08_create_dns_zone.jpg)
 
-![image](assets/)
+![image](assets/project15_09_dns_lst.jpg)
 
  Go to the domain name provider and edit the nameservers
 
