@@ -98,17 +98,19 @@ The next step is to get a certificate from AWS Certificate Manager. The reason w
 
 - Click on request a Cert > Request public cert > Next
 
-![image](https://github.com/user-attachments/assets/d98e20c7-c16b-476b-a744-89f673f0c004)
+![image](assets/project15_11_certificate_manager.JPG)
 
-![image](https://github.com/user-attachments/assets/967556ef-f08e-4d16-8a7b-7eaa563f9e82)
+![image](assets/project15_12_request_cirtificate.JPG)
 
 
-In the domain name, we are going to use a wild card i.e(*.). should in case we want to have another `name` or `subdomain`, the `WILDCARD` will make sure that any name before the domain name is attached to the `certificate`. e.g  melkamu.tooling.cloudns.be
-![image](https://github.com/user-attachments/assets/b61044db-930f-451e-8d1a-f3295a0c2285)
+In the domain name, we are going to use a wild card i.e(*.). should in case we want to have another `name` or `subdomain`, the `WILDCARD` will make sure that any name before the domain name is attached to the `certificate`. 
+e.g gashaw.fictitiouscompany.ip-ddns.com
+
+![image](assets/project15_13_public_certificates.JPG)
 
 NOTE: Because we are using DNS verification is going to automatically write to the Rout53 to confirm
 
-![image](https://github.com/user-attachments/assets/00ee7cc8-dbbe-4a16-a393-3b6c322bed75)
+![image](assets/project15_14_certificate_details.JPG)
 
 > NOTE : As you proceed with configuration, ensure that all resources are appropriately tagged, for example:
 
