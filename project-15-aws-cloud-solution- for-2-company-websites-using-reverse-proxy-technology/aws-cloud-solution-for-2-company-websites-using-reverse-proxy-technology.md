@@ -84,9 +84,9 @@ Fill in the following details:
    -  VPC: Leave this blank for a public hosted zone.
    -  Click Create hosted zone
 
-![image](https://github.com/user-attachments/assets/50f70a9e-5e6a-4210-91fa-36071bc25b73)
+![image](assets/project15_08_create_dns_zone.jpg)
 
-![image](https://github.com/user-attachments/assets/97a53c78-3940-4378-9a24-722d16123283)
+![image](assets/)
 
  Go to the domain name provider and edit the nameservers
 
