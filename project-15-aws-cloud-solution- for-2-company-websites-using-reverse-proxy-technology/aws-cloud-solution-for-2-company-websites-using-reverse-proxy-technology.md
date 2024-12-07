@@ -212,7 +212,9 @@ Click Add route > Destination: 0.0.0.0/0 > Target: Select the internet gateway y
 
 Create Elastic IP to configured with the NAT gateway. The NAT gateway enables connection from the public subnet to private subnet and it needs a static ip to make this happen. VPC > Elastic IP addresses > Allocate Elastic IP address - add a name tag and click on allocate
 
-![image](https://github.com/user-attachments/assets/f32f5656-4b84-49d5-b823-36953abb6523)
+![image](assets/project15_28_addingelastic%20ips.JPG)
+
+![image](assets/project15_29_elastic_ips_list.JPG)
 
 8. Create a Nat Gateway and assign one of the Elastic IPs the other 2 will be used by [Bastion hosts](https://aws.amazon.com/solutions/implementations/linux-bastion/))
 
