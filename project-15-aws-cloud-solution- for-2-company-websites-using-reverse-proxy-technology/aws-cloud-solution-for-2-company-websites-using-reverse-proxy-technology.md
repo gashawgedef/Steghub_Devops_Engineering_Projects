@@ -174,16 +174,18 @@ VPC: 10.0.0.0/16
 - In the Select subnets section, check the boxes for Public Subnet 1 and Public Subnet 2.
 - Click Save associations.
 
-![image](https://github.com/user-attachments/assets/07a75f1b-c222-496b-8481-77aa4d55de7c)
+![image](assets/project15_21_edit_public_associations.JPG)
 
 
 4. Create a Private route table and associate it with private subnets
 
-![image](https://github.com/user-attachments/assets/bcf78fee-1088-4c5e-ae1c-d1fa899ce90c)
+![images](assets/project15_22_create_private_route_tables.JPG)
+
+![image](assets/project15_23_create_route_table_2.JPG)
 
 
 **Route Tables**
-![image](https://github.com/user-attachments/assets/ec4ca91d-2bcc-4832-8c83-52d40cb27288)
+![image](assets/project15_24_route_tables.JPG)
 
 
 5. Create an [Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
