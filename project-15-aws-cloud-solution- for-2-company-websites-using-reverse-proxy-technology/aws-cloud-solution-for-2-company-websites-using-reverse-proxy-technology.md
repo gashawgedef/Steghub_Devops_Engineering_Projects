@@ -437,7 +437,7 @@ Prepare Launch Template For Bastion (One per subnet)
 10. Set scale out if CPU utilization reaches 90%
 11. Ensure there is an SNS topic to send scaling notifications
 
-![images](assets/project15_42_target_bastion.jpg)
+![images](assets/project15_43_autoscaling_group.jpg)
 
 ## Set Up Compute Resources for Webservers
 
