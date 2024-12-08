@@ -414,12 +414,28 @@ Prepare Launch Template For Bastion (One per subnet)
 
 ![images](assets/project15_40_create.jpg)
 
-Configure Target Groups
+## Configure Target Groups
 
 1. Select Instances as the target type
 2. Ensure the protocol is TCP on port 22
 3. Register Bastion Instances as targets
 4. Ensure that health check passes for the target group
+
+![images](assets/project15_42_target_bastion.jpg)
+
+## CONFIGURE AUTOSCALING FOR BASTION
+
+1. Select the right launch template
+2. Select the VPC
+3. Select both public subnets
+4. Enable Application Load Balancer for the AutoScalingGroup (ASG)
+5. Select the target group you created before
+6. Ensure that you have health checks for both EC2 and ALB
+7. The desired capacity is 2
+8. Minimum capacity is 2
+9. Maximum capacity is 4
+10. Set scale out if CPU utilization reaches 90%
+11. Ensure there is an SNS topic to send scaling notifications
 
 ![images](assets/project15_42_target_bastion.jpg)
 
