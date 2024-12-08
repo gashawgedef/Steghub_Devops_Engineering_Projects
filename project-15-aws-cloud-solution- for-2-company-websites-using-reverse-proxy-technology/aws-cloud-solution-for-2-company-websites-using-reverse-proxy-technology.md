@@ -396,7 +396,12 @@ systemctl start chronyd
 systemctl enable chronyd
 ```
 3. Associate an Elastic IP with each of the Bastion EC2 Instances
+
 4. Create an AMI out of the EC2 instance
+
+ Here is sample for the one available zone
+
+![images](assets/project15_41_create_bastion_images.jpg)
 
 Prepare Launch Template For Bastion (One per subnet)
 
@@ -404,7 +409,10 @@ Prepare Launch Template For Bastion (One per subnet)
 2. Ensure the Instances are launched into a public subnet
 3. Assign appropriate security group
 4. Configure Userdata to update yum package repository and install Ansible and git
+ 
+ Here is sample for the one available zone
 
+![images](assets/project15_40_create.jpg)
 
 Configure Target Groups
 
@@ -413,6 +421,7 @@ Configure Target Groups
 3. Register Bastion Instances as targets
 4. Ensure that health check passes for the target group
 
+![images](assets/project15_42_target_bastion.jpg)
 
 ## Set Up Compute Resources for Webservers
 
