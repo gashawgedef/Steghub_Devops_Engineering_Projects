@@ -338,6 +338,7 @@ Prepare Launch Template For Nginx (One Per Subnet)
 3. Assign appropriate security group
 4. Configure Userdata to update yum package repository and install nginx
 
+![images](assets/project15_35_create_templates_nginx.jpg)
 
 ## Configure Target Groups
 
@@ -347,6 +348,26 @@ Prepare Launch Template For Nginx (One Per Subnet)
 4. Register Nginx Instances as targets
 5. Ensure that health check passes for the target group
 
+![images](assets/project15_36_create_target_groups.jpg)
+
+
+## CONFIGURE AUTOSCALING FOR NGINX
+
+1. Select the right launch template
+2. Select the VPC
+3. Select both public subnets
+4. Enable Application Load Balancer for the AutoScalingGroup (ASG)
+5. Select the target group you created before
+6. Ensure that you have health checks for both EC2 and ALB
+7. The desired capacity is 2
+8. Minimum capacity is 2
+9. Maximum capacity is 4
+10. Set scale out if CPU utilization reaches 90%
+11. Ensure there is an SNS topic to send scaling notifications
+
+![image](assets/project15_38_create_autoscaling_nginx.jpg)
+
+![image](assets/project15_39_autoscaling.jpg)
 
 ## Set Up Compute Resources for Bastion
 Provision the EC2 Instances for Bastion
