@@ -612,28 +612,30 @@ Open the Amazon EC2 console > Navigate to Load Balancers under the Load Balancin
 - Listeners: Add a listener for HTTPS (port 443).
 - Availability Zones: Select the appropriate VPC and Availability Zones (AZs). Ensure that the ALB is created within subnets that have internet access.
 
-![image](https://github.com/user-attachments/assets/52c0dcaa-82e5-4308-8fc7-4bf6a278b5c3)
+![image](assets/project15_54_load%20balancers.JPG)
 
 
-![image](https://github.com/user-attachments/assets/141e4d0c-18da-466e-a288-f88f02799865)
+![image](assets/project15_55_exp.JPG)
 
 
 2. Ensure that it listens on HTTPS protocol (TCP port 443)
-![image](https://github.com/user-attachments/assets/53e112e5-f6d8-430d-a98f-1c37e51b4a9b)
+![image](assets/project15_56.JPG)
 
 3. Ensure the ALB is created within the appropriate VPC | AZ | Subnets
-![image](https://github.com/user-attachments/assets/ea341106-20d4-4204-96fd-3863260b6aea)
+![image](assets/project15_57.JPG)
 
 
 4. Choose the Certificate from ACM
-![image](https://github.com/user-attachments/assets/dd80c3a7-7dbe-4854-bd3c-d1006417e086)
+![image](assets/project15_58_updates.JPG)
 
 5. Select Security Group
-![image](https://github.com/user-attachments/assets/7a6250e5-ae78-4177-8795-3ca7f9d3abaf)
+
+![image](assets/project15_59_security_group.JPG)
+
 
 6. Select Nginx Instances as the target group
 
-![image](https://github.com/user-attachments/assets/e102016c-b5a6-48e9-bb4c-0758ff146415)
+![image](assets/project15_60_summary.JPG)
 
 ## Application Load Balancer To Route Traffic To Web Server
 Since the webservers are configured for auto-scaling, there is going to be a problem if servers get dynamically scalled out or in. 
