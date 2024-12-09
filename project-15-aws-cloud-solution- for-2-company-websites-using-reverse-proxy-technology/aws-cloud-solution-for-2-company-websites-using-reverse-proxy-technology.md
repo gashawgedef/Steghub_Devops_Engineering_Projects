@@ -512,14 +512,16 @@ Prepare Launch Template For Webservers (One per subnet)
 3. Assign appropriate security group
 4. Configure Userdata to update yum package repository and install wordpress (Only required on the WordPress launch template)
 
+![images](assets/project15_44_web_server_images.JPG)
+
    **Instances are listed**
-![image](https://github.com/user-attachments/assets/863bb64e-c814-4052-bf9c-4f001d607931)
+![image](assets/project15_45_instances_listed.JPG)
 
 **Creating AMI from the instances**
-![image](https://github.com/user-attachments/assets/8e03a1b8-459f-4cd9-8edb-27b4e917329f)
+![image](assets/project15_46_created_ami.JPG)
 
 **Creating Target Groups**
-![image](https://github.com/user-attachments/assets/60ff02b8-58f2-4d78-9a13-ed20188ade65)
+![image](assets/project15_47_target_groups.JPG)
 
 
 **Create Launch Templates**
@@ -587,11 +589,11 @@ The lunch templates requires AMIs (Amazon Machine Images) - Create AMIs from the
 ![image](https://github.com/user-attachments/assets/b63e821a-bb34-4a5d-9b62-79c78a02f30a)
 
 
-![image](https://github.com/user-attachments/assets/93830c54-8b75-4546-a182-acf31a406474)
+![image](assets/project15_50_updates.JPG)
 
-![image](https://github.com/user-attachments/assets/5db8cc97-f067-4e0d-be49-508363b399b9)
+![image](assets/project15_51_details_certificates.JPG)
 
-![image](https://github.com/user-attachments/assets/ccab3da6-af22-49f0-ac88-c7d7ebfdf91e)
+![image](assets/project15_52_fictious_dns.JPG)
 
 ## CONFIGURE APPLICATION LOAD BALANCER (ALB) Application Load Balancer To Route Traffic To NGINX
 Nginx EC2 Instances will have configurations that accepts incoming traffic only from Load Balancers. No request should go directly
