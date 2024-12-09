@@ -389,8 +389,9 @@ We will use instance to create an ami for launching instances
 
 ```
 sudu su -
-yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm 
-yum install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm 
+sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+
+sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
 yum install wget vim python3 telnet htop git mysql net-tools chrony -y 
 systemctl start chronyd 
 systemctl enable chronyd
@@ -459,11 +460,10 @@ Now, you will need to create 2 separate launch templates for both the WordPress 
 - php
 
 ```
-yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
 
-yum install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm
-
-yum install wget vim python3 telnet htop git mysql net-tools chrony -y
+yum install wget vim python3  php telnet htop git mysql net-tools chrony -y
 
 systemctl start chronyd
 
