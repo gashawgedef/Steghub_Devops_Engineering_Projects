@@ -586,7 +586,8 @@ The lunch templates requires AMIs (Amazon Machine Images) - Create AMIs from the
 2. Request a public wildcard certificate for the domain name you registered in Freenom
 3. Use DNS to validate the domain name
 4. Tag the resource
-![image](https://github.com/user-attachments/assets/b63e821a-bb34-4a5d-9b62-79c78a02f30a)
+
+![image](assets/project15_53.JPG)
 
 
 ![image](assets/project15_50_updates.JPG)
