@@ -646,9 +646,10 @@ the webservers are within a private subnet, and we do not want direct access to 
 
 
 1. Create an Internal ALB
-![image](https://github.com/user-attachments/assets/66bfc224-9b82-4ffe-bca4-4e725cfcb035)
+![image](assets/project15_61_create_internal_1.JPG)
 
 2. Ensure that it listens on HTTPS protocol (TCP port 443)
+
 ![image](https://github.com/user-attachments/assets/6d72a063-291e-469d-83ec-6c7d1f4ef855)
 
 3. Ensure the ALB is created within the appropriate VPC | AZ | Subnets
