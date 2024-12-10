@@ -738,54 +738,54 @@ this AWS also has a solution – this is a more advanced concept that will be di
 To configure RDS, follow steps below:
 
 1. Create a subnet group and add 2 private subnets (data Layer)
-![image](https://github.com/user-attachments/assets/54e0e870-5027-4cb1-a1f8-f8b2e7dbc999)
+![image](assets/project15_82_subnet_groups.JPG)
 
-![image](https://github.com/user-attachments/assets/6a40a1f3-106b-4436-9995-39bf65ff1968)
+![image](assets/project15_83_subnet_group.JPG)
 
-![image](https://github.com/user-attachments/assets/3edaca88-5779-425d-82a0-362e8c99cc4b)
+![image](assets/project15_84_create_subnets.JPG)
 
 
 2. Create an RDS Instance for mysql 8.*.*
-![image](https://github.com/user-attachments/assets/7820b737-14ec-486c-b729-0dd25d8b7f88)
+![image](assets/project15_85_create_db_001.JPG)
 
-![image](https://github.com/user-attachments/assets/db4c2ed8-772c-485b-bd07-1f56a001f459)
+![image](assets/project15_86_create_db_002.JPG)
 
 3. To satisfy our architectural diagram, you will need to select either Dev/Test or Production Sample Template. But to minimize AWS 
 cost, you can select the Do not create a standby instance option under Availability & durability sample template (The production 
 template will enable Multi-AZ deployment)
 
 
-![image](https://github.com/user-attachments/assets/ccfa61ba-d934-4b8b-b00b-dd51a3f586ff)
+![image](assets/project15_87_create_db_003.JPG)
 
 4. Configure other settings accordingly (For test purposes, most of the default settings are good to go). In the real world, you will
 need to size the database appropriately. You will need to get some information about the usage. If it is a highly transactional 
 database that grows at 10GB weekly, you must bear that in mind while configuring the initial storage allocation, storage autoscaling, 
 and maximum storage threshold.
 
-![image](https://github.com/user-attachments/assets/865ce1a0-3755-4c73-ac3e-68dcee9fbc6a)
+![image](assets/project15_88_create_Db_004.JPG)
 
-![image](https://github.com/user-attachments/assets/e2c5cb14-2b26-4407-967f-4535e43ca7ad)
+![image](assets/project15_89_create_db_005.JPG)
 
 
 5. Configure VPC and security (ensure the database is not available from the Internet)
-![image](https://github.com/user-attachments/assets/0972a1d8-b7ad-4c84-9480-9f0e6848ac8f)
+![image](assets/project15_90_create_connectivity.JPG)
 
 
 6. Configure backups and retention
-![image](https://github.com/user-attachments/assets/b4a7ee89-44a1-4008-9edb-fd2ced78df4a)
+![image](assets/project15_91_create_db_002.JPG)
 
-![image](https://github.com/user-attachments/assets/335cc4ad-9fff-4f2f-b4a9-14b789c7d9eb)
+![image](assets/project15_92_create.JPG)
 
 7. Encrypt the database using the KMS key created earlier
-![image](https://github.com/user-attachments/assets/762f4649-d8d7-4149-b78a-aa1a42ca4053)
+![image](assets/project15_93_create_db_006.JPG)
 
 
 8.Enable CloudWatch monitoring and export Error and Slow Query logs (for production, also include Audit)
 
-![image](https://github.com/user-attachments/assets/e9f83e68-841a-4c67-882a-97d4843357c8)
+![image](assets/project15_94_create_db_007.JPG)
 
 
-![image](https://github.com/user-attachments/assets/c70967e1-7d29-48bb-879d-45a33743c683)
+![image](assets/project15_95_created_db_008.JPG)
 
 > Note This service is an expensinve one. Ensure to review the monthly cost before creating. **(DO NOT LEAVE ANY SERVICE RUNNING FOR LONG)Create other records such as CNAME, alias and A records**
 
