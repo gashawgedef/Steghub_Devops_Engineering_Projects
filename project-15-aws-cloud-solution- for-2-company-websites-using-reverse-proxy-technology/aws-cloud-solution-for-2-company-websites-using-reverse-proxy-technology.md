@@ -701,30 +701,30 @@ Pre-requisite: Create a KMS key from Key Management Service (KMS) to be used to 
 Open the AWS Management Console > Navigate to the AWS Key Management Service (KMS) > Click Create Key >
 - Key Type: Choose Symmetric.
 - Key Usage: Select Encrypt and decrypt.
-![image](https://github.com/user-attachments/assets/56e9819d-23a2-4866-b0c8-f4f1d1413365)
+
+![image](assets/project15_76_create.JPG)
 
 **Configure Key:**
-- Key Alias: Enter an alias for your key  `Project15_key_Rds`
+- Key Alias: Enter an alias for your key  `project15_key_RDS`
 - Key Description: Optionally add a description.
-![image](https://github.com/user-attachments/assets/6c8e511d-3623-4687-8c04-da9adba952cd)
+
+![image](assets/project15_77_create_key_11.JPG)
+
 
 Define Key Administrative Permissions: Add IAM roles or users who can manage this key.
-![image](https://github.com/user-attachments/assets/a90c66e4-f9d2-4d40-a9c8-ec62f2309d90)
+
+![image](assets/project15_78_created.JPG)
 
 Define Key Usage Permissions:
-![image](https://github.com/user-attachments/assets/369339ae-5338-406a-b95b-3182a8d31e81)
+![image](assets/project15_79_create.JPG)
 
 
 Review and Create:
-![image](https://github.com/user-attachments/assets/7cca8bde-e0e1-4497-9eae-eaff018ae9aa)
+![image](assets/project15_80_created.JPG)
 
 Review the settings and click Create Key.
 
-![image](https://github.com/user-attachments/assets/2fdecef9-60b0-47d5-8fca-9559e4d19ab4)
-
-![image](https://github.com/user-attachments/assets/684861eb-fe0e-446d-a4e7-229d65bb3fcb)
-
-
+![image](assets/project15_81_created_rds_key.JPG)
 
 Amazon Relational Database Service (Amazon RDS) is a managed distributed relational database service by Amazon Web Services. 
 This web service running in the cloud designed to simplify setup, operations, maintenans & scaling of relational databases. 
