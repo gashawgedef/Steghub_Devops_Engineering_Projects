@@ -676,17 +676,23 @@ AWS Cloud services and on-premises resources. In this project, we will utulize E
 and Webservers to store data.
 
 1. Create an EFS filesystem
-![image](https://github.com/user-attachments/assets/2f6fda78-2f17-4af1-8456-67423be01edf)
 
-![image](https://github.com/user-attachments/assets/5612e4d9-e0ea-48d2-95b3-202826af7a45)
+![image](assets/project15_70_create_EFS.JPG)
+
+![image](assets/project15_71_create_form.JPG)
 
 2. Create an EFS mount target per AZ in the VPC, associate it with both subnets dedicated for data layer
 3. Associate the Security groups created earlier for data layer.
 
-![image](https://github.com/user-attachments/assets/d0b8d03d-650b-4185-bb82-662118127883)
+![image](assets/project15_72_created_efs.JPG)
 
 4. Create an EFS access point. Create Access Points mount the applications wordpress and tooling
-![image](https://github.com/user-attachments/assets/37cf6069-996e-4494-8f02-03ad2a05efec)
+
+![image](assets/project15_73_create_wordpress.JPG)
+
+![image](assets/project15_74_create_access_point.JPG)
+
+![image](assets/project15_75_list_access_points.JPG)
 
 
 ### Setup RDS
