@@ -650,22 +650,22 @@ the webservers are within a private subnet, and we do not want direct access to 
 
 2. Ensure that it listens on HTTPS protocol (TCP port 443)
 
-![image](https://github.com/user-attachments/assets/6d72a063-291e-469d-83ec-6c7d1f4ef855)
+![image](assets/project15_63_secure.JPG)
 
 3. Ensure the ALB is created within the appropriate VPC | AZ | Subnets
-![image](https://github.com/user-attachments/assets/ae7e8eab-d77b-4acc-81a5-eb78889f4534)
+![image](assets/project15_64_with_vpc.JPG)
 
 4. Choose the Certificate from ACM
 
-![image](https://github.com/user-attachments/assets/a07df960-5bbb-4324-b6dd-ca6a8d6511c7)
+![image](assets/project15_65_select_certificate.JPG)
 
 5. Select Security Group
-![image](https://github.com/user-attachments/assets/8421dedb-f4b9-4c26-9ecc-9681bb81fb2a)
+![image](assets/project15_66_security_group.JPG)
 
 6. Select webserver Instances as the target group
 7. Ensure that health check passes for the target group
 
-![image](https://github.com/user-attachments/assets/feac3ddf-43c5-4470-9ab9-4e502d6a709b)
+![image](assets/project15_67_summary.JPG)
 
 
 > NOTE: This process must be repeated for both WordPress and Tooling websites.
