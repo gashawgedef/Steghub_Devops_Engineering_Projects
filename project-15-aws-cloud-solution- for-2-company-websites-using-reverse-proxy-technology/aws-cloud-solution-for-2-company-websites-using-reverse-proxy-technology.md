@@ -800,13 +800,11 @@ You need to ensure that the main domain for the WordPress website can be reached
 reached using a browser.
 
 
-![image](https://github.com/user-attachments/assets/eccf5ffc-e0bb-4f77-9099-a22cdea149a0)
+![image](assets/tooling.png)
 
  Worpress website
 
-![image](https://github.com/user-attachments/assets/70df13b6-731d-4673-8fd9-87d3177c6b27)
-
-![image](https://github.com/user-attachments/assets/8fb52606-226a-4dcf-954c-c2673ee08e0e)
+![image](assets/Wordpress.png)
 
 ### The end of Project 15 
 In this project We have just created a secured, scalable and cost-effective infrastructure to host 2 enterprise websites using various Cloud services
