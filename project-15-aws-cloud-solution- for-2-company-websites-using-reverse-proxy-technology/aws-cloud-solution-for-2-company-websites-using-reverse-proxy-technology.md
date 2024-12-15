@@ -527,6 +527,67 @@ Prepare Launch Template For Webservers (One per subnet)
 **Create Launch Templates**
 The lunch templates requires AMIs (Amazon Machine Images) - Create AMIs from the instances and terminate them.From the created custom AMIs, create Launch templates for each of the instances
 
+ - update user data for each wordpress and tooling templates by using the following.
+
+Wordpress userdata
+
+```
+
+
+#!/bin/bash
+mkdir /var/www/
+sudo mount -t efs -o tls,accesspoint=`fsap-00120ed849b980600 fs-054a184972e10ea7b`:/ /var/www/
+yum install -y httpd 
+systemctl start httpd
+systemctl enable httpd
+yum module reset php -y
+yum module enable php:remi-7.4 -y
+yum install -y php php-common php-mbstring php-opcache php-intl php-xml php-gd php-curl php-mysqlnd php-fpm php-json
+systemctl start php-fpm
+systemctl enable php-fpm
+wget http://wordpress.org/latest.tar.gz
+tar xzvf latest.tar.gz
+rm -rf latest.tar.gz
+cp wordpress/wp-config-sample.php wordpress/wp-config.php
+mkdir /var/www/html/
+cp -R /wordpress/* /var/www/html/
+cd /var/www/html/
+touch healthstatus
+sed -i "s/localhost/`pr15-database.c5se06e401wm.us-east-1.rds.amazonaws.com`/g" 
+wp-config.php
+sed -i "s/username_here/HRAadmin/g" wp-config.php 
+sed -i "s/password_here/admin12345/g" wp-config.php 
+sed -i "s/database_name_here/wordpressdb/g" wp-config.php #doesnt exist yet
+chcon -t httpd_sys_rw_content_t /var/www/html/ -R
+systemctl restart httpd
+```
+
+Tooling User Data 
+
+```
+#!/bin/bash
+mkdir /var/www/
+sudo mount -t efs -o tls,accesspoint=fsap-034809a0f8ec5ff2d fs-054a184972e10ea7b:/ /var/www/
+yum install -y httpd 
+systemctl start httpd
+systemctl enable httpd
+yum module reset php -y
+yum module enable php:remi-7.4 -y
+yum install -y php php-common php-mbstring php-opcache php-intl php-xml php-gd php-curl php-mysqlnd php-fpm php-json
+systemctl start php-fpm
+systemctl enable php-fpm
+git clone https://github.com/gashawgedef/tooling.git
+mkdir /var/www/html
+cp -R /tooling/html/*  /var/www/html/
+cd /tooling
+mysql -h pr15-database.c5se06e401wm.us-east-1.rds.amazonaws.com -u HRAadmin -p toolingdb < tooling-db.sql
+cd /var/www/html/
+touch healthstatus
+sed -i "s/$db = mysqli_connect('mysql.tooling.svc.cluster.local', 'admin', 'admin', 'tooling');/$db = mysqli_connect('pr15-database.c5se06e401wm.us-east-1.rds.amazonaws.com', 'HRAadmin', 'admin12345', 'toolingdb');/g" functions.php
+chcon -t httpd_sys_rw_content_t /var/www/html/ -R
+systemctl restart httpd
+```
+
 
 ![image](https://github.com/user-attachments/assets/b2eefc6b-f8f1-486e-9264-fb6626802256)
 
