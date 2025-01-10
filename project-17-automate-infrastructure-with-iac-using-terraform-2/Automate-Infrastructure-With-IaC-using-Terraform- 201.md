@@ -101,7 +101,7 @@ variable "tags" {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/e09ebdd5-32ac-4151-95c9-6d08a2714b05)
+![image](assets/pr17-08-tags-variable.jpg)
 
 The nice thing about this is – anytime we need to make a change to the tags, we simply do that in one single place (terraform.tfvars).
 
@@ -126,7 +126,7 @@ resource "aws_internet_gateway" "igw" {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/634244cb-a39d-4592-85e1-95891769a5a0)
+![image](assets/pr17-03-internet-gateways.jpg)
 
 Did you notice how we have used format() function to dynamically generate a unique name for this resource? The first part of the %s
 takes the interpolated value of aws_vpc.main.id while the second %s appends a literal string IG and finally an exclamation mark is 
@@ -155,7 +155,7 @@ tags = merge(
     } 
   )
 ```
-![image](https://github.com/user-attachments/assets/c292d10d-d7b5-40ed-ae7a-878801087ce5)
+![image](assets/pr17-04-private-subnet-code.jpg)
 
 
 ### NAT Gateways
@@ -197,7 +197,7 @@ resource "aws_nat_gateway" "nat" {
 }
 
 ```
-![image](https://github.com/user-attachments/assets/29eba38b-dac8-486e-aa26-c2c440366755)
+![image](assets/pr17-05-nat-gateways.jpg)
 
 
 ## AWS ROUTES
@@ -255,7 +255,7 @@ resource "aws_route_table_association" "public-subnets-assoc" {
 }
 
 ```
-![image](https://github.com/user-attachments/assets/4231094c-8d37-4c06-b273-e8812388ec35)
+![image](assets/pr17-06-route-tables.jpg)
 
 Now if you run terraform plan and terraform apply it will add the following resources to AWS in multi-az set up:
 
