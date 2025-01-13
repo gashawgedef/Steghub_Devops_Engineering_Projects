@@ -1599,18 +1599,18 @@ terraform apply
 Aws Console
 
 
-![image](https://github.com/user-attachments/assets/c0582fd1-50b6-4cf0-9576-c28138b2d156)
-![image](https://github.com/user-attachments/assets/0b439217-ebc2-4369-bb58-4c38971865c2)
-![image](https://github.com/user-attachments/assets/bdbbd1bb-7931-445e-8a89-e25bafc8640c)
-![image](https://github.com/user-attachments/assets/23ec0e86-720d-404f-8e04-25e59c22074c)
-![image](https://github.com/user-attachments/assets/305eb54f-905f-43ae-a8cb-f9dd9820f215)
-![image](https://github.com/user-attachments/assets/672c8dfb-2941-4e94-a31f-138b6d4eea2c)
-![image](https://github.com/user-attachments/assets/0abed942-ddc9-42e6-899f-dd55346ed47a)
-![image](https://github.com/user-attachments/assets/941b40a6-6f9c-439b-b32f-aa36fd69cf2d)
+![image](assets/pr17-40-vpc.jpg)
+![image](assets/pr17-41-subnets.jpg)
+![image](assets/pr17-42-route-tables.jpg)
+![image](assets/pr17-43-internet-gateways.jpg)
+![image](assets/pr17-44-eip.jpg)
+![image](assets/pr17-45-natgateways.jpg)
+![image](assets/pr17-46-certificates.jpg)
+![image](assets/pr17-47-security-group.jpg)
 
-![image](https://github.com/user-attachments/assets/e9b23df5-6570-4650-9dcd-a35c9d247c2b)
+![image](assets/pr17-48-als.jpg)
 
-![image](https://github.com/user-attachments/assets/7ce4b5bf-42fa-4db5-977e-52fb9c6abb51)
+![image](assets/pr17-49-autoscaling.jpg)
 
 ![image](https://github.com/user-attachments/assets/15450ff6-4016-42f5-896a-f8229b2b25e7)
 
