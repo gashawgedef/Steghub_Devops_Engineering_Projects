@@ -641,7 +641,7 @@ resource "aws_security_group_rule" "inbound-mysql-webserver" {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/a1695e1d-589f-4d47-a411-e8f9bf91f0c5)
+![image](assets/pr17-18-security-group.jpg)
 
 > **IMPORTANT NOTE:** We used the aws_security_group_rule to refrence another security group in a security group.
 
@@ -721,7 +721,7 @@ resource "aws_route53_record" "wordpress" {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/5753114c-48c7-4584-8b7d-bef81de6db11)
+![image](assets/pr17-19-create-aws-certificates.jpg)
 
 
 
