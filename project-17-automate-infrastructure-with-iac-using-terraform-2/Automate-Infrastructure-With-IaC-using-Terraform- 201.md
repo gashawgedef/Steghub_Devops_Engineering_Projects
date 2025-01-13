@@ -1568,15 +1568,17 @@ massive costs.
 ```
 terraform plan
 ```
-![image](https://github.com/user-attachments/assets/2d1b0d96-5519-4e6e-9c06-80a4ca7de476)
+![image](assets/pr17-20-plan1.jpg)
 
-![image](https://github.com/user-attachments/assets/1a2405c5-52e2-4366-9708-c09593ee9cd0)
+![image](assets/pr17-22-plan2.jpg)
 
-![image](https://github.com/user-attachments/assets/00cd8cc5-7374-41ce-9cb1-206bc8934a0d)
+![image](assets/pr17-23-plan3.jpg)
 
-![image](https://github.com/user-attachments/assets/58134698-c1b8-4ee2-8c6c-f8096cbc3483)
+![image](assets/pr17-24-plan4.jpg)
 
-![image](https://github.com/user-attachments/assets/ef4ed567-6d60-49e0-b94b-016aa2f3445e)
+![image](assets/pr17-25-plan5.jpg)
+
+![images](assets/pr17-26-plan.jpg)
 
 
 ```
