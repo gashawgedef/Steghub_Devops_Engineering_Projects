@@ -1584,13 +1584,17 @@ terraform plan
 ```
 terraform apply
 ```
-![image](https://github.com/user-attachments/assets/6d49d070-cb28-4b79-bb7a-254dba4fea4b)
-![image](https://github.com/user-attachments/assets/a0163682-8fdd-48e0-9b10-9e87165c429c)
-![image](https://github.com/user-attachments/assets/43ca6da1-934c-420b-844d-b81e84bb21ba)
-![image](https://github.com/user-attachments/assets/6b055ccc-35fe-465d-961c-b966532278b5)
-![image](https://github.com/user-attachments/assets/e3c92422-cf42-4e9e-b926-b8af1f5c241b)
-![image](https://github.com/user-attachments/assets/724606f8-554e-4d29-8e2e-2f25adb4d32d)
-![image](https://github.com/user-attachments/assets/34b7a19f-e17b-43cf-9247-6b2ca3d70b1c)
+![image](assets/pr17-27-create1.jpg)
+![image](assets/pr17-28-create2.jpg)
+![image](assets/pr17-29-create3.jpg)
+![image](assets/pr17-30-create4.jpg)
+![image](assets/pr17-31-create5.jpg)
+![image](assets/pr17-32-create6.jpg)
+![image](assets/pr17-33-create7.jpg)
+
+![image](assets/pr17-31-create5.jpg)
+![image](assets/pr17-32-create6.jpg)
+![image](assets/pr17-33-create7.jpg)
 
 Aws Console
 
