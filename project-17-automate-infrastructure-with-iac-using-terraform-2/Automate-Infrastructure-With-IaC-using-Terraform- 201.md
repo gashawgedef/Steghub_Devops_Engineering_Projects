@@ -653,7 +653,7 @@ Create `cert.tf` file and add the following code snippets to it.
 
 - Check out the terraform documentation for AWS Certificate manager
 NOTE: You'd have to create a hosted zone from the AWS management console first before making reference to the created hosted zone in the code below;
-![image](https://github.com/user-attachments/assets/cc3ee12e-833f-49f5-95f2-6aa3e60e650a)
+![image](assets/pr17-52-certificate_manager.jpg)
 
 ```
 # The entire section create a certifcate, public zone, and validate the certificate using DNS method
@@ -1595,7 +1595,7 @@ terraform apply
 ![image](assets/pr17-31-create5.jpg)
 ![image](assets/pr17-32-create6.jpg)
 ![image](assets/pr17-33-create7.jpg)
-
+![image](assets/pr17-51-create-kms.jpg)
 Aws Console
 
 
