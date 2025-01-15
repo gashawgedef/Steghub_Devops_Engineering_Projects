@@ -1612,14 +1612,13 @@ Aws Console
 
 ![image](assets/pr17-49-autoscaling.jpg)
 
-![image](https://github.com/user-attachments/assets/15450ff6-4016-42f5-896a-f8229b2b25e7)
 
 ![image](assets/pr17-50-created-db.jpg)
 
 ```
 terraform destroy -auto-approve
 ```
-![image](https://github.com/user-attachments/assets/0ae0f9a7-dae4-4ec9-a854-12b9ba2014da)
+![image](assets/pr17-53_create.jpg)
 
 ### The End of Project 17
 Now We have fully automated creation of AWS Infrastructure for 2 websites with Terraform. In the next project we will further enhance our codes by refactoring and introducing more exciting Terraform concepts! Go ahead and continue your PBL journey!
