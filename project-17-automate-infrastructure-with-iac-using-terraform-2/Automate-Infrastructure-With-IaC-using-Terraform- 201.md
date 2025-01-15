@@ -1596,6 +1596,7 @@ terraform apply
 ![image](assets/pr17-32-create6.jpg)
 ![image](assets/pr17-33-create7.jpg)
 ![image](assets/pr17-51-create-kms.jpg)
+
 Aws Console
 
 
@@ -1609,10 +1610,7 @@ Aws Console
 ![image](assets/pr17-47-security-group.jpg)
 
 ![image](assets/pr17-48-als.jpg)
-
 ![image](assets/pr17-49-autoscaling.jpg)
-
-
 ![image](assets/pr17-50-created-db.jpg)
 
 ```
