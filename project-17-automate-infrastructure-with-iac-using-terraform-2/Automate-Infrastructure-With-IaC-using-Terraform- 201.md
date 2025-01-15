@@ -1614,7 +1614,7 @@ Aws Console
 
 ![image](https://github.com/user-attachments/assets/15450ff6-4016-42f5-896a-f8229b2b25e7)
 
-![image](https://github.com/user-attachments/assets/9e54922d-d09f-4aae-ae43-2a96a95b1a8e)
+![image](assets/pr17-50-created-db.jpg)
 
 ```
 terraform destroy -auto-approve
