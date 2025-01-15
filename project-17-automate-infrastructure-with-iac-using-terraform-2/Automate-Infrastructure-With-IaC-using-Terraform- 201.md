@@ -939,11 +939,11 @@ resource "aws_lb_listener_rule" "tooling-listener" {
 
 This Section we will create the Auto Scaling Group (ASG) Now we need to configure our ASG to be able to scale the EC2s out and in depending on the application traffic.
 
-Before we start configuring an ASG, we need to create the launch template and the the AMI needed. For now we are going to use a random AMI from AWS, then in project 19, we will use `Packerto` create our `ami`.
+<!-- Before we start configuring an ASG, we need to create the launch template and the the AMI needed. For now we are going to use a random AMI from AWS, then in project 19, we will use `Packerto` create our `ami`.
 
-To get random Amazon Machine Images (AMIs) 
+To get random Amazon Machine Images (AMIs)  -->
 
-![image](https://github.com/user-attachments/assets/c7dbce5c-42c7-429c-9da9-328aadb7c8f4)
+![image](assets/pr17-49-autoscaling.jpg)
 
 
 
@@ -1183,7 +1183,7 @@ resource "aws_autoscaling_group" "wordpress-asg" {
     version = "$Latest"
   }
   tag {
-    key                 = "melkamu"
+    key                 = "gashaw-key"
     value               = "wordpress-asg"
     propagate_at_launch = true
   }
