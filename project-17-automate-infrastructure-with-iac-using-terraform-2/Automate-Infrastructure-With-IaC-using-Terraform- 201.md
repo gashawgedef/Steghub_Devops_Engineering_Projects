@@ -17,7 +17,7 @@ resource "aws_subnet" "private" {
   }
 }
 ```
-![image](https://github.com/user-attachments/assets/a5f843ce-1813-4668-8219-f226db870492)
+![image](assets/pr17-41-subnets.jpg)
 
 
 Before we go deeper into automating other parts of our infrastructure on AWS, it is very important to fully understand certain concepts around ``Networking` (in case this is completely new area to you). 
@@ -1119,7 +1119,7 @@ resource "aws_autoscaling_attachment" "asg_attachment_nginx" {
   alb_target_group_arn   = aws_lb_target_group.nginx-tgt.arn
 }
 ```
-![image](https://github.com/user-attachments/assets/960ebc0c-247f-49a7-9756-da125160694c)
+![image](assets/pr17-54-bastion-nginx.jpg)
 
 Autoscaling for wordpres and toolibng will be created in a seperate file
 
@@ -1388,7 +1388,7 @@ resource "aws_efs_access_point" "tooling" {
   }
 }
 ```
-![image](https://github.com/user-attachments/assets/4f003c16-5a9d-4027-8fee-e57f6717968e)
+![image](assets/pr17-55-kms.jpg)
 
 
 ## 8. Create [MySQL RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html)
@@ -1426,7 +1426,7 @@ resource "aws_db_instance" "ACS-rds" {
   multi_az               = "true"
 }
 ```
-![image](https://github.com/user-attachments/assets/447450f9-9398-4657-9013-b8dbba7489e6)
+![image](assets/pr17-56-rds.jpg)
 
 
 Before Applying, if you take note, we gave refrence to a lot of varibales in our resources that has not been declared in the 
