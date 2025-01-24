@@ -52,7 +52,7 @@ resource "aws_s3_bucket" "terraform_state" {
   }
 }
 ```
-![image](https://github.com/user-attachments/assets/3d63ede2-6c0e-4aaf-af6d-14882f87643a)
+![image](assets/pr18-001-backend-1.jpg)
 
 You must be aware that Terraform stores secret data inside the state files. Passwords, and secret keys processed by resources are 
 always stored in there. Hence, you must consider to always enable encryption. You can see how we achieved that with 
@@ -77,7 +77,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
   }
 }
 ```
-![image](https://github.com/user-attachments/assets/e0c69178-e85e-4685-92e9-2c2a8610a3f7)
+![image](assets/pr18-001-backend-2.jpg)
 
 Terraform expects that both S3 bucket and DynamoDB resources are already created before we configure the backend. So, let us run
 terraform apply to provision resources.
@@ -87,7 +87,7 @@ terraform apply to provision resources.
 ```
 terraform {
   backend "s3" {
-    bucket         = "dev-terraform-bucket"
+    bucket         = "gashaw-dev-terraform-bucket"
     key            = "global/s3/terraform.tfstate"
     region         = "eu-central-1"
     dynamodb_table = "terraform-locks"
@@ -121,7 +121,7 @@ terraform plan
 refresh the browser and see how the lock is being handled:
 
 
-![image](https://github.com/user-attachments/assets/0c01937a-7d50-481a-a52e-871b951cd229)
+![image](assets/pr18-005-backemd-5.jpg)
 
 
 
@@ -142,7 +142,7 @@ output "dynamodb_table_name" {
   description = "The name of the DynamoDB table"
 }
 ```
-![image](https://github.com/user-attachments/assets/c76a1289-9bca-49f6-a6ab-d6972b459f64)
+![image](assets/pr18-006-backemd-6.jpg)
 
 
 Now we have everything ready to go!
@@ -156,9 +156,9 @@ several versions of your terraform.tfstate file in the S3 bucket:
 ```
 terraform apply
 ```
-![image](https://github.com/user-attachments/assets/1d2b3a7e-aa6b-4fe8-bc93-8c8c9658eff0)
+![image](assets/pr18-007-backemd-7.jpg)
 
-![image](https://github.com/user-attachments/assets/04b36ac4-c268-423d-88a8-56175dc089c9)
+![image](assets/pr18-008-backemd-8.jpg)
 
 
 With help of remote backend and locking configuration that we have just configured, **collaboration is no longer a problem**.
