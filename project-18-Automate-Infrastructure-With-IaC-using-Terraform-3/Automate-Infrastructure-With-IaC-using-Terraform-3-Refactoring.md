@@ -224,10 +224,10 @@ For repetitive blocks of code you can use [dynamic blocks](https://developer.has
 in Terraform, to get to know more how to use them – [watch this video](https://youtu.be/tL58Qt-RGHY).
 
 **Refactor Security Groups create all security groups dynamically**
-![image](https://github.com/user-attachments/assets/95b09e2c-50b8-46ea-9aba-77c386320223)
+![image](assets/pr18-011-backemd-11.jpg)
 
 **creating dynamic ingress security groups**
-![image](https://github.com/user-attachments/assets/959433c5-4569-4868-9f32-9ef29f594819)
+![image](assets/pr18-012-backemd-12.jpg)
 
 
 **EC2 refactoring with Map and Lookup**
@@ -245,7 +245,7 @@ variable "images" {
     }
 }
 ```
-![image](https://github.com/user-attachments/assets/669a0871-b611-44a2-ba9e-e8a6f3ca4751)
+![image](assets/pr18-013-backemd-13.jpg)
 
 To select an appropriate AMI per region, we will use a lookup function which has following syntax: lookup(map, key, [default]).
 
@@ -256,7 +256,7 @@ resource "aws_instace" "web" {
     ami  = "${lookup(var.images, var.region), "ami-12323"}
    }
 ```
-![image](https://github.com/user-attachments/assets/1b2c4acb-630c-4b19-96e9-69a0c90fe52c)
+![image](assets/pr18-014-backemd-14.jpg)
 
 Now, the lookup function will load the variable images using the first parameter. But it also needs to know which of the key-value 
 pairs to use. That is where the second parameter comes in. The key us-east-1 could be specified, but then we will not be doing 
@@ -301,7 +301,7 @@ module "network" {
   source = "./modules/network"
 }
 ```
-![image](https://github.com/user-attachments/assets/8693b617-005b-4339-ad60-e15a38feeb1d)
+![image](assets/pr18-015-backemd-15.jpg)
 
 Note that the path to `network` module is set as relative to your working directory. 
 
@@ -334,7 +334,7 @@ type into directories within a ‘modules’ directory, for example, like this:
   - VPC: For VPC and netowrking resources such as subnets, roles, e.t.c.
   - security: for creating security group resources
 ```
-![image](https://github.com/user-attachments/assets/50e6835a-5b39-49bd-b3dd-3e1f985a02a5)
+![image](assets/pr18-016-backemd-16.jpg)
 
 Each module shall contain following files:
 
@@ -343,11 +343,11 @@ Each module shall contain following files:
 - outputs.tf (optional, if you need to refer outputs from any of these resources in your root module)
 - variables.tf (as we learned before - it is a good practice not to hard code the values and use variables)
 ```
-![image](https://github.com/user-attachments/assets/949bb1dc-c3be-415b-8c38-722d9831973d)
+![image](assets/pr18-017-backemd-17.jpg)
 
 It is also recommended to configure providers and backends sections in separate files but should be placed in the root module.
 
-![image](https://github.com/user-attachments/assets/628da44d-e385-47d7-b612-7f93513d8b18) ![image](https://github.com/user-attachments/assets/dfdaa15b-8d6d-4445-aa8a-af6ff1612631)
+![image](assets/pr18-018-backemd-18.jpg)
 
 
 
@@ -365,7 +365,7 @@ module "VPC" {
   region = var.region
   ...
 ```
-![image](https://github.com/user-attachments/assets/cc7514a4-641b-48fd-af99-1632ee9948ca)
+![image](assets/pr18-019-backemd-19.jpg)
 
 
 b. Refer to a module’s output by specifying the full path to the output variable by using module.%module_name%.%output_name% 
@@ -375,7 +375,7 @@ construction:
 ```
 subnets-compute = module.network.public_subnets-1
 ```
-![image](https://github.com/user-attachments/assets/c9ba715d-5684-4218-8ecd-ad32bad74b74)
+![image](assets/pr18-021-backemd-21.jpg)
 
 
 # COMPLETE THE TERRAFORM CONFIGURATION
@@ -407,7 +407,7 @@ Complete the rest of the codes yourself, the resulting configuration structure i
     ├── terraform.tfvars
     └── variables.tf
 ```
-![image](https://github.com/user-attachments/assets/66ef101d-b40a-4cb1-8568-2eda76453f4e)
+![image](assets/pr18-022-backemd-22.jpg)
 
 Now, the code is much more well-structured and can be easily read, edited and reused by your DevOps team members.
 
