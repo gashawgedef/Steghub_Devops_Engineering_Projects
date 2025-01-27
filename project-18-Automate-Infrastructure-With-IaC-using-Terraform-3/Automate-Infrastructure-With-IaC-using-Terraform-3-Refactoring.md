@@ -96,8 +96,8 @@ terraform {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/9da4b56f-2e8d-4348-827d-412479318533)
-![image](https://github.com/user-attachments/assets/99519c6f-de8f-4e72-a5b8-63be117abed7)
+![image](assets/pr18-009-backemd-9.jpg)
+![image](assets/pr18-010-backemd-10.jpg)
 
 Now its time to re-initialize the backend. Run terraform init and confirm you are happy to change the backend by typing yes
 ```
