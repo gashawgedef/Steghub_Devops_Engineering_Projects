@@ -103,7 +103,7 @@ Now its time to re-initialize the backend. Run terraform init and confirm you ar
 ```
 terraform init
 ```
-![image](https://github.com/user-attachments/assets/ec4e71c1-701b-429d-8d84-902277cd11d6)
+![image](assets/pr18-initialize.png)
 
 -  Verify the changes
 Before doing anything if you opened AWS now to see what happened you should be able to see the following:
