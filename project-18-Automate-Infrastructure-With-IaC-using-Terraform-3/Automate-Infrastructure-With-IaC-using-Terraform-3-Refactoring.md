@@ -426,13 +426,13 @@ syntactically valid and internally consistent.
 ```
 terraform validate
 ```
-![image](https://github.com/user-attachments/assets/242b73fb-5f43-42f7-b60d-54553e216805)
+![image](assets/pr18-026-backemd-26.png)
 
 
 ```
 terraform plan
 ```
-![image](https://github.com/user-attachments/assets/7ca72493-3e96-46ec-b03a-d22b089addd8)
+![image](assets/pr18-024-backemd-24.png)
 
 
 2. In order to make your configuration files more readable and follow canonical format and style – use terraform fmt command. It will 
@@ -440,7 +440,7 @@ apply Terraform language style conventions and format your .tf files in accordan
 
  Navigate to Your Project Directory
 
-![image](https://github.com/user-attachments/assets/0ce0c5fe-6978-4201-a32b-71a688a8224c)
+![image](assets/pr18-023-backemd-23.png)
 
 Simply run the terraform fmt command to format all Terraform files in your project directory 
 ```
@@ -451,7 +451,7 @@ terraform fmt
 terraform fmt -check
 
 ```
-![image](https://github.com/user-attachments/assets/5f3c396f-7bb9-485b-b85e-fa68d8f28532)
+![image](assets/pr18-025-backemd-25.png)
 
 
 ## The End of Project 18
